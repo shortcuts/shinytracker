@@ -1,7 +1,33 @@
+# Android/Gradle/Kotlin
 *.iml
 .gradle/
-build/
 local.properties
 .idea/
+*.keystore
+*.jks
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+.kotlin/
+kls_database.db
+
+# CI/CD artifacts
+*.apk
+*.aab
+
+# OS
 .DS_Store
+Thumbs.db
+
 docs/screenshots/
+
+# Agents
+.sisyphus
+.opencode
+.omc
+# Added by code-review-graph
+.code-review-graph/
+.agents
+.shortcuts
+.claude/.radin
