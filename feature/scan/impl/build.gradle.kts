@@ -8,5 +8,7 @@ android {
 
 dependencies {
     implementation(project(":feature:scan:api"))
+    implementation(project(":core:sprites"))
+    implementation(project(":core:data"))
     implementation(libs.kotlinx.coroutines.android)
 }

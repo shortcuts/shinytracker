@@ -1,0 +1,64 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "896ebcfedee4c3719ac85cfbc712d3b4",
+    "entities": [
+      {
+        "tableName": "caught",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`dexId` INTEGER NOT NULL, `formId` INTEGER NOT NULL, `costumeId` INTEGER NOT NULL, `shiny` INTEGER NOT NULL, `name` TEXT NOT NULL, `caughtAt` INTEGER NOT NULL, PRIMARY KEY(`dexId`, `formId`, `costumeId`, `shiny`))",
+        "fields": [
+          {
+            "fieldPath": "dexId",
+            "columnName": "dexId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "formId",
+            "columnName": "formId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "costumeId",
+            "columnName": "costumeId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shiny",
+            "columnName": "shiny",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "caughtAt",
+            "columnName": "caughtAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "dexId",
+            "formId",
+            "costumeId",
+            "shiny"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '896ebcfedee4c3719ac85cfbc712d3b4')"
+    ]
+  }
+}

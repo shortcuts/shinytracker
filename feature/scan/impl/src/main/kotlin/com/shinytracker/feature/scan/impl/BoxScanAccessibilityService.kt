@@ -1,16 +1,21 @@
 package com.shinytracker.feature.scan.impl
 
+import android.Manifest
 import android.accessibilityservice.AccessibilityService
 import android.accessibilityservice.GestureDescription
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.Path
+import android.graphics.Rect
 import android.util.Log
 import android.view.Display
 import android.view.accessibility.AccessibilityEvent
+import android.view.accessibility.AccessibilityNodeInfo
 import androidx.core.app.NotificationCompat
+import androidx.core.content.ContextCompat
 import com.shinytracker.core.common.constants.AppConstants
 import com.shinytracker.feature.scan.api.BoxScanAccessibilityServiceBridge
 import com.shinytracker.feature.scan.api.BoxScanBridge
@@ -119,8 +124,33 @@ class BoxScanAccessibilityService :
         }
     }
 
+    override suspend fun getIconSlotBounds(): List<Rect> {
+        val root = rootInActiveWindow ?: return emptyList()
+        val bounds = mutableListOf<Rect>()
+        collectImageNodeBounds(root, bounds)
+        return bounds
+    }
+
+    private fun collectImageNodeBounds(
+        node: AccessibilityNodeInfo,
+        out: MutableList<Rect>,
+    ) {
+        if (node.className == "android.widget.ImageView") {
+            val rect = Rect()
+            node.getBoundsInScreen(rect)
+            out.add(rect)
+        }
+        for (i in 0 until node.childCount) {
+            node.getChild(i)?.let { collectImageNodeBounds(it, out) }
+        }
+    }
+
     private fun showActiveNotification() {
         val nm = getSystemService(NotificationManager::class.java) ?: return
+        val hasPermission =
+            ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) ==
+                PackageManager.PERMISSION_GRANTED
+        if (!hasPermission) return // no runtime request flow yet — best-effort status notification only
         val channel =
             NotificationChannel(
                 AppConstants.ScanConstants.NOTIFICATION_CHANNEL_ID,

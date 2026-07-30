@@ -12,10 +12,12 @@ import androidx.activity.compose.setContent
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.lifecycleScope
 import com.shinytracker.core.designsystem.ShinyTheme
 import com.shinytracker.feature.scan.api.BoxScanBridge
 import com.shinytracker.feature.scan.impl.BoxScanAccessibilityService
+import com.shinytracker.feature.scan.impl.ScanOrchestrator
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import java.io.File
@@ -27,16 +29,22 @@ import javax.inject.Inject
 class MainActivity : ComponentActivity() {
     @Inject lateinit var boxScanBridge: BoxScanBridge
 
+    @Inject lateinit var scanOrchestrator: ScanOrchestrator
+
     private var isServiceEnabled by mutableStateOf(false)
     private var statusText by mutableStateOf("")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            val scanResults by scanOrchestrator.scanResults.collectAsStateWithLifecycle()
+            val reviewQueue by scanOrchestrator.reviewQueue.collectAsStateWithLifecycle()
             ShinyTheme {
                 ShinyApp(
                     isServiceEnabled = isServiceEnabled,
                     statusText = statusText,
+                    scanResults = scanResults,
+                    reviewQueueSize = reviewQueue.size,
                     onOpenAccessibilitySettings = { openAccessibilitySettings() },
                     onCaptureScreenshot = {
                         lifecycleScope.launch { statusText = captureAndSaveScreenshot() }
@@ -44,6 +52,13 @@ class MainActivity : ComponentActivity() {
                     onScrollBoxDown = {
                         lifecycleScope.launch {
                             statusText = if (boxScanBridge.scrollBoxDown()) "Scroll dispatched" else "Scroll failed"
+                        }
+                    },
+                    onRunFullScan = {
+                        lifecycleScope.launch {
+                            statusText = "Scanning..."
+                            scanOrchestrator.runFullScan()
+                            statusText = "Scan complete"
                         }
                     },
                 )

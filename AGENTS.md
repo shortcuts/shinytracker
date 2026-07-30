@@ -87,16 +87,15 @@ Rules:
 
 ## Feature Specifications
 
-No features are built yet. The planned module structure lives in
-@docs/architecture.md. This section gains a table of
-`docs/features/<feature>.md` entries as features land, starting with M1.
+| Feature | Doc |
+|---------|-----|
+| Box scan (screenshot → crop → match → record) | `docs/features/scan.md` |
 
 ---
 
 ## Domain Models
 
-No domain models exist yet — `:core:model` is not yet a real module. This
-section links to `docs/domain-models.md` once the first models land.
+→ See @docs/domain-models.md
 
 ---
 
@@ -106,8 +105,11 @@ Populated as milestones land.
 
 | Service | Module | Type | Purpose |
 |---------|--------|------|---------|
-| BoxScanBridge | `:feature:scan:api` | `@Singleton` bind/unbind bridge | Exposes `captureScreenshot()`/`scrollBoxDown()` to consumers without a dependency on the concrete `AccessibilityService` |
-| BoxScanAccessibilityService | `:feature:scan:impl` | `AccessibilityService` | Captures box screenshots and dispatches the scroll gesture; binds itself into `BoxScanBridge` |
+| BoxScanBridge | `:feature:scan:api` | `@Singleton` bind/unbind bridge | Exposes `captureScreenshot()`/`scrollBoxDown()`/`getIconSlotBounds()` to consumers without a dependency on the concrete `AccessibilityService` |
+| BoxScanAccessibilityService | `:feature:scan:impl` | `AccessibilityService` | Captures box screenshots, dispatches the scroll gesture, and walks the node tree for icon bounds; binds itself into `BoxScanBridge` |
+| SpriteMatcher | `:core:sprites` | `@Singleton` | Matches a cropped box-slot icon against the bundled sprite catalog, returns a `MatchResult` |
+| CaughtRepository | `:core:data` | `@Singleton` | Single source of truth for caught shinies; insert-only-if-absent against `CaughtDao` |
+| ScanOrchestrator | `:feature:scan:impl` | `@Singleton` | Drives the full scan loop: bounds → screenshot → crop → match → record/review, until scrolling stops changing bounds |
 
 ---
 
