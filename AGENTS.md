@@ -102,11 +102,12 @@ section links to `docs/domain-models.md` once the first models land.
 
 ## Key Services
 
-Populated as milestones land. No services exist yet — do not invent entries here.
+Populated as milestones land.
 
 | Service | Module | Type | Purpose |
 |---------|--------|------|---------|
-| — | — | — | — |
+| BoxScanBridge | `:feature:scan:api` | `@Singleton` bind/unbind bridge | Exposes `captureScreenshot()`/`scrollBoxDown()` to consumers without a dependency on the concrete `AccessibilityService` |
+| BoxScanAccessibilityService | `:feature:scan:impl` | `AccessibilityService` | Captures box screenshots and dispatches the scroll gesture; binds itself into `BoxScanBridge` |
 
 ---
 

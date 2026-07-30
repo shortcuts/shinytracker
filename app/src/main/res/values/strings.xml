@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">shinytracker</string>
+    <string name="accessibility_service_label">shinytracker box scan</string>
+    <string name="accessibility_service_description">Reads your Pokemon GO shiny box via screenshots and scrolls the list. Starts and stops manually — never runs automatically, never taps Pokemon.</string>
 </resources>
