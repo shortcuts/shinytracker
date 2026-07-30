@@ -24,6 +24,10 @@ class ShinyLibraryConventionPlugin : Plugin<Project> {
                     sourceCompatibility = org.gradle.api.JavaVersion.VERSION_17
                     targetCompatibility = org.gradle.api.JavaVersion.VERSION_17
                 }
+
+                testOptions {
+                    unitTests.isIncludeAndroidResources = true
+                }
             }
 
             extensions.configure<org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension> {

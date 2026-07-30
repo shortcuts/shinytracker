@@ -42,3 +42,22 @@ Domain-level "the user has caught this" fact, mapped from `CaughtEntity` (`:core
 | dexEntry | DexEntry | |
 | shiny | Boolean | |
 | caughtAt | Long | Epoch millis |
+
+## Generation
+
+Pokemon generation, derived from dex id. Ranges per Bulbapedia's National Pokedex.
+
+| Field | Type | Notes |
+|---|---|---|
+| dexRange | IntRange | One of KANTO..PALDEA; `fromDexId(dexId)` falls back to the last generation for unknown ids |
+
+## ChecklistEntry
+
+One eligible-shiny species (from `ShinyChecklistSource`) cross-referenced against caught records. Built by `ChecklistRepository` (owner mode) or inline in `SharedProfileViewModel` (shared read-only mode, against an imported profile instead of `CaughtRepository`).
+
+| Field | Type | Notes |
+|---|---|---|
+| dexEntry | DexEntry | |
+| caught | Boolean | |
+| caughtAt | Long? | Null if not caught |
+| generation | Generation | |

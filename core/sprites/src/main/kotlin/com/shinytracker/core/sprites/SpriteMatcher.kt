@@ -14,6 +14,7 @@ class SpriteMatcher
     @Inject
     constructor(
         @ApplicationContext private val context: Context,
+        private val checklistSource: ShinyChecklistSource,
     ) {
         private val catalog: List<Pair<ShinyRecord, SpriteDescriptor>> by lazy { loadCatalog() }
 
@@ -24,7 +25,7 @@ class SpriteMatcher
         }
 
         private fun loadCatalog(): List<Pair<ShinyRecord, SpriteDescriptor>> =
-            SpriteCatalog.ENTRIES.map { record ->
+            SpriteCatalog.load(context, checklistSource::nameFor).map { record ->
                 context.assets.open("sprites/${record.assetPath}").use { stream ->
                     val bitmap = BitmapFactory.decodeStream(stream)
                     val descriptor = computeDescriptor(bitmap.toArgbPixels(), bitmap.width, bitmap.height)

@@ -26,13 +26,16 @@ queue instead of guessing.
 ## Current UI
 
 Debug-only, in `:app`'s `MainActivity`/`ShinyApp` — a "Run full scan"
-button and two counters (new/total caught this scan, review-queue size). A
-real results screen with confirm/reject for the review queue is
-`:feature:checklist` (M4), not built yet.
+button and two counters (new/total caught this scan, review-queue size), plus
+a "View checklist" button into `:feature:checklist` (see
+`docs/features/checklist.md`). A confirm/reject UI for the review queue is
+not built yet.
 
 ## Sprite catalog
 
-M3 ships a fixed ~20-sprite subset (`:core:sprites`'s `SpriteCatalog`),
-vendored from `PokeMiners/pogo_assets` via `scripts/pull_reference_sprites.py`.
-Full catalog + eligibility checklist is M4's `ShinyChecklistSource` +
-`scripts/sync_sprites.py`.
+`:core:sprites`'s `SpriteCatalog` lists every PNG vendored under
+`core/sprites/src/main/assets/sprites/` at runtime (no hardcoded list) and
+parses each filename back into a `ShinyRecord`. `scripts/pull_reference_sprites.py`
+(M3) vendors a fixed ~20-sprite starter subset from `PokeMiners/pogo_assets`;
+`scripts/sync_sprites.py` (M4) incrementally syncs the full set from the same
+repo into the same directory.

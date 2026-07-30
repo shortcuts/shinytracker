@@ -1,36 +1,30 @@
 package com.shinytracker.core.sprites
 
+import android.content.Context
 import com.shinytracker.core.model.DexEntry
 import com.shinytracker.core.model.ShinyRecord
 
+private const val SPRITES_ASSET_DIR = "sprites"
+private val FILENAME_REGEX = Regex("""pokemon_icon_(\d{3})_(\d{2})(?:_(\d{2}))?(_shiny)?\.png""")
+
 /**
- * Fixed ~20-sprite starter catalog for M3. Vendored via
- * scripts/pull_reference_sprites.py into
- * core/sprites/src/main/assets/sprites/. Superseded by a full catalog once
- * M4's ShinyChecklistSource + scripts/sync_sprites.py land.
+ * Lists every vendored sprite under assets/sprites/ at runtime and parses
+ * each filename into a ShinyRecord. Reads whatever scripts/sync_sprites.py
+ * (full catalog) or scripts/pull_reference_sprites.py (M3 starter set) has
+ * vendored -- both write into the same directory.
  */
 object SpriteCatalog {
-    val ENTRIES: List<ShinyRecord> =
-        listOf(
-            normalAndShiny(1, "Bulbasaur"),
-            normalAndShiny(4, "Charmander"),
-            normalAndShiny(7, "Squirtle"),
-            normalAndShiny(19, "Rattata"),
-            normalAndShiny(25, "Pikachu"),
-            normalAndShiny(66, "Machop"),
-            normalAndShiny(74, "Geodude"),
-            normalAndShiny(129, "Magikarp"),
-            normalAndShiny(133, "Eevee"),
-        ).flatten() + ShinyRecord(DexEntry(25, 0, 1, "Pikachu"), shiny = false, assetPath = "pokemon_icon_025_00_01.png")
-
-    private fun normalAndShiny(
-        dexId: Int,
-        name: String,
-    ): List<ShinyRecord> {
-        val id = "%03d".format(dexId)
-        return listOf(
-            ShinyRecord(DexEntry(dexId, 0, 0, name), shiny = false, assetPath = "pokemon_icon_${id}_00.png"),
-            ShinyRecord(DexEntry(dexId, 0, 0, name), shiny = true, assetPath = "pokemon_icon_${id}_00_shiny.png"),
-        )
-    }
+    fun load(
+        context: Context,
+        nameFor: (dexId: Int) -> String,
+    ): List<ShinyRecord> =
+        context.assets.list(SPRITES_ASSET_DIR).orEmpty().mapNotNull { filename ->
+            val match = FILENAME_REGEX.matchEntire(filename) ?: return@mapNotNull null
+            val (dexId, formId, costumeId, shinySuffix) = match.destructured
+            ShinyRecord(
+                dexEntry = DexEntry(dexId.toInt(), formId.toInt(), costumeId.toIntOrNull() ?: 0, nameFor(dexId.toInt())),
+                shiny = shinySuffix.isNotEmpty(),
+                assetPath = filename,
+            )
+        }
 }
