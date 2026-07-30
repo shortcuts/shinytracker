@@ -90,6 +90,7 @@ Rules:
 | Feature | Doc |
 |---------|-----|
 | Box scan (screenshot → crop → match → record) | `docs/features/scan.md` |
+| Checklist (owner + shared read-only, search/filter, export/import) | `docs/features/checklist.md` |
 
 ---
 
@@ -110,6 +111,9 @@ Populated as milestones land.
 | SpriteMatcher | `:core:sprites` | `@Singleton` | Matches a cropped box-slot icon against the bundled sprite catalog, returns a `MatchResult` |
 | CaughtRepository | `:core:data` | `@Singleton` | Single source of truth for caught shinies; insert-only-if-absent against `CaughtDao` |
 | ScanOrchestrator | `:feature:scan:impl` | `@Singleton` | Drives the full scan loop: bounds → screenshot → crop → match → record/review, until scrolling stops changing bounds |
+| ShinyChecklistSource | `:core:sprites` | `@Singleton` | Loads the bundled/cached shiny-eligibility checklist; `refresh()` re-fetches over the network without touching the bundled asset |
+| ChecklistRepository | `:core:data` | `@Singleton` | Combines `ShinyChecklistSource` + `CaughtRepository` into `ChecklistEntry` lists for the checklist UI |
+| ProfileShareRepository | `:core:data` | `@Singleton` | Exports the owner's caught list to a shareable file; imports someone else's exported file for read-only viewing (never writes to `CaughtRepository`) |
 
 ---
 

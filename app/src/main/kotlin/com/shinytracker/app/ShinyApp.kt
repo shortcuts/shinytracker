@@ -23,6 +23,7 @@ fun ShinyApp(
     onCaptureScreenshot: () -> Unit = {},
     onScrollBoxDown: () -> Unit = {},
     onRunFullScan: () -> Unit = {},
+    onOpenChecklist: () -> Unit = {},
 ) {
     Column(
         modifier = Modifier.fillMaxSize().padding(24.dp),
@@ -39,6 +40,7 @@ fun ShinyApp(
             Text(text = "Caught this scan: ${scanResults.count { it.isNew }} new / ${scanResults.size} total")
             Text(text = "Needs review: $reviewQueueSize")
         }
+        Button(onClick = onOpenChecklist) { Text("View checklist") }
         if (statusText.isNotEmpty()) {
             Text(text = statusText)
         }
