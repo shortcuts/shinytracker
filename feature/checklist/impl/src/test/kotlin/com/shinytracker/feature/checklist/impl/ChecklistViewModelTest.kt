@@ -53,9 +53,9 @@ class ChecklistViewModelTest {
     fun `caught filter only returns caught entries`() =
         runTest {
             caughtRepository.recordIfAbsent(CaughtRecord(DexEntry(1, 0, 0, "Bulbasaur"), shiny = true, caughtAt = 1000L))
-            viewModel.onFilterChange(ChecklistFilter.CAUGHT)
+            viewModel.onFilterChange(AdvancedFilter(status = ChecklistFilter.CAUGHT))
 
-            val state = viewModel.uiState.first { !it.isLoading && it.filter == ChecklistFilter.CAUGHT }
+            val state = viewModel.uiState.first { !it.isLoading && it.filter.status == ChecklistFilter.CAUGHT }
 
             assertTrue(state.entries.isNotEmpty())
             assertTrue(state.entries.all { it.caught })

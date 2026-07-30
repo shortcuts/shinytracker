@@ -1,26 +1,30 @@
 package com.shinytracker.feature.checklist.impl
 
 import android.net.Uri
+import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.ExpandMore
+import androidx.compose.material.icons.filled.FilterList
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Share
+import androidx.compose.material3.Badge
+import androidx.compose.material3.BadgedBox
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
@@ -28,27 +32,35 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.rotate
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.graphics.ColorMatrix
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import coil.compose.AsyncImage
 import com.shinytracker.core.designsystem.ShinyTheme
 import com.shinytracker.core.model.ChecklistEntry
 import com.shinytracker.core.model.DexEntry
 import com.shinytracker.core.model.Generation
+import com.shinytracker.core.model.PokemonType
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -62,6 +74,8 @@ fun ChecklistScreen(
         title = "Shiny Checklist",
         searchText = uiState.searchText,
         onSearchChange = viewModel::onSearchChange,
+        filter = uiState.filter,
+        onFilterChange = viewModel::onFilterChange,
         caughtCount = uiState.caughtCount,
         totalCount = uiState.totalCount,
         entries = uiState.entries,
@@ -73,7 +87,6 @@ fun ChecklistScreen(
                 Icon(Icons.Default.Share, contentDescription = "Share my profile")
             }
         },
-        filterChips = { FilterChipRow(selected = uiState.filter, onSelect = viewModel::onFilterChange) },
         modifier = modifier,
     )
 }
@@ -90,6 +103,8 @@ fun SharedProfileScreen(
         title = "Shared Checklist",
         searchText = uiState.searchText,
         onSearchChange = viewModel::onSearchChange,
+        filter = uiState.filter,
+        onFilterChange = viewModel::onFilterChange,
         caughtCount = uiState.caughtCount,
         totalCount = uiState.totalCount,
         entries = uiState.entries,
@@ -97,7 +112,6 @@ fun SharedProfileScreen(
         errorMessage = if (uiState.loadFailed) "Could not open this shared profile." else null,
         banner = { SharedProfileBanner(ownerLabel) },
         actions = {},
-        filterChips = null,
         modifier = modifier,
     )
 }
@@ -108,6 +122,8 @@ internal fun ChecklistScaffold(
     title: String,
     searchText: String,
     onSearchChange: (String) -> Unit,
+    filter: AdvancedFilter,
+    onFilterChange: (AdvancedFilter) -> Unit,
     caughtCount: Int,
     totalCount: Int,
     entries: List<ChecklistEntry>,
@@ -115,10 +131,11 @@ internal fun ChecklistScaffold(
     errorMessage: String?,
     banner: (@Composable () -> Unit)?,
     actions: @Composable () -> Unit,
-    filterChips: (@Composable () -> Unit)?,
     modifier: Modifier = Modifier,
 ) {
     var searchExpanded by remember { mutableStateOf(false) }
+    var filterSheetVisible by remember { mutableStateOf(false) }
+    var collapsed by rememberSaveable { mutableStateOf(setOf<String>()) }
 
     Scaffold(
         modifier = modifier,
@@ -128,6 +145,11 @@ internal fun ChecklistScaffold(
                 actions = {
                     IconButton(onClick = { searchExpanded = !searchExpanded }) {
                         Icon(Icons.Default.Search, contentDescription = "Search")
+                    }
+                    IconButton(onClick = { filterSheetVisible = true }) {
+                        BadgedBox(badge = { if (filter.isActive) Badge() }) {
+                            Icon(Icons.Default.FilterList, contentDescription = "Filter")
+                        }
                     }
                     actions()
                 },
@@ -141,40 +163,114 @@ internal fun ChecklistScaffold(
                     value = searchText,
                     onValueChange = onSearchChange,
                     modifier = Modifier.fillMaxWidth().padding(16.dp),
-                    label = { Text("Search species") },
+                    label = { Text("Search by name or dex #") },
                     singleLine = true,
                 )
             }
             if (!isLoading) {
                 ProgressHeader(caughtCount = caughtCount, totalCount = totalCount)
-                filterChips?.invoke()
             }
 
             when {
                 isLoading -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { CircularProgressIndicator() }
                 errorMessage != null -> EmptyState(errorMessage)
-                entries.isEmpty() -> EmptyState("No species match your search. Try a different name or clear the filter.")
-                else -> ChecklistList(entries)
+                entries.isEmpty() -> EmptyState("No species match your search or filter.")
+                else ->
+                    ChecklistList(entries, collapsed) { generation ->
+                        collapsed = if (generation.name in collapsed) collapsed - generation.name else collapsed + generation.name
+                    }
             }
+        }
+    }
+
+    if (filterSheetVisible) {
+        ModalBottomSheet(onDismissRequest = { filterSheetVisible = false }) {
+            FilterSheetContent(filter = filter, onFilterChange = onFilterChange, onClose = { filterSheetVisible = false })
         }
     }
 }
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
-private fun ChecklistList(entries: List<ChecklistEntry>) {
+private fun FilterSheetContent(
+    filter: AdvancedFilter,
+    onFilterChange: (AdvancedFilter) -> Unit,
+    onClose: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    Column(modifier = modifier.padding(horizontal = 16.dp).padding(bottom = 32.dp)) {
+        Text("Status", style = MaterialTheme.typography.titleSmall)
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 8.dp, bottom = 16.dp)) {
+            ChecklistFilter.entries.forEach { status ->
+                FilterChip(
+                    selected = filter.status == status,
+                    onClick = { onFilterChange(filter.copy(status = status)) },
+                    label = { Text(status.label()) },
+                )
+            }
+        }
+
+        Text("Generation", style = MaterialTheme.typography.titleSmall)
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 8.dp, bottom = 16.dp)) {
+            Generation.entries.forEach { gen ->
+                FilterChip(
+                    selected = gen in filter.generations,
+                    onClick = { onFilterChange(filter.copy(generations = filter.generations.toggle(gen))) },
+                    label = { Text(gen.displayName()) },
+                )
+            }
+        }
+
+        Text("Type", style = MaterialTheme.typography.titleSmall)
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 8.dp, bottom = 8.dp)) {
+            PokemonType.entries.forEach { type ->
+                FilterChip(
+                    selected = type in filter.types,
+                    onClick = { onFilterChange(filter.copy(types = filter.types.toggle(type))) },
+                    label = { Text(type.displayName()) },
+                )
+            }
+        }
+
+        Row(modifier = Modifier.fillMaxWidth().padding(top = 8.dp), horizontalArrangement = Arrangement.End) {
+            TextButton(onClick = { onFilterChange(AdvancedFilter()) }) { Text("Clear all") }
+            TextButton(onClick = onClose) { Text("Done") }
+        }
+    }
+}
+
+private fun <T> Set<T>.toggle(value: T): Set<T> = if (value in this) this - value else this + value
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun ChecklistList(
+    entries: List<ChecklistEntry>,
+    collapsed: Set<String>,
+    onToggleCollapse: (Generation) -> Unit,
+) {
     val grouped = entries.groupBy { it.generation }.toSortedMap(compareBy { it.ordinal })
     LazyColumn(modifier = Modifier.fillMaxSize()) {
         grouped.forEach { (generation, regionEntries) ->
             item(key = "header-${generation.name}") {
-                RegionStickyHeader(generation, caughtCount = regionEntries.count { it.caught }, totalCount = regionEntries.size)
+                RegionHeader(
+                    generation = generation,
+                    caughtCount = regionEntries.count { it.caught },
+                    totalCount = regionEntries.size,
+                    collapsed = generation.name in collapsed,
+                    onToggle = { onToggleCollapse(generation) },
+                )
             }
-            item(key = "grid-${generation.name}") {
-                LazyVerticalGrid(
-                    columns = GridCells.Adaptive(minSize = 80.dp),
-                    modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp),
-                ) {
-                    items(regionEntries, key = { it.dexEntry.dexId to it.dexEntry.formId }) { entry ->
-                        ChecklistEntryIcon(entry)
+            if (generation.name !in collapsed) {
+                // ponytail: LazyVerticalGrid nested in a LazyColumn item crashes with an
+                // infinite-height-constraint exception; FlowRow wraps naturally instead.
+                item(key = "grid-${generation.name}") {
+                    FlowRow(
+                        modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp),
+                        horizontalArrangement = Arrangement.Start,
+                    ) {
+                        regionEntries.forEach { entry ->
+                            SpriteTile(entry)
+                        }
                     }
                 }
             }
@@ -189,29 +285,12 @@ private fun ProgressHeader(
     modifier: Modifier = Modifier,
 ) {
     Column(modifier = modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp)) {
-        Text(text = "$caughtCount / $totalCount caught", style = MaterialTheme.typography.titleMedium)
+        Text(
+            text = "$caughtCount / $totalCount caught",
+            style = MaterialTheme.typography.titleMedium.copy(fontFeatureSettings = "tnum"),
+        )
         val progress = if (totalCount > 0) caughtCount / totalCount.toFloat() else 0f
         LinearProgressIndicator(progress = { progress }, modifier = Modifier.fillMaxWidth().padding(top = 4.dp))
-    }
-}
-
-@Composable
-private fun FilterChipRow(
-    selected: ChecklistFilter,
-    onSelect: (ChecklistFilter) -> Unit,
-    modifier: Modifier = Modifier,
-) {
-    LazyRow(
-        modifier = modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
-    ) {
-        items(ChecklistFilter.entries.toList()) { filter ->
-            FilterChip(
-                selected = filter == selected,
-                onClick = { onSelect(filter) },
-                label = { Text(filter.label()) },
-            )
-        }
     }
 }
 
@@ -219,65 +298,96 @@ private fun ChecklistFilter.label(): String =
     when (this) {
         ChecklistFilter.ALL -> "All"
         ChecklistFilter.CAUGHT -> "Caught"
-        ChecklistFilter.NOT_CAUGHT -> "Not caught"
+        ChecklistFilter.NOT_CAUGHT -> "Missing"
     }
 
 @Composable
-private fun RegionStickyHeader(
+private fun RegionHeader(
     generation: Generation,
     caughtCount: Int,
     totalCount: Int,
+    collapsed: Boolean,
+    onToggle: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val rotation by animateFloatAsState(if (collapsed) 180f else 0f, label = "chevron")
     Row(
         modifier =
             modifier
                 .fillMaxWidth()
                 .background(MaterialTheme.colorScheme.surfaceVariant)
+                .clickable(onClick = onToggle)
                 .padding(horizontal = 16.dp, vertical = 8.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically,
     ) {
         Text(text = generation.displayName(), style = MaterialTheme.typography.titleSmall)
-        Text(text = "$caughtCount/$totalCount", style = MaterialTheme.typography.labelMedium)
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                text = "$caughtCount/$totalCount",
+                style = MaterialTheme.typography.labelMedium.copy(fontFeatureSettings = "tnum"),
+            )
+            Spacer(Modifier.size(4.dp))
+            Icon(
+                Icons.Default.ExpandMore,
+                contentDescription = if (collapsed) "Expand ${generation.displayName()}" else "Collapse ${generation.displayName()}",
+                modifier = Modifier.rotate(rotation).size(20.dp),
+            )
+        }
     }
 }
 
 private fun Generation.displayName(): String = name.lowercase().replaceFirstChar(Char::uppercase)
 
+private fun PokemonType.displayName(): String = name.lowercase().replaceFirstChar(Char::uppercase)
+
 @Composable
-private fun ChecklistEntryIcon(
+private fun SpriteTile(
     entry: ChecklistEntry,
     modifier: Modifier = Modifier,
 ) {
-    // ponytail: sprite art needs an image loader reading core:sprites' vendored PNGs
-    // (e.g. Coil) -- out of this task's scope. Text tile until that lands.
-    val background = if (entry.caught) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant
     val caughtLabel = if (entry.caught) "caught" else "not caught"
-    Column(
+    val grayscale = remember { ColorMatrix().apply { setToSaturation(0f) } }
+    Box(
         modifier =
             modifier
-                .size(72.dp)
+                .size(76.dp)
                 .padding(4.dp)
-                .background(background, RoundedCornerShape(12.dp))
-                .padding(8.dp)
+                .background(MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.shapes.medium)
                 .clearAndSetSemantics {
                     contentDescription = "#%03d %s, %s".format(entry.dexEntry.dexId, entry.dexEntry.name, caughtLabel)
                 },
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center,
+        contentAlignment = Alignment.Center,
     ) {
-        Text(
-            text =
-                entry.dexEntry.name
-                    .take(2)
-                    .uppercase(),
-            style = MaterialTheme.typography.titleSmall,
-        )
-        Text(text = "#%03d".format(entry.dexEntry.dexId), style = MaterialTheme.typography.labelSmall)
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            AsyncImage(
+                model = spriteAssetUri(entry.dexEntry),
+                contentDescription = null,
+                modifier = Modifier.size(48.dp),
+                colorFilter = if (entry.caught) null else ColorFilter.colorMatrix(grayscale),
+                alpha = if (entry.caught) 1f else 0.4f,
+            )
+            Text(
+                text = "#%03d".format(entry.dexEntry.dexId),
+                style = MaterialTheme.typography.labelSmall.copy(fontFeatureSettings = "tnum"),
+            )
+        }
         if (entry.caught) {
-            Icon(Icons.Default.Check, contentDescription = "Caught", modifier = Modifier.size(16.dp))
+            Icon(
+                Icons.Default.Check,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.align(Alignment.TopEnd).size(14.dp),
+            )
         }
     }
+}
+
+/** All checklist sprites are shiny -- this app only tracks the shiny form. */
+private fun spriteAssetUri(dexEntry: DexEntry): String {
+    val costume = if (dexEntry.costumeId != 0) "_%02d".format(dexEntry.costumeId) else ""
+    return "file:///android_asset/sprites/pokemon_icon_%03d_%02d%s_shiny.png"
+        .format(dexEntry.dexId, dexEntry.formId, costume)
 }
 
 @Composable
@@ -321,6 +431,8 @@ private fun ChecklistScaffoldPreview() {
             title = "Shiny Checklist",
             searchText = "",
             onSearchChange = {},
+            filter = AdvancedFilter(),
+            onFilterChange = {},
             caughtCount = 1,
             totalCount = 3,
             entries = sampleEntries(),
@@ -328,7 +440,6 @@ private fun ChecklistScaffoldPreview() {
             errorMessage = null,
             banner = null,
             actions = {},
-            filterChips = { FilterChipRow(selected = ChecklistFilter.ALL, onSelect = {}) },
         )
     }
 }
@@ -341,6 +452,8 @@ private fun SharedProfileScaffoldPreview() {
             title = "Shared Checklist",
             searchText = "",
             onSearchChange = {},
+            filter = AdvancedFilter(),
+            onFilterChange = {},
             caughtCount = 1,
             totalCount = 3,
             entries = sampleEntries(),
@@ -348,7 +461,6 @@ private fun SharedProfileScaffoldPreview() {
             errorMessage = null,
             banner = { SharedProfileBanner("Ash") },
             actions = {},
-            filterChips = null,
         )
     }
 }

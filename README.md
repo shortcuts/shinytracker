@@ -21,7 +21,7 @@ contribution reference.
 |--------|---------|
 | `:app` | Entry point, Hilt, nav host |
 | `:core:common` | `AppConstants`-equivalent, extensions |
-| `:core:model` | Pure Kotlin: `DexEntry`, `ShinyRecord`, `MatchResult`, `CaughtRecord`, `ChecklistEntry`, `Generation` |
+| `:core:model` | Pure Kotlin: `DexEntry`, `ShinyRecord`, `MatchResult`, `CaughtRecord`, `ChecklistEntry`, `Generation`, `PokemonType` |
 | `:core:database` | Room: `CaughtEntity`/`CaughtDao` |
 | `:core:datastore` | DataStore prefs (planned, not yet used) |
 | `:core:data` | Repositories, single source of truth |

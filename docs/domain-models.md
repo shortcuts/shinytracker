@@ -12,6 +12,12 @@ Identity of one Pokemon variant.
 | formId | Int | Form variant; 0 for the base/only form |
 | costumeId | Int | 0 = no costume (default); matches PogoAssets' filename convention of omitting the costume segment for the base form |
 | name | String | Species display name |
+| types | List\<PokemonType\> | Defaults to empty -- no per-species type source is wired up yet, see `docs/features/checklist.md`'s type filter data gap |
+
+## PokemonType
+
+Elemental type enum (`NORMAL`..`FAIRY`, 18 values), used by the checklist's
+type filter. Not yet populated per-species -- see `DexEntry.types`.
 
 ## ShinyRecord
 

@@ -21,6 +21,7 @@ import javax.inject.Inject
 data class SharedProfileUiState(
     val entries: List<ChecklistEntry> = emptyList(),
     val searchText: String = "",
+    val filter: AdvancedFilter = AdvancedFilter(),
     val caughtCount: Int = 0,
     val totalCount: Int = 0,
     val isLoading: Boolean = true,
@@ -42,15 +43,17 @@ class SharedProfileViewModel
         private val loadedEntries = MutableStateFlow<List<ChecklistEntry>?>(null)
         private val loadFailed = MutableStateFlow(false)
         private val searchText = MutableStateFlow("")
+        private val filter = MutableStateFlow(AdvancedFilter())
 
         val uiState: StateFlow<SharedProfileUiState> =
-            combine(loadedEntries, searchText, loadFailed) { entries, search, failed ->
+            combine(loadedEntries, searchText, filter, loadFailed) { entries, search, currentFilter, failed ->
                 if (entries == null) {
                     SharedProfileUiState(isLoading = !failed, loadFailed = failed)
                 } else {
                     SharedProfileUiState(
-                        entries = entries.filter { it.dexEntry.name.contains(search, ignoreCase = true) },
+                        entries = entries.filterEntries(search, currentFilter),
                         searchText = search,
+                        filter = currentFilter,
                         caughtCount = entries.count { it.caught },
                         totalCount = entries.size,
                         isLoading = false,
@@ -87,5 +90,9 @@ class SharedProfileViewModel
 
         fun onSearchChange(text: String) {
             searchText.value = text
+        }
+
+        fun onFilterChange(newFilter: AdvancedFilter) {
+            filter.value = newFilter
         }
     }

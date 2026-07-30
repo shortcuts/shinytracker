@@ -7,25 +7,32 @@ generation, cross-referenced against caught records. Two modes:
 
 - **Owner mode** — the device owner's own caught list. Editable indirectly
   (caught state comes from scanning, see `docs/features/scan.md`). Supports
-  search, a Caught/Not caught/All filter, and exporting the list to share.
+  search (by name or dex #), an advanced filter sheet (status, generation,
+  type), and exporting the list to share.
 - **Shared read-only mode** — someone else's exported list, imported via a
-  file `Intent`. No filter chips, no edit affordance, just search and a
-  banner naming whose profile is showing.
+  file `Intent`. Same search + filter sheet as owner mode, no edit affordance,
+  plus a banner naming whose profile is showing.
 
 ## Flow
 
-1. `ChecklistViewModel` (owner) combines `ChecklistRepository.observeChecklist()`
-   with local search text and filter state into `ChecklistUiState`.
-2. `SharedProfileViewModel` (shared) reads the imported file's `Uri` from the
-   nav arg (`ChecklistRoute.SHARED_ARG_KEY`), imports it via
+1. `ChecklistViewModel` (owner) and `SharedProfileViewModel` (shared) both
+   combine their entry source with local search text and an `AdvancedFilter`
+   (`ChecklistFiltering.kt`: status + generation set + type set, AND'd
+   together) via `List<ChecklistEntry>.filterEntries()`.
+2. `SharedProfileViewModel` reads the imported file's `Uri` from the nav arg
+   (`ChecklistRoute.SHARED_ARG_KEY`), imports it via
    `ProfileShareRepository.importProfile()`, and cross-references the result
    against `ShinyChecklistSource`'s full species list -- **never**
    `CaughtRepository`, since an imported list is not the device owner's own
    progress.
 3. `ChecklistScreen` (owner) / `SharedProfileScreen` (shared) both render
-   through a shared `ChecklistScaffold`: top app bar with search, a progress
-   header (`caught / total`), a `LazyColumn` with one sticky header per
-   generation followed by that generation's species as a wrapping icon grid.
+   through a shared `ChecklistScaffold`: top app bar with search + a filter
+   icon (badged when a filter is active) opening a `ModalBottomSheet`, a
+   progress header (`caught / total`), and a `LazyColumn` with one
+   collapsible region section per generation (tap the header to
+   expand/collapse; collapse state is `rememberSaveable`, resets on process
+   death) followed by that generation's species as a wrapping sprite tile
+   row.
 
 ## Sharing
 
@@ -40,10 +47,19 @@ intent-filter, parsed by `ChecklistRoute.parseSharedProfileArg` into the
 
 ## Sprite art
 
-Species tiles currently render as a placeholder (two-letter name abbreviation
-+ dex number, caught state as background color + checkmark), not real sprite
-images -- no image-loading library (e.g. Coil) is wired up yet. Swapping in
-real sprite bitmaps from `:core:sprites`' vendored PNGs is future work.
+Species tiles render the real shiny sprite via Coil (`AsyncImage`) loaded
+from `:core:sprites`' vendored PNGs (`file:///android_asset/sprites/...`, all
+local, no network). Every tile shows the shiny variant, since this app only
+tracks shinies. Uncaught species render desaturated + dimmed rather than
+hidden, so the grid still shows what's missing.
+
+## Type filter data gap
+
+`AdvancedFilter.types` and `PokemonType` (`:core:model`) exist and drive the
+filter sheet's Type chip grid, but `DexEntry.types` defaults to `emptyList()`
+everywhere -- `ShinyChecklistSource`'s `checklist.json` has no per-species
+type data yet. Selecting a type currently narrows results to zero until that
+data is sourced; this is a known gap, not a bug.
 
 ## Eligibility data
 

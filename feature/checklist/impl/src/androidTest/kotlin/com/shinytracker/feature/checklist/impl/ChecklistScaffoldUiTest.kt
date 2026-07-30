@@ -35,6 +35,8 @@ class ChecklistScaffoldUiTest {
                     title = "Shiny Checklist",
                     searchText = searchText,
                     onSearchChange = { searchText = it },
+                    filter = AdvancedFilter(),
+                    onFilterChange = {},
                     caughtCount = 1,
                     totalCount = 2,
                     entries = entries.filter { it.dexEntry.name.contains(searchText, ignoreCase = true) },
@@ -42,18 +44,17 @@ class ChecklistScaffoldUiTest {
                     errorMessage = null,
                     banner = null,
                     actions = {},
-                    filterChips = null,
                 )
             }
         }
 
-        composeTestRule.onNodeWithText("BU").assertExists()
-        composeTestRule.onNodeWithText("CH").assertExists()
+        composeTestRule.onNodeWithText("#001").assertExists()
+        composeTestRule.onNodeWithText("#004").assertExists()
 
         composeTestRule.onNodeWithText("Search").performClick()
-        composeTestRule.onNodeWithText("Search species").performTextInput("Bulba")
+        composeTestRule.onNodeWithText("Search by name or dex #").performTextInput("Bulba")
 
-        composeTestRule.onNodeWithText("BU").assertExists()
-        composeTestRule.onNodeWithText("CH").assertDoesNotExist()
+        composeTestRule.onNodeWithText("#001").assertExists()
+        composeTestRule.onNodeWithText("#004").assertDoesNotExist()
     }
 }

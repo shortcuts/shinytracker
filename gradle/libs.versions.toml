@@ -30,6 +30,9 @@ navigation-compose = "2.7.7"
 # Coroutines
 coroutines = "1.7.3"
 
+# Image loading
+coil = "2.6.0"
+
 # Serialization
 kotlinx-serialization-json = "1.6.3"
 
@@ -79,6 +82,9 @@ androidx-compose-foundation = { group = "androidx.compose.foundation", name = "f
 
 # Navigation
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation-compose" }
+
+# Image loading
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 
 # Hilt
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }

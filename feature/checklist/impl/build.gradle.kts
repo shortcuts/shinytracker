@@ -10,6 +10,7 @@ dependencies {
     implementation(project(":feature:checklist:api"))
     implementation(project(":core:data"))
     implementation(project(":core:sprites"))
+    implementation(libs.coil.compose)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.androidx.compose.material.icons.extended)
     implementation(libs.androidx.navigation.compose)

@@ -15,12 +15,10 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-enum class ChecklistFilter { ALL, CAUGHT, NOT_CAUGHT }
-
 data class ChecklistUiState(
     val entries: List<ChecklistEntry> = emptyList(),
     val searchText: String = "",
-    val filter: ChecklistFilter = ChecklistFilter.ALL,
+    val filter: AdvancedFilter = AdvancedFilter(),
     val caughtCount: Int = 0,
     val totalCount: Int = 0,
     val isLoading: Boolean = true,
@@ -35,22 +33,12 @@ class ChecklistViewModel
         private val profileShareRepository: ProfileShareRepository,
     ) : ViewModel() {
         private val searchText = MutableStateFlow("")
-        private val filter = MutableStateFlow(ChecklistFilter.ALL)
+        private val filter = MutableStateFlow(AdvancedFilter())
 
         val uiState: StateFlow<ChecklistUiState> =
             combine(checklistRepository.observeChecklist(), searchText, filter) { entries, search, currentFilter ->
-                val filtered =
-                    entries
-                        .filter { it.dexEntry.name.contains(search, ignoreCase = true) }
-                        .filter { entry ->
-                            when (currentFilter) {
-                                ChecklistFilter.ALL -> true
-                                ChecklistFilter.CAUGHT -> entry.caught
-                                ChecklistFilter.NOT_CAUGHT -> !entry.caught
-                            }
-                        }
                 ChecklistUiState(
-                    entries = filtered,
+                    entries = entries.filterEntries(search, currentFilter),
                     searchText = search,
                     filter = currentFilter,
                     caughtCount = entries.count { it.caught },
@@ -63,7 +51,7 @@ class ChecklistViewModel
             searchText.value = text
         }
 
-        fun onFilterChange(newFilter: ChecklistFilter) {
+        fun onFilterChange(newFilter: AdvancedFilter) {
             filter.value = newFilter
         }
 
