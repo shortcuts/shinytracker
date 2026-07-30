@@ -26,9 +26,19 @@ private fun matchesSearch(
     search: String,
 ): Boolean =
     when {
-        search.isBlank() -> true
-        search.all { it.isDigit() } -> entry.dexEntry.dexId.toString().startsWith(search)
-        else -> entry.dexEntry.name.contains(search, ignoreCase = true)
+        search.isBlank() -> {
+            true
+        }
+
+        search.all { it.isDigit() } -> {
+            entry.dexEntry.dexId
+                .toString()
+                .startsWith(search)
+        }
+
+        else -> {
+            entry.dexEntry.name.contains(search, ignoreCase = true)
+        }
     }
 
 private fun matchesFilter(

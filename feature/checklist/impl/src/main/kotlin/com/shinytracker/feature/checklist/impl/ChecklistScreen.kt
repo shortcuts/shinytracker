@@ -172,13 +172,23 @@ internal fun ChecklistScaffold(
             }
 
             when {
-                isLoading -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { CircularProgressIndicator() }
-                errorMessage != null -> EmptyState(errorMessage)
-                entries.isEmpty() -> EmptyState("No species match your search or filter.")
-                else ->
+                isLoading -> {
+                    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { CircularProgressIndicator() }
+                }
+
+                errorMessage != null -> {
+                    EmptyState(errorMessage)
+                }
+
+                entries.isEmpty() -> {
+                    EmptyState("No species match your search or filter.")
+                }
+
+                else -> {
                     ChecklistList(entries, collapsed) { generation ->
                         collapsed = if (generation.name in collapsed) collapsed - generation.name else collapsed + generation.name
                     }
+                }
             }
         }
     }
