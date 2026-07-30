@@ -6,7 +6,8 @@ Multi-module, NowInAndroid-style. Feature = `api` (contract) + `impl`. Shared: `
 
 All modules below are **planned**, per the settled module list — they are
 `include()`d in `settings.gradle.kts` but do not yet exist as real
-directories with code. Real module creation starts at M1.
+directories with code, except `:app`, `:core:model`, and
+`:core:designsystem`, which landed with M1's boot scaffold.
 
 ```
 feature/*        — UI + ViewModels (Compose screens, no business logic)
