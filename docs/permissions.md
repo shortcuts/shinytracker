@@ -7,6 +7,7 @@
 | `BIND_ACCESSIBILITY_SERVICE` | Special (AppOps-style) | Reading the shiny box via screenshots + gestures | Yes |
 | `POST_NOTIFICATIONS` | Runtime (API 33+) | Showing the `IMPORTANCE_LOW` "box scan active" notification while the accessibility service runs | Yes |
 | `INTERNET` | Normal | Sprite/checklist download (M4 only) | Yes |
+| `SYSTEM_ALERT_WINDOW` | Special (AppOps-style) | Scan-mode floating widget (screenshot + automated grid scan) | Yes |
 
 ## Notes
 
@@ -22,6 +23,8 @@
 - `INTERNET` is only needed once the M4 sprite/checklist sync ships. M1–M3's
   core scan loop runs against a locally-bundled small sprite set and needs
   no network access.
-- This app requests **no location permission** and **no
-  `SYSTEM_ALERT_WINDOW`/overlay permission** — unlike locationjoystick, it
-  does not do floating overlays.
+- `SYSTEM_ALERT_WINDOW` is not requested via `requestPermissions` either. The
+  user grants it via `Settings.ACTION_MANAGE_OVERLAY_PERMISSION` — the same
+  "special permission" shape as `BIND_ACCESSIBILITY_SERVICE` — needed only to
+  show the scan-mode floating widget (`ScanWidgetOverlayService`).
+- This app requests **no location permission**.

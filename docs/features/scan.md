@@ -20,16 +20,39 @@ queue instead of guessing.
    get recorded via `CaughtRepository.recordIfAbsent()` (Room's
    insert-only-if-absent on the `(dexId, formId, costumeId, shiny)` primary
    key gives "new since last scan" for free). Below-threshold matches go to
-   `ScanOrchestrator.reviewQueue` instead.
+   `ScanOrchestrator.reviewQueue` instead. `PendingReview` carries the
+   crop plus the top-N `candidates` from `SpriteMatcher.matchCandidates()`
+   (not a single best guess), so the validation panel can offer
+   alternate-candidate chips.
 5. Scroll down (`BoxScanBridge.scrollBoxDown()`) and repeat.
 
 ## Current UI
 
-Debug-only, in `:app`'s `MainActivity`/`ShinyApp` — a "Run full scan"
-button and two counters (new/total caught this scan, review-queue size), plus
-a "View checklist" button into `:feature:checklist` (see
-`docs/features/checklist.md`). A confirm/reject UI for the review queue is
-not built yet.
+A floating overlay widget (`ScanWidgetOverlayService`), toggled from
+`:app`'s `MainActivity`/`ShinyApp` (only shown once the accessibility
+service is enabled) via a "Enable scan widget"/"Disable scan widget"
+button. The widget is a draggable pill with two action buttons:
+
+- **Screenshot**: `ScanOrchestrator.captureAndDetect()` — a single
+  capture, detects every slot on screen (one or many, same code path),
+  and sends every detected entry to the validation panel. Nothing is
+  auto-recorded regardless of confidence.
+- **Automated scan**: `ScanOrchestrator.runFullScan()` — the existing
+  scroll-loop; confident matches auto-record as before, and the
+  low-confidence `reviewQueue` is opened in the same validation panel
+  once the loop finishes.
+
+The validation panel (`ScanValidationScreen`, driven by
+`ScanValidationPresenter`) is its own `WindowManager` overlay hosted by
+`ScanWidgetOverlayService` — not a `MainActivity` nav-graph screen — so it
+works while Pokemon GO, not shinytracker, is in the foreground. Per entry:
+crop thumbnail, top candidate with confidence, alternate-candidate chips,
+and Confirm/Reject actions.
+
+`:app`'s `MainActivity`/`ShinyApp` also keeps the debug "Capture
+screenshot"/"Scroll box down"/"Run full scan" buttons and counters, plus
+the "View checklist" button into `:feature:checklist` (see
+`docs/features/checklist.md`).
 
 ## Sprite catalog
 

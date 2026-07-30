@@ -19,10 +19,10 @@ data class ScanSlotResult(
     val isNew: Boolean,
 )
 
-/** [crop] is kept (not recycled) so a future confirm/reject UI (M4) can display it. */
+/** [crop] is kept (not recycled) so the confirm/reject validation panel can display it. */
 data class PendingReview(
     val crop: Bitmap,
-    val bestGuess: MatchResult?,
+    val candidates: List<MatchResult>,
 )
 
 @Singleton
@@ -63,15 +63,31 @@ class ScanOrchestrator
             }
         }
 
+        /**
+         * Screenshot-button flow: capture once, detect every slot on screen, and return every
+         * crop's candidates for the validation panel. No confidence threshold, no auto-record.
+         */
+        suspend fun captureAndDetect(): List<PendingReview> {
+            val bounds = boxScanBridge.getIconSlotBounds()
+            if (bounds.isEmpty()) return emptyList()
+            val screenshot = boxScanBridge.captureScreenshot() ?: return emptyList()
+            val crops = iconCropper.crop(screenshot, bounds)
+            screenshot.recycle()
+            return crops.map { crop ->
+                PendingReview(crop, spriteMatcher.matchCandidates(crop, AppConstants.ScanConstants.SCREENSHOT_CANDIDATE_TOP_N))
+            }
+        }
+
         private suspend fun processCrop(crop: Bitmap) {
-            val match = spriteMatcher.match(crop)
+            val candidates = spriteMatcher.matchCandidates(crop)
+            val match = candidates.firstOrNull()
             if (match != null && match.confidence >= AppConstants.ScanConstants.MATCH_CONFIDENCE_THRESHOLD) {
                 val record = CaughtRecord(match.dexEntry, match.shiny, System.currentTimeMillis())
                 val isNew = caughtRepository.recordIfAbsent(record)
                 _scanResults.update { it + ScanSlotResult(record, isNew) }
                 crop.recycle()
             } else if (_reviewQueue.value.size < AppConstants.ScanConstants.REVIEW_QUEUE_MAX_SIZE) {
-                _reviewQueue.update { it + PendingReview(crop, match) }
+                _reviewQueue.update { it + PendingReview(crop, candidates) }
             } else {
                 crop.recycle() // review queue full — drop rather than leak; M4's real review UI paginates instead
             }

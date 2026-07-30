@@ -26,6 +26,7 @@ import com.shinytracker.feature.checklist.impl.checklistNavGraph
 import com.shinytracker.feature.scan.api.BoxScanBridge
 import com.shinytracker.feature.scan.impl.BoxScanAccessibilityService
 import com.shinytracker.feature.scan.impl.ScanOrchestrator
+import com.shinytracker.feature.scan.impl.ScanWidgetOverlayService
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import java.io.File
@@ -42,6 +43,7 @@ class MainActivity : ComponentActivity() {
     @Inject lateinit var scanOrchestrator: ScanOrchestrator
 
     private var isServiceEnabled by mutableStateOf(false)
+    private var isWidgetRunning by mutableStateOf(false)
     private var statusText by mutableStateOf("")
     private var pendingSharedProfileUri by mutableStateOf<Uri?>(null)
 
@@ -57,10 +59,12 @@ class MainActivity : ComponentActivity() {
                     composable(SCAN_ROUTE) {
                         ShinyApp(
                             isServiceEnabled = isServiceEnabled,
+                            isWidgetRunning = isWidgetRunning,
                             statusText = statusText,
                             scanResults = scanResults,
                             reviewQueueSize = reviewQueue.size,
                             onOpenAccessibilitySettings = { openAccessibilitySettings() },
+                            onToggleWidget = { onToggleWidget() },
                             onCaptureScreenshot = {
                                 lifecycleScope.launch { statusText = captureAndSaveScreenshot() }
                             },
@@ -109,6 +113,7 @@ class MainActivity : ComponentActivity() {
     override fun onResume() {
         super.onResume()
         isServiceEnabled = isBoxScanServiceEnabled()
+        isWidgetRunning = ScanWidgetOverlayService.isRunning
     }
 
     private fun isBoxScanServiceEnabled(): Boolean {
@@ -120,6 +125,23 @@ class MainActivity : ComponentActivity() {
 
     private fun openAccessibilitySettings() {
         startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS).apply { addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) })
+    }
+
+    private fun openOverlaySettings() {
+        val uri = Uri.parse("package:$packageName")
+        startActivity(
+            Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, uri).apply { addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) },
+        )
+    }
+
+    private fun onToggleWidget() {
+        if (!Settings.canDrawOverlays(this)) {
+            openOverlaySettings()
+            return
+        }
+        val intent = Intent(this, ScanWidgetOverlayService::class.java)
+        if (isWidgetRunning) stopService(intent) else startService(intent)
+        isWidgetRunning = !isWidgetRunning
     }
 
     private suspend fun captureAndSaveScreenshot(): String {

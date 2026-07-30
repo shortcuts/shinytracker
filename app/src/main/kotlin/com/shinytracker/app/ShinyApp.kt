@@ -27,10 +27,12 @@ import com.shinytracker.feature.scan.impl.ScanSlotResult
 @Composable
 fun ShinyApp(
     isServiceEnabled: Boolean = false,
+    isWidgetRunning: Boolean = false,
     statusText: String = "",
     scanResults: List<ScanSlotResult> = emptyList(),
     reviewQueueSize: Int = 0,
     onOpenAccessibilitySettings: () -> Unit = {},
+    onToggleWidget: () -> Unit = {},
     onCaptureScreenshot: () -> Unit = {},
     onScrollBoxDown: () -> Unit = {},
     onRunFullScan: () -> Unit = {},
@@ -55,6 +57,10 @@ fun ShinyApp(
             Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
                 TextButton(onClick = onCaptureScreenshot) { Text("Capture screenshot") }
                 TextButton(onClick = onScrollBoxDown) { Text("Scroll box down") }
+            }
+            Spacer(Modifier.height(8.dp))
+            TextButton(onClick = onToggleWidget) {
+                Text(if (isWidgetRunning) "Disable scan widget" else "Enable scan widget")
             }
             Spacer(Modifier.height(16.dp))
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {

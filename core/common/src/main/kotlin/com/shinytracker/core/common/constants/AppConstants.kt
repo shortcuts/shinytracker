@@ -13,6 +13,7 @@ object AppConstants {
         const val MATCH_CONFIDENCE_THRESHOLD = 0.85f
         const val REVIEW_QUEUE_MAX_SIZE = 100
         const val MAX_SCROLL_ITERATIONS = 50
+        const val SCREENSHOT_CANDIDATE_TOP_N = 5
     }
 
     object DatabaseConstants {
