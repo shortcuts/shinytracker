@@ -26,7 +26,8 @@ contribution reference.
 | `:core:datastore` | DataStore prefs (planned, not yet used) |
 | `:core:data` | Repositories, single source of truth |
 | `:core:designsystem` | Compose theme/tokens |
-| `:core:sprites` | `SpriteMatcher`, `SpriteCatalog`, `ShinyChecklistSource` |
+| `:core:sprites` | `SpriteMatcher`, `SpriteCatalog`, `DescriptorCatalog`, `ShinyChecklistSource` |
+| `:core:sprites:descriptors` | Sprite descriptor math + offline precompute tool (pure JVM) |
 | `:core:testing` | Fake DAOs, shared test utils |
 | `:feature:scan:api` / `:impl` | `AccessibilityService`, `ScanOrchestrator`, `IconCropper` |
 | `:feature:checklist:api` / `:impl` | Owner + shared read-only checklist UI |

@@ -29,7 +29,8 @@ core/model       — Pure Kotlin data classes, no Android deps
 | `:core:datastore` | DataStore prefs (last scan time, etc.) |
 | `:core:data` | Repositories, single source of truth |
 | `:core:designsystem` | Compose theme/tokens (near-copy of locationjoystick's, retinted) |
-| `:core:sprites` | `SpriteMatcher`, `SpriteDatabase`, `ShinyChecklistSource` — this app's `:core:routing` equivalent |
+| `:core:sprites` | `SpriteMatcher`, `SpriteCatalog`, `DescriptorCatalog`, `ShinyChecklistSource` — this app's `:core:routing` equivalent |
+| `:core:sprites:descriptors` | Pure JVM: descriptor math (pHash, dHash, histograms, edges, etc.) + the offline precompute tool that bundles `descriptors.json` |
 | `:core:testing` | Fake DAOs, shared test utils |
 | `:feature:scan:api` / `:impl` | `AccessibilityService`, `ScanOrchestrator`, `IconCropper` |
 | `:feature:checklist:api` / `:impl` | Owner + shared read-only checklist UI: search, filter, region grouping, profile export/import |

@@ -2,9 +2,12 @@ package com.shinytracker.core.sprites
 
 import android.content.Context
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import com.shinytracker.core.model.MatchResult
 import com.shinytracker.core.model.ShinyRecord
+import com.shinytracker.core.sprites.descriptors.SpriteDescriptor
+import com.shinytracker.core.sprites.descriptors.computeDescriptor
+import com.shinytracker.core.sprites.descriptors.pickBestMatch
+import com.shinytracker.core.sprites.descriptors.pickTopMatches
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -24,15 +27,22 @@ class SpriteMatcher
             return MatchResult(record.dexEntry, record.shiny, score)
         }
 
-        private fun loadCatalog(): List<Pair<ShinyRecord, SpriteDescriptor>> =
-            SpriteCatalog.load(context, checklistSource::nameFor).map { record ->
-                context.assets.open("sprites/${record.assetPath}").use { stream ->
-                    val bitmap = BitmapFactory.decodeStream(stream)
-                    val descriptor = computeDescriptor(bitmap.toArgbPixels(), bitmap.width, bitmap.height)
-                    bitmap.recycle()
-                    record to descriptor
-                }
+        /** Top [topN] candidates instead of just the single best match. */
+        fun matchCandidates(
+            crop: Bitmap,
+            topN: Int = 5,
+        ): List<MatchResult> {
+            val descriptor = computeDescriptor(crop.toArgbPixels(), crop.width, crop.height)
+            return pickTopMatches(descriptor, catalog, topN).map { (record, score) ->
+                MatchResult(record.dexEntry, record.shiny, score)
             }
+        }
+
+        private fun loadCatalog(): List<Pair<ShinyRecord, SpriteDescriptor>> {
+            val records = SpriteCatalog.load(context, checklistSource::nameFor)
+            val descriptors = DescriptorCatalog.load(context)
+            return records.mapNotNull { record -> descriptors[record.assetPath]?.let { record to it } }
+        }
     }
 
 private fun Bitmap.toArgbPixels(): IntArray {

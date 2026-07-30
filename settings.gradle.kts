@@ -26,6 +26,8 @@ include(":core:datastore")
 include(":core:data")
 include(":core:designsystem")
 include(":core:sprites")
+include(":core:sprites:descriptors")
+project(":core:sprites:descriptors").projectDir = file("core/spritesdescriptors")
 include(":core:testing")
 
 include(":feature:scan:api")

@@ -10,6 +10,7 @@ android {
 
 dependencies {
     implementation(project(":core:model"))
+    implementation(project(":core:sprites:descriptors"))
     implementation(libs.kotlinx.serialization.json)
 
     testImplementation(libs.junit)

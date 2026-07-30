@@ -12,4 +12,7 @@ milestones land.
 
 - No new top-level/companion constant outside the shared constants object. Add there.
 - Modules needing constants: declare `implementation(project(":core:common"))` in `build.gradle.kts`.
-- Exception: `:core:model` is pure JVM, cannot depend on `core:common`. Constants only used in `:core:model` stay there.
+- Exception: `:core:model` and `:core:sprites:descriptors` are pure JVM, cannot depend on
+  `core:common`. Constants only used in those modules stay there -- e.g.
+  `:core:sprites:descriptors`'s ensemble-similarity weights live as local consts in
+  `SpriteMatching.kt`.

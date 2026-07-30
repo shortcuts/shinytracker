@@ -39,3 +39,16 @@ parses each filename back into a `ShinyRecord`. `scripts/pull_reference_sprites.
 (M3) vendors a fixed ~20-sprite starter subset from `PokeMiners/pogo_assets`;
 `scripts/sync_sprites.py` (M4) incrementally syncs the full set from the same
 repo into the same directory.
+
+Matching no longer decodes and describes every vendored PNG on-device.
+`:core:sprites:descriptors`'s offline precompute tool computes each sprite's
+multi-feature descriptor (pHash, dHash, HSV/LAB histograms, dominant colors,
+edge signature, alpha mask + bounding box, plus the original grid-RGB
+descriptor) ahead of time and bundles the result as
+`core/sprites/src/main/assets/sprites/descriptors.json`. `:core:sprites`'s
+`DescriptorCatalog` reads that file at runtime and `SpriteMatcher` joins it
+against `SpriteCatalog`'s filename-parsed records; only the single cropped
+box-slot icon is described on-device per match. Maintainer flow after
+vendoring new sprites: `make sync-sprites` then `make precompute-descriptors`.
+`SpriteMatcher.matchCandidates()` returns the top-N candidates by ensemble
+score instead of just the single best match, for a future validation-list UI.

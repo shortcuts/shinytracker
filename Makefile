@@ -55,6 +55,9 @@ wiki-serve:
 sync-sprites:
 	python3 scripts/sync_sprites.py
 
+precompute-descriptors:
+	./gradlew :core:sprites:descriptors:run
+
 screenshot:
 	mkdir -p docs/screenshots
 	adb exec-out screencap -p > docs/screenshots/latest.png
