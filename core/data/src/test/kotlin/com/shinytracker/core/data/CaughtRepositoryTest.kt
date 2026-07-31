@@ -31,4 +31,16 @@ class CaughtRepositoryTest {
 
             assertEquals(listOf(record), repository.observeCaught().first())
         }
+
+    @Test
+    fun `delete removes a caught record so it can be recorded again`() =
+        runTest {
+            val record = CaughtRecord(DexEntry(25, 0, 0, "Pikachu"), shiny = true, caughtAt = 1000L)
+            repository.recordIfAbsent(record)
+
+            repository.delete(record)
+
+            assertEquals(emptyList<CaughtRecord>(), repository.observeCaught().first())
+            assertTrue(repository.recordIfAbsent(record))
+        }
 }

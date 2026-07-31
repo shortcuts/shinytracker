@@ -59,4 +59,17 @@ class CaughtDaoTest {
             )
             check(first != -1L)
         }
+
+    @Test
+    fun `delete removes the matching row, leaves others untouched`() =
+        runTest {
+            val target = CaughtEntity(dexId = 25, formId = 0, costumeId = 0, shiny = true, name = "Pikachu", caughtAt = 1000L)
+            val other = CaughtEntity(dexId = 1, formId = 0, costumeId = 0, shiny = false, name = "Bulbasaur", caughtAt = 500L)
+            database.caughtDao().insertIfAbsent(target)
+            database.caughtDao().insertIfAbsent(other)
+
+            database.caughtDao().delete(target.dexId, target.formId, target.costumeId, target.shiny)
+
+            assertEquals(listOf(other), database.caughtDao().observeAll().first())
+        }
 }

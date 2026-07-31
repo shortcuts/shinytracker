@@ -109,7 +109,7 @@ Populated as milestones land.
 | BoxScanBridge | `:feature:scan:api` | `@Singleton` bind/unbind bridge | Exposes `captureScreenshot()`/`scrollBoxDown()`/`getIconSlotBounds()` to consumers without a dependency on the concrete `AccessibilityService` |
 | BoxScanAccessibilityService | `:feature:scan:impl` | `AccessibilityService` | Captures box screenshots, dispatches the scroll gesture, and walks the node tree for icon bounds; binds itself into `BoxScanBridge` |
 | SpriteMatcher | `:core:sprites` | `@Singleton` | Matches a cropped box-slot icon against the bundled sprite catalog, returns a `MatchResult` |
-| CaughtRepository | `:core:data` | `@Singleton` | Single source of truth for caught shinies; insert-only-if-absent against `CaughtDao` |
+| CaughtRepository | `:core:data` | `@Singleton` | Single source of truth for caught shinies; insert-only-if-absent against `CaughtDao`, plus `delete()` to mark a caught record uncaught again |
 | ScanOrchestrator | `:feature:scan:impl` | `@Singleton` | Drives the full scan loop: bounds → screenshot → crop → match → record/review, until scrolling stops changing bounds |
 | ShinyChecklistSource | `:core:sprites` | `@Singleton` | Loads the bundled/cached shiny-eligibility checklist; `refresh()` re-fetches over the network without touching the bundled asset |
 | ChecklistRepository | `:core:data` | `@Singleton` | Combines `ShinyChecklistSource` + `CaughtRepository` into `ChecklistEntry` lists for the checklist UI |

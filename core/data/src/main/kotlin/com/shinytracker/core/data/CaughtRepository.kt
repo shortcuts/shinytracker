@@ -19,6 +19,10 @@ class CaughtRepository
 
         /** Returns true if this is newly recorded, false if it was already caught. */
         suspend fun recordIfAbsent(record: CaughtRecord): Boolean = caughtDao.insertIfAbsent(record.toEntity()) != -1L
+
+        /** Marks a previously-caught record as uncaught again. No-op if it wasn't caught. */
+        suspend fun delete(record: CaughtRecord) =
+            caughtDao.delete(record.dexEntry.dexId, record.dexEntry.formId, record.dexEntry.costumeId, record.shiny)
     }
 
 private fun CaughtEntity.toDomain() = CaughtRecord(DexEntry(dexId, formId, costumeId, name), shiny, caughtAt)

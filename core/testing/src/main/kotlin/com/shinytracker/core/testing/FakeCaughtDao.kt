@@ -20,4 +20,16 @@ class FakeCaughtDao : CaughtDao {
     }
 
     override fun observeAll(): Flow<List<CaughtEntity>> = state.map { list -> list.sortedByDescending { it.caughtAt } }
+
+    override suspend fun delete(
+        dexId: Int,
+        formId: Int,
+        costumeId: Int,
+        shiny: Boolean,
+    ) {
+        state.value =
+            state.value.filterNot {
+                it.dexId == dexId && it.formId == formId && it.costumeId == costumeId && it.shiny == shiny
+            }
+    }
 }
