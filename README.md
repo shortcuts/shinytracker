@@ -14,6 +14,7 @@ contribution reference.
 |---------|-----|
 | Box scan (screenshot → crop → match → record) | `docs/features/scan.md` |
 | Checklist (owner + shared read-only, search/filter, export/import) | `docs/features/checklist.md` |
+| Onboarding gate (block app until accessibility + overlay granted, re-trigger on revoke) | `docs/features/onboarding.md` |
 
 ## Modules
 

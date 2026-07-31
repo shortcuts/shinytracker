@@ -13,6 +13,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.core.content.IntentCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -35,6 +36,7 @@ import java.io.IOException
 import javax.inject.Inject
 
 private const val SCAN_ROUTE = "scan"
+private const val ONBOARDING_ROUTE = "onboarding"
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -43,6 +45,7 @@ class MainActivity : ComponentActivity() {
     @Inject lateinit var scanOrchestrator: ScanOrchestrator
 
     private var isServiceEnabled by mutableStateOf(false)
+    private var overlayPermissionGranted by mutableStateOf(false)
     private var isWidgetRunning by mutableStateOf(false)
     private var statusText by mutableStateOf("")
     private var pendingSharedProfileUri by mutableStateOf<Uri?>(null)
@@ -50,12 +53,24 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         pendingSharedProfileUri = parseIncomingProfileIntent(intent)
+        isServiceEnabled = isBoxScanServiceEnabled()
+        overlayPermissionGranted = isOverlayPermissionGranted()
         setContent {
             val scanResults by scanOrchestrator.scanResults.collectAsStateWithLifecycle()
             val reviewQueue by scanOrchestrator.reviewQueue.collectAsStateWithLifecycle()
             val navController = rememberNavController()
+            val startDestination =
+                remember { if (isServiceEnabled && overlayPermissionGranted) SCAN_ROUTE else ONBOARDING_ROUTE }
             ShinyTheme {
-                NavHost(navController = navController, startDestination = SCAN_ROUTE) {
+                NavHost(navController = navController, startDestination = startDestination) {
+                    composable(ONBOARDING_ROUTE) {
+                        OnboardingScreen(
+                            accessibilityGranted = isServiceEnabled,
+                            overlayGranted = overlayPermissionGranted,
+                            onOpenAccessibilitySettings = { openAccessibilitySettings() },
+                            onOpenOverlaySettings = { openOverlaySettings() },
+                        )
+                    }
                     composable(SCAN_ROUTE) {
                         ShinyApp(
                             isServiceEnabled = isServiceEnabled,
@@ -91,6 +106,24 @@ class MainActivity : ComponentActivity() {
                         pendingSharedProfileUri = null
                     }
                 }
+                LaunchedEffect(isServiceEnabled, overlayPermissionGranted, pendingSharedProfileUri) {
+                    if (pendingSharedProfileUri != null) return@LaunchedEffect
+                    val current = navController.currentDestination?.route ?: return@LaunchedEffect
+                    val bothGranted = isServiceEnabled && overlayPermissionGranted
+                    when {
+                        bothGranted && current == ONBOARDING_ROUTE -> {
+                            navController.navigate(SCAN_ROUTE) {
+                                popUpTo(navController.graph.id) { inclusive = true }
+                            }
+                        }
+
+                        !bothGranted && current != ONBOARDING_ROUTE && current != ChecklistRoute.SHARED_PATTERN -> {
+                            navController.navigate(ONBOARDING_ROUTE) {
+                                popUpTo(navController.graph.id) { inclusive = true }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -113,6 +146,7 @@ class MainActivity : ComponentActivity() {
     override fun onResume() {
         super.onResume()
         isServiceEnabled = isBoxScanServiceEnabled()
+        overlayPermissionGranted = isOverlayPermissionGranted()
         isWidgetRunning = ScanWidgetOverlayService.isRunning
     }
 
@@ -122,6 +156,8 @@ class MainActivity : ComponentActivity() {
             .getEnabledAccessibilityServiceList(AccessibilityServiceInfo.FEEDBACK_ALL_MASK)
             .any { it.id.contains(BoxScanAccessibilityService::class.java.simpleName) }
     }
+
+    private fun isOverlayPermissionGranted(): Boolean = Settings.canDrawOverlays(this)
 
     private fun openAccessibilitySettings() {
         startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS).apply { addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) })
@@ -135,7 +171,7 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun onToggleWidget() {
-        if (!Settings.canDrawOverlays(this)) {
+        if (!isOverlayPermissionGranted()) {
             openOverlaySettings()
             return
         }
