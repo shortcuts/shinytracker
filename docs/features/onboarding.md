@@ -11,8 +11,9 @@ already on.
 
 1. `MainActivity` checks both permissions synchronously in `onCreate`,
    before `setContent`, so the nav host's `startDestination` is correct on
-   the first frame: both granted -> the scan screen (`SCAN_ROUTE`),
-   otherwise the onboarding screen (`ONBOARDING_ROUTE`).
+   the first frame: both granted -> the checklist screen
+   (`ChecklistRoute.OWNER`), otherwise the onboarding screen
+   (`ONBOARDING_ROUTE`).
 2. `OnboardingScreen` shows one card per permission with its granted
    state and, when missing, a button to
    `Settings.ACTION_ACCESSIBILITY_SETTINGS` or
@@ -21,7 +22,8 @@ already on.
    returns to the foreground -- including after the user grants or
    revokes one in system Settings.
 4. A `LaunchedEffect` keyed on both booleans reacts to every re-check:
-   both granted while on `ONBOARDING_ROUTE` -> navigate to `SCAN_ROUTE`
+   both granted while on `ONBOARDING_ROUTE` -> navigate to
+   `ChecklistRoute.OWNER`
    (auto-advance, no manual "Continue" button); either missing while on
    any other route -> navigate back to `ONBOARDING_ROUTE`. Both directions
    clear the back stack. This is what re-triggers the gate if a

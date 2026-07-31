@@ -21,6 +21,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material.icons.filled.FilterList
+import androidx.compose.material.icons.filled.PictureInPictureAlt
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.Badge
@@ -66,6 +67,8 @@ import com.shinytracker.core.model.PokemonType
 @Composable
 fun ChecklistScreen(
     onExportProfile: (Uri) -> Unit,
+    onToggleWidget: () -> Unit,
+    isWidgetRunning: Boolean,
     modifier: Modifier = Modifier,
     viewModel: ChecklistViewModel = hiltViewModel(),
 ) {
@@ -83,6 +86,12 @@ fun ChecklistScreen(
         errorMessage = null,
         banner = null,
         actions = {
+            IconButton(onClick = onToggleWidget) {
+                Icon(
+                    Icons.Default.PictureInPictureAlt,
+                    contentDescription = if (isWidgetRunning) "Disable scan widget" else "Enable scan widget",
+                )
+            }
             IconButton(onClick = { viewModel.exportProfile { result -> result.onSuccess(onExportProfile) } }) {
                 Icon(Icons.Default.Share, contentDescription = "Share my profile")
             }

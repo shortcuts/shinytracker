@@ -5,7 +5,9 @@
 Shows every shiny-eligible species (from `ShinyChecklistSource`) grouped by
 generation, cross-referenced against caught records. Two modes:
 
-- **Owner mode** — the device owner's own caught list. Editable by scanning
+- **Owner mode** — the app's default/home screen, reached immediately
+  after the onboarding gate passes (see `docs/features/onboarding.md`).
+  The device owner's own caught list. Editable by scanning
   (see `docs/features/scan.md`) or by tapping a species tile to toggle its
   caught state directly. Supports search (by name or dex #), an advanced
   filter sheet (status, generation, type), and exporting the list to share.
@@ -26,13 +28,19 @@ generation, cross-referenced against caught records. Two modes:
    `CaughtRepository`, since an imported list is not the device owner's own
    progress.
 3. `ChecklistScreen` (owner) / `SharedProfileScreen` (shared) both render
-   through a shared `ChecklistScaffold`: top app bar with search + a filter
-   icon (badged when a filter is active) opening a `ModalBottomSheet`, a
-   progress header (`caught / total`), and a `LazyColumn` with one
+   through a shared `ChecklistScaffold`: top app bar with search, a filter
+   icon (badged when a filter is active) opening a `ModalBottomSheet`, and
+   -- owner mode only -- a floating-scan-widget toggle icon and a share
+   icon, a progress header (`caught / total`), and a `LazyColumn` with one
    collapsible region section per generation (tap the header to
    expand/collapse; collapse state is `rememberSaveable`, resets on process
    death) followed by that generation's species as a wrapping sprite tile
    row.
+
+The floating scan widget (`ScanWidgetOverlayService`, see
+`docs/features/scan.md`) is enabled/disabled from a `PictureInPictureAlt`
+icon button in owner mode's top app bar -- the single entry point into
+scanning from this screen.
 4. In owner mode, tapping a tile calls `ChecklistViewModel.toggleCaught()`,
    which calls `ChecklistRepository.toggleCaught()` to record or delete
    the species' `CaughtRecord`. Shared read-only mode never passes a

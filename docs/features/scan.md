@@ -29,9 +29,12 @@ queue instead of guessing.
 ## Current UI
 
 A floating overlay widget (`ScanWidgetOverlayService`), toggled from
-`:app`'s `MainActivity`/`ShinyApp` (only shown once the accessibility
-service is enabled) via a "Enable scan widget"/"Disable scan widget"
-button. The widget is a draggable pill with two action buttons:
+`:feature:checklist`'s `ChecklistScreen` top app bar (a
+`PictureInPictureAlt` icon button, its content description swapping
+between "Enable scan widget"/"Disable scan widget") via
+`MainActivity.onToggleWidget()` -- reachable unconditionally once the
+onboarding gate passes, since both required permissions are guaranteed
+granted by then. The widget is a draggable pill with two action buttons:
 
 - **Screenshot**: `ScanOrchestrator.captureAndDetect()` — a single
   capture, detects every slot on screen (one or many, same code path),
@@ -48,11 +51,6 @@ The validation panel (`ScanValidationScreen`, driven by
 works while Pokemon GO, not shinytracker, is in the foreground. Per entry:
 crop thumbnail, top candidate with confidence, alternate-candidate chips,
 and Confirm/Reject actions.
-
-`:app`'s `MainActivity`/`ShinyApp` also keeps the debug "Capture
-screenshot"/"Scroll box down"/"Run full scan" buttons and counters, plus
-the "View checklist" button into `:feature:checklist` (see
-`docs/features/checklist.md`).
 
 ## Sprite catalog
 

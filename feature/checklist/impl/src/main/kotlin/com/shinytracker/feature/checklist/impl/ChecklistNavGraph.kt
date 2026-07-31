@@ -7,9 +7,17 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.shinytracker.feature.checklist.api.ChecklistRoute
 
-fun NavGraphBuilder.checklistNavGraph(onExportProfile: (Uri) -> Unit) {
+fun NavGraphBuilder.checklistNavGraph(
+    onExportProfile: (Uri) -> Unit,
+    onToggleWidget: () -> Unit,
+    isWidgetRunning: Boolean,
+) {
     composable(ChecklistRoute.OWNER) {
-        ChecklistScreen(onExportProfile = onExportProfile)
+        ChecklistScreen(
+            onExportProfile = onExportProfile,
+            onToggleWidget = onToggleWidget,
+            isWidgetRunning = isWidgetRunning,
+        )
     }
     composable(
         route = ChecklistRoute.SHARED_PATTERN,
