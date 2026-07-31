@@ -23,6 +23,13 @@ class ChecklistRepository
                 species.map { it.toChecklistEntry(caught) }
             }
 
+        /** Toggles [entry]'s caught state: records it if uncaught, deletes it if already caught. */
+        suspend fun toggleCaught(entry: ChecklistEntry) {
+            // this app only tracks the shiny form of each species (see ChecklistScreen.spriteAssetUri)
+            val record = CaughtRecord(entry.dexEntry, shiny = true, caughtAt = entry.caughtAt ?: System.currentTimeMillis())
+            if (entry.caught) caughtRepository.delete(record) else caughtRepository.recordIfAbsent(record)
+        }
+
         private fun DexEntry.toChecklistEntry(caught: List<CaughtRecord>): ChecklistEntry {
             val match = caught.firstOrNull { it.dexEntry.dexId == dexId }
             return ChecklistEntry(

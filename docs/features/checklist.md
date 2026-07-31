@@ -5,10 +5,10 @@
 Shows every shiny-eligible species (from `ShinyChecklistSource`) grouped by
 generation, cross-referenced against caught records. Two modes:
 
-- **Owner mode** — the device owner's own caught list. Editable indirectly
-  (caught state comes from scanning, see `docs/features/scan.md`). Supports
-  search (by name or dex #), an advanced filter sheet (status, generation,
-  type), and exporting the list to share.
+- **Owner mode** — the device owner's own caught list. Editable by scanning
+  (see `docs/features/scan.md`) or by tapping a species tile to toggle its
+  caught state directly. Supports search (by name or dex #), an advanced
+  filter sheet (status, generation, type), and exporting the list to share.
 - **Shared read-only mode** — someone else's exported list, imported via a
   file `Intent`. Same search + filter sheet as owner mode, no edit affordance,
   plus a banner naming whose profile is showing.
@@ -33,6 +33,10 @@ generation, cross-referenced against caught records. Two modes:
    expand/collapse; collapse state is `rememberSaveable`, resets on process
    death) followed by that generation's species as a wrapping sprite tile
    row.
+4. In owner mode, tapping a tile calls `ChecklistViewModel.toggleCaught()`,
+   which calls `ChecklistRepository.toggleCaught()` to record or delete
+   the species' `CaughtRecord`. Shared read-only mode never passes a
+   toggle handler into `ChecklistScaffold`, so its tiles stay non-tappable.
 
 ## Sharing
 

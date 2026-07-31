@@ -61,4 +61,22 @@ class ChecklistViewModelTest {
             assertTrue(state.entries.all { it.caught })
             assertEquals(1, state.caughtCount)
         }
+
+    @Test
+    fun `toggleCaught flips an entry from uncaught to caught and back`() =
+        runTest {
+            val target =
+                viewModel.uiState
+                    .first { !it.isLoading }
+                    .entries
+                    .first { it.dexEntry.dexId == 1 }
+
+            viewModel.toggleCaught(target)
+            val caughtState = viewModel.uiState.first { !it.isLoading && it.caughtCount == 1 }
+            assertTrue(caughtState.entries.first { it.dexEntry.dexId == 1 }.caught)
+
+            viewModel.toggleCaught(caughtState.entries.first { it.dexEntry.dexId == 1 })
+            val uncaughtState = viewModel.uiState.first { !it.isLoading && it.caughtCount == 0 }
+            assertTrue(uncaughtState.entries.all { !it.caught })
+        }
 }

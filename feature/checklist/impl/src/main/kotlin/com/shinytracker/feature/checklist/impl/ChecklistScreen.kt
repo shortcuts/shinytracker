@@ -87,6 +87,7 @@ fun ChecklistScreen(
                 Icon(Icons.Default.Share, contentDescription = "Share my profile")
             }
         },
+        onToggle = viewModel::toggleCaught,
         modifier = modifier,
     )
 }
@@ -131,6 +132,7 @@ internal fun ChecklistScaffold(
     errorMessage: String?,
     banner: (@Composable () -> Unit)?,
     actions: @Composable () -> Unit,
+    onToggle: ((ChecklistEntry) -> Unit)? = null,
     modifier: Modifier = Modifier,
 ) {
     var searchExpanded by remember { mutableStateOf(false) }
@@ -185,7 +187,7 @@ internal fun ChecklistScaffold(
                 }
 
                 else -> {
-                    ChecklistList(entries, collapsed) { generation ->
+                    ChecklistList(entries, collapsed, onToggle) { generation ->
                         collapsed = if (generation.name in collapsed) collapsed - generation.name else collapsed + generation.name
                     }
                 }
@@ -256,6 +258,7 @@ private fun <T> Set<T>.toggle(value: T): Set<T> = if (value in this) this - valu
 private fun ChecklistList(
     entries: List<ChecklistEntry>,
     collapsed: Set<String>,
+    onToggle: ((ChecklistEntry) -> Unit)?,
     onToggleCollapse: (Generation) -> Unit,
 ) {
     val grouped = entries.groupBy { it.generation }.toSortedMap(compareBy { it.ordinal })
@@ -279,7 +282,7 @@ private fun ChecklistList(
                         horizontalArrangement = Arrangement.Start,
                     ) {
                         regionEntries.forEach { entry ->
-                            SpriteTile(entry)
+                            SpriteTile(entry, onToggle = onToggle?.let { callback -> { callback(entry) } })
                         }
                     }
                 }
@@ -355,6 +358,7 @@ private fun PokemonType.displayName(): String = name.lowercase().replaceFirstCha
 private fun SpriteTile(
     entry: ChecklistEntry,
     modifier: Modifier = Modifier,
+    onToggle: (() -> Unit)? = null,
 ) {
     val caughtLabel = if (entry.caught) "caught" else "not caught"
     val grayscale = remember { ColorMatrix().apply { setToSaturation(0f) } }
@@ -364,6 +368,7 @@ private fun SpriteTile(
                 .size(76.dp)
                 .padding(4.dp)
                 .background(MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.shapes.medium)
+                .then(if (onToggle != null) Modifier.clickable(onClick = onToggle) else Modifier)
                 .clearAndSetSemantics {
                     contentDescription = "#%03d %s, %s".format(entry.dexEntry.dexId, entry.dexEntry.name, caughtLabel)
                 },

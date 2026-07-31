@@ -55,6 +55,10 @@ class ChecklistViewModel
             filter.value = newFilter
         }
 
+        fun toggleCaught(entry: ChecklistEntry) {
+            viewModelScope.launch { checklistRepository.toggleCaught(entry) }
+        }
+
         fun exportProfile(onResult: (Result<Uri>) -> Unit) {
             viewModelScope.launch { onResult(profileShareRepository.exportProfile()) }
         }

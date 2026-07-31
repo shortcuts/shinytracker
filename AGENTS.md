@@ -112,7 +112,7 @@ Populated as milestones land.
 | CaughtRepository | `:core:data` | `@Singleton` | Single source of truth for caught shinies; insert-only-if-absent against `CaughtDao`, plus `delete()` to mark a caught record uncaught again |
 | ScanOrchestrator | `:feature:scan:impl` | `@Singleton` | Drives the full scan loop: bounds → screenshot → crop → match → record/review, until scrolling stops changing bounds |
 | ShinyChecklistSource | `:core:sprites` | `@Singleton` | Loads the bundled/cached shiny-eligibility checklist; `refresh()` re-fetches over the network without touching the bundled asset |
-| ChecklistRepository | `:core:data` | `@Singleton` | Combines `ShinyChecklistSource` + `CaughtRepository` into `ChecklistEntry` lists for the checklist UI |
+| ChecklistRepository | `:core:data` | `@Singleton` | Combines `ShinyChecklistSource` + `CaughtRepository` into `ChecklistEntry` lists for the checklist UI; `toggleCaught()` records/deletes a `CaughtRecord` directly from a tapped checklist tile |
 | ProfileShareRepository | `:core:data` | `@Singleton` | Exports the owner's caught list to a shareable file; imports someone else's exported file for read-only viewing (never writes to `CaughtRepository`) |
 | ScanWidgetOverlayService | `:feature:scan:impl` | `Service` (`@AndroidEntryPoint`) | Floating overlay widget: screenshot-detect button, automated-scan button, hosts the validation panel |
 | ScanValidationPresenter | `:feature:scan:impl` | plain class, one instance per `ScanWidgetOverlayService` | Confirm/reject state + recording for both widget button flows — not a ViewModel (Service is not a `ViewModelStoreOwner`) |

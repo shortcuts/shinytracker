@@ -9,6 +9,7 @@ import com.shinytracker.core.testing.FakeCaughtDao
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -38,5 +39,28 @@ class ChecklistRepositoryTest {
 
             assertEquals(true, bulbasaur.caught)
             assertEquals(1000L, bulbasaur.caughtAt)
+        }
+
+    @Test
+    fun `toggleCaught marks an uncaught entry as caught`() =
+        runTest {
+            val entry = repository.observeChecklist().first().first { it.dexEntry.dexId == 1 }
+
+            repository.toggleCaught(entry)
+
+            val updated = repository.observeChecklist().first().first { it.dexEntry.dexId == 1 }
+            assertTrue(updated.caught)
+        }
+
+    @Test
+    fun `toggleCaught marks a caught entry as uncaught`() =
+        runTest {
+            caughtRepository.recordIfAbsent(CaughtRecord(DexEntry(1, 0, 0, "Bulbasaur"), shiny = true, caughtAt = 1000L))
+            val entry = repository.observeChecklist().first().first { it.dexEntry.dexId == 1 }
+
+            repository.toggleCaught(entry)
+
+            val updated = repository.observeChecklist().first().first { it.dexEntry.dexId == 1 }
+            assertFalse(updated.caught)
         }
 }
