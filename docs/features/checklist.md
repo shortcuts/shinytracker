@@ -30,12 +30,12 @@ generation, cross-referenced against caught records. Two modes:
 3. `ChecklistScreen` (owner) / `SharedProfileScreen` (shared) both render
    through a shared `ChecklistScaffold`: top app bar with search, a filter
    icon (badged when a filter is active) opening a `ModalBottomSheet`, and
-   -- owner mode only -- a floating-scan-widget toggle icon and a share
-   icon, a progress header (`caught / total`), and a `LazyColumn` with one
-   collapsible region section per generation (tap the header to
-   expand/collapse; collapse state is `rememberSaveable`, resets on process
-   death) followed by that generation's species as a wrapping sprite tile
-   row.
+   -- owner mode only -- a leading hamburger icon opening a navigation
+   drawer, a floating-scan-widget toggle icon and a share icon, a progress
+   header (`caught / total`), and a `LazyColumn` with one collapsible
+   region section per generation (tap the header to expand/collapse;
+   collapse state is `rememberSaveable`, resets on process death) followed
+   by that generation's species as a wrapping sprite tile row.
 
 The floating scan widget (`ScanWidgetOverlayService`, see
 `docs/features/scan.md`) is enabled/disabled from a `PictureInPictureAlt`
@@ -56,6 +56,20 @@ out as a `content://` URI via `:app`'s `FileProvider`
 `MainActivity`'s `ACTION_VIEW`/`ACTION_SEND` (`application/json`)
 intent-filter, parsed by `ChecklistRoute.parseSharedProfileArg` into the
 `checklist/shared/{profileUri}` route.
+
+## Navigation drawer
+
+Owner mode's top app bar has a leading hamburger icon (`Icons.Default.Menu`)
+that opens a `ModalNavigationDrawer` (`ChecklistDrawerContent`), wired from
+`MainActivity`.
+
+The drawer currently has exactly one item, "Home", which closes the drawer
+(and re-navigates to the already-current `ChecklistRoute.OWNER` route) --
+intentionally inert today, kept ready for a Settings item once that screen
+is scoped.
+
+`SharedProfileScreen` does not show the hamburger icon (deep-link-only
+screen, no reason to expose the owner's own navigation).
 
 ## Sprite art
 

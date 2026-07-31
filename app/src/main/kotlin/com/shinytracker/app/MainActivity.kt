@@ -8,10 +8,14 @@ import android.provider.Settings
 import android.view.accessibility.AccessibilityManager
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.material3.DrawerValue
+import androidx.compose.material3.ModalNavigationDrawer
+import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.core.content.IntentCompat
 import androidx.navigation.compose.NavHost
@@ -19,10 +23,12 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.shinytracker.core.designsystem.ShinyTheme
 import com.shinytracker.feature.checklist.api.ChecklistRoute
+import com.shinytracker.feature.checklist.impl.ChecklistDrawerContent
 import com.shinytracker.feature.checklist.impl.checklistNavGraph
 import com.shinytracker.feature.scan.impl.BoxScanAccessibilityService
 import com.shinytracker.feature.scan.impl.ScanWidgetOverlayService
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
 
 private const val ONBOARDING_ROUTE = "onboarding"
 
@@ -44,21 +50,29 @@ class MainActivity : ComponentActivity() {
                 remember {
                     if (isServiceEnabled && overlayPermissionGranted) ChecklistRoute.OWNER else ONBOARDING_ROUTE
                 }
+            val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
+            val scope = rememberCoroutineScope()
             ShinyTheme {
-                NavHost(navController = navController, startDestination = startDestination) {
-                    composable(ONBOARDING_ROUTE) {
-                        OnboardingScreen(
-                            accessibilityGranted = isServiceEnabled,
-                            overlayGranted = overlayPermissionGranted,
-                            onOpenAccessibilitySettings = { openAccessibilitySettings() },
-                            onOpenOverlaySettings = { openOverlaySettings() },
+                ModalNavigationDrawer(
+                    drawerState = drawerState,
+                    drawerContent = { ChecklistDrawerContent(navController, drawerState) },
+                ) {
+                    NavHost(navController = navController, startDestination = startDestination) {
+                        composable(ONBOARDING_ROUTE) {
+                            OnboardingScreen(
+                                accessibilityGranted = isServiceEnabled,
+                                overlayGranted = overlayPermissionGranted,
+                                onOpenAccessibilitySettings = { openAccessibilitySettings() },
+                                onOpenOverlaySettings = { openOverlaySettings() },
+                            )
+                        }
+                        checklistNavGraph(
+                            onExportProfile = { uri -> shareProfileFile(uri) },
+                            onToggleWidget = { onToggleWidget() },
+                            isWidgetRunning = isWidgetRunning,
+                            onOpenDrawer = { scope.launch { drawerState.open() } },
                         )
                     }
-                    checklistNavGraph(
-                        onExportProfile = { uri -> shareProfileFile(uri) },
-                        onToggleWidget = { onToggleWidget() },
-                        isWidgetRunning = isWidgetRunning,
-                    )
                 }
                 LaunchedEffect(pendingSharedProfileUri) {
                     pendingSharedProfileUri?.let { uri ->

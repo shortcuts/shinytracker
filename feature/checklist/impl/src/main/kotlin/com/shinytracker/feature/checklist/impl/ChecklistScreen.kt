@@ -21,6 +21,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material.icons.filled.FilterList
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.PictureInPictureAlt
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Share
@@ -69,6 +70,7 @@ fun ChecklistScreen(
     onExportProfile: (Uri) -> Unit,
     onToggleWidget: () -> Unit,
     isWidgetRunning: Boolean,
+    onOpenDrawer: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: ChecklistViewModel = hiltViewModel(),
 ) {
@@ -85,6 +87,11 @@ fun ChecklistScreen(
         isLoading = uiState.isLoading,
         errorMessage = null,
         banner = null,
+        navigationIcon = {
+            IconButton(onClick = onOpenDrawer) {
+                Icon(Icons.Default.Menu, contentDescription = "Open navigation menu")
+            }
+        },
         actions = {
             IconButton(onClick = onToggleWidget) {
                 Icon(
@@ -140,6 +147,7 @@ internal fun ChecklistScaffold(
     isLoading: Boolean,
     errorMessage: String?,
     banner: (@Composable () -> Unit)?,
+    navigationIcon: @Composable () -> Unit = {},
     actions: @Composable () -> Unit,
     onToggle: ((ChecklistEntry) -> Unit)? = null,
     modifier: Modifier = Modifier,
@@ -153,6 +161,7 @@ internal fun ChecklistScaffold(
         topBar = {
             TopAppBar(
                 title = { Text(title) },
+                navigationIcon = navigationIcon,
                 actions = {
                     IconButton(onClick = { searchExpanded = !searchExpanded }) {
                         Icon(Icons.Default.Search, contentDescription = "Search")

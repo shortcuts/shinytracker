@@ -11,12 +11,14 @@ fun NavGraphBuilder.checklistNavGraph(
     onExportProfile: (Uri) -> Unit,
     onToggleWidget: () -> Unit,
     isWidgetRunning: Boolean,
+    onOpenDrawer: () -> Unit,
 ) {
     composable(ChecklistRoute.OWNER) {
         ChecklistScreen(
             onExportProfile = onExportProfile,
             onToggleWidget = onToggleWidget,
             isWidgetRunning = isWidgetRunning,
+            onOpenDrawer = onOpenDrawer,
         )
     }
     composable(
