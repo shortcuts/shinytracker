@@ -41,6 +41,7 @@ class ShinyChecklistSource
     @Inject
     constructor(
         @ApplicationContext private val context: Context,
+        private val dexDataSource: PokemonDexDataSource,
     ) {
         private val json = Json { ignoreUnknownKeys = true }
         private val state: MutableStateFlow<List<DexEntry>> by lazy { MutableStateFlow(loadBundledOrCached()) }
@@ -49,6 +50,9 @@ class ShinyChecklistSource
 
         /** Synchronous lookup against the currently loaded checklist; "Unknown" if not found. */
         fun nameFor(dexId: Int): String = state.value.firstOrNull { it.dexId == dexId }?.name ?: "Unknown #%03d".format(dexId)
+
+        /** Species-level DexEntry (types/localizedNames/species/evolutions merged in), used by SpriteCatalog. */
+        fun dexEntryFor(dexId: Int): DexEntry = dexEntry(dexId, nameFor(dexId))
 
         suspend fun refresh(): Result<Unit> = refreshFrom(CHECKLIST_URL)
 
@@ -89,7 +93,25 @@ class ShinyChecklistSource
         private fun parse(text: String): List<DexEntry> =
             json
                 .decodeFromString<List<ChecklistEntryJson>>(text)
-                .map { DexEntry(it.dexId, formId = 0, costumeId = 0, name = it.name) }
+                .map { dexEntry(it.dexId, it.name) }
+
+        private fun dexEntry(
+            dexId: Int,
+            name: String,
+        ): DexEntry {
+            val data = dexDataSource.get(dexId)
+            return DexEntry(
+                dexId = dexId,
+                formId = 0,
+                costumeId = 0,
+                name = name,
+                types = data?.types.orEmpty(),
+                localizedNames = data?.localizedNames.orEmpty(),
+                species = data?.species,
+                evolvesFrom = data?.evolvesFrom,
+                evolvesTo = data?.evolvesTo.orEmpty(),
+            )
+        }
 
         private fun fetch(url: String): String {
             val connection = URL(url).openConnection() as HttpURLConnection

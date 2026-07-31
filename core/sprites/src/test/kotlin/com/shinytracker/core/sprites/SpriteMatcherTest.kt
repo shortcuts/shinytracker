@@ -12,7 +12,7 @@ import org.robolectric.RobolectricTestRunner
 @RunWith(RobolectricTestRunner::class)
 class SpriteMatcherTest {
     private val context = ApplicationProvider.getApplicationContext<Context>()
-    private val matcher = SpriteMatcher(context, ShinyChecklistSource(context))
+    private val matcher = SpriteMatcher(context, ShinyChecklistSource(context, PokemonDexDataSource(context)))
 
     private fun loadCrop(assetPath: String) = context.assets.open("sprites/$assetPath").use { BitmapFactory.decodeStream(it) }
 

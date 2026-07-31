@@ -7,6 +7,7 @@ import com.shinytracker.core.data.ChecklistRepository
 import com.shinytracker.core.data.ProfileShareRepository
 import com.shinytracker.core.model.CaughtRecord
 import com.shinytracker.core.model.DexEntry
+import com.shinytracker.core.sprites.PokemonDexDataSource
 import com.shinytracker.core.sprites.ShinyChecklistSource
 import com.shinytracker.core.testing.FakeCaughtDao
 import com.shinytracker.core.testing.MainDispatcherRule
@@ -31,7 +32,7 @@ class ChecklistViewModelTest {
     @Before
     fun setUp() {
         val context = ApplicationProvider.getApplicationContext<Context>()
-        val checklistSource = ShinyChecklistSource(context)
+        val checklistSource = ShinyChecklistSource(context, PokemonDexDataSource(context))
         caughtRepository = CaughtRepository(FakeCaughtDao())
         val checklistRepository = ChecklistRepository(checklistSource, caughtRepository)
         val profileShareRepository = ProfileShareRepository(context, caughtRepository)

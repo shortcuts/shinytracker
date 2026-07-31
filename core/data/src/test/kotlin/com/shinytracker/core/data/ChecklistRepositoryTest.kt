@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.test.core.app.ApplicationProvider
 import com.shinytracker.core.model.CaughtRecord
 import com.shinytracker.core.model.DexEntry
+import com.shinytracker.core.sprites.PokemonDexDataSource
 import com.shinytracker.core.sprites.ShinyChecklistSource
 import com.shinytracker.core.testing.FakeCaughtDao
 import kotlinx.coroutines.flow.first
@@ -17,7 +18,8 @@ import org.robolectric.RobolectricTestRunner
 
 @RunWith(RobolectricTestRunner::class)
 class ChecklistRepositoryTest {
-    private val checklistSource = ShinyChecklistSource(ApplicationProvider.getApplicationContext<Context>())
+    private val context = ApplicationProvider.getApplicationContext<Context>()
+    private val checklistSource = ShinyChecklistSource(context, PokemonDexDataSource(context))
     private val caughtRepository = CaughtRepository(FakeCaughtDao())
     private val repository = ChecklistRepository(checklistSource, caughtRepository)
 

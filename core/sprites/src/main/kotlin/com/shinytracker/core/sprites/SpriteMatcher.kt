@@ -39,7 +39,7 @@ class SpriteMatcher
         }
 
         private fun loadCatalog(): List<Pair<ShinyRecord, SpriteDescriptor>> {
-            val records = SpriteCatalog.load(context, checklistSource::nameFor)
+            val records = SpriteCatalog.load(context, checklistSource::dexEntryFor)
             val descriptors = DescriptorCatalog.load(context)
             return records.mapNotNull { record -> descriptors[record.assetPath]?.let { record to it } }
         }

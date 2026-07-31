@@ -5,6 +5,9 @@ data class DexEntry(
     val formId: Int,
     val costumeId: Int = 0,
     val name: String,
-    // ponytail: no per-species type source wired up yet, always empty until checklist.json gains a `types` field
     val types: List<PokemonType> = emptyList(),
+    val localizedNames: Map<String, String> = emptyMap(),
+    val species: String? = null,
+    val evolvesFrom: Int? = null,
+    val evolvesTo: List<Int> = emptyList(),
 )

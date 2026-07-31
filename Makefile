@@ -55,6 +55,9 @@ wiki-serve:
 sync-sprites:
 	python3 scripts/sync_sprites.py
 
+sync-dex-data:
+	python3 scripts/sync_dex_data.py
+
 precompute-descriptors:
 	./gradlew :core:sprites:descriptors:run
 

@@ -16,13 +16,17 @@ private val FILENAME_REGEX = Regex("""pokemon_icon_(\d{3})_(\d{2})(?:_(\d{2}))?(
 object SpriteCatalog {
     fun load(
         context: Context,
-        nameFor: (dexId: Int) -> String,
+        dexEntryFor: (dexId: Int) -> DexEntry,
     ): List<ShinyRecord> =
         context.assets.list(SPRITES_ASSET_DIR).orEmpty().mapNotNull { filename ->
             val match = FILENAME_REGEX.matchEntire(filename) ?: return@mapNotNull null
             val (dexId, formId, costumeId, shinySuffix) = match.destructured
             ShinyRecord(
-                dexEntry = DexEntry(dexId.toInt(), formId.toInt(), costumeId.toIntOrNull() ?: 0, nameFor(dexId.toInt())),
+                dexEntry =
+                    dexEntryFor(dexId.toInt()).copy(
+                        formId = formId.toInt(),
+                        costumeId = costumeId.toIntOrNull() ?: 0,
+                    ),
                 shiny = shinySuffix.isNotEmpty(),
                 assetPath = filename,
             )

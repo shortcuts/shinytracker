@@ -79,13 +79,16 @@ local, no network). Every tile shows the shiny variant, since this app only
 tracks shinies. Uncaught species render desaturated + dimmed rather than
 hidden, so the grid still shows what's missing.
 
-## Type filter data gap
+## Type filter data coverage
 
-`AdvancedFilter.types` and `PokemonType` (`:core:model`) exist and drive the
-filter sheet's Type chip grid, but `DexEntry.types` defaults to `emptyList()`
-everywhere -- `ShinyChecklistSource`'s `checklist.json` has no per-species
-type data yet. Selecting a type currently narrows results to zero until that
-data is sourced; this is a known gap, not a bug.
+`AdvancedFilter.types` and `PokemonType` (`:core:model`) drive the filter
+sheet's Type chip grid. `DexEntry.types` is populated from
+`core/sprites/src/main/assets/dexdata.json` (written by
+`scripts/sync_dex_data.py` from Purukitto's `pokedex.json`), merged into each
+`DexEntry` by `ShinyChecklistSource`/`PokemonDexDataSource`. That source only
+covers dex ids 1-898, while `checklist.json` (pogoapi.net) covers ids up to
+1000 -- species above 898 still get `DexEntry.types == emptyList()` and the
+type filter still excludes them. This is a known, narrower gap, not a bug.
 
 ## Eligibility data
 

@@ -6,6 +6,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.test.core.app.ApplicationProvider
 import com.shinytracker.core.data.CaughtRepository
 import com.shinytracker.core.data.ProfileShareRepository
+import com.shinytracker.core.sprites.PokemonDexDataSource
 import com.shinytracker.core.sprites.ShinyChecklistSource
 import com.shinytracker.core.testing.FakeCaughtDao
 import com.shinytracker.core.testing.MainDispatcherRule
@@ -27,7 +28,7 @@ class SharedProfileViewModelTest {
 
     private val context = ApplicationProvider.getApplicationContext<Context>()
     private val profileShareRepository = ProfileShareRepository(context, CaughtRepository(FakeCaughtDao()))
-    private val checklistSource = ShinyChecklistSource(context)
+    private val checklistSource = ShinyChecklistSource(context, PokemonDexDataSource(context))
 
     private fun sharedProfileFile(): Uri {
         val file =
