@@ -5,9 +5,7 @@
 Multi-module, NowInAndroid-style. Feature = `api` (contract) + `impl`. Shared: `:core:*`.
 
 All modules below are `include()`d in `settings.gradle.kts`. All have landed
-as real directories with code except `:core:datastore`, which is a scaffolded
-module (build file only, no source) — no feature in scope so far needs
-persisted UI prefs.
+as real directories with code.
 
 ```
 feature/*        — UI + ViewModels (Compose screens, no business logic)
@@ -25,9 +23,9 @@ core/model       — Pure Kotlin data classes, no Android deps
 |--------|---------|
 | `:app` | Entry point, Hilt, nav host |
 | `:core:common` | `AppConstants`-equivalent, extensions |
-| `:core:model` | Pure Kotlin: `DexEntry`, `ShinyRecord`, `MatchResult`, `CaughtRecord`, `ChecklistEntry`, `Generation` |
+| `:core:model` | Pure Kotlin: `DexEntry`, `ShinyRecord`, `MatchResult`, `CaughtRecord`, `ChecklistEntry`, `Generation`, `DisplayLanguage` |
 | `:core:database` | Room: `CaughtEntity`/`CaughtDao` |
-| `:core:datastore` | DataStore prefs (last scan time, etc.) |
+| `:core:datastore` | `OnboardingPreferencesDataSource` -- raw Preferences DataStore reads/writes for the onboarding gate's persisted choices |
 | `:core:data` | Repositories, single source of truth |
 | `:core:designsystem` | Compose theme/tokens (near-copy of locationjoystick's, retinted) |
 | `:core:sprites` | `SpriteMatcher`, `SpriteCatalog`, `DescriptorCatalog`, `ShinyChecklistSource` — this app's `:core:routing` equivalent |

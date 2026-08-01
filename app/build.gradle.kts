@@ -20,6 +20,7 @@ dependencies {
     implementation(project(":core:common"))
     implementation(project(":core:data"))
     implementation(project(":core:designsystem"))
+    implementation(project(":core:model"))
     implementation(project(":feature:scan:api"))
     implementation(project(":feature:scan:impl"))
     implementation(project(":feature:checklist:api"))

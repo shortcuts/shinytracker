@@ -4,8 +4,10 @@ import android.net.Uri
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.shinytracker.core.data.ChecklistRepository
+import com.shinytracker.core.data.OnboardingPreferencesRepository
 import com.shinytracker.core.data.ProfileShareRepository
 import com.shinytracker.core.model.ChecklistEntry
+import com.shinytracker.core.model.DisplayLanguage
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -22,6 +24,7 @@ data class ChecklistUiState(
     val caughtCount: Int = 0,
     val totalCount: Int = 0,
     val isLoading: Boolean = true,
+    val displayLanguage: DisplayLanguage = DisplayLanguage.ENGLISH,
 )
 
 /** Owner mode: the device owner's own checklist, editable via scanning, exportable for sharing. */
@@ -31,12 +34,18 @@ class ChecklistViewModel
     constructor(
         private val checklistRepository: ChecklistRepository,
         private val profileShareRepository: ProfileShareRepository,
+        private val onboardingPreferencesRepository: OnboardingPreferencesRepository,
     ) : ViewModel() {
         private val searchText = MutableStateFlow("")
         private val filter = MutableStateFlow(AdvancedFilter())
 
         val uiState: StateFlow<ChecklistUiState> =
-            combine(checklistRepository.observeChecklist(), searchText, filter) { entries, search, currentFilter ->
+            combine(
+                checklistRepository.observeChecklist(),
+                searchText,
+                filter,
+                onboardingPreferencesRepository.displayLanguage,
+            ) { entries, search, currentFilter, displayLanguage ->
                 ChecklistUiState(
                     entries = entries.filterEntries(search, currentFilter),
                     searchText = search,
@@ -44,6 +53,7 @@ class ChecklistViewModel
                     caughtCount = entries.count { it.caught },
                     totalCount = entries.size,
                     isLoading = false,
+                    displayLanguage = displayLanguage,
                 )
             }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), ChecklistUiState())
 

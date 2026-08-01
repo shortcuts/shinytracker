@@ -11,6 +11,7 @@ import com.shinytracker.core.sprites.PokemonDexDataSource
 import com.shinytracker.core.sprites.ShinyChecklistSource
 import com.shinytracker.core.testing.FakeCaughtDao
 import com.shinytracker.core.testing.MainDispatcherRule
+import com.shinytracker.core.testing.testOnboardingPreferencesRepository
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
@@ -36,7 +37,8 @@ class ChecklistViewModelTest {
         caughtRepository = CaughtRepository(FakeCaughtDao())
         val checklistRepository = ChecklistRepository(checklistSource, caughtRepository)
         val profileShareRepository = ProfileShareRepository(context, caughtRepository)
-        viewModel = ChecklistViewModel(checklistRepository, profileShareRepository)
+        val onboardingPreferencesRepository = testOnboardingPreferencesRepository(context)
+        viewModel = ChecklistViewModel(checklistRepository, profileShareRepository, onboardingPreferencesRepository)
     }
 
     @Test

@@ -61,6 +61,7 @@ import coil.compose.AsyncImage
 import com.shinytracker.core.designsystem.ShinyTheme
 import com.shinytracker.core.model.ChecklistEntry
 import com.shinytracker.core.model.DexEntry
+import com.shinytracker.core.model.DisplayLanguage
 import com.shinytracker.core.model.Generation
 import com.shinytracker.core.model.PokemonType
 
@@ -87,6 +88,7 @@ fun ChecklistScreen(
         isLoading = uiState.isLoading,
         errorMessage = null,
         banner = null,
+        displayLanguage = uiState.displayLanguage,
         navigationIcon = {
             IconButton(onClick = onOpenDrawer) {
                 Icon(Icons.Default.Menu, contentDescription = "Open navigation menu")
@@ -128,6 +130,7 @@ fun SharedProfileScreen(
         isLoading = uiState.isLoading,
         errorMessage = if (uiState.loadFailed) "Could not open this shared profile." else null,
         banner = { SharedProfileBanner(ownerLabel) },
+        displayLanguage = uiState.displayLanguage,
         actions = {},
         modifier = modifier,
     )
@@ -150,6 +153,7 @@ internal fun ChecklistScaffold(
     navigationIcon: @Composable () -> Unit = {},
     actions: @Composable () -> Unit,
     onToggle: ((ChecklistEntry) -> Unit)? = null,
+    displayLanguage: DisplayLanguage = DisplayLanguage.ENGLISH,
     modifier: Modifier = Modifier,
 ) {
     var searchExpanded by remember { mutableStateOf(false) }
@@ -205,7 +209,7 @@ internal fun ChecklistScaffold(
                 }
 
                 else -> {
-                    ChecklistList(entries, collapsed, onToggle) { generation ->
+                    ChecklistList(entries, collapsed, onToggle, displayLanguage) { generation ->
                         collapsed = if (generation.name in collapsed) collapsed - generation.name else collapsed + generation.name
                     }
                 }
@@ -283,6 +287,7 @@ private fun ChecklistList(
     entries: List<ChecklistEntry>,
     collapsed: Set<String>,
     onToggle: ((ChecklistEntry) -> Unit)?,
+    displayLanguage: DisplayLanguage,
     onToggleCollapse: (Generation) -> Unit,
 ) {
     val grouped = entries.groupBy { it.generation }.toSortedMap(compareBy { it.ordinal })
@@ -306,7 +311,7 @@ private fun ChecklistList(
                         horizontalArrangement = Arrangement.Start,
                     ) {
                         regionEntries.forEach { entry ->
-                            SpriteTile(entry, onToggle = onToggle?.let { callback -> { callback(entry) } })
+                            SpriteTile(entry, displayLanguage, onToggle = onToggle?.let { callback -> { callback(entry) } })
                         }
                     }
                 }
@@ -378,9 +383,12 @@ private fun Generation.displayName(): String = name.lowercase().replaceFirstChar
 
 private fun PokemonType.displayName(): String = name.lowercase().replaceFirstChar(Char::uppercase)
 
+private fun DexEntry.displayName(displayLanguage: DisplayLanguage): String = localizedNames[displayLanguage.name.lowercase()] ?: name
+
 @Composable
 private fun SpriteTile(
     entry: ChecklistEntry,
+    displayLanguage: DisplayLanguage,
     modifier: Modifier = Modifier,
     onToggle: (() -> Unit)? = null,
 ) {
@@ -394,7 +402,8 @@ private fun SpriteTile(
                 .background(MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.shapes.medium)
                 .then(if (onToggle != null) Modifier.clickable(onClick = onToggle) else Modifier)
                 .clearAndSetSemantics {
-                    contentDescription = "#%03d %s, %s".format(entry.dexEntry.dexId, entry.dexEntry.name, caughtLabel)
+                    contentDescription =
+                        "#%03d %s, %s".format(entry.dexEntry.dexId, entry.dexEntry.displayName(displayLanguage), caughtLabel)
                 },
         contentAlignment = Alignment.Center,
     ) {

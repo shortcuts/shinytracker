@@ -14,7 +14,7 @@ contribution reference.
 |---------|-----|
 | Box scan (screenshot → crop → match → record) | `docs/features/scan.md` |
 | Checklist (owner + shared read-only, search/filter, export/import) | `docs/features/checklist.md` |
-| Onboarding gate (block app until accessibility + overlay granted, re-trigger on revoke) | `docs/features/onboarding.md` |
+| Onboarding gate (language + optional scanner setup, permissions only required if scanner enabled, re-trigger on revoke) | `docs/features/onboarding.md` |
 
 ## Modules
 
@@ -22,9 +22,9 @@ contribution reference.
 |--------|---------|
 | `:app` | Entry point, Hilt, nav host |
 | `:core:common` | `AppConstants`-equivalent, extensions |
-| `:core:model` | Pure Kotlin: `DexEntry`, `ShinyRecord`, `MatchResult`, `CaughtRecord`, `ChecklistEntry`, `Generation`, `PokemonType` |
+| `:core:model` | Pure Kotlin: `DexEntry`, `ShinyRecord`, `MatchResult`, `CaughtRecord`, `ChecklistEntry`, `Generation`, `PokemonType`, `DisplayLanguage` |
 | `:core:database` | Room: `CaughtEntity`/`CaughtDao` |
-| `:core:datastore` | DataStore prefs (planned, not yet used) |
+| `:core:datastore` | DataStore prefs -- onboarding's display-language + scanner-enabled choices |
 | `:core:data` | Repositories, single source of truth |
 | `:core:designsystem` | Compose theme/tokens |
 | `:core:sprites` | `SpriteMatcher`, `SpriteCatalog`, `DescriptorCatalog`, `ShinyChecklistSource`, `PokemonDexDataSource` |

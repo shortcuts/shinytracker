@@ -18,9 +18,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.core.content.IntentCompat
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.shinytracker.core.data.OnboardingPreferencesRepository
 import com.shinytracker.core.designsystem.ShinyTheme
 import com.shinytracker.feature.checklist.api.ChecklistRoute
 import com.shinytracker.feature.checklist.impl.ChecklistDrawerContent
@@ -29,11 +31,14 @@ import com.shinytracker.feature.scan.impl.BoxScanAccessibilityService
 import com.shinytracker.feature.scan.impl.ScanWidgetOverlayService
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 private const val ONBOARDING_ROUTE = "onboarding"
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+    @Inject lateinit var onboardingPreferencesRepository: OnboardingPreferencesRepository
+
     private var isServiceEnabled by mutableStateOf(false)
     private var overlayPermissionGranted by mutableStateOf(false)
     private var isWidgetRunning by mutableStateOf(false)
@@ -46,10 +51,15 @@ class MainActivity : ComponentActivity() {
         overlayPermissionGranted = isOverlayPermissionGranted()
         setContent {
             val navController = rememberNavController()
-            val startDestination =
-                remember {
-                    if (isServiceEnabled && overlayPermissionGranted) ChecklistRoute.OWNER else ONBOARDING_ROUTE
-                }
+            val displayLanguageChoice by
+                onboardingPreferencesRepository.displayLanguageChoice.collectAsStateWithLifecycle(initialValue = null)
+            val scannerEnabledPref by
+                onboardingPreferencesRepository.scannerEnabled.collectAsStateWithLifecycle(initialValue = false)
+            val onboardingSatisfied =
+                displayLanguageChoice != null && (!scannerEnabledPref || (isServiceEnabled && overlayPermissionGranted))
+            // ponytail: DataStore's first Flow emission is async, so this one-shot startDestination read can briefly
+            // flash ONBOARDING_ROUTE for an already-onboarded user; the LaunchedEffect below corrects it a few ms later.
+            val startDestination = remember { if (onboardingSatisfied) ChecklistRoute.OWNER else ONBOARDING_ROUTE }
             val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
             val scope = rememberCoroutineScope()
             ShinyTheme {
@@ -60,8 +70,12 @@ class MainActivity : ComponentActivity() {
                     NavHost(navController = navController, startDestination = startDestination) {
                         composable(ONBOARDING_ROUTE) {
                             OnboardingScreen(
+                                displayLanguageChoice = displayLanguageChoice,
                                 accessibilityGranted = isServiceEnabled,
                                 overlayGranted = overlayPermissionGranted,
+                                onSetupComplete = { language, scannerEnabled ->
+                                    scope.launch { onboardingPreferencesRepository.completeSetup(language, scannerEnabled) }
+                                },
                                 onOpenAccessibilitySettings = { openAccessibilitySettings() },
                                 onOpenOverlaySettings = { openOverlaySettings() },
                             )
@@ -80,18 +94,23 @@ class MainActivity : ComponentActivity() {
                         pendingSharedProfileUri = null
                     }
                 }
-                LaunchedEffect(isServiceEnabled, overlayPermissionGranted, pendingSharedProfileUri) {
+                LaunchedEffect(
+                    isServiceEnabled,
+                    overlayPermissionGranted,
+                    displayLanguageChoice,
+                    scannerEnabledPref,
+                    pendingSharedProfileUri,
+                ) {
                     if (pendingSharedProfileUri != null) return@LaunchedEffect
                     val current = navController.currentDestination?.route ?: return@LaunchedEffect
-                    val bothGranted = isServiceEnabled && overlayPermissionGranted
                     when {
-                        bothGranted && current == ONBOARDING_ROUTE -> {
+                        onboardingSatisfied && current == ONBOARDING_ROUTE -> {
                             navController.navigate(ChecklistRoute.OWNER) {
                                 popUpTo(navController.graph.id) { inclusive = true }
                             }
                         }
 
-                        !bothGranted && current != ONBOARDING_ROUTE && current != ChecklistRoute.SHARED_PATTERN -> {
+                        !onboardingSatisfied && current != ONBOARDING_ROUTE && current != ChecklistRoute.SHARED_PATTERN -> {
                             navController.navigate(ONBOARDING_ROUTE) {
                                 popUpTo(navController.graph.id) { inclusive = true }
                             }

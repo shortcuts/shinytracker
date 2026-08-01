@@ -10,6 +10,7 @@ import com.shinytracker.core.sprites.PokemonDexDataSource
 import com.shinytracker.core.sprites.ShinyChecklistSource
 import com.shinytracker.core.testing.FakeCaughtDao
 import com.shinytracker.core.testing.MainDispatcherRule
+import com.shinytracker.core.testing.testOnboardingPreferencesRepository
 import com.shinytracker.feature.checklist.api.ChecklistRoute
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
@@ -29,6 +30,7 @@ class SharedProfileViewModelTest {
     private val context = ApplicationProvider.getApplicationContext<Context>()
     private val profileShareRepository = ProfileShareRepository(context, CaughtRepository(FakeCaughtDao()))
     private val checklistSource = ShinyChecklistSource(context, PokemonDexDataSource(context))
+    private val onboardingPreferencesRepository = testOnboardingPreferencesRepository(context)
 
     private fun sharedProfileFile(): Uri {
         val file =
@@ -47,7 +49,8 @@ class SharedProfileViewModelTest {
     fun `loads the imported profile and marks only its own species as caught`() =
         runTest {
             val savedStateHandle = SavedStateHandle(mapOf(ChecklistRoute.SHARED_ARG_KEY to Uri.encode(sharedProfileFile().toString())))
-            val viewModel = SharedProfileViewModel(savedStateHandle, profileShareRepository, checklistSource)
+            val viewModel =
+                SharedProfileViewModel(savedStateHandle, profileShareRepository, checklistSource, onboardingPreferencesRepository)
 
             val state = viewModel.uiState.first { !it.isLoading }
 
@@ -60,7 +63,8 @@ class SharedProfileViewModelTest {
     fun `missing profile arg surfaces a load failure instead of crashing`() =
         runTest {
             val savedStateHandle = SavedStateHandle()
-            val viewModel = SharedProfileViewModel(savedStateHandle, profileShareRepository, checklistSource)
+            val viewModel =
+                SharedProfileViewModel(savedStateHandle, profileShareRepository, checklistSource, onboardingPreferencesRepository)
 
             val state = viewModel.uiState.first { !it.isLoading }
 

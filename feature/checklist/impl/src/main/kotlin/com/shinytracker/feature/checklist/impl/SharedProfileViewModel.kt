@@ -3,8 +3,10 @@ package com.shinytracker.feature.checklist.impl
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.shinytracker.core.data.OnboardingPreferencesRepository
 import com.shinytracker.core.data.ProfileShareRepository
 import com.shinytracker.core.model.ChecklistEntry
+import com.shinytracker.core.model.DisplayLanguage
 import com.shinytracker.core.model.Generation
 import com.shinytracker.core.sprites.ShinyChecklistSource
 import com.shinytracker.feature.checklist.api.ChecklistRoute
@@ -26,6 +28,7 @@ data class SharedProfileUiState(
     val totalCount: Int = 0,
     val isLoading: Boolean = true,
     val loadFailed: Boolean = false,
+    val displayLanguage: DisplayLanguage = DisplayLanguage.ENGLISH,
 )
 
 /**
@@ -39,6 +42,7 @@ class SharedProfileViewModel
         savedStateHandle: SavedStateHandle,
         private val profileShareRepository: ProfileShareRepository,
         private val checklistSource: ShinyChecklistSource,
+        private val onboardingPreferencesRepository: OnboardingPreferencesRepository,
     ) : ViewModel() {
         private val loadedEntries = MutableStateFlow<List<ChecklistEntry>?>(null)
         private val loadFailed = MutableStateFlow(false)
@@ -46,9 +50,15 @@ class SharedProfileViewModel
         private val filter = MutableStateFlow(AdvancedFilter())
 
         val uiState: StateFlow<SharedProfileUiState> =
-            combine(loadedEntries, searchText, filter, loadFailed) { entries, search, currentFilter, failed ->
+            combine(
+                loadedEntries,
+                searchText,
+                filter,
+                loadFailed,
+                onboardingPreferencesRepository.displayLanguage,
+            ) { entries, search, currentFilter, failed, displayLanguage ->
                 if (entries == null) {
-                    SharedProfileUiState(isLoading = !failed, loadFailed = failed)
+                    SharedProfileUiState(isLoading = !failed, loadFailed = failed, displayLanguage = displayLanguage)
                 } else {
                     SharedProfileUiState(
                         entries = entries.filterEntries(search, currentFilter),
@@ -57,6 +67,7 @@ class SharedProfileViewModel
                         caughtCount = entries.count { it.caught },
                         totalCount = entries.size,
                         isLoading = false,
+                        displayLanguage = displayLanguage,
                     )
                 }
             }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), SharedProfileUiState())

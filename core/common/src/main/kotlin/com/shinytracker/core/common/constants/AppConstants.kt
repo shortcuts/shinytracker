@@ -19,4 +19,8 @@ object AppConstants {
     object DatabaseConstants {
         const val DATABASE_NAME = "shinytracker.db"
     }
+
+    object DataStoreConstants {
+        const val ONBOARDING_PREFS_NAME = "onboarding_prefs"
+    }
 }

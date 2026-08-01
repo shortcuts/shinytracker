@@ -91,7 +91,7 @@ Rules:
 |---------|-----|
 | Box scan (screenshot → crop → match → record) | `docs/features/scan.md` |
 | Checklist (owner + shared read-only, search/filter, export/import) | `docs/features/checklist.md` |
-| Onboarding gate (block app until accessibility + overlay granted, re-trigger on revoke) | `docs/features/onboarding.md` |
+| Onboarding gate (language + optional scanner setup, permissions only required if scanner enabled, re-trigger on revoke) | `docs/features/onboarding.md` |
 
 ---
 
@@ -118,6 +118,8 @@ Populated as milestones land.
 | ProfileShareRepository | `:core:data` | `@Singleton` | Exports the owner's caught list to a shareable file; imports someone else's exported file for read-only viewing (never writes to `CaughtRepository`) |
 | ScanWidgetOverlayService | `:feature:scan:impl` | `Service` (`@AndroidEntryPoint`) | Floating overlay widget: screenshot-detect button, automated-scan button, hosts the validation panel |
 | ScanValidationPresenter | `:feature:scan:impl` | plain class, one instance per `ScanWidgetOverlayService` | Confirm/reject state + recording for both widget button flows — not a ViewModel (Service is not a `ViewModelStoreOwner`) |
+| OnboardingPreferencesDataSource | `:core:datastore` | `@Singleton` | Raw Preferences DataStore reads/writes for the onboarding gate's persisted display-language + scanner-enabled choices |
+| OnboardingPreferencesRepository | `:core:data` | `@Singleton` | Maps `OnboardingPreferencesDataSource`'s raw values to/from `DisplayLanguage`; `completeSetup()` persists both onboarding choices in one transaction |
 
 ---
 

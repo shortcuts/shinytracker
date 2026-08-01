@@ -61,6 +61,15 @@ Pokemon generation, derived from dex id. Ranges per Bulbapedia's National Pokede
 |---|---|---|
 | dexRange | IntRange | One of KANTO..PALDEA; `fromDexId(dexId)` falls back to the last generation for unknown ids |
 
+## DisplayLanguage
+
+Which key of `DexEntry.localizedNames` the checklist displays species
+names in. Not app UI localization -- see `docs/features/onboarding.md`.
+
+| Field | Type | Notes |
+|---|---|---|
+| (no fields) | enum | `ENGLISH`, `JAPANESE`, `CHINESE`, `FRENCH` -- each constant's `.name.lowercase()` matches `DexEntry.localizedNames`' JSON keys exactly |
+
 ## ChecklistEntry
 
 One eligible-shiny species (from `ShinyChecklistSource`) cross-referenced against caught records. Built by `ChecklistRepository` (owner mode) or inline in `SharedProfileViewModel` (shared read-only mode, against an imported profile instead of `CaughtRepository`).

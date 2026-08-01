@@ -28,7 +28,10 @@
   "special permission" shape as `BIND_ACCESSIBILITY_SERVICE` — needed only to
   show the scan-mode floating widget (`ScanWidgetOverlayService`).
 - This app requests **no location permission**.
-- Both `BIND_ACCESSIBILITY_SERVICE` and `SYSTEM_ALERT_WINDOW` are gated by
-  an onboarding screen (`docs/features/onboarding.md`): the app blocks
-  every other screen until both are granted, and re-checks on every
-  resume so revoking either one later re-triggers the gate.
+- `BIND_ACCESSIBILITY_SERVICE` and `SYSTEM_ALERT_WINDOW` are only requested
+  if the user checks "Enable Scanner" during onboarding
+  (`docs/features/onboarding.md`). A user who leaves it unchecked is never
+  shown either permission step and can use the app as a manual tracker. If
+  checked, the app blocks every other screen until both are granted, and
+  re-checks on every resume so revoking either one later re-triggers the
+  gate.
