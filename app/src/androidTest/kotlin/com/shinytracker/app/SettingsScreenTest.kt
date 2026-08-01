@@ -1,10 +1,12 @@
 package com.shinytracker.app
 
+import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.isSelectable
 import androidx.compose.ui.test.isToggleable
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onAllNodes
 import androidx.compose.ui.test.onNode
+import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import com.shinytracker.core.designsystem.ShinyTheme
 import com.shinytracker.core.model.DisplayLanguage
@@ -26,6 +28,8 @@ class SettingsScreenTest {
                     scannerEnabled = false,
                     onLanguageChange = { changedTo = it },
                     onScannerEnabledChange = {},
+                    syncState = SettingsSyncState.IDLE,
+                    onSyncClick = {},
                     onOpenDrawer = {},
                 )
             }
@@ -47,6 +51,8 @@ class SettingsScreenTest {
                     scannerEnabled = false,
                     onLanguageChange = {},
                     onScannerEnabledChange = { toggledTo = it },
+                    syncState = SettingsSyncState.IDLE,
+                    onSyncClick = {},
                     onOpenDrawer = {},
                 )
             }
@@ -55,5 +61,46 @@ class SettingsScreenTest {
         composeTestRule.onNode(isToggleable()).performClick()
 
         assert(toggledTo == true) { "expected true, got $toggledTo" }
+    }
+
+    @Test
+    fun tappingSyncButtonInvokesOnSyncClick() {
+        var clicked = false
+        composeTestRule.setContent {
+            ShinyTheme {
+                SettingsScreen(
+                    displayLanguage = DisplayLanguage.ENGLISH,
+                    scannerEnabled = false,
+                    onLanguageChange = {},
+                    onScannerEnabledChange = {},
+                    syncState = SettingsSyncState.IDLE,
+                    onSyncClick = { clicked = true },
+                    onOpenDrawer = {},
+                )
+            }
+        }
+
+        composeTestRule.onNodeWithText("Sync checklist").performClick()
+
+        assert(clicked) { "expected onSyncClick to fire" }
+    }
+
+    @Test
+    fun syncButtonIsDisabledWhileSyncing() {
+        composeTestRule.setContent {
+            ShinyTheme {
+                SettingsScreen(
+                    displayLanguage = DisplayLanguage.ENGLISH,
+                    scannerEnabled = false,
+                    onLanguageChange = {},
+                    onScannerEnabledChange = {},
+                    syncState = SettingsSyncState.SYNCING,
+                    onSyncClick = {},
+                    onOpenDrawer = {},
+                )
+            }
+        }
+
+        composeTestRule.onNodeWithText("Sync checklist").assertIsNotEnabled()
     }
 }

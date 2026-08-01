@@ -20,9 +20,11 @@
   notification is best-effort status only, not required for the scan loop
   to function, so a missing grant degrades silently rather than blocking
   anything.
-- `INTERNET` is only needed once the M4 sprite/checklist sync ships. M1–M3's
-  core scan loop runs against a locally-bundled small sprite set and needs
-  no network access.
+- `INTERNET` is used by the manual "Sync checklist" button on the
+  Settings screen (`docs/features/settings.md`), which calls
+  `ShinyChecklistSource.refresh()` via `ChecklistRepository.refresh()`.
+  Nothing else in the app makes network calls; the core scan loop stays
+  fully offline.
 - `SYSTEM_ALERT_WINDOW` is not requested via `requestPermissions` either. The
   user grants it via `Settings.ACTION_MANAGE_OVERLAY_PERMISSION` — the same
   "special permission" shape as `BIND_ACCESSIBILITY_SERVICE` — needed only to

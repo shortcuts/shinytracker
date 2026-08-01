@@ -70,6 +70,18 @@ class ChecklistRepositoryTest {
         }
 
     @Test
+    fun `refresh delegates to the checklist source`() =
+        runTest {
+            val result = repository.refresh()
+
+            // Robolectric tests have no real network access, so this always fails --
+            // the point of this test is only that ChecklistRepository.refresh() reaches
+            // ShinyChecklistSource.refresh() and returns its Result, not network mocking
+            // (already covered at the source level by ShinyChecklistSourceTest).
+            assertTrue(result.isFailure)
+        }
+
+    @Test
     fun `toggleCaught marks a caught entry as uncaught`() =
         runTest {
             caughtRepository.recordIfAbsent(CaughtRecord(DexEntry(1, 0, 0, "Bulbasaur"), shiny = true, caughtAt = 1000L))

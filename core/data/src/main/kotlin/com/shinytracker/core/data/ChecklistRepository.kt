@@ -30,6 +30,9 @@ class ChecklistRepository
             if (entry.caught) caughtRepository.delete(record) else caughtRepository.recordIfAbsent(record)
         }
 
+        /** Re-fetches the shiny checklist over the network; UI state (idle/syncing/success/error) lives in the caller. */
+        suspend fun refresh(): Result<Unit> = checklistSource.refresh()
+
         internal fun DexEntry.toChecklistEntry(caught: List<CaughtRecord>): ChecklistEntry {
             val match =
                 caught.firstOrNull {

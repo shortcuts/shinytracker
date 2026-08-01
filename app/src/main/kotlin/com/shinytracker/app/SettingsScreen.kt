@@ -7,8 +7,12 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material3.Button
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -25,6 +29,8 @@ import androidx.compose.ui.unit.dp
 import com.shinytracker.core.designsystem.ShinyTheme
 import com.shinytracker.core.model.DisplayLanguage
 
+enum class SettingsSyncState { IDLE, SYNCING, SUCCESS, ERROR }
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
@@ -32,6 +38,8 @@ fun SettingsScreen(
     scannerEnabled: Boolean,
     onLanguageChange: (DisplayLanguage) -> Unit,
     onScannerEnabledChange: (Boolean) -> Unit,
+    syncState: SettingsSyncState,
+    onSyncClick: () -> Unit,
     onOpenDrawer: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -66,6 +74,31 @@ fun SettingsScreen(
             Spacer(Modifier.height(24.dp))
 
             ScannerToggleCard(checked = scannerEnabled, onCheckedChange = onScannerEnabledChange)
+
+            Spacer(Modifier.height(24.dp))
+            Text(text = "Checklist data", style = MaterialTheme.typography.titleSmall)
+            Spacer(Modifier.height(8.dp))
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Button(onClick = onSyncClick, enabled = syncState != SettingsSyncState.SYNCING) {
+                    Text("Sync checklist")
+                }
+                Spacer(Modifier.width(12.dp))
+                when (syncState) {
+                    SettingsSyncState.SYNCING -> {
+                        CircularProgressIndicator(modifier = Modifier.size(20.dp))
+                    }
+
+                    SettingsSyncState.SUCCESS -> {
+                        Text("Synced", color = MaterialTheme.colorScheme.primary)
+                    }
+
+                    SettingsSyncState.ERROR -> {
+                        Text("Sync failed", color = MaterialTheme.colorScheme.error)
+                    }
+
+                    SettingsSyncState.IDLE -> {}
+                }
+            }
         }
     }
 }
@@ -79,6 +112,8 @@ private fun SettingsScreenPreview() {
             scannerEnabled = false,
             onLanguageChange = {},
             onScannerEnabledChange = {},
+            syncState = SettingsSyncState.IDLE,
+            onSyncClick = {},
             onOpenDrawer = {},
         )
     }

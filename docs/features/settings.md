@@ -27,3 +27,19 @@ Routes the user into `OnboardingScreen`'s existing permission step, via the
 same unchanged `onboardingSatisfied` gate described in
 `docs/features/onboarding.md`. No dedicated "grant permissions" UI exists in
 Settings.
+
+## Syncing the checklist
+
+A "Sync checklist" button re-fetches the shiny-eligibility checklist from
+the network (`ChecklistRepository.refresh()` -> `ShinyChecklistSource.refresh()`)
+and overwrites the on-disk checklist cache -- never the bundled asset used
+on first install. The button shows syncing/success/failure inline; failure
+leaves the previously loaded checklist untouched (see
+`ShinyChecklistSourceTest`). Manual only -- there is no periodic or
+background sync.
+
+Already-caught species are matched by `(dexId, formId, costumeId)` against
+whatever checklist is currently loaded (`ChecklistRepository.toChecklistEntry`).
+If a sync drops or renames a species, its caught record is not deleted --
+it just stops appearing until the species is present in checklist data
+again.

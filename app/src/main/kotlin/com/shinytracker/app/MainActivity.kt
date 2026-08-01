@@ -22,6 +22,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.shinytracker.core.data.ChecklistRepository
 import com.shinytracker.core.data.OnboardingPreferencesRepository
 import com.shinytracker.core.designsystem.ShinyTheme
 import com.shinytracker.core.model.DisplayLanguage
@@ -39,6 +40,8 @@ private const val ONBOARDING_ROUTE = "onboarding"
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     @Inject lateinit var onboardingPreferencesRepository: OnboardingPreferencesRepository
+
+    @Inject lateinit var checklistRepository: ChecklistRepository
 
     private var isServiceEnabled by mutableStateOf(false)
     private var overlayPermissionGranted by mutableStateOf(false)
@@ -67,6 +70,7 @@ class MainActivity : ComponentActivity() {
             val startDestination = remember { if (onboardingSatisfied) ChecklistRoute.OWNER else ONBOARDING_ROUTE }
             val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
             val scope = rememberCoroutineScope()
+            var syncState by remember { mutableStateOf(SettingsSyncState.IDLE) }
             ShinyTheme {
                 ModalNavigationDrawer(
                     drawerState = drawerState,
@@ -103,6 +107,14 @@ class MainActivity : ComponentActivity() {
                                 onScannerEnabledChange = { enabled ->
                                     scope.launch {
                                         onboardingPreferencesRepository.completeSetup(displayLanguage, enabled)
+                                    }
+                                },
+                                syncState = syncState,
+                                onSyncClick = {
+                                    scope.launch {
+                                        syncState = SettingsSyncState.SYNCING
+                                        val result = checklistRepository.refresh()
+                                        syncState = if (result.isSuccess) SettingsSyncState.SUCCESS else SettingsSyncState.ERROR
                                     }
                                 },
                                 onOpenDrawer = { scope.launch { drawerState.open() } },
