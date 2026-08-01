@@ -79,24 +79,33 @@ private fun SetupStep(
         }
         Spacer(Modifier.height(24.dp))
 
-        Card(shape = MaterialTheme.shapes.medium, modifier = Modifier.fillMaxWidth()) {
-            Column(modifier = Modifier.padding(16.dp)) {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Checkbox(checked = scannerEnabled, onCheckedChange = { scannerEnabled = it })
-                    Text(text = "Enable Scanner", style = MaterialTheme.typography.titleSmall)
-                }
-                Text(
-                    text =
-                        "Turns on the box-scan feature, which reads your shiny box via screenshots. " +
-                            "Leave this off to track shinies manually instead.",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            }
-        }
+        ScannerToggleCard(checked = scannerEnabled, onCheckedChange = { scannerEnabled = it })
         Spacer(Modifier.height(24.dp))
 
         Button(onClick = { onContinue(selectedLanguage, scannerEnabled) }) { Text("Continue") }
+    }
+}
+
+@Composable
+internal fun ScannerToggleCard(
+    checked: Boolean,
+    onCheckedChange: (Boolean) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    Card(shape = MaterialTheme.shapes.medium, modifier = modifier.fillMaxWidth()) {
+        Column(modifier = Modifier.padding(16.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Checkbox(checked = checked, onCheckedChange = onCheckedChange)
+                Text(text = "Enable Scanner", style = MaterialTheme.typography.titleSmall)
+            }
+            Text(
+                text =
+                    "Turns on the box-scan feature, which reads your shiny box via screenshots. " +
+                        "Leave this off to track shinies manually instead.",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
     }
 }
 
@@ -175,7 +184,7 @@ private fun PermissionStepCard(
     }
 }
 
-private fun DisplayLanguage.label(): String =
+internal fun DisplayLanguage.label(): String =
     when (this) {
         DisplayLanguage.ENGLISH -> "English"
         DisplayLanguage.JAPANESE -> "Japanese"

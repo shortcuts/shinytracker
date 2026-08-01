@@ -50,8 +50,10 @@ First-run setup with two parts:
 
 ## Out of scope
 
-- No settings screen to change the display language or scanner preference
-  after onboarding -- both are set once, during setup.
+- Changing the display language or scanner preference after onboarding is
+  handled by the Settings screen (`docs/features/settings.md`), not this
+  gate -- see that doc for what happens when "Enable Scanner" is
+  toggled post-onboarding.
 - No full app UI localization (`values-xx/strings.xml`,
   `locale_config.xml`, per-app-language APIs). The onboarding screen's own
   chrome and every other screen's text stays in English regardless of the

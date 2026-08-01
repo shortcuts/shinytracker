@@ -2,6 +2,7 @@ package com.shinytracker.feature.checklist.impl
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.DrawerState
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.Icon
@@ -37,6 +38,18 @@ fun ChecklistDrawerContent(
             onClick = {
                 navController.navigate(ChecklistRoute.OWNER) {
                     popUpTo(ChecklistRoute.OWNER) { inclusive = true }
+                    launchSingleTop = true
+                }
+                scope.launch { drawerState.close() }
+            },
+        )
+        NavigationDrawerItem(
+            icon = { Icon(Icons.Default.Settings, contentDescription = null) },
+            label = { Text("Settings") },
+            selected = currentRoute == ChecklistRoute.SETTINGS,
+            onClick = {
+                navController.navigate(ChecklistRoute.SETTINGS) {
+                    popUpTo(ChecklistRoute.OWNER)
                     launchSingleTop = true
                 }
                 scope.launch { drawerState.close() }

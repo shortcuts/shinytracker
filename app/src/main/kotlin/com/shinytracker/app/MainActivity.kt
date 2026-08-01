@@ -24,6 +24,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.shinytracker.core.data.OnboardingPreferencesRepository
 import com.shinytracker.core.designsystem.ShinyTheme
+import com.shinytracker.core.model.DisplayLanguage
 import com.shinytracker.feature.checklist.api.ChecklistRoute
 import com.shinytracker.feature.checklist.impl.ChecklistDrawerContent
 import com.shinytracker.feature.checklist.impl.checklistNavGraph
@@ -55,6 +56,10 @@ class MainActivity : ComponentActivity() {
                 onboardingPreferencesRepository.displayLanguageChoice.collectAsStateWithLifecycle(initialValue = null)
             val scannerEnabledPref by
                 onboardingPreferencesRepository.scannerEnabled.collectAsStateWithLifecycle(initialValue = false)
+            val displayLanguage by
+                onboardingPreferencesRepository.displayLanguage.collectAsStateWithLifecycle(
+                    initialValue = DisplayLanguage.ENGLISH,
+                )
             val onboardingSatisfied =
                 displayLanguageChoice != null && (!scannerEnabledPref || (isServiceEnabled && overlayPermissionGranted))
             // ponytail: DataStore's first Flow emission is async, so this one-shot startDestination read can briefly
@@ -86,6 +91,23 @@ class MainActivity : ComponentActivity() {
                             isWidgetRunning = isWidgetRunning,
                             onOpenDrawer = { scope.launch { drawerState.open() } },
                         )
+                        composable(ChecklistRoute.SETTINGS) {
+                            SettingsScreen(
+                                displayLanguage = displayLanguage,
+                                scannerEnabled = scannerEnabledPref,
+                                onLanguageChange = { language ->
+                                    scope.launch {
+                                        onboardingPreferencesRepository.completeSetup(language, scannerEnabledPref)
+                                    }
+                                },
+                                onScannerEnabledChange = { enabled ->
+                                    scope.launch {
+                                        onboardingPreferencesRepository.completeSetup(displayLanguage, enabled)
+                                    }
+                                },
+                                onOpenDrawer = { scope.launch { drawerState.open() } },
+                            )
+                        }
                     }
                 }
                 LaunchedEffect(pendingSharedProfileUri) {

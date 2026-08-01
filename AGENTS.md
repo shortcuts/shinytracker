@@ -92,6 +92,7 @@ Rules:
 | Box scan (screenshot → crop → match → record) | `docs/features/scan.md` |
 | Checklist (owner + shared read-only, search/filter, export/import) | `docs/features/checklist.md` |
 | Onboarding gate (language + optional scanner setup, permissions only required if scanner enabled, re-trigger on revoke) | `docs/features/onboarding.md` |
+| Settings (revisit language + Enable Scanner choice after onboarding) | `docs/features/settings.md` |
 
 ---
 
