@@ -30,8 +30,11 @@ class ChecklistRepository
             if (entry.caught) caughtRepository.delete(record) else caughtRepository.recordIfAbsent(record)
         }
 
-        private fun DexEntry.toChecklistEntry(caught: List<CaughtRecord>): ChecklistEntry {
-            val match = caught.firstOrNull { it.dexEntry.dexId == dexId }
+        internal fun DexEntry.toChecklistEntry(caught: List<CaughtRecord>): ChecklistEntry {
+            val match =
+                caught.firstOrNull {
+                    it.dexEntry.dexId == dexId && it.dexEntry.formId == formId && it.dexEntry.costumeId == costumeId
+                }
             return ChecklistEntry(
                 dexEntry = this,
                 caught = match != null,

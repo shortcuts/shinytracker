@@ -55,6 +55,21 @@ class ChecklistRepositoryTest {
         }
 
     @Test
+    fun `matches caught records by full dexId, formId, costumeId identity, not dexId alone`() =
+        runTest {
+            val base = DexEntry(37, 0, 0, "Vulpix")
+            val alolan = DexEntry(37, 1, 0, "Vulpix (Alolan)")
+            caughtRepository.recordIfAbsent(CaughtRecord(alolan, shiny = true, caughtAt = 2000L))
+
+            val baseEntry = with(repository) { base.toChecklistEntry(caughtRepository.observeCaught().first()) }
+            val alolanEntry = with(repository) { alolan.toChecklistEntry(caughtRepository.observeCaught().first()) }
+
+            assertFalse(baseEntry.caught)
+            assertTrue(alolanEntry.caught)
+            assertEquals(2000L, alolanEntry.caughtAt)
+        }
+
+    @Test
     fun `toggleCaught marks a caught entry as uncaught`() =
         runTest {
             caughtRepository.recordIfAbsent(CaughtRecord(DexEntry(1, 0, 0, "Bulbasaur"), shiny = true, caughtAt = 1000L))
