@@ -5,8 +5,9 @@
 Multi-module, NowInAndroid-style. Feature = `api` (contract) + `impl`. Shared: `:core:*`.
 
 All modules below are `include()`d in `settings.gradle.kts`. All have landed
-as real directories with code except `:core:datastore`, which stays
-`include()`d but empty — no feature in scope so far needs persisted UI prefs.
+as real directories with code except `:core:datastore`, which is a scaffolded
+module (build file only, no source) — no feature in scope so far needs
+persisted UI prefs.
 
 ```
 feature/*        — UI + ViewModels (Compose screens, no business logic)
