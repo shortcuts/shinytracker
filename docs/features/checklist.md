@@ -89,6 +89,7 @@ sheet's Type chip grid. `DexEntry.types` is populated from
 covers dex ids 1-898, while `checklist.json` (pogoapi.net) covers ids up to
 1000 -- species above 898 still get `DexEntry.types == emptyList()` and the
 type filter still excludes them. This is a known, narrower gap, not a bug.
+The filter sheet's Type section shows a caption noting this limitation.
 
 ## Eligibility data
 

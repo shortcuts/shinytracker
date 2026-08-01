@@ -261,6 +261,12 @@ private fun FilterSheetContent(
                 )
             }
         }
+        Text(
+            "Species above dex #898 have no type data and are excluded from type-filtered results.",
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(bottom = 8.dp),
+        )
 
         Row(modifier = Modifier.fillMaxWidth().padding(top = 8.dp), horizontalArrangement = Arrangement.End) {
             TextButton(onClick = { onFilterChange(AdvancedFilter()) }) { Text("Clear all") }
