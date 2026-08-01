@@ -16,7 +16,7 @@ import javax.inject.Singleton
 class SpriteMatcher
     @Inject
     constructor(
-        @ApplicationContext private val context: Context,
+        @param:ApplicationContext private val context: Context,
         private val checklistSource: ShinyChecklistSource,
     ) {
         private val catalog: List<Pair<ShinyRecord, SpriteDescriptor>> by lazy { loadCatalog() }

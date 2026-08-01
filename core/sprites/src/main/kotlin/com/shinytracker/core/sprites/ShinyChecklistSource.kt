@@ -40,7 +40,7 @@ private data class ChecklistEntryJson(
 class ShinyChecklistSource
     @Inject
     constructor(
-        @ApplicationContext private val context: Context,
+        @param:ApplicationContext private val context: Context,
         private val dexDataSource: PokemonDexDataSource,
     ) {
         private val json = Json { ignoreUnknownKeys = true }
