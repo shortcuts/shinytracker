@@ -31,6 +31,17 @@ class ShinyChecklistSourceTest {
     }
 
     @Test
+    fun `observeChecklist represents costume and form variants as distinct entries, not just base species`() =
+        runTest {
+            val checklist = source.observeChecklist().first()
+            val uniqueDexIds = checklist.map { it.dexId }.distinct().size
+            val uniqueTriples = checklist.map { Triple(it.dexId, it.formId, it.costumeId) }.distinct().size
+
+            assertTrue(checklist.size > uniqueDexIds)
+            assertEquals(checklist.size, uniqueTriples)
+        }
+
+    @Test
     fun `refresh failure leaves the previously loaded checklist untouched`() =
         runTest {
             val before = source.observeChecklist().first()

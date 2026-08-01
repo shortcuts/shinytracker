@@ -1,3454 +1,6290 @@
 [
   {
     "dexId": 1,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Bulbasaur"
+  },
+  {
+    "dexId": 1,
+    "formId": 0,
+    "costumeId": 11,
+    "name": "Bulbasaur"
+  },
+  {
+    "dexId": 1,
+    "formId": 0,
+    "costumeId": 14,
     "name": "Bulbasaur"
   },
   {
     "dexId": 2,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Ivysaur"
   },
   {
     "dexId": 3,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Venusaur"
+  },
+  {
+    "dexId": 3,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Venusaur"
+  },
+  {
+    "dexId": 3,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Venusaur"
   },
   {
     "dexId": 4,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Charmander"
+  },
+  {
+    "dexId": 4,
+    "formId": 0,
+    "costumeId": 11,
+    "name": "Charmander"
+  },
+  {
+    "dexId": 4,
+    "formId": 0,
+    "costumeId": 14,
     "name": "Charmander"
   },
   {
     "dexId": 5,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Charmeleon"
   },
   {
     "dexId": 6,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Charizard"
+  },
+  {
+    "dexId": 6,
+    "formId": 51,
+    "costumeId": 0,
+    "name": "Charizard"
+  },
+  {
+    "dexId": 6,
+    "formId": 52,
+    "costumeId": 0,
     "name": "Charizard"
   },
   {
     "dexId": 7,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Squirtle"
+  },
+  {
+    "dexId": 7,
+    "formId": 0,
+    "costumeId": 5,
+    "name": "Squirtle"
+  },
+  {
+    "dexId": 7,
+    "formId": 0,
+    "costumeId": 11,
+    "name": "Squirtle"
+  },
+  {
+    "dexId": 7,
+    "formId": 0,
+    "costumeId": 14,
     "name": "Squirtle"
   },
   {
     "dexId": 8,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Wartortle"
+  },
+  {
+    "dexId": 8,
+    "formId": 0,
+    "costumeId": 5,
     "name": "Wartortle"
   },
   {
     "dexId": 9,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Blastoise"
+  },
+  {
+    "dexId": 9,
+    "formId": 0,
+    "costumeId": 5,
+    "name": "Blastoise"
+  },
+  {
+    "dexId": 9,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Blastoise"
   },
   {
     "dexId": 10,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Caterpie"
   },
   {
     "dexId": 11,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Metapod"
   },
   {
     "dexId": 12,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Butterfree"
+  },
+  {
+    "dexId": 12,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Butterfree"
   },
   {
     "dexId": 13,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Weedle"
   },
   {
     "dexId": 14,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Kakuna"
   },
   {
     "dexId": 15,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Beedrill"
+  },
+  {
+    "dexId": 15,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Beedrill"
   },
   {
     "dexId": 16,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pidgey"
   },
   {
     "dexId": 17,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pidgeotto"
   },
   {
     "dexId": 18,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Pidgeot"
+  },
+  {
+    "dexId": 18,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Pidgeot"
   },
   {
     "dexId": 19,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Rattata"
+  },
+  {
+    "dexId": 19,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Rattata"
+  },
+  {
+    "dexId": 19,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Rattata"
   },
   {
     "dexId": 20,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Raticate"
+  },
+  {
+    "dexId": 20,
+    "formId": 0,
+    "costumeId": 11,
+    "name": "Raticate"
+  },
+  {
+    "dexId": 20,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Raticate"
+  },
+  {
+    "dexId": 20,
+    "formId": 1,
+    "costumeId": 11,
+    "name": "Raticate"
+  },
+  {
+    "dexId": 20,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Raticate"
   },
   {
     "dexId": 21,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Spearow"
   },
   {
     "dexId": 22,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Fearow"
   },
   {
     "dexId": 23,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Ekans"
   },
   {
     "dexId": 24,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Arbok"
   },
   {
     "dexId": 25,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 1,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 2,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 3,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 4,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 5,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 6,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 7,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 8,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 9,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 10,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 11,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 12,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 13,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 22,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 23,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 24,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 25,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 27,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 28,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 0,
+    "costumeId": 47,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 1,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 2,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 3,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 4,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 5,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 6,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 7,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 8,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 9,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 10,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 11,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 12,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 13,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 22,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 23,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 24,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 25,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 27,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 28,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 1,
+    "costumeId": 47,
+    "name": "Pikachu"
+  },
+  {
+    "dexId": 25,
+    "formId": 16,
+    "costumeId": 0,
     "name": "Pikachu"
   },
   {
     "dexId": 26,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 0,
+    "costumeId": 1,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 0,
+    "costumeId": 2,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 0,
+    "costumeId": 3,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 0,
+    "costumeId": 4,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 0,
+    "costumeId": 5,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 0,
+    "costumeId": 6,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 0,
+    "costumeId": 7,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 0,
+    "costumeId": 8,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 0,
+    "costumeId": 9,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 0,
+    "costumeId": 27,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 0,
+    "costumeId": 28,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 1,
+    "costumeId": 1,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 1,
+    "costumeId": 2,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 1,
+    "costumeId": 3,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 1,
+    "costumeId": 4,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 1,
+    "costumeId": 5,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 1,
+    "costumeId": 6,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 1,
+    "costumeId": 7,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 1,
+    "costumeId": 8,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 1,
+    "costumeId": 9,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 1,
+    "costumeId": 27,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 1,
+    "costumeId": 28,
+    "name": "Raichu"
+  },
+  {
+    "dexId": 26,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Raichu"
   },
   {
     "dexId": 27,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Sandshrew"
+  },
+  {
+    "dexId": 27,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Sandshrew"
   },
   {
     "dexId": 28,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Sandslash"
+  },
+  {
+    "dexId": 28,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Sandslash"
   },
   {
     "dexId": 29,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Nidoran\u2640"
   },
   {
     "dexId": 30,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Nidorina"
   },
   {
     "dexId": 31,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Nidoqueen"
   },
   {
     "dexId": 32,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Nidoran\u2642"
   },
   {
     "dexId": 33,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Nidorino"
+  },
+  {
+    "dexId": 33,
+    "formId": 0,
+    "costumeId": 11,
     "name": "Nidorino"
   },
   {
     "dexId": 34,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Nidoking"
   },
   {
     "dexId": 35,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Clefairy"
   },
   {
     "dexId": 36,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Clefable"
   },
   {
     "dexId": 37,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Vulpix"
+  },
+  {
+    "dexId": 37,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Vulpix"
   },
   {
     "dexId": 38,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Ninetales"
+  },
+  {
+    "dexId": 38,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Ninetales"
   },
   {
     "dexId": 39,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Jigglypuff"
   },
   {
     "dexId": 40,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Wigglytuff"
   },
   {
     "dexId": 41,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Zubat"
+  },
+  {
+    "dexId": 41,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Zubat"
   },
   {
     "dexId": 42,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Golbat"
+  },
+  {
+    "dexId": 42,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Golbat"
   },
   {
     "dexId": 43,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Oddish"
   },
   {
     "dexId": 44,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Gloom"
+  },
+  {
+    "dexId": 44,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Gloom"
   },
   {
     "dexId": 45,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Vileplume"
+  },
+  {
+    "dexId": 45,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Vileplume"
   },
   {
     "dexId": 46,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Paras"
   },
   {
     "dexId": 47,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Parasect"
   },
   {
     "dexId": 48,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Venonat"
   },
   {
     "dexId": 49,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Venomoth"
   },
   {
     "dexId": 50,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Diglett"
+  },
+  {
+    "dexId": 50,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Diglett"
   },
   {
     "dexId": 51,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Dugtrio"
+  },
+  {
+    "dexId": 51,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Dugtrio"
   },
   {
     "dexId": 52,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Meowth"
+  },
+  {
+    "dexId": 52,
+    "formId": 31,
+    "costumeId": 0,
+    "name": "Meowth"
+  },
+  {
+    "dexId": 52,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Meowth"
   },
   {
     "dexId": 53,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Persian"
+  },
+  {
+    "dexId": 53,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Persian"
   },
   {
     "dexId": 54,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Psyduck"
   },
   {
     "dexId": 55,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Golduck"
   },
   {
     "dexId": 56,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mankey"
   },
   {
     "dexId": 57,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Primeape"
   },
   {
     "dexId": 58,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Growlithe"
   },
   {
     "dexId": 59,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Arcanine"
   },
   {
     "dexId": 60,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Poliwag"
   },
   {
     "dexId": 61,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Poliwhirl"
   },
   {
     "dexId": 62,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Poliwrath"
   },
   {
     "dexId": 63,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Abra"
   },
   {
     "dexId": 64,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Kadabra"
+  },
+  {
+    "dexId": 64,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Kadabra"
   },
   {
     "dexId": 65,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Alakazam"
+  },
+  {
+    "dexId": 65,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Alakazam"
+  },
+  {
+    "dexId": 65,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Alakazam"
   },
   {
     "dexId": 66,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Machop"
   },
   {
     "dexId": 67,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Machoke"
   },
   {
     "dexId": 68,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Machamp"
   },
   {
     "dexId": 69,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Bellsprout"
   },
   {
     "dexId": 70,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Weepinbell"
   },
   {
     "dexId": 71,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Victreebel"
   },
   {
     "dexId": 72,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tentacool"
   },
   {
     "dexId": 73,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tentacruel"
   },
   {
     "dexId": 74,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Geodude"
+  },
+  {
+    "dexId": 74,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Geodude"
   },
   {
     "dexId": 75,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Graveler"
+  },
+  {
+    "dexId": 75,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Graveler"
   },
   {
     "dexId": 76,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Golem"
+  },
+  {
+    "dexId": 76,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Golem"
   },
   {
     "dexId": 77,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Ponyta"
+  },
+  {
+    "dexId": 77,
+    "formId": 31,
+    "costumeId": 0,
+    "name": "Ponyta"
+  },
+  {
+    "dexId": 77,
+    "formId": 31,
+    "costumeId": 47,
     "name": "Ponyta"
   },
   {
     "dexId": 78,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Rapidash"
+  },
+  {
+    "dexId": 78,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Rapidash"
   },
   {
     "dexId": 79,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Slowpoke"
+  },
+  {
+    "dexId": 79,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Slowpoke"
   },
   {
     "dexId": 80,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Slowbro"
+  },
+  {
+    "dexId": 80,
+    "formId": 31,
+    "costumeId": 0,
+    "name": "Slowbro"
+  },
+  {
+    "dexId": 80,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Slowbro"
   },
   {
     "dexId": 81,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Magnemite"
   },
   {
     "dexId": 82,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Magneton"
   },
   {
     "dexId": 83,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Farfetch\u2019d"
+  },
+  {
+    "dexId": 83,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Farfetch\u2019d"
   },
   {
     "dexId": 84,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Doduo"
+  },
+  {
+    "dexId": 84,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Doduo"
   },
   {
     "dexId": 85,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Dodrio"
+  },
+  {
+    "dexId": 85,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Dodrio"
   },
   {
     "dexId": 86,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Seel"
   },
   {
     "dexId": 87,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Dewgong"
   },
   {
     "dexId": 88,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Grimer"
+  },
+  {
+    "dexId": 88,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Grimer"
   },
   {
     "dexId": 89,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Muk"
+  },
+  {
+    "dexId": 89,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Muk"
   },
   {
     "dexId": 90,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Shellder"
   },
   {
     "dexId": 91,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cloyster"
   },
   {
     "dexId": 92,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Gastly"
   },
   {
     "dexId": 93,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Haunter"
   },
   {
     "dexId": 94,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Gengar"
+  },
+  {
+    "dexId": 94,
+    "formId": 0,
+    "costumeId": 11,
+    "name": "Gengar"
+  },
+  {
+    "dexId": 94,
+    "formId": 26,
+    "costumeId": 0,
+    "name": "Gengar"
+  },
+  {
+    "dexId": 94,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Gengar"
   },
   {
     "dexId": 95,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Onix"
   },
   {
     "dexId": 96,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Drowzee"
   },
   {
     "dexId": 97,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Hypno"
+  },
+  {
+    "dexId": 97,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Hypno"
   },
   {
     "dexId": 98,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Krabby"
   },
   {
     "dexId": 99,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Kingler"
   },
   {
     "dexId": 100,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Voltorb"
   },
   {
     "dexId": 101,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Electrode"
   },
   {
     "dexId": 102,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Exeggcute"
   },
   {
     "dexId": 103,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Exeggutor"
+  },
+  {
+    "dexId": 103,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Exeggutor"
   },
   {
     "dexId": 104,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cubone"
   },
   {
     "dexId": 105,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Marowak"
+  },
+  {
+    "dexId": 105,
+    "formId": 61,
+    "costumeId": 0,
     "name": "Marowak"
   },
   {
     "dexId": 106,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Hitmonlee"
   },
   {
     "dexId": 107,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Hitmonchan"
   },
   {
     "dexId": 108,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lickitung"
   },
   {
     "dexId": 109,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Koffing"
   },
   {
     "dexId": 110,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Weezing"
+  },
+  {
+    "dexId": 110,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Weezing"
   },
   {
     "dexId": 111,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Rhyhorn"
+  },
+  {
+    "dexId": 111,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Rhyhorn"
   },
   {
     "dexId": 112,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Rhydon"
+  },
+  {
+    "dexId": 112,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Rhydon"
   },
   {
     "dexId": 113,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Chansey"
+  },
+  {
+    "dexId": 113,
+    "formId": 0,
+    "costumeId": 7,
     "name": "Chansey"
   },
   {
     "dexId": 114,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tangela"
   },
   {
     "dexId": 115,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Kangaskhan"
+  },
+  {
+    "dexId": 115,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Kangaskhan"
   },
   {
     "dexId": 116,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Horsea"
   },
   {
     "dexId": 117,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Seadra"
   },
   {
     "dexId": 118,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Goldeen"
+  },
+  {
+    "dexId": 118,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Goldeen"
   },
   {
     "dexId": 119,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Seaking"
+  },
+  {
+    "dexId": 119,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Seaking"
   },
   {
     "dexId": 120,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Staryu"
   },
   {
     "dexId": 121,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Starmie"
   },
   {
     "dexId": 122,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Mr. Mime"
+  },
+  {
+    "dexId": 122,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Mr. Mime"
   },
   {
     "dexId": 123,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Scyther"
+  },
+  {
+    "dexId": 123,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Scyther"
   },
   {
     "dexId": 124,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Jynx"
   },
   {
     "dexId": 125,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Electabuzz"
   },
   {
     "dexId": 126,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Magmar"
   },
   {
     "dexId": 127,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Pinsir"
+  },
+  {
+    "dexId": 127,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Pinsir"
   },
   {
     "dexId": 128,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tauros"
   },
   {
     "dexId": 129,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Magikarp"
+  },
+  {
+    "dexId": 129,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Magikarp"
   },
   {
     "dexId": 130,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Gyarados"
+  },
+  {
+    "dexId": 130,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Gyarados"
+  },
+  {
+    "dexId": 130,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Gyarados"
   },
   {
     "dexId": 131,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lapras"
   },
   {
     "dexId": 132,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Ditto"
   },
   {
     "dexId": 133,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Eevee"
+  },
+  {
+    "dexId": 133,
+    "formId": 0,
+    "costumeId": 7,
+    "name": "Eevee"
+  },
+  {
+    "dexId": 133,
+    "formId": 0,
+    "costumeId": 11,
     "name": "Eevee"
   },
   {
     "dexId": 134,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Vaporeon"
+  },
+  {
+    "dexId": 134,
+    "formId": 0,
+    "costumeId": 7,
     "name": "Vaporeon"
   },
   {
     "dexId": 135,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Jolteon"
+  },
+  {
+    "dexId": 135,
+    "formId": 0,
+    "costumeId": 7,
     "name": "Jolteon"
   },
   {
     "dexId": 136,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Flareon"
+  },
+  {
+    "dexId": 136,
+    "formId": 0,
+    "costumeId": 7,
     "name": "Flareon"
   },
   {
     "dexId": 137,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Porygon"
   },
   {
     "dexId": 138,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Omanyte"
   },
   {
     "dexId": 139,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Omastar"
   },
   {
     "dexId": 140,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Kabuto"
   },
   {
     "dexId": 141,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Kabutops"
   },
   {
     "dexId": 142,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Aerodactyl"
+  },
+  {
+    "dexId": 142,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Aerodactyl"
   },
   {
     "dexId": 143,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Snorlax"
   },
   {
     "dexId": 144,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Articuno"
   },
   {
     "dexId": 145,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Zapdos"
   },
   {
     "dexId": 146,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Moltres"
   },
   {
     "dexId": 147,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Dratini"
   },
   {
     "dexId": 148,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Dragonair"
   },
   {
     "dexId": 149,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Dragonite"
   },
   {
     "dexId": 150,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Mewtwo"
+  },
+  {
+    "dexId": 150,
+    "formId": 51,
+    "costumeId": 0,
+    "name": "Mewtwo"
+  },
+  {
+    "dexId": 150,
+    "formId": 52,
+    "costumeId": 0,
     "name": "Mewtwo"
   },
   {
     "dexId": 151,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mew"
   },
   {
     "dexId": 152,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Chikorita"
   },
   {
     "dexId": 153,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Bayleef"
   },
   {
     "dexId": 154,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Meganium"
+  },
+  {
+    "dexId": 154,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Meganium"
   },
   {
     "dexId": 155,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cyndaquil"
   },
   {
     "dexId": 156,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Quilava"
   },
   {
     "dexId": 157,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Typhlosion"
   },
   {
     "dexId": 158,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Totodile"
   },
   {
     "dexId": 159,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Croconaw"
   },
   {
     "dexId": 160,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Feraligatr"
   },
   {
     "dexId": 161,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Sentret"
   },
   {
     "dexId": 162,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Furret"
   },
   {
     "dexId": 163,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Hoothoot"
   },
   {
     "dexId": 164,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Noctowl"
   },
   {
     "dexId": 165,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Ledyba"
+  },
+  {
+    "dexId": 165,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Ledyba"
   },
   {
     "dexId": 166,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Ledian"
+  },
+  {
+    "dexId": 166,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Ledian"
   },
   {
     "dexId": 167,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Spinarak"
   },
   {
     "dexId": 168,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Ariados"
   },
   {
     "dexId": 169,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Crobat"
   },
   {
     "dexId": 170,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Chinchou"
   },
   {
     "dexId": 171,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lanturn"
   },
   {
     "dexId": 172,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Pichu"
+  },
+  {
+    "dexId": 172,
+    "formId": 0,
+    "costumeId": 1,
+    "name": "Pichu"
+  },
+  {
+    "dexId": 172,
+    "formId": 0,
+    "costumeId": 2,
+    "name": "Pichu"
+  },
+  {
+    "dexId": 172,
+    "formId": 0,
+    "costumeId": 3,
+    "name": "Pichu"
+  },
+  {
+    "dexId": 172,
+    "formId": 0,
+    "costumeId": 4,
+    "name": "Pichu"
+  },
+  {
+    "dexId": 172,
+    "formId": 0,
+    "costumeId": 5,
+    "name": "Pichu"
+  },
+  {
+    "dexId": 172,
+    "formId": 0,
+    "costumeId": 6,
+    "name": "Pichu"
+  },
+  {
+    "dexId": 172,
+    "formId": 0,
+    "costumeId": 7,
+    "name": "Pichu"
+  },
+  {
+    "dexId": 172,
+    "formId": 0,
+    "costumeId": 8,
+    "name": "Pichu"
+  },
+  {
+    "dexId": 172,
+    "formId": 0,
+    "costumeId": 28,
     "name": "Pichu"
   },
   {
     "dexId": 173,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cleffa"
   },
   {
     "dexId": 174,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Igglybuff"
   },
   {
     "dexId": 175,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Togepi"
+  },
+  {
+    "dexId": 175,
+    "formId": 0,
+    "costumeId": 12,
     "name": "Togepi"
   },
   {
     "dexId": 176,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Togetic"
   },
   {
     "dexId": 177,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Natu"
   },
   {
     "dexId": 178,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Xatu"
+  },
+  {
+    "dexId": 178,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Xatu"
   },
   {
     "dexId": 179,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mareep"
   },
   {
     "dexId": 180,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Flaaffy"
   },
   {
     "dexId": 181,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Ampharos"
+  },
+  {
+    "dexId": 181,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Ampharos"
   },
   {
     "dexId": 182,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Bellossom"
   },
   {
     "dexId": 183,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Marill"
   },
   {
     "dexId": 184,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Azumarill"
   },
   {
     "dexId": 185,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Sudowoodo"
+  },
+  {
+    "dexId": 185,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Sudowoodo"
   },
   {
     "dexId": 186,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Politoed"
+  },
+  {
+    "dexId": 186,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Politoed"
   },
   {
     "dexId": 187,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Hoppip"
   },
   {
     "dexId": 188,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Skiploom"
   },
   {
     "dexId": 189,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Jumpluff"
   },
   {
     "dexId": 190,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Aipom"
+  },
+  {
+    "dexId": 190,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Aipom"
   },
   {
     "dexId": 191,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Sunkern"
   },
   {
     "dexId": 192,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Sunflora"
   },
   {
     "dexId": 193,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Yanma"
   },
   {
     "dexId": 194,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Wooper"
+  },
+  {
+    "dexId": 194,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Wooper"
   },
   {
     "dexId": 195,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Quagsire"
+  },
+  {
+    "dexId": 195,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Quagsire"
   },
   {
     "dexId": 196,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Espeon"
+  },
+  {
+    "dexId": 196,
+    "formId": 0,
+    "costumeId": 7,
     "name": "Espeon"
   },
   {
     "dexId": 197,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Umbreon"
+  },
+  {
+    "dexId": 197,
+    "formId": 0,
+    "costumeId": 7,
     "name": "Umbreon"
   },
   {
     "dexId": 198,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Murkrow"
+  },
+  {
+    "dexId": 198,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Murkrow"
   },
   {
     "dexId": 199,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Slowking"
+  },
+  {
+    "dexId": 199,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Slowking"
   },
   {
     "dexId": 200,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Misdreavus"
   },
   {
     "dexId": 201,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 12,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 13,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 14,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 15,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 16,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 17,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 18,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 19,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 20,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 21,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 22,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 23,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 24,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 25,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 26,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 27,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 28,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 29,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 30,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 31,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 32,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 33,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 34,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 35,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 36,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 37,
+    "costumeId": 0,
+    "name": "Unown"
+  },
+  {
+    "dexId": 201,
+    "formId": 38,
+    "costumeId": 0,
     "name": "Unown"
   },
   {
     "dexId": 202,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Wobbuffet"
+  },
+  {
+    "dexId": 202,
+    "formId": 0,
+    "costumeId": 11,
+    "name": "Wobbuffet"
+  },
+  {
+    "dexId": 202,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Wobbuffet"
+  },
+  {
+    "dexId": 202,
+    "formId": 1,
+    "costumeId": 11,
     "name": "Wobbuffet"
   },
   {
     "dexId": 203,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Girafarig"
+  },
+  {
+    "dexId": 203,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Girafarig"
   },
   {
     "dexId": 204,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pineco"
   },
   {
     "dexId": 205,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Forretress"
   },
   {
     "dexId": 206,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Dunsparce"
   },
   {
     "dexId": 207,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Gligar"
+  },
+  {
+    "dexId": 207,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Gligar"
   },
   {
     "dexId": 208,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Steelix"
+  },
+  {
+    "dexId": 208,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Steelix"
   },
   {
     "dexId": 209,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Snubbull"
   },
   {
     "dexId": 210,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Granbull"
   },
   {
     "dexId": 211,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Qwilfish"
   },
   {
     "dexId": 212,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Scizor"
+  },
+  {
+    "dexId": 212,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Scizor"
   },
   {
     "dexId": 213,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Shuckle"
   },
   {
     "dexId": 214,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Heracross"
+  },
+  {
+    "dexId": 214,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Heracross"
   },
   {
     "dexId": 215,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Sneasel"
+  },
+  {
+    "dexId": 215,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Sneasel"
   },
   {
     "dexId": 216,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Teddiursa"
   },
   {
     "dexId": 217,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Ursaring"
+  },
+  {
+    "dexId": 217,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Ursaring"
   },
   {
     "dexId": 218,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Slugma"
   },
   {
     "dexId": 219,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Magcargo"
   },
   {
     "dexId": 220,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Swinub"
   },
   {
     "dexId": 221,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Piloswine"
+  },
+  {
+    "dexId": 221,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Piloswine"
   },
   {
     "dexId": 222,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Corsola"
   },
   {
     "dexId": 223,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Remoraid"
   },
   {
     "dexId": 224,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Octillery"
+  },
+  {
+    "dexId": 224,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Octillery"
   },
   {
     "dexId": 225,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Delibird"
   },
   {
     "dexId": 226,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mantine"
   },
   {
     "dexId": 227,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Skarmory"
   },
   {
     "dexId": 228,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Houndour"
   },
   {
     "dexId": 229,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Houndoom"
+  },
+  {
+    "dexId": 229,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Houndoom"
+  },
+  {
+    "dexId": 229,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Houndoom"
   },
   {
     "dexId": 230,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Kingdra"
   },
   {
     "dexId": 231,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Phanpy"
   },
   {
     "dexId": 232,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Donphan"
+  },
+  {
+    "dexId": 232,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Donphan"
   },
   {
     "dexId": 233,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Porygon2"
   },
   {
     "dexId": 234,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Stantler"
+  },
+  {
+    "dexId": 234,
+    "formId": 0,
+    "costumeId": 8,
     "name": "Stantler"
   },
   {
     "dexId": 235,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Smeargle"
   },
   {
     "dexId": 236,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tyrogue"
   },
   {
     "dexId": 237,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Hitmontop"
   },
   {
     "dexId": 238,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Smoochum"
+  },
+  {
+    "dexId": 238,
+    "formId": 0,
+    "costumeId": 16,
     "name": "Smoochum"
   },
   {
     "dexId": 239,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Elekid"
   },
   {
     "dexId": 240,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Magby"
   },
   {
     "dexId": 241,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Miltank"
   },
   {
     "dexId": 242,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Blissey"
+  },
+  {
+    "dexId": 242,
+    "formId": 0,
+    "costumeId": 7,
     "name": "Blissey"
   },
   {
     "dexId": 243,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Raikou"
   },
   {
     "dexId": 244,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Entei"
   },
   {
     "dexId": 245,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Suicune"
   },
   {
     "dexId": 246,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Larvitar"
   },
   {
     "dexId": 247,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pupitar"
   },
   {
     "dexId": 248,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tyranitar"
   },
   {
     "dexId": 249,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lugia"
   },
   {
     "dexId": 250,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Ho-Oh"
   },
   {
     "dexId": 251,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Celebi"
   },
   {
     "dexId": 252,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Treecko"
   },
   {
     "dexId": 253,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Grovyle"
   },
   {
     "dexId": 254,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Sceptile"
   },
   {
     "dexId": 255,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Torchic"
+  },
+  {
+    "dexId": 255,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Torchic"
   },
   {
     "dexId": 256,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Combusken"
+  },
+  {
+    "dexId": 256,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Combusken"
   },
   {
     "dexId": 257,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Blaziken"
+  },
+  {
+    "dexId": 257,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Blaziken"
   },
   {
     "dexId": 258,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mudkip"
   },
   {
     "dexId": 259,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Marshtomp"
   },
   {
     "dexId": 260,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Swampert"
   },
   {
     "dexId": 261,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Poochyena"
   },
   {
     "dexId": 262,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mightyena"
   },
   {
     "dexId": 263,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Zigzagoon"
+  },
+  {
+    "dexId": 263,
+    "formId": 31,
+    "costumeId": 0,
+    "name": "Zigzagoon"
+  },
+  {
+    "dexId": 263,
+    "formId": 31,
+    "costumeId": 47,
     "name": "Zigzagoon"
   },
   {
     "dexId": 264,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Linoone"
+  },
+  {
+    "dexId": 264,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Linoone"
   },
   {
     "dexId": 265,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Wurmple"
+  },
+  {
+    "dexId": 265,
+    "formId": 0,
+    "costumeId": 11,
     "name": "Wurmple"
   },
   {
     "dexId": 266,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Silcoon"
   },
   {
     "dexId": 267,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Beautifly"
+  },
+  {
+    "dexId": 267,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Beautifly"
   },
   {
     "dexId": 268,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cascoon"
   },
   {
     "dexId": 269,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Dustox"
+  },
+  {
+    "dexId": 269,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Dustox"
   },
   {
     "dexId": 270,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lotad"
   },
   {
     "dexId": 271,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lombre"
   },
   {
     "dexId": 272,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Ludicolo"
+  },
+  {
+    "dexId": 272,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Ludicolo"
   },
   {
     "dexId": 273,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Seedot"
   },
   {
     "dexId": 274,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Nuzleaf"
+  },
+  {
+    "dexId": 274,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Nuzleaf"
   },
   {
     "dexId": 275,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Shiftry"
+  },
+  {
+    "dexId": 275,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Shiftry"
   },
   {
     "dexId": 276,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Taillow"
   },
   {
     "dexId": 277,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Swellow"
   },
   {
     "dexId": 278,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Wingull"
   },
   {
     "dexId": 279,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pelipper"
   },
   {
     "dexId": 280,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Ralts"
   },
   {
     "dexId": 281,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Kirlia"
+  },
+  {
+    "dexId": 281,
+    "formId": 0,
+    "costumeId": 16,
     "name": "Kirlia"
   },
   {
     "dexId": 282,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Gardevoir"
+  },
+  {
+    "dexId": 282,
+    "formId": 0,
+    "costumeId": 47,
     "name": "Gardevoir"
   },
   {
     "dexId": 283,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Surskit"
   },
   {
     "dexId": 284,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Masquerain"
   },
   {
     "dexId": 285,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Shroomish"
   },
   {
     "dexId": 286,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Breloom"
   },
   {
     "dexId": 287,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Slakoth"
   },
   {
     "dexId": 288,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Vigoroth"
   },
   {
     "dexId": 289,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Slaking"
   },
   {
     "dexId": 290,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Nincada"
   },
   {
     "dexId": 291,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Ninjask"
   },
   {
     "dexId": 292,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Shedinja"
   },
   {
     "dexId": 293,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Whismur"
   },
   {
     "dexId": 294,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Loudred"
   },
   {
     "dexId": 295,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Exploud"
   },
   {
     "dexId": 296,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Makuhita"
   },
   {
     "dexId": 297,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Hariyama"
   },
   {
     "dexId": 298,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Azurill"
   },
   {
     "dexId": 299,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Nosepass"
   },
   {
     "dexId": 300,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Skitty"
   },
   {
     "dexId": 301,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Delcatty"
   },
   {
     "dexId": 302,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Sableye"
+  },
+  {
+    "dexId": 302,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Sableye"
   },
   {
     "dexId": 303,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Mawile"
+  },
+  {
+    "dexId": 303,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Mawile"
   },
   {
     "dexId": 304,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Aron"
   },
   {
     "dexId": 305,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lairon"
   },
   {
     "dexId": 306,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Aggron"
   },
   {
     "dexId": 307,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Meditite"
+  },
+  {
+    "dexId": 307,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Meditite"
   },
   {
     "dexId": 308,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Medicham"
+  },
+  {
+    "dexId": 308,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Medicham"
   },
   {
     "dexId": 309,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Electrike"
   },
   {
     "dexId": 310,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Manectric"
+  },
+  {
+    "dexId": 310,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Manectric"
   },
   {
     "dexId": 311,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Plusle"
   },
   {
     "dexId": 312,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Minun"
   },
   {
     "dexId": 313,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Volbeat"
   },
   {
     "dexId": 314,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Illumise"
   },
   {
     "dexId": 315,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Roselia"
+  },
+  {
+    "dexId": 315,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Roselia"
   },
   {
     "dexId": 316,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Gulpin"
+  },
+  {
+    "dexId": 316,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Gulpin"
   },
   {
     "dexId": 317,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Swalot"
+  },
+  {
+    "dexId": 317,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Swalot"
   },
   {
     "dexId": 318,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Carvanha"
   },
   {
     "dexId": 319,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Sharpedo"
+  },
+  {
+    "dexId": 319,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Sharpedo"
   },
   {
     "dexId": 320,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Wailmer"
   },
   {
     "dexId": 321,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Wailord"
   },
   {
     "dexId": 322,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Numel"
+  },
+  {
+    "dexId": 322,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Numel"
   },
   {
     "dexId": 323,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Camerupt"
+  },
+  {
+    "dexId": 323,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Camerupt"
   },
   {
     "dexId": 324,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Torkoal"
   },
   {
     "dexId": 325,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Spoink"
   },
   {
     "dexId": 326,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Grumpig"
   },
   {
     "dexId": 327,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Spinda"
+  },
+  {
+    "dexId": 327,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Spinda"
+  },
+  {
+    "dexId": 327,
+    "formId": 12,
+    "costumeId": 0,
+    "name": "Spinda"
+  },
+  {
+    "dexId": 327,
+    "formId": 13,
+    "costumeId": 0,
+    "name": "Spinda"
+  },
+  {
+    "dexId": 327,
+    "formId": 14,
+    "costumeId": 0,
+    "name": "Spinda"
+  },
+  {
+    "dexId": 327,
+    "formId": 15,
+    "costumeId": 0,
+    "name": "Spinda"
+  },
+  {
+    "dexId": 327,
+    "formId": 16,
+    "costumeId": 0,
+    "name": "Spinda"
+  },
+  {
+    "dexId": 327,
+    "formId": 17,
+    "costumeId": 0,
+    "name": "Spinda"
+  },
+  {
+    "dexId": 327,
+    "formId": 18,
+    "costumeId": 0,
+    "name": "Spinda"
+  },
+  {
+    "dexId": 327,
+    "formId": 19,
+    "costumeId": 0,
     "name": "Spinda"
   },
   {
     "dexId": 328,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Trapinch"
   },
   {
     "dexId": 329,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Vibrava"
   },
   {
     "dexId": 330,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Flygon"
+  },
+  {
+    "dexId": 330,
+    "formId": 0,
+    "costumeId": 47,
     "name": "Flygon"
   },
   {
     "dexId": 331,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cacnea"
   },
   {
     "dexId": 332,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Cacturne"
+  },
+  {
+    "dexId": 332,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Cacturne"
   },
   {
     "dexId": 333,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Swablu"
   },
   {
     "dexId": 334,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Altaria"
+  },
+  {
+    "dexId": 334,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Altaria"
   },
   {
     "dexId": 335,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Zangoose"
   },
   {
     "dexId": 336,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Seviper"
   },
   {
     "dexId": 337,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lunatone"
   },
   {
     "dexId": 338,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Solrock"
   },
   {
     "dexId": 339,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Barboach"
   },
   {
     "dexId": 340,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Whiscash"
   },
   {
     "dexId": 341,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Corphish"
   },
   {
     "dexId": 342,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Crawdaunt"
   },
   {
     "dexId": 343,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Baltoy"
   },
   {
     "dexId": 344,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Claydol"
   },
   {
     "dexId": 345,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lileep"
   },
   {
     "dexId": 346,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cradily"
   },
   {
     "dexId": 347,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Anorith"
   },
   {
     "dexId": 348,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Armaldo"
   },
   {
     "dexId": 349,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Feebas"
   },
   {
     "dexId": 350,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Milotic"
+  },
+  {
+    "dexId": 350,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Milotic"
   },
   {
     "dexId": 351,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Castform"
+  },
+  {
+    "dexId": 351,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Castform"
+  },
+  {
+    "dexId": 351,
+    "formId": 12,
+    "costumeId": 0,
+    "name": "Castform"
+  },
+  {
+    "dexId": 351,
+    "formId": 13,
+    "costumeId": 0,
+    "name": "Castform"
+  },
+  {
+    "dexId": 351,
+    "formId": 14,
+    "costumeId": 0,
     "name": "Castform"
   },
   {
     "dexId": 352,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Kecleon"
   },
   {
     "dexId": 353,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Shuppet"
   },
   {
     "dexId": 354,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Banette"
   },
   {
     "dexId": 355,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Duskull"
   },
   {
     "dexId": 356,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Dusclops"
   },
   {
     "dexId": 357,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tropius"
   },
   {
     "dexId": 358,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Chimecho"
   },
   {
     "dexId": 359,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Absol"
   },
   {
     "dexId": 360,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Wynaut"
   },
   {
     "dexId": 361,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Snorunt"
   },
   {
     "dexId": 362,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Glalie"
   },
   {
     "dexId": 363,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Spheal"
   },
   {
     "dexId": 364,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Sealeo"
   },
   {
     "dexId": 365,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Walrein"
   },
   {
     "dexId": 366,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Clamperl"
   },
   {
     "dexId": 367,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Huntail"
   },
   {
     "dexId": 368,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Gorebyss"
   },
   {
     "dexId": 369,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Relicanth"
+  },
+  {
+    "dexId": 369,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Relicanth"
   },
   {
     "dexId": 370,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Luvdisc"
   },
   {
     "dexId": 371,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Bagon"
   },
   {
     "dexId": 372,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Shelgon"
   },
   {
     "dexId": 373,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Salamence"
   },
   {
     "dexId": 374,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Beldum"
   },
   {
     "dexId": 375,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Metang"
   },
   {
     "dexId": 376,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Metagross"
   },
   {
     "dexId": 377,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Regirock"
   },
   {
     "dexId": 378,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Regice"
   },
   {
     "dexId": 379,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Registeel"
   },
   {
     "dexId": 380,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Latias"
   },
   {
     "dexId": 381,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Latios"
   },
   {
     "dexId": 382,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Kyogre"
   },
   {
     "dexId": 383,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Groudon"
   },
   {
     "dexId": 384,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Rayquaza"
   },
   {
     "dexId": 385,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Jirachi"
   },
   {
     "dexId": 386,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Deoxys"
+  },
+  {
+    "dexId": 386,
+    "formId": 12,
+    "costumeId": 0,
+    "name": "Deoxys"
+  },
+  {
+    "dexId": 386,
+    "formId": 13,
+    "costumeId": 0,
+    "name": "Deoxys"
+  },
+  {
+    "dexId": 386,
+    "formId": 14,
+    "costumeId": 0,
     "name": "Deoxys"
   },
   {
     "dexId": 387,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Turtwig"
   },
   {
     "dexId": 388,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Grotle"
   },
   {
     "dexId": 389,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Torterra"
   },
   {
     "dexId": 390,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Chimchar"
   },
   {
     "dexId": 391,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Monferno"
   },
   {
     "dexId": 392,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Infernape"
   },
   {
     "dexId": 393,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Piplup"
   },
   {
     "dexId": 394,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Prinplup"
   },
   {
     "dexId": 395,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Empoleon"
   },
   {
     "dexId": 396,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Starly"
+  },
+  {
+    "dexId": 396,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Starly"
   },
   {
     "dexId": 397,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Staravia"
+  },
+  {
+    "dexId": 397,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Staravia"
   },
   {
     "dexId": 398,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Staraptor"
+  },
+  {
+    "dexId": 398,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Staraptor"
   },
   {
     "dexId": 399,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Bidoof"
+  },
+  {
+    "dexId": 399,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Bidoof"
   },
   {
     "dexId": 400,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Bibarel"
+  },
+  {
+    "dexId": 400,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Bibarel"
   },
   {
     "dexId": 401,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Kricketot"
+  },
+  {
+    "dexId": 401,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Kricketot"
   },
   {
     "dexId": 402,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Kricketune"
+  },
+  {
+    "dexId": 402,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Kricketune"
   },
   {
     "dexId": 403,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Shinx"
+  },
+  {
+    "dexId": 403,
+    "formId": 0,
+    "costumeId": 16,
+    "name": "Shinx"
+  },
+  {
+    "dexId": 403,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Shinx"
+  },
+  {
+    "dexId": 403,
+    "formId": 1,
+    "costumeId": 16,
     "name": "Shinx"
   },
   {
     "dexId": 404,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Luxio"
+  },
+  {
+    "dexId": 404,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Luxio"
   },
   {
     "dexId": 405,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Luxray"
+  },
+  {
+    "dexId": 405,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Luxray"
   },
   {
     "dexId": 406,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Budew"
   },
   {
     "dexId": 407,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Roserade"
+  },
+  {
+    "dexId": 407,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Roserade"
   },
   {
     "dexId": 408,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cranidos"
   },
   {
     "dexId": 409,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Rampardos"
   },
   {
     "dexId": 410,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Shieldon"
   },
   {
     "dexId": 411,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Bastiodon"
   },
   {
     "dexId": 412,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Burmy"
+  },
+  {
+    "dexId": 412,
+    "formId": 12,
+    "costumeId": 0,
+    "name": "Burmy"
+  },
+  {
+    "dexId": 412,
+    "formId": 13,
+    "costumeId": 0,
     "name": "Burmy"
   },
   {
     "dexId": 413,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Wormadam"
+  },
+  {
+    "dexId": 413,
+    "formId": 12,
+    "costumeId": 0,
+    "name": "Wormadam"
+  },
+  {
+    "dexId": 413,
+    "formId": 13,
+    "costumeId": 0,
     "name": "Wormadam"
   },
   {
     "dexId": 414,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mothim"
   },
   {
     "dexId": 415,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Combee"
+  },
+  {
+    "dexId": 415,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Combee"
   },
   {
     "dexId": 416,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Vespiquen"
   },
   {
     "dexId": 417,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Pachirisu"
+  },
+  {
+    "dexId": 417,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Pachirisu"
   },
   {
     "dexId": 418,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Buizel"
+  },
+  {
+    "dexId": 418,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Buizel"
   },
   {
     "dexId": 419,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Floatzel"
+  },
+  {
+    "dexId": 419,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Floatzel"
   },
   {
     "dexId": 420,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cherubi"
   },
   {
     "dexId": 421,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Cherrim"
+  },
+  {
+    "dexId": 421,
+    "formId": 12,
+    "costumeId": 0,
     "name": "Cherrim"
   },
   {
     "dexId": 422,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Shellos"
+  },
+  {
+    "dexId": 422,
+    "formId": 12,
+    "costumeId": 0,
     "name": "Shellos"
   },
   {
     "dexId": 423,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Gastrodon"
+  },
+  {
+    "dexId": 423,
+    "formId": 12,
+    "costumeId": 0,
     "name": "Gastrodon"
   },
   {
     "dexId": 424,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Ambipom"
+  },
+  {
+    "dexId": 424,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Ambipom"
   },
   {
     "dexId": 425,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Drifloon"
   },
   {
     "dexId": 426,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Drifblim"
   },
   {
     "dexId": 427,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Buneary"
+  },
+  {
+    "dexId": 427,
+    "formId": 0,
+    "costumeId": 12,
     "name": "Buneary"
   },
   {
     "dexId": 428,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Lopunny"
+  },
+  {
+    "dexId": 428,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Lopunny"
   },
   {
     "dexId": 429,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mismagius"
   },
   {
     "dexId": 430,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Honchkrow"
   },
   {
     "dexId": 431,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Glameow"
   },
   {
     "dexId": 432,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Purugly"
   },
   {
     "dexId": 433,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Chingling"
   },
   {
     "dexId": 434,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Stunky"
   },
   {
     "dexId": 435,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Skuntank"
   },
   {
     "dexId": 436,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Bronzor"
   },
   {
     "dexId": 437,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Bronzong"
   },
   {
     "dexId": 438,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Bonsly"
   },
   {
     "dexId": 439,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mime Jr."
   },
   {
     "dexId": 440,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Happiny"
+  },
+  {
+    "dexId": 440,
+    "formId": 0,
+    "costumeId": 7,
     "name": "Happiny"
   },
   {
     "dexId": 441,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Chatot"
   },
   {
     "dexId": 442,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Spiritomb"
   },
   {
     "dexId": 443,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Gible"
+  },
+  {
+    "dexId": 443,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Gible"
   },
   {
     "dexId": 444,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Gabite"
+  },
+  {
+    "dexId": 444,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Gabite"
   },
   {
     "dexId": 445,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Garchomp"
+  },
+  {
+    "dexId": 445,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Garchomp"
   },
   {
     "dexId": 446,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Munchlax"
   },
   {
     "dexId": 447,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Riolu"
   },
   {
     "dexId": 448,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lucario"
   },
   {
     "dexId": 449,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Hippopotas"
+  },
+  {
+    "dexId": 449,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Hippopotas"
   },
   {
     "dexId": 450,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Hippowdon"
+  },
+  {
+    "dexId": 450,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Hippowdon"
   },
   {
     "dexId": 451,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Skorupi"
   },
   {
     "dexId": 452,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Drapion"
   },
   {
     "dexId": 453,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Croagunk"
+  },
+  {
+    "dexId": 453,
+    "formId": 0,
+    "costumeId": 16,
+    "name": "Croagunk"
+  },
+  {
+    "dexId": 453,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Croagunk"
+  },
+  {
+    "dexId": 453,
+    "formId": 1,
+    "costumeId": 16,
     "name": "Croagunk"
   },
   {
     "dexId": 454,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Toxicroak"
+  },
+  {
+    "dexId": 454,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Toxicroak"
   },
   {
     "dexId": 455,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Carnivine"
   },
   {
     "dexId": 456,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Finneon"
+  },
+  {
+    "dexId": 456,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Finneon"
   },
   {
     "dexId": 457,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Lumineon"
+  },
+  {
+    "dexId": 457,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Lumineon"
   },
   {
     "dexId": 458,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mantyke"
   },
   {
     "dexId": 459,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Snover"
+  },
+  {
+    "dexId": 459,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Snover"
   },
   {
     "dexId": 460,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Abomasnow"
+  },
+  {
+    "dexId": 460,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Abomasnow"
+  },
+  {
+    "dexId": 460,
+    "formId": 51,
+    "costumeId": 0,
     "name": "Abomasnow"
   },
   {
     "dexId": 461,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Weavile"
+  },
+  {
+    "dexId": 461,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Weavile"
   },
   {
     "dexId": 462,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Magnezone"
   },
   {
     "dexId": 463,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lickilicky"
   },
   {
     "dexId": 464,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Rhyperior"
+  },
+  {
+    "dexId": 464,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Rhyperior"
   },
   {
     "dexId": 465,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Tangrowth"
+  },
+  {
+    "dexId": 465,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Tangrowth"
   },
   {
     "dexId": 466,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Electivire"
   },
   {
     "dexId": 467,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Magmortar"
   },
   {
     "dexId": 468,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Togekiss"
   },
   {
     "dexId": 469,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Yanmega"
   },
   {
     "dexId": 470,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Leafeon"
+  },
+  {
+    "dexId": 470,
+    "formId": 0,
+    "costumeId": 7,
     "name": "Leafeon"
   },
   {
     "dexId": 471,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Glaceon"
+  },
+  {
+    "dexId": 471,
+    "formId": 0,
+    "costumeId": 7,
     "name": "Glaceon"
   },
   {
     "dexId": 472,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Gliscor"
   },
   {
     "dexId": 473,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Mamoswine"
+  },
+  {
+    "dexId": 473,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Mamoswine"
   },
   {
     "dexId": 474,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Porygon-Z"
   },
   {
     "dexId": 475,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Gallade"
   },
   {
     "dexId": 476,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Probopass"
   },
   {
     "dexId": 477,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Dusknoir"
   },
   {
     "dexId": 478,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Froslass"
   },
   {
     "dexId": 479,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Rotom"
+  },
+  {
+    "dexId": 479,
+    "formId": 12,
+    "costumeId": 0,
+    "name": "Rotom"
+  },
+  {
+    "dexId": 479,
+    "formId": 13,
+    "costumeId": 0,
+    "name": "Rotom"
+  },
+  {
+    "dexId": 479,
+    "formId": 14,
+    "costumeId": 0,
+    "name": "Rotom"
+  },
+  {
+    "dexId": 479,
+    "formId": 15,
+    "costumeId": 0,
+    "name": "Rotom"
+  },
+  {
+    "dexId": 479,
+    "formId": 16,
+    "costumeId": 0,
     "name": "Rotom"
   },
   {
     "dexId": 480,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Uxie"
   },
   {
     "dexId": 481,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mesprit"
   },
   {
     "dexId": 482,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Azelf"
   },
   {
     "dexId": 483,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Dialga"
   },
   {
     "dexId": 484,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Palkia"
   },
   {
     "dexId": 485,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Heatran"
   },
   {
     "dexId": 486,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Regigigas"
   },
   {
     "dexId": 487,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Giratina"
+  },
+  {
+    "dexId": 487,
+    "formId": 12,
+    "costumeId": 0,
     "name": "Giratina"
   },
   {
     "dexId": 488,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cresselia"
   },
   {
     "dexId": 491,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Darkrai"
   },
   {
     "dexId": 492,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Shaymin"
+  },
+  {
+    "dexId": 492,
+    "formId": 12,
+    "costumeId": 0,
     "name": "Shaymin"
   },
   {
     "dexId": 495,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Snivy"
   },
   {
     "dexId": 496,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Servine"
   },
   {
     "dexId": 497,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Serperior"
   },
   {
     "dexId": 498,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tepig"
   },
   {
     "dexId": 499,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pignite"
   },
   {
     "dexId": 500,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Emboar"
   },
   {
     "dexId": 501,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Oshawott"
   },
   {
     "dexId": 502,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Dewott"
   },
   {
     "dexId": 503,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Samurott"
   },
   {
     "dexId": 504,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Patrat"
   },
   {
     "dexId": 505,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Watchog"
   },
   {
     "dexId": 506,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lillipup"
   },
   {
     "dexId": 507,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Herdier"
   },
   {
     "dexId": 508,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Stoutland"
   },
   {
     "dexId": 509,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Purrloin"
   },
   {
     "dexId": 510,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Liepard"
   },
   {
     "dexId": 511,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pansage"
   },
   {
     "dexId": 512,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Simisage"
   },
   {
     "dexId": 513,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pansear"
   },
   {
     "dexId": 514,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Simisear"
   },
   {
     "dexId": 515,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Panpour"
   },
   {
     "dexId": 516,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Simipour"
   },
   {
     "dexId": 517,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Munna"
   },
   {
     "dexId": 518,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Musharna"
   },
   {
     "dexId": 519,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pidove"
   },
   {
     "dexId": 520,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tranquill"
   },
   {
     "dexId": 521,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Unfezant"
+  },
+  {
+    "dexId": 521,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Unfezant"
   },
   {
     "dexId": 522,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Blitzle"
   },
   {
     "dexId": 523,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Zebstrika"
   },
   {
     "dexId": 524,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Roggenrola"
   },
   {
     "dexId": 525,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Boldore"
   },
   {
     "dexId": 526,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Gigalith"
   },
   {
     "dexId": 527,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Woobat"
   },
   {
     "dexId": 528,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Swoobat"
   },
   {
     "dexId": 529,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Drilbur"
   },
   {
     "dexId": 530,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Excadrill"
   },
   {
     "dexId": 531,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Audino"
   },
   {
     "dexId": 532,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Timburr"
   },
   {
     "dexId": 533,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Gurdurr"
   },
   {
     "dexId": 534,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Conkeldurr"
   },
   {
     "dexId": 535,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tympole"
   },
   {
     "dexId": 536,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Palpitoad"
   },
   {
     "dexId": 537,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Seismitoad"
   },
   {
     "dexId": 538,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Throh"
   },
   {
     "dexId": 539,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Sawk"
   },
   {
     "dexId": 540,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Sewaddle"
   },
   {
     "dexId": 541,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Swadloon"
   },
   {
     "dexId": 542,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Leavanny"
   },
   {
     "dexId": 543,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Venipede"
   },
   {
     "dexId": 544,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Whirlipede"
   },
   {
     "dexId": 545,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Scolipede"
   },
   {
     "dexId": 546,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cottonee"
   },
   {
     "dexId": 547,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Whimsicott"
   },
   {
     "dexId": 548,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Petilil"
   },
   {
     "dexId": 549,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lilligant"
   },
   {
     "dexId": 550,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Basculin"
+  },
+  {
+    "dexId": 550,
+    "formId": 12,
+    "costumeId": 0,
     "name": "Basculin"
   },
   {
     "dexId": 551,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Sandile"
   },
   {
     "dexId": 552,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Krokorok"
   },
   {
     "dexId": 553,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Krookodile"
   },
   {
     "dexId": 554,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Darumaka"
+  },
+  {
+    "dexId": 554,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Darumaka"
   },
   {
     "dexId": 555,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Darmanitan"
+  },
+  {
+    "dexId": 555,
+    "formId": 12,
+    "costumeId": 0,
+    "name": "Darmanitan"
+  },
+  {
+    "dexId": 555,
+    "formId": 31,
+    "costumeId": 0,
+    "name": "Darmanitan"
+  },
+  {
+    "dexId": 555,
+    "formId": 32,
+    "costumeId": 0,
     "name": "Darmanitan"
   },
   {
     "dexId": 556,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Maractus"
   },
   {
     "dexId": 557,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Dwebble"
   },
   {
     "dexId": 558,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Crustle"
   },
   {
     "dexId": 559,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Scraggy"
   },
   {
     "dexId": 560,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Scrafty"
   },
   {
     "dexId": 561,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Sigilyph"
   },
   {
     "dexId": 562,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Yamask"
+  },
+  {
+    "dexId": 562,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Yamask"
   },
   {
     "dexId": 563,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cofagrigus"
   },
   {
     "dexId": 564,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tirtouga"
   },
   {
     "dexId": 565,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Carracosta"
   },
   {
     "dexId": 566,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Archen"
   },
   {
     "dexId": 567,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Archeops"
   },
   {
     "dexId": 568,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Trubbish"
   },
   {
     "dexId": 569,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Garbodor"
   },
   {
     "dexId": 570,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Zorua"
   },
   {
     "dexId": 571,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Zoroark"
   },
   {
     "dexId": 572,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Minccino"
   },
   {
     "dexId": 573,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cinccino"
   },
   {
     "dexId": 574,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Gothita"
   },
   {
     "dexId": 575,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Gothorita"
   },
   {
     "dexId": 576,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Gothitelle"
   },
   {
     "dexId": 577,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Solosis"
   },
   {
     "dexId": 578,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Duosion"
   },
   {
     "dexId": 579,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Reuniclus"
   },
   {
     "dexId": 580,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Ducklett"
   },
   {
     "dexId": 581,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Swanna"
   },
   {
     "dexId": 582,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Vanillite"
   },
   {
     "dexId": 583,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Vanillish"
   },
   {
     "dexId": 584,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Vanilluxe"
   },
   {
     "dexId": 585,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Deerling"
+  },
+  {
+    "dexId": 585,
+    "formId": 12,
+    "costumeId": 0,
+    "name": "Deerling"
+  },
+  {
+    "dexId": 585,
+    "formId": 13,
+    "costumeId": 0,
+    "name": "Deerling"
+  },
+  {
+    "dexId": 585,
+    "formId": 14,
+    "costumeId": 0,
     "name": "Deerling"
   },
   {
     "dexId": 586,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Sawsbuck"
+  },
+  {
+    "dexId": 586,
+    "formId": 12,
+    "costumeId": 0,
+    "name": "Sawsbuck"
+  },
+  {
+    "dexId": 586,
+    "formId": 13,
+    "costumeId": 0,
+    "name": "Sawsbuck"
+  },
+  {
+    "dexId": 586,
+    "formId": 14,
+    "costumeId": 0,
     "name": "Sawsbuck"
   },
   {
     "dexId": 587,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Emolga"
   },
   {
     "dexId": 588,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Karrablast"
   },
   {
     "dexId": 589,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Escavalier"
   },
   {
     "dexId": 590,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Foongus"
   },
   {
     "dexId": 591,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Amoonguss"
   },
   {
     "dexId": 592,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Frillish"
+  },
+  {
+    "dexId": 592,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Frillish"
   },
   {
     "dexId": 593,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Jellicent"
+  },
+  {
+    "dexId": 593,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Jellicent"
   },
   {
     "dexId": 594,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Alomomola"
   },
   {
     "dexId": 595,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Joltik"
   },
   {
     "dexId": 596,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Galvantula"
   },
   {
     "dexId": 597,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Ferroseed"
   },
   {
     "dexId": 598,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Ferrothorn"
   },
   {
     "dexId": 599,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Klink"
   },
   {
     "dexId": 600,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Klang"
   },
   {
     "dexId": 601,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Klinklang"
   },
   {
     "dexId": 602,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tynamo"
   },
   {
     "dexId": 603,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Eelektrik"
   },
   {
     "dexId": 604,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Eelektross"
   },
   {
     "dexId": 605,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Elgyem"
   },
   {
     "dexId": 606,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Beheeyem"
   },
   {
     "dexId": 607,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Litwick"
   },
   {
     "dexId": 608,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Lampent"
   },
   {
     "dexId": 609,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Chandelure"
   },
   {
     "dexId": 610,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Axew"
   },
   {
     "dexId": 611,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Fraxure"
   },
   {
     "dexId": 612,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Haxorus"
   },
   {
     "dexId": 613,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cubchoo"
   },
   {
     "dexId": 614,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Beartic"
   },
   {
     "dexId": 615,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cryogonal"
   },
   {
     "dexId": 616,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Shelmet"
   },
   {
     "dexId": 617,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Accelgor"
   },
   {
     "dexId": 618,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Stunfisk"
+  },
+  {
+    "dexId": 618,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Stunfisk"
   },
   {
     "dexId": 619,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mienfoo"
   },
   {
     "dexId": 620,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mienshao"
   },
   {
     "dexId": 621,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Druddigon"
   },
   {
     "dexId": 622,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Golett"
   },
   {
     "dexId": 623,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Golurk"
   },
   {
     "dexId": 624,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pawniard"
   },
   {
     "dexId": 625,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Bisharp"
   },
   {
     "dexId": 626,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Bouffalant"
   },
   {
     "dexId": 627,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Rufflet"
   },
   {
     "dexId": 628,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Braviary"
   },
   {
     "dexId": 629,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Vullaby"
   },
   {
     "dexId": 630,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Mandibuzz"
   },
   {
     "dexId": 631,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Heatmor"
   },
   {
     "dexId": 632,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Durant"
   },
   {
     "dexId": 633,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Deino"
   },
   {
     "dexId": 634,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Zweilous"
   },
   {
     "dexId": 635,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Hydreigon"
   },
   {
     "dexId": 636,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Larvesta"
   },
   {
     "dexId": 637,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Volcarona"
   },
   {
     "dexId": 638,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Cobalion"
   },
   {
     "dexId": 639,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Terrakion"
   },
   {
     "dexId": 640,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Virizion"
   },
   {
     "dexId": 641,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Tornadus"
+  },
+  {
+    "dexId": 641,
+    "formId": 12,
+    "costumeId": 0,
     "name": "Tornadus"
   },
   {
     "dexId": 642,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Thundurus"
+  },
+  {
+    "dexId": 642,
+    "formId": 12,
+    "costumeId": 0,
     "name": "Thundurus"
   },
   {
     "dexId": 643,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Reshiram"
   },
   {
     "dexId": 644,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Zekrom"
   },
   {
     "dexId": 645,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Landorus"
+  },
+  {
+    "dexId": 645,
+    "formId": 12,
+    "costumeId": 0,
     "name": "Landorus"
   },
   {
     "dexId": 646,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Kyurem"
+  },
+  {
+    "dexId": 646,
+    "formId": 12,
+    "costumeId": 0,
+    "name": "Kyurem"
+  },
+  {
+    "dexId": 646,
+    "formId": 13,
+    "costumeId": 0,
     "name": "Kyurem"
   },
   {
     "dexId": 647,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Keldeo"
+  },
+  {
+    "dexId": 647,
+    "formId": 12,
+    "costumeId": 0,
     "name": "Keldeo"
   },
   {
     "dexId": 648,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Meloetta"
+  },
+  {
+    "dexId": 648,
+    "formId": 12,
+    "costumeId": 0,
     "name": "Meloetta"
   },
   {
     "dexId": 649,
+    "formId": 11,
+    "costumeId": 0,
+    "name": "Genesect"
+  },
+  {
+    "dexId": 649,
+    "formId": 12,
+    "costumeId": 0,
+    "name": "Genesect"
+  },
+  {
+    "dexId": 649,
+    "formId": 13,
+    "costumeId": 0,
+    "name": "Genesect"
+  },
+  {
+    "dexId": 649,
+    "formId": 14,
+    "costumeId": 0,
+    "name": "Genesect"
+  },
+  {
+    "dexId": 649,
+    "formId": 15,
+    "costumeId": 0,
     "name": "Genesect"
   },
   {
     "dexId": 650,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Chespin"
   },
   {
     "dexId": 651,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Quilladin"
   },
   {
     "dexId": 652,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Chesnaught"
   },
   {
     "dexId": 653,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Fennekin"
   },
   {
     "dexId": 654,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Braixen"
   },
   {
     "dexId": 655,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Delphox"
   },
   {
     "dexId": 656,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Froakie"
   },
   {
     "dexId": 657,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Frogadier"
   },
   {
     "dexId": 658,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Greninja"
   },
   {
     "dexId": 659,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Bunnelby"
   },
   {
     "dexId": 660,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Diggersby"
   },
   {
     "dexId": 661,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Fletchling"
   },
   {
     "dexId": 662,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Fletchinder"
   },
   {
     "dexId": 663,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Talonflame"
   },
   {
     "dexId": 664,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Scatterbug"
   },
   {
     "dexId": 665,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Spewpa"
   },
   {
-    "dexId": 666,
-    "name": "Vivillon"
-  },
-  {
     "dexId": 667,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Litleo"
   },
   {
     "dexId": 668,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pyroar"
   },
   {
-    "dexId": 669,
-    "name": "Flabebe"
-  },
-  {
-    "dexId": 670,
-    "name": "Floette"
-  },
-  {
-    "dexId": 671,
-    "name": "Florges"
+    "dexId": 668,
+    "formId": 1,
+    "costumeId": 0,
+    "name": "Pyroar"
   },
   {
     "dexId": 672,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Skiddo"
   },
   {
     "dexId": 673,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Gogoat"
   },
   {
     "dexId": 674,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pancham"
   },
   {
     "dexId": 675,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Pangoro"
   },
   {
-    "dexId": 676,
-    "name": "Furfrou"
-  },
-  {
     "dexId": 677,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Espurr"
   },
   {
     "dexId": 678,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Meowstic"
+  },
+  {
+    "dexId": 678,
+    "formId": 1,
+    "costumeId": 0,
     "name": "Meowstic"
   },
   {
     "dexId": 682,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Spritzee"
   },
   {
     "dexId": 683,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Aromatisse"
   },
   {
     "dexId": 684,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Swirlix"
   },
   {
     "dexId": 685,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Slurpuff"
   },
   {
     "dexId": 686,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Inkay"
   },
   {
     "dexId": 687,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Malamar"
   },
   {
     "dexId": 688,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Binacle"
   },
   {
     "dexId": 689,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Barbaracle"
   },
   {
     "dexId": 690,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Skrelp"
   },
   {
     "dexId": 691,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Dragalge"
   },
   {
     "dexId": 692,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Clauncher"
   },
   {
     "dexId": 693,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Clawitzer"
   },
   {
     "dexId": 694,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Helioptile"
   },
   {
     "dexId": 695,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Heliolisk"
   },
   {
     "dexId": 696,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Tyrunt"
   },
   {
-    "dexId": 697,
-    "name": "Tyrantrum"
-  },
-  {
     "dexId": 698,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Amaura"
   },
   {
     "dexId": 699,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Aurorus"
   },
   {
     "dexId": 700,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Sylveon"
+  },
+  {
+    "dexId": 700,
+    "formId": 0,
+    "costumeId": 7,
     "name": "Sylveon"
   },
   {
     "dexId": 702,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Dedenne"
   },
   {
-    "dexId": 703,
-    "name": "Carbink"
-  },
-  {
     "dexId": 704,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Goomy"
   },
   {
     "dexId": 705,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Sliggoo"
   },
   {
     "dexId": 706,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Goodra"
   },
   {
-    "dexId": 708,
-    "name": "Phantump"
-  },
-  {
-    "dexId": 709,
-    "name": "Trevenant"
-  },
-  {
-    "dexId": 710,
-    "name": "Pumpkaboo"
-  },
-  {
-    "dexId": 711,
-    "name": "Gourgeist"
-  },
-  {
-    "dexId": 712,
-    "name": "Bergmite"
-  },
-  {
-    "dexId": 713,
-    "name": "Avalugg"
-  },
-  {
     "dexId": 714,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Noibat"
   },
   {
     "dexId": 715,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Noivern"
   },
   {
     "dexId": 716,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Xerneas"
   },
   {
     "dexId": 717,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Yveltal"
   },
   {
-    "dexId": 722,
-    "name": "Rowlet"
-  },
-  {
-    "dexId": 723,
-    "name": "Dartrix"
-  },
-  {
-    "dexId": 724,
-    "name": "Decidueye"
-  },
-  {
-    "dexId": 725,
-    "name": "Litten"
-  },
-  {
-    "dexId": 726,
-    "name": "Torracat"
-  },
-  {
-    "dexId": 727,
-    "name": "Incineroar"
-  },
-  {
-    "dexId": 728,
-    "name": "Popplio"
-  },
-  {
-    "dexId": 729,
-    "name": "Brionne"
-  },
-  {
-    "dexId": 730,
-    "name": "Primarina"
-  },
-  {
-    "dexId": 731,
-    "name": "Pikipek"
-  },
-  {
-    "dexId": 732,
-    "name": "Trumbeak"
-  },
-  {
-    "dexId": 733,
-    "name": "Toucannon"
-  },
-  {
-    "dexId": 734,
-    "name": "Yungoos"
-  },
-  {
-    "dexId": 735,
-    "name": "Gumshoos"
-  },
-  {
-    "dexId": 736,
-    "name": "Grubbin"
-  },
-  {
-    "dexId": 737,
-    "name": "Charjabug"
-  },
-  {
-    "dexId": 738,
-    "name": "Vikavolt"
-  },
-  {
-    "dexId": 739,
-    "name": "Crabrawler"
-  },
-  {
-    "dexId": 740,
-    "name": "Crabominable"
-  },
-  {
-    "dexId": 741,
-    "name": "Oricorio"
-  },
-  {
-    "dexId": 742,
-    "name": "Cutiefly"
-  },
-  {
-    "dexId": 743,
-    "name": "Ribombee"
-  },
-  {
-    "dexId": 744,
-    "name": "Rockruff"
-  },
-  {
-    "dexId": 745,
-    "name": "Lycanroc"
-  },
-  {
-    "dexId": 747,
-    "name": "Mareanie"
-  },
-  {
-    "dexId": 748,
-    "name": "Toxapex"
-  },
-  {
-    "dexId": 749,
-    "name": "Mudbray"
-  },
-  {
-    "dexId": 750,
-    "name": "Mudsdale"
-  },
-  {
-    "dexId": 751,
-    "name": "Dewpider"
-  },
-  {
-    "dexId": 752,
-    "name": "Araquanid"
-  },
-  {
-    "dexId": 753,
-    "name": "Fomantis"
-  },
-  {
-    "dexId": 754,
-    "name": "Lurantis"
-  },
-  {
-    "dexId": 755,
-    "name": "Morelull"
-  },
-  {
-    "dexId": 756,
-    "name": "Shiinotic"
-  },
-  {
-    "dexId": 757,
-    "name": "Salandit"
-  },
-  {
-    "dexId": 758,
-    "name": "Salazzle"
-  },
-  {
-    "dexId": 759,
-    "name": "Stufful"
-  },
-  {
-    "dexId": 760,
-    "name": "Bewear"
-  },
-  {
-    "dexId": 761,
-    "name": "Bounsweet"
-  },
-  {
-    "dexId": 762,
-    "name": "Steenee"
-  },
-  {
-    "dexId": 763,
-    "name": "Tsareena"
-  },
-  {
-    "dexId": 765,
-    "name": "Oranguru"
-  },
-  {
-    "dexId": 766,
-    "name": "Passimian"
-  },
-  {
-    "dexId": 767,
-    "name": "Wimpod"
-  },
-  {
-    "dexId": 768,
-    "name": "Golisopod"
-  },
-  {
-    "dexId": 769,
-    "name": "Sandygast"
-  },
-  {
-    "dexId": 770,
-    "name": "Palossand"
-  },
-  {
-    "dexId": 775,
-    "name": "Komala"
-  },
-  {
-    "dexId": 776,
-    "name": "Turtonator"
-  },
-  {
-    "dexId": 777,
-    "name": "Togedemaru"
-  },
-  {
-    "dexId": 779,
-    "name": "Bruxish"
-  },
-  {
-    "dexId": 780,
-    "name": "Drampa"
-  },
-  {
-    "dexId": 781,
-    "name": "Dhelmise"
-  },
-  {
-    "dexId": 782,
-    "name": "Jangmo-o"
-  },
-  {
-    "dexId": 783,
-    "name": "Hakamo-o"
-  },
-  {
-    "dexId": 784,
-    "name": "Kommo-o"
-  },
-  {
-    "dexId": 785,
-    "name": "Tapu Koko"
-  },
-  {
-    "dexId": 786,
-    "name": "Tapu Lele"
-  },
-  {
-    "dexId": 787,
-    "name": "Tapu Bulu"
-  },
-  {
-    "dexId": 788,
-    "name": "Tapu Fini"
-  },
-  {
-    "dexId": 793,
-    "name": "Nihilego"
-  },
-  {
-    "dexId": 794,
-    "name": "Buzzwole"
-  },
-  {
-    "dexId": 795,
-    "name": "Pheromosa"
-  },
-  {
-    "dexId": 796,
-    "name": "Xurkitree"
-  },
-  {
-    "dexId": 797,
-    "name": "Celesteela"
-  },
-  {
-    "dexId": 798,
-    "name": "Kartana"
-  },
-  {
-    "dexId": 799,
-    "name": "Guzzlord"
-  },
-  {
-    "dexId": 800,
-    "name": "Necrozma"
-  },
-  {
-    "dexId": 805,
-    "name": "Stakataka"
-  },
-  {
-    "dexId": 806,
-    "name": "Blacephalon"
-  },
-  {
     "dexId": 808,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Meltan"
   },
   {
     "dexId": 809,
+    "formId": 0,
+    "costumeId": 0,
     "name": "Melmetal"
   },
   {
-    "dexId": 810,
-    "name": "Grookey"
-  },
-  {
-    "dexId": 811,
-    "name": "Thwackey"
-  },
-  {
-    "dexId": 812,
-    "name": "Rillaboom"
-  },
-  {
-    "dexId": 819,
-    "name": "Skwovet"
-  },
-  {
-    "dexId": 820,
-    "name": "Greedent"
-  },
-  {
-    "dexId": 821,
-    "name": "Rookidee"
-  },
-  {
-    "dexId": 822,
-    "name": "Corvisquire"
-  },
-  {
-    "dexId": 823,
-    "name": "Corviknight"
-  },
-  {
-    "dexId": 831,
-    "name": "Wooloo"
-  },
-  {
-    "dexId": 832,
-    "name": "Dubwool"
-  },
-  {
-    "dexId": 848,
-    "name": "Toxel"
-  },
-  {
-    "dexId": 849,
-    "name": "Toxtricity"
-  },
-  {
-    "dexId": 854,
-    "name": "Sinistea"
-  },
-  {
-    "dexId": 855,
-    "name": "Polteageist"
-  },
-  {
-    "dexId": 856,
-    "name": "Hatenna"
-  },
-  {
-    "dexId": 857,
-    "name": "Hattrem"
-  },
-  {
-    "dexId": 858,
-    "name": "Hatterene"
-  },
-  {
-    "dexId": 859,
-    "name": "Impidimp"
-  },
-  {
-    "dexId": 860,
-    "name": "Morgrem"
-  },
-  {
-    "dexId": 861,
-    "name": "Grimmsnarl"
-  },
-  {
     "dexId": 862,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Obstagoon"
   },
   {
     "dexId": 863,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Perrserker"
   },
   {
-    "dexId": 864,
-    "name": "Cursola"
-  },
-  {
     "dexId": 865,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Sirfetch\u2019d"
   },
   {
     "dexId": 867,
+    "formId": 31,
+    "costumeId": 0,
     "name": "Runerigus"
-  },
-  {
-    "dexId": 870,
-    "name": "Falinks"
-  },
-  {
-    "dexId": 876,
-    "name": "Indeedee"
-  },
-  {
-    "dexId": 877,
-    "name": "Morpeko"
-  },
-  {
-    "dexId": 884,
-    "name": "Duraludon"
-  },
-  {
-    "dexId": 888,
-    "name": "Zacian"
-  },
-  {
-    "dexId": 889,
-    "name": "Zamazenta"
-  },
-  {
-    "dexId": 894,
-    "name": "Regieleki"
-  },
-  {
-    "dexId": 895,
-    "name": "Regidrago"
-  },
-  {
-    "dexId": 899,
-    "name": "Wyrdeer"
-  },
-  {
-    "dexId": 900,
-    "name": "Kleavor"
-  },
-  {
-    "dexId": 903,
-    "name": "Sneasler"
-  },
-  {
-    "dexId": 904,
-    "name": "Overqwil"
-  },
-  {
-    "dexId": 906,
-    "name": "Sprigatito"
-  },
-  {
-    "dexId": 907,
-    "name": "Floragato"
-  },
-  {
-    "dexId": 908,
-    "name": "Meowscarada"
-  },
-  {
-    "dexId": 909,
-    "name": "Fuecoco"
-  },
-  {
-    "dexId": 910,
-    "name": "Crocalor"
-  },
-  {
-    "dexId": 911,
-    "name": "Skeledirge"
-  },
-  {
-    "dexId": 912,
-    "name": "Quaxly"
-  },
-  {
-    "dexId": 913,
-    "name": "Quaxwell"
-  },
-  {
-    "dexId": 914,
-    "name": "Quaquaval"
-  },
-  {
-    "dexId": 915,
-    "name": "Lechonk"
-  },
-  {
-    "dexId": 916,
-    "name": "Oinkologne"
-  },
-  {
-    "dexId": 919,
-    "name": "Nymble"
-  },
-  {
-    "dexId": 920,
-    "name": "Lokix"
-  },
-  {
-    "dexId": 921,
-    "name": "Pawmi"
-  },
-  {
-    "dexId": 922,
-    "name": "Pawmo"
-  },
-  {
-    "dexId": 923,
-    "name": "Pawmot"
-  },
-  {
-    "dexId": 924,
-    "name": "Tandemaus"
-  },
-  {
-    "dexId": 925,
-    "name": "Maushold"
-  },
-  {
-    "dexId": 926,
-    "name": "Fidough"
-  },
-  {
-    "dexId": 927,
-    "name": "Dachsbun"
-  },
-  {
-    "dexId": 928,
-    "name": "Smoliv"
-  },
-  {
-    "dexId": 929,
-    "name": "Dolliv"
-  },
-  {
-    "dexId": 930,
-    "name": "Arboliva"
-  },
-  {
-    "dexId": 935,
-    "name": "Charcadet"
-  },
-  {
-    "dexId": 936,
-    "name": "Armarouge"
-  },
-  {
-    "dexId": 937,
-    "name": "Ceruledge"
-  },
-  {
-    "dexId": 938,
-    "name": "Tadbulb"
-  },
-  {
-    "dexId": 939,
-    "name": "Bellibolt"
-  },
-  {
-    "dexId": 957,
-    "name": "Tinkatink"
-  },
-  {
-    "dexId": 958,
-    "name": "Tinkatuff"
-  },
-  {
-    "dexId": 959,
-    "name": "Tinkaton"
-  },
-  {
-    "dexId": 960,
-    "name": "Wiglett"
-  },
-  {
-    "dexId": 961,
-    "name": "Wugtrio"
-  },
-  {
-    "dexId": 962,
-    "name": "Bombirdier"
-  },
-  {
-    "dexId": 974,
-    "name": "Cetoddle"
-  },
-  {
-    "dexId": 975,
-    "name": "Cetitan"
-  },
-  {
-    "dexId": 977,
-    "name": "Dondozo"
-  },
-  {
-    "dexId": 979,
-    "name": "Annihilape"
-  },
-  {
-    "dexId": 980,
-    "name": "Clodsire"
-  },
-  {
-    "dexId": 982,
-    "name": "Dudunsparce"
-  },
-  {
-    "dexId": 983,
-    "name": "Kingambit"
-  },
-  {
-    "dexId": 996,
-    "name": "Frigibax"
-  },
-  {
-    "dexId": 997,
-    "name": "Arctibax"
-  },
-  {
-    "dexId": 998,
-    "name": "Baxcalibur"
-  },
-  {
-    "dexId": 999,
-    "name": "Gimmighoul"
-  },
-  {
-    "dexId": 1000,
-    "name": "Gholdengo"
   }
 ]

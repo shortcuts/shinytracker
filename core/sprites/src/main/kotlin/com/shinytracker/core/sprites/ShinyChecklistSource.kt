@@ -26,6 +26,8 @@ private const val CHECKLIST_URL = "https://pogoapi.net/api/v1/shiny_pokemon.json
 @Serializable
 private data class ChecklistEntryJson(
     val dexId: Int,
+    val formId: Int = 0,
+    val costumeId: Int = 0,
     val name: String,
 )
 
@@ -52,7 +54,7 @@ class ShinyChecklistSource
         fun nameFor(dexId: Int): String = state.value.firstOrNull { it.dexId == dexId }?.name ?: "Unknown #%03d".format(dexId)
 
         /** Species-level DexEntry (types/localizedNames/species/evolutions merged in), used by SpriteCatalog. */
-        fun dexEntryFor(dexId: Int): DexEntry = dexEntry(dexId, nameFor(dexId))
+        fun dexEntryFor(dexId: Int): DexEntry = dexEntry(dexId, formId = 0, costumeId = 0, nameFor(dexId))
 
         suspend fun refresh(): Result<Unit> = refreshFrom(CHECKLIST_URL)
 
@@ -93,17 +95,19 @@ class ShinyChecklistSource
         private fun parse(text: String): List<DexEntry> =
             json
                 .decodeFromString<List<ChecklistEntryJson>>(text)
-                .map { dexEntry(it.dexId, it.name) }
+                .map { dexEntry(it.dexId, it.formId, it.costumeId, it.name) }
 
         private fun dexEntry(
             dexId: Int,
+            formId: Int,
+            costumeId: Int,
             name: String,
         ): DexEntry {
             val data = dexDataSource.get(dexId)
             return DexEntry(
                 dexId = dexId,
-                formId = 0,
-                costumeId = 0,
+                formId = formId,
+                costumeId = costumeId,
                 name = name,
                 types = data?.types.orEmpty(),
                 localizedNames = data?.localizedNames.orEmpty(),

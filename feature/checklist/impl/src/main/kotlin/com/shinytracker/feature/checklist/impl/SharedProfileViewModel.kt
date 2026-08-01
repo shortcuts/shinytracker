@@ -74,7 +74,12 @@ class SharedProfileViewModel
                         val species = checklistSource.observeChecklist().first()
                         loadedEntries.value =
                             species.map { dex ->
-                                val match = imported.firstOrNull { it.dexEntry.dexId == dex.dexId }
+                                val match =
+                                    imported.firstOrNull {
+                                        it.dexEntry.dexId == dex.dexId &&
+                                            it.dexEntry.formId == dex.formId &&
+                                            it.dexEntry.costumeId == dex.costumeId
+                                    }
                                 ChecklistEntry(
                                     dexEntry = dex,
                                     caught = match != null,

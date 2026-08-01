@@ -93,9 +93,16 @@ type filter still excludes them. This is a known, narrower gap, not a bug.
 ## Eligibility data
 
 `ShinyChecklistSource` (`:core:sprites`) loads a bundled
-`core/sprites/src/main/assets/checklist.json` (written by
-`scripts/sync_checklist.py` from pogoapi.net's `shiny_pokemon.json`) by
-default, so a fresh install works offline. `refresh()` re-fetches the same
-source over the network and overwrites only the on-disk cache
-(`filesDir/checklist.json`), never the bundled asset; on failure the
-previously-loaded list is left untouched.
+`core/sprites/src/main/assets/checklist.json` by default, so a fresh
+install works offline. `scripts/sync_checklist.py` writes that file from
+two sources: pogoapi.net's `shiny_pokemon.json` for species-level
+eligibility and display names, and `PokeMiners/pogo_assets`' shiny sprite
+filenames (Git Trees API) to explode each eligible species into its
+individual form/costume variants -- each entry is a
+`(dexId, formId, costumeId)` triple, not just a species. `refresh()`
+re-fetches pogoapi.net's species list over the network and overwrites only
+the on-disk cache (`filesDir/checklist.json`), never the bundled asset; on
+failure the previously-loaded list is left untouched. (`refresh()` only
+re-syncs species-level eligibility, not variant data -- variant data only
+changes via re-running `scripts/sync_checklist.py` and shipping a new
+build.)
