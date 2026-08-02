@@ -4,15 +4,15 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.ui.graphics.Color
 
-// Values chosen for perceptual consistency across schemes (same teal hue, tuned lightness/chroma
+// Values chosen for perceptual consistency across schemes (same yellow hue, tuned lightness/chroma
 // per surface) and checked against WCAG 4.5:1 for body text pairs.
 
 val ShinyDarkColorScheme =
     darkColorScheme(
-        primary = Color(0xFF5FD9CB),
-        onPrimary = Color(0xFF06211D),
-        primaryContainer = Color(0xFF12413B),
-        onPrimaryContainer = Color(0xFF8FEDE0),
+        primary = Color(0xFFF4C430),
+        onPrimary = Color(0xFF2B1D00),
+        primaryContainer = Color(0xFF3D3300),
+        onPrimaryContainer = Color(0xFFFFE580),
         secondaryContainer = Color(0xFF2B3B33),
         onSecondaryContainer = Color(0xFFCDE9DD),
         background = Color(0xFF12181E),
@@ -27,10 +27,10 @@ val ShinyDarkColorScheme =
 
 val ShinyLightColorScheme =
     lightColorScheme(
-        primary = Color(0xFF128A7C),
+        primary = Color(0xFF8A6400),
         onPrimary = Color(0xFFFFFFFF),
-        primaryContainer = Color(0xFFC8F3EC),
-        onPrimaryContainer = Color(0xFF04332C),
+        primaryContainer = Color(0xFFFFE9A8),
+        onPrimaryContainer = Color(0xFF4A3800),
         secondaryContainer = Color(0xFFDCEEE6),
         onSecondaryContainer = Color(0xFF1B3A30),
         background = Color(0xFFF7FAF9),
