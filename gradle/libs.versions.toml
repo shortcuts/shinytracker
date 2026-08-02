@@ -1,7 +1,7 @@
 [versions]
 # Kotlin & Android
 kotlin = "2.2.21"
-agp = "8.9.1"
+agp = "9.3.0"
 ksp = "2.2.21-2.0.5"
 
 # AndroidX Core
@@ -47,7 +47,7 @@ androidx-test-ext = "1.1.5"
 espresso = "3.5.1"
 mockk = "1.13.9"
 turbine = "1.0.0"
-robolectric = "4.11.1"
+robolectric = "4.16.1"
 orgjson = "20240303"
 
 [libraries]

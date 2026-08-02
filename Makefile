@@ -40,7 +40,7 @@ tail-log-on-phone:
 	adb logcat --pid=$(adb shell pidof com.shinytracker.app)
 
 test:
-	./gradlew testRelease
+	./gradlew test
 
 coverage:
 	./gradlew koverHtmlReport koverXmlReport
