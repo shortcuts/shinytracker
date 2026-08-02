@@ -37,7 +37,9 @@ generation, cross-referenced against caught records. Two modes:
    collapse state is `rememberSaveable`, resets on process death) followed
    by that generation's species laid out as fixed-width rows of sprite
    tiles, one `LazyColumn` item per row, so off-screen rows aren't
-   composed.
+   composed. Each region header is a `stickyHeader`, so it stays pinned to
+   the top of the screen while its rows scroll underneath, and swaps to the
+   next region's header once the user scrolls past that region's rows.
 
 The floating scan widget (`ScanWidgetOverlayService`, see
 `docs/features/scan.md`) is enabled/disabled from a `PictureInPictureAlt`

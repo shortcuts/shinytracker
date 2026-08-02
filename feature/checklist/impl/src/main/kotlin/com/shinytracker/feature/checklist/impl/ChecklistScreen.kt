@@ -52,6 +52,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.ColorMatrix
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.tooling.preview.Preview
@@ -297,9 +298,9 @@ private fun ChecklistList(
         // region into fixed-size Row items keeps this to one scrolling container while still
         // windowing per row instead of per region.
         val columns = 3
-        LazyColumn(modifier = Modifier.fillMaxSize()) {
+        LazyColumn(modifier = Modifier.fillMaxSize().testTag("checklist-list")) {
             grouped.forEach { (generation, regionEntries) ->
-                item(key = "header-${generation.name}") {
+                stickyHeader(key = "header-${generation.name}") {
                     RegionHeader(
                         generation = generation,
                         caughtCount = regionEntries.count { it.caught },

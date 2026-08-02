@@ -4,9 +4,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollToNode
 import androidx.compose.ui.test.performTextInput
 import com.shinytracker.core.designsystem.ShinyTheme
 import com.shinytracker.core.model.ChecklistEntry
@@ -91,5 +94,41 @@ class ChecklistScaffoldUiTest {
 
         composeTestRule.onNodeWithText("#001").assertExists()
         composeTestRule.onNodeWithText("#030").assertExists()
+    }
+
+    @Test
+    fun regionHeaderStaysPinnedAndSwapsAcrossRegionBoundary() {
+        val kantoEntries =
+            (1..30).map { dexId ->
+                ChecklistEntry(DexEntry(dexId, 0, 0, "Species$dexId"), caught = false, caughtAt = null, generation = Generation.KANTO)
+            }
+        val johtoEntries =
+            (152..160).map { dexId ->
+                ChecklistEntry(DexEntry(dexId, 0, 0, "Species$dexId"), caught = false, caughtAt = null, generation = Generation.JOHTO)
+            }
+
+        composeTestRule.setContent {
+            ShinyTheme {
+                ChecklistScaffold(
+                    title = "Shiny Checklist",
+                    searchText = "",
+                    onSearchChange = {},
+                    filter = AdvancedFilter(),
+                    onFilterChange = {},
+                    caughtCount = 0,
+                    totalCount = kantoEntries.size + johtoEntries.size,
+                    entries = kantoEntries + johtoEntries,
+                    isLoading = false,
+                    errorMessage = null,
+                    banner = null,
+                    actions = {},
+                )
+            }
+        }
+
+        composeTestRule.onNodeWithTag("checklist-list").performScrollToNode(hasText("#160"))
+
+        composeTestRule.onNodeWithText("Johto").assertExists()
+        composeTestRule.onNodeWithText("Kanto").assertDoesNotExist()
     }
 }
