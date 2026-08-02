@@ -131,4 +131,32 @@ class ChecklistScaffoldUiTest {
         composeTestRule.onNodeWithText("Johto").assertExists()
         composeTestRule.onNodeWithText("Kanto").assertDoesNotExist()
     }
+
+    @Test
+    fun tileFadeInDoesNotBlockToggleClick() {
+        var toggledId: Int? = null
+        composeTestRule.setContent {
+            ShinyTheme {
+                ChecklistScaffold(
+                    title = "Shiny Checklist",
+                    searchText = "",
+                    onSearchChange = {},
+                    filter = AdvancedFilter(),
+                    onFilterChange = {},
+                    caughtCount = 1,
+                    totalCount = 2,
+                    entries = entries,
+                    isLoading = false,
+                    errorMessage = null,
+                    banner = null,
+                    onToggle = { toggledId = it.dexEntry.dexId },
+                    actions = {},
+                )
+            }
+        }
+
+        composeTestRule.onNodeWithText("#004").performClick()
+
+        assert(toggledId == 4) { "expected tile toggle to fire after fade-in, got $toggledId" }
+    }
 }

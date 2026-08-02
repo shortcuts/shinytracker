@@ -81,7 +81,9 @@ Species tiles render the real shiny sprite via Coil (`AsyncImage`) loaded
 from `:core:sprites`' vendored PNGs (`file:///android_asset/sprites/...`, all
 local, no network). Every tile shows the shiny variant, since this app only
 tracks shinies. Uncaught species render desaturated + dimmed rather than
-hidden, so the grid still shows what's missing.
+hidden, so the grid still shows what's missing. Each tile fades in (200ms
+alpha) as it enters composition, so recomposition during scroll reads as
+intentional rather than a pop-in glitch.
 
 ## Type filter data coverage
 
