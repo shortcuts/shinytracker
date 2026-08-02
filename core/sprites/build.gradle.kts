@@ -13,6 +13,7 @@ dependencies {
     implementation(project(":core:sprites:descriptors"))
     implementation(libs.kotlinx.serialization.json)
 
+    testImplementation(project(":core:common"))
     testImplementation(libs.junit)
     testImplementation(libs.kotlinx.coroutines.test)
     testImplementation(libs.robolectric)

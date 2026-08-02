@@ -3,11 +3,13 @@ package com.shinytracker.core.sprites
 import android.content.Context
 import android.graphics.BitmapFactory
 import androidx.test.core.app.ApplicationProvider
+import com.shinytracker.core.common.constants.AppConstants
 import com.shinytracker.core.model.DexEntry
 import com.shinytracker.core.model.MatchResult
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Assume
 import org.junit.Test
@@ -33,7 +35,8 @@ import java.io.File
  * ```json
  * [ { "filename": "crop_0001.png", "dexId": 25, "shiny": true } ]
  * ```
- * `filename` resolves against `EVAL_CROPS_DIR`.
+ * `filename` resolves against `EVAL_CROPS_DIR`. When real data is present, the same run also
+ * prints a recommended auto-accept confidence threshold via [summarizeThresholdRecommendation].
  */
 @Serializable
 data class EvalLabel(
@@ -68,6 +71,75 @@ fun summarizeEval(outcomes: List<EvalOutcome>): String {
     return if (mismatches.isEmpty()) header else "$header\n$mismatches"
 }
 
+data class ThresholdRecommendation(
+    val threshold: Float,
+    val precision: Double,
+    val coverage: Double,
+    val acceptedCount: Int,
+    val totalCount: Int,
+    val metTarget: Boolean,
+)
+
+private const val TARGET_PRECISION = 0.99
+
+/**
+ * Sweeps distinct observed confidence values as candidate auto-accept thresholds and picks the
+ * lowest (loosest) one whose accepted subset hits [targetPrecision] -- since a false accept
+ * silently corrupts CaughtRepository while a false reject just costs one extra review-queue tap,
+ * this optimizes for precision of the accepted set rather than raw accuracy. Falls back to the
+ * best-achievable precision (reported as not meeting the target) when none clears the bar.
+ */
+fun recommendThreshold(
+    outcomes: List<EvalOutcome>,
+    targetPrecision: Double = TARGET_PRECISION,
+): ThresholdRecommendation? {
+    val predicted = outcomes.filter { it.predicted != null }
+    if (predicted.isEmpty()) return null
+
+    val candidates = predicted.map { it.predicted!!.confidence }.distinct().sorted()
+    val evaluated =
+        candidates.map { t ->
+            val accepted = predicted.filter { it.predicted!!.confidence >= t }
+            val correct =
+                accepted.count { it.predicted!!.dexEntry.dexId == it.label.dexId && it.predicted.shiny == it.label.shiny }
+            val precision = correct.toDouble() / accepted.size
+            ThresholdRecommendation(
+                threshold = t,
+                precision = precision,
+                coverage = accepted.size.toDouble() / outcomes.size,
+                acceptedCount = accepted.size,
+                totalCount = outcomes.size,
+                metTarget = precision >= targetPrecision,
+            )
+        }
+
+    val meetingTarget = evaluated.filter { it.metTarget }
+    return if (meetingTarget.isNotEmpty()) {
+        meetingTarget.minByOrNull { it.threshold }
+    } else {
+        evaluated.maxByOrNull { it.precision }
+    }
+}
+
+fun summarizeThresholdRecommendation(rec: ThresholdRecommendation?): String {
+    if (rec == null) return "No predictions to calibrate a threshold against."
+    val status = if (rec.metTarget) "meets" else "does NOT meet"
+    val current = AppConstants.ScanConstants.MATCH_CONFIDENCE_THRESHOLD
+    return (
+        "Recommended threshold: %.3f (precision %.1f%%, coverage %d/%d = %.1f%%) -- $status the " +
+            "%.0f%% precision target. Current production threshold " +
+            "(AppConstants.ScanConstants.MATCH_CONFIDENCE_THRESHOLD) = %.2f."
+    ).format(
+        rec.threshold,
+        rec.precision * 100.0,
+        rec.acceptedCount,
+        rec.totalCount,
+        rec.coverage * 100.0,
+        TARGET_PRECISION * 100.0,
+        current,
+    )
+}
+
 @RunWith(RobolectricTestRunner::class)
 class SpriteMatcherEvalTest {
     private val context = ApplicationProvider.getApplicationContext<Context>()
@@ -92,6 +164,28 @@ class SpriteMatcherEvalTest {
             }
 
         println(summarizeEval(outcomes))
+        println(summarizeThresholdRecommendation(recommendThreshold(outcomes)))
+    }
+
+    @Test
+    fun `recommendThreshold picks the lowest threshold meeting the precision target`() {
+        val bulbasaur = DexEntry(dexId = 1, formId = 0, name = "Bulbasaur")
+        val outcomes =
+            listOf(
+                // confidence 0.95, correct
+                EvalOutcome(EvalLabel("a.png", 1, false), MatchResult(bulbasaur, false, 0.95f)),
+                // confidence 0.90, correct
+                EvalOutcome(EvalLabel("b.png", 1, false), MatchResult(bulbasaur, false, 0.90f)),
+                // confidence 0.80, WRONG dexId -- pulls precision below target once included
+                EvalOutcome(EvalLabel("c.png", 4, false), MatchResult(bulbasaur, false, 0.80f)),
+            )
+
+        val rec = recommendThreshold(outcomes, targetPrecision = 1.0)
+
+        assertTrue(rec != null)
+        assertEquals(0.90f, rec!!.threshold)
+        assertTrue(rec.metTarget)
+        assertEquals(2, rec.acceptedCount)
     }
 
     @Test
