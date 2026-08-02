@@ -1,5 +1,6 @@
 package com.shinytracker.app
 
+import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -9,6 +10,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.Button
@@ -22,6 +24,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -56,8 +59,21 @@ fun SettingsScreen(
             )
         },
     ) { padding ->
-        Column(modifier = Modifier.fillMaxSize().padding(padding).padding(24.dp)) {
-            Text(text = "Display language", style = MaterialTheme.typography.titleSmall)
+        Column(
+            modifier =
+                Modifier
+                    .fillMaxSize()
+                    .padding(padding)
+                    .verticalScroll(remember { ScrollState(0) })
+                    .padding(16.dp),
+        ) {
+            Text(text = "Display language", style = MaterialTheme.typography.headlineSmall)
+            Spacer(Modifier.height(4.dp))
+            Text(
+                text = "Which language the checklist shows species names in.",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
             Spacer(Modifier.height(8.dp))
             DisplayLanguage.entries.forEach { language ->
                 Row(
@@ -76,7 +92,13 @@ fun SettingsScreen(
             ScannerToggleCard(checked = scannerEnabled, onCheckedChange = onScannerEnabledChange)
 
             Spacer(Modifier.height(24.dp))
-            Text(text = "Checklist data", style = MaterialTheme.typography.titleSmall)
+            Text(text = "Checklist data", style = MaterialTheme.typography.headlineSmall)
+            Spacer(Modifier.height(4.dp))
+            Text(
+                text = "Manually re-fetch the shiny-eligibility checklist from the network.",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
             Spacer(Modifier.height(8.dp))
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Button(onClick = onSyncClick, enabled = syncState != SettingsSyncState.SYNCING) {
