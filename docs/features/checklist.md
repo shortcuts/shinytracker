@@ -35,7 +35,9 @@ generation, cross-referenced against caught records. Two modes:
    header (`caught / total`), and a `LazyColumn` with one collapsible
    region section per generation (tap the header to expand/collapse;
    collapse state is `rememberSaveable`, resets on process death) followed
-   by that generation's species as a wrapping sprite tile row.
+   by that generation's species laid out as fixed-width rows of sprite
+   tiles, one `LazyColumn` item per row, so off-screen rows aren't
+   composed.
 
 The floating scan widget (`ScanWidgetOverlayService`, see
 `docs/features/scan.md`) is enabled/disabled from a `PictureInPictureAlt`

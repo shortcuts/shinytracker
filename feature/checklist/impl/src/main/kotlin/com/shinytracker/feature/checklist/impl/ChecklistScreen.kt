@@ -6,6 +6,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
@@ -17,6 +18,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.ExpandMore
@@ -281,7 +283,6 @@ private fun FilterSheetContent(
 
 private fun <T> Set<T>.toggle(value: T): Set<T> = if (value in this) this - value else this + value
 
-@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun ChecklistList(
     entries: List<ChecklistEntry>,
@@ -291,27 +292,34 @@ private fun ChecklistList(
     onToggleCollapse: (Generation) -> Unit,
 ) {
     val grouped = entries.groupBy { it.generation }.toSortedMap(compareBy { it.ordinal })
-    LazyColumn(modifier = Modifier.fillMaxSize()) {
-        grouped.forEach { (generation, regionEntries) ->
-            item(key = "header-${generation.name}") {
-                RegionHeader(
-                    generation = generation,
-                    caughtCount = regionEntries.count { it.caught },
-                    totalCount = regionEntries.size,
-                    collapsed = generation.name in collapsed,
-                    onToggle = { onToggleCollapse(generation) },
-                )
-            }
-            if (generation.name !in collapsed) {
-                // ponytail: LazyVerticalGrid nested in a LazyColumn item crashes with an
-                // infinite-height-constraint exception; FlowRow wraps naturally instead.
-                item(key = "grid-${generation.name}") {
-                    FlowRow(
-                        modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp),
-                        horizontalArrangement = Arrangement.Start,
-                    ) {
-                        regionEntries.forEach { entry ->
-                            SpriteTile(entry, displayLanguage, onToggle = onToggle?.let { callback -> { callback(entry) } })
+    BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+        // ponytail: two nested lazy-scrolling containers (e.g. LazyVerticalGrid inside this
+        // LazyColumn's item) crash with an infinite-height-constraint exception.
+        // BoxWithConstraints only measures width once and isn't scrolling, so chunking each
+        // region into fixed-size Row items keeps this to one scrolling container while still
+        // windowing per row instead of per region.
+        val columns = ((maxWidth - 16.dp) / 76.dp).toInt().coerceAtLeast(1)
+        LazyColumn(modifier = Modifier.fillMaxSize()) {
+            grouped.forEach { (generation, regionEntries) ->
+                item(key = "header-${generation.name}") {
+                    RegionHeader(
+                        generation = generation,
+                        caughtCount = regionEntries.count { it.caught },
+                        totalCount = regionEntries.size,
+                        collapsed = generation.name in collapsed,
+                        onToggle = { onToggleCollapse(generation) },
+                    )
+                }
+                if (generation.name !in collapsed) {
+                    val rows = regionEntries.chunked(columns)
+                    itemsIndexed(rows, key = { index, _ -> "grid-${generation.name}-$index" }) { _, row ->
+                        Row(
+                            modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp),
+                            horizontalArrangement = Arrangement.Start,
+                        ) {
+                            row.forEach { entry ->
+                                SpriteTile(entry, displayLanguage, onToggle = onToggle?.let { callback -> { callback(entry) } })
+                            }
                         }
                     }
                 }

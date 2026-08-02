@@ -57,4 +57,39 @@ class ChecklistScaffoldUiTest {
         composeTestRule.onNodeWithText("#001").assertExists()
         composeTestRule.onNodeWithText("#004").assertDoesNotExist()
     }
+
+    @Test
+    fun rendersFirstAndLastTileAcrossChunkedRows() {
+        val manyEntries =
+            (1..30).map { dexId ->
+                ChecklistEntry(
+                    DexEntry(dexId, 0, 0, "Species$dexId"),
+                    caught = false,
+                    caughtAt = null,
+                    generation = Generation.KANTO,
+                )
+            }
+
+        composeTestRule.setContent {
+            ShinyTheme {
+                ChecklistScaffold(
+                    title = "Shiny Checklist",
+                    searchText = "",
+                    onSearchChange = {},
+                    filter = AdvancedFilter(),
+                    onFilterChange = {},
+                    caughtCount = 0,
+                    totalCount = 30,
+                    entries = manyEntries,
+                    isLoading = false,
+                    errorMessage = null,
+                    banner = null,
+                    actions = {},
+                )
+            }
+        }
+
+        composeTestRule.onNodeWithText("#001").assertExists()
+        composeTestRule.onNodeWithText("#030").assertExists()
+    }
 }
