@@ -6,7 +6,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
@@ -292,13 +291,12 @@ private fun ChecklistList(
     onToggleCollapse: (Generation) -> Unit,
 ) {
     val grouped = entries.groupBy { it.generation }.toSortedMap(compareBy { it.ordinal })
-    BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+    Box(modifier = Modifier.fillMaxSize()) {
         // ponytail: two nested lazy-scrolling containers (e.g. LazyVerticalGrid inside this
-        // LazyColumn's item) crash with an infinite-height-constraint exception.
-        // BoxWithConstraints only measures width once and isn't scrolling, so chunking each
+        // LazyColumn's item) crash with an infinite-height-constraint exception. Chunking each
         // region into fixed-size Row items keeps this to one scrolling container while still
         // windowing per row instead of per region.
-        val columns = ((maxWidth - 16.dp) / 76.dp).toInt().coerceAtLeast(1)
+        val columns = 3
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             grouped.forEach { (generation, regionEntries) ->
                 item(key = "header-${generation.name}") {
