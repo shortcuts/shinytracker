@@ -17,6 +17,14 @@ tasks.named<JavaExec>("run") {
     workingDir = rootProject.projectDir
 }
 
+// ConfusablePairs.kt's paths are also repo-root-relative; mirrors the `run` task above.
+tasks.register<JavaExec>("confusablePairs") {
+    group = "application"
+    mainClass.set("com.shinytracker.core.sprites.descriptors.tool.ConfusablePairsKt")
+    classpath = sourceSets["main"].runtimeClasspath
+    workingDir = rootProject.projectDir
+}
+
 dependencies {
     implementation(project(":core:model"))
     implementation(libs.kotlinx.serialization.json)

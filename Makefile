@@ -61,6 +61,9 @@ sync-dex-data:
 precompute-descriptors:
 	./gradlew :core:sprites:descriptors:run
 
+confusable-pairs:
+	./gradlew :core:sprites:descriptors:confusablePairs
+
 screenshot:
 	mkdir -p docs/screenshots
 	adb exec-out screencap -p > docs/screenshots/latest.png
