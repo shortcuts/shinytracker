@@ -64,6 +64,9 @@ precompute-descriptors:
 confusable-pairs:
 	./gradlew :core:sprites:descriptors:confusablePairs
 
+tune-weights:
+	./gradlew :core:sprites:descriptors:weightSearch
+
 screenshot:
 	mkdir -p docs/screenshots
 	adb exec-out screencap -p > docs/screenshots/latest.png

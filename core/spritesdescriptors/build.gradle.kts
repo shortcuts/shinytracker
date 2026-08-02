@@ -25,6 +25,14 @@ tasks.register<JavaExec>("confusablePairs") {
     workingDir = rootProject.projectDir
 }
 
+// WeightSearch.kt's paths are also repo-root-relative; mirrors the `confusablePairs` task above.
+tasks.register<JavaExec>("weightSearch") {
+    group = "application"
+    mainClass.set("com.shinytracker.core.sprites.descriptors.tool.WeightSearchKt")
+    classpath = sourceSets["main"].runtimeClasspath
+    workingDir = rootProject.projectDir
+}
+
 dependencies {
     implementation(project(":core:model"))
     implementation(libs.kotlinx.serialization.json)

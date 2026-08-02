@@ -137,4 +137,11 @@ class SpriteMatchingTest {
             assertTrue((descriptor.alphaMask and (1L shl rightColumnBit)) != 0L)
         }
     }
+
+    @Test
+    fun `similarity with no weights arg matches similarity with explicit default EnsembleWeights`() {
+        val a = loadDescriptor(pikachuNormal.assetPath)
+        val b = loadDescriptor(pikachuShiny.assetPath)
+        assertEquals(similarity(a, b), similarity(a, b, EnsembleWeights()))
+    }
 }

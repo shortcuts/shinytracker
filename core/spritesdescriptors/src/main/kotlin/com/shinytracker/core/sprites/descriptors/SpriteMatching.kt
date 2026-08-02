@@ -66,20 +66,34 @@ fun computeDescriptor(
     )
 }
 
+/** Runtime-swappable view of the 8 ensemble weights, for [similarity]'s optional param.
+ * Defaults to the tuned consts below -- production callers never pass this explicitly. */
+data class EnsembleWeights(
+    val gridRgb: Float = WEIGHT_GRID_RGB,
+    val pHash: Float = WEIGHT_PHASH,
+    val dHash: Float = WEIGHT_DHASH,
+    val hsvHistogram: Float = WEIGHT_HSV_HISTOGRAM,
+    val labHistogram: Float = WEIGHT_LAB_HISTOGRAM,
+    val dominantColors: Float = WEIGHT_DOMINANT_COLORS,
+    val edgeSignature: Float = WEIGHT_EDGE_SIGNATURE,
+    val alphaMask: Float = WEIGHT_ALPHA_MASK,
+)
+
 /** 1 = identical, 0 = maximally different. Weighted ensemble across every descriptor field. */
 fun similarity(
     a: SpriteDescriptor,
     b: SpriteDescriptor,
+    weights: EnsembleWeights = EnsembleWeights(),
 ): Float {
     val score =
-        WEIGHT_GRID_RGB * gridRgbSimilarity(a.gridRgb, b.gridRgb) +
-            WEIGHT_PHASH * hammingSimilarity(a.pHash, b.pHash) +
-            WEIGHT_DHASH * hammingSimilarity(a.dHash, b.dHash) +
-            WEIGHT_HSV_HISTOGRAM * histogramSimilarity(a.hsvHistogram, b.hsvHistogram) +
-            WEIGHT_LAB_HISTOGRAM * histogramSimilarity(a.labHistogram, b.labHistogram) +
-            WEIGHT_DOMINANT_COLORS * dominantColorSimilarity(a.dominantColors, b.dominantColors) +
-            WEIGHT_EDGE_SIGNATURE * edgeSignatureSimilarity(a.edgeSignature, b.edgeSignature) +
-            WEIGHT_ALPHA_MASK * hammingSimilarity(a.alphaMask, b.alphaMask)
+        weights.gridRgb * gridRgbSimilarity(a.gridRgb, b.gridRgb) +
+            weights.pHash * hammingSimilarity(a.pHash, b.pHash) +
+            weights.dHash * hammingSimilarity(a.dHash, b.dHash) +
+            weights.hsvHistogram * histogramSimilarity(a.hsvHistogram, b.hsvHistogram) +
+            weights.labHistogram * histogramSimilarity(a.labHistogram, b.labHistogram) +
+            weights.dominantColors * dominantColorSimilarity(a.dominantColors, b.dominantColors) +
+            weights.edgeSignature * edgeSignatureSimilarity(a.edgeSignature, b.edgeSignature) +
+            weights.alphaMask * hammingSimilarity(a.alphaMask, b.alphaMask)
     return score.coerceIn(0f, 1f)
 }
 

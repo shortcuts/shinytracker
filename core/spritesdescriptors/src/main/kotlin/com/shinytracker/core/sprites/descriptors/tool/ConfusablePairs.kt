@@ -12,6 +12,7 @@
 package com.shinytracker.core.sprites.descriptors.tool
 
 import com.shinytracker.core.sprites.descriptors.DescriptorEntry
+import com.shinytracker.core.sprites.descriptors.EnsembleWeights
 import com.shinytracker.core.sprites.descriptors.similarity
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
@@ -31,12 +32,15 @@ data class ConfusablePair(
 )
 
 /** For each entry, its best-scoring match among every OTHER entry in [entries]. */
-fun findTopNonSelfMatches(entries: List<DescriptorEntry>): List<ConfusablePair> =
+fun findTopNonSelfMatches(
+    entries: List<DescriptorEntry>,
+    weights: EnsembleWeights = EnsembleWeights(),
+): List<ConfusablePair> =
     entries.map { entry ->
         val (best, score) =
             entries
                 .filter { it.assetPath != entry.assetPath }
-                .map { other -> other to similarity(entry.descriptor, other.descriptor) }
+                .map { other -> other to similarity(entry.descriptor, other.descriptor, weights) }
                 .maxByOrNull { (_, score) -> score }!!
         ConfusablePair(entry.assetPath, best.assetPath, score)
     }
@@ -44,8 +48,9 @@ fun findTopNonSelfMatches(entries: List<DescriptorEntry>): List<ConfusablePair> 
 fun findConfusablePairs(
     entries: List<DescriptorEntry>,
     threshold: Float = CONFUSABLE_THRESHOLD,
+    weights: EnsembleWeights = EnsembleWeights(),
 ): List<ConfusablePair> =
-    findTopNonSelfMatches(entries)
+    findTopNonSelfMatches(entries, weights)
         .filter { it.score >= threshold }
         .sortedByDescending { it.score }
 
