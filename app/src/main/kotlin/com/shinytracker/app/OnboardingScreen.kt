@@ -143,6 +143,7 @@ internal fun ScannerToggleCard(
             Text(
                 text =
                     "Turns on the box-scan feature, which reads your shiny box via screenshots. " +
+                        "Works only with Pokemon GO's shiny box screen. " +
                         "Leave this off to track shinies manually instead.",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
