@@ -317,7 +317,7 @@ private fun ChecklistList(
                     itemsIndexed(rows, key = { index, _ -> "grid-${generation.name}-$index" }) { _, row ->
                         Row(
                             modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp),
-                            horizontalArrangement = Arrangement.Start,
+                            horizontalArrangement = Arrangement.SpaceEvenly,
                         ) {
                             row.forEach { entry ->
                                 SpriteTile(entry, displayLanguage, onToggle = onToggle?.let { callback -> { callback(entry) } })
