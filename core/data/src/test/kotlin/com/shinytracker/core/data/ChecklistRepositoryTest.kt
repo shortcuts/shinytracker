@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.test.core.app.ApplicationProvider
 import com.shinytracker.core.model.CaughtRecord
 import com.shinytracker.core.model.DexEntry
+import com.shinytracker.core.model.buildChecklistEntries
 import com.shinytracker.core.sprites.PokemonDexDataSource
 import com.shinytracker.core.sprites.ShinyChecklistSource
 import com.shinytracker.core.testing.FakeCaughtDao
@@ -61,8 +62,9 @@ class ChecklistRepositoryTest {
             val alolan = DexEntry(37, 1, 0, "Vulpix (Alolan)")
             caughtRepository.recordIfAbsent(CaughtRecord(alolan, shiny = true, caughtAt = 2000L))
 
-            val baseEntry = with(repository) { base.toChecklistEntry(caughtRepository.observeCaught().first()) }
-            val alolanEntry = with(repository) { alolan.toChecklistEntry(caughtRepository.observeCaught().first()) }
+            val caught = caughtRepository.observeCaught().first()
+            val baseEntry = buildChecklistEntries(listOf(base), caught).first()
+            val alolanEntry = buildChecklistEntries(listOf(alolan), caught).first()
 
             assertFalse(baseEntry.caught)
             assertTrue(alolanEntry.caught)

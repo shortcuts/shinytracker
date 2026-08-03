@@ -9,6 +9,7 @@ import android.view.Gravity
 import android.view.View
 import android.view.WindowManager
 import android.widget.Toast
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.platform.ComposeView
 import androidx.lifecycle.Lifecycle
@@ -118,22 +119,26 @@ class ScanWidgetOverlayService :
                 y = resources.displayMetrics.heightPixels / 2
             }
 
+    /** Builds a ComposeView wired to this service's lifecycle/saved-state owners; caller adds it to [windowManager]. */
+    private fun overlayComposeView(content: @Composable () -> Unit): ComposeView =
+        ComposeView(this).apply {
+            setViewTreeLifecycleOwner(this@ScanWidgetOverlayService)
+            setViewTreeSavedStateRegistryOwner(this@ScanWidgetOverlayService)
+            setContent(content)
+        }
+
     private fun addPillView() {
         val view =
-            ComposeView(this).apply {
-                setViewTreeLifecycleOwner(this@ScanWidgetOverlayService)
-                setViewTreeSavedStateRegistryOwner(this@ScanWidgetOverlayService)
-                setContent {
-                    val scanning by isScanning.collectAsStateWithLifecycle()
-                    ShinyTheme {
-                        ScanWidgetPill(
-                            isScanning = scanning,
-                            onScreenshot = ::onScreenshotClicked,
-                            onAutomatedScan = ::onAutomatedScanClicked,
-                            onClose = { stopSelf() },
-                            onDrag = { dx, dy -> onPillDragged(dx, dy) },
-                        )
-                    }
+            overlayComposeView {
+                val scanning by isScanning.collectAsStateWithLifecycle()
+                ShinyTheme {
+                    ScanWidgetPill(
+                        isScanning = scanning,
+                        onScreenshot = ::onScreenshotClicked,
+                        onAutomatedScan = ::onAutomatedScanClicked,
+                        onClose = { stopSelf() },
+                        onDrag = { dx, dy -> onPillDragged(dx, dy) },
+                    )
                 }
             }
         val params = pillLayoutParams()
@@ -155,6 +160,7 @@ class ScanWidgetOverlayService :
     }
 
     private fun onScreenshotClicked() {
+        if (isScanning.value) return // pill's `enabled = !isScanning` should already block this; guard the race directly
         serviceScope.launch {
             isScanning.value = true
             val results = scanOrchestrator.captureAndDetect()
@@ -169,6 +175,7 @@ class ScanWidgetOverlayService :
     }
 
     private fun onAutomatedScanClicked() {
+        if (isScanning.value) return // pill's `enabled = !isScanning` should already block this; guard the race directly
         serviceScope.launch {
             isScanning.value = true
             scanOrchestrator.runFullScan()
@@ -186,19 +193,15 @@ class ScanWidgetOverlayService :
     private fun showValidationPanel() {
         hideValidationPanel()
         val view =
-            ComposeView(this).apply {
-                setViewTreeLifecycleOwner(this@ScanWidgetOverlayService)
-                setViewTreeSavedStateRegistryOwner(this@ScanWidgetOverlayService)
-                setContent {
-                    val entries by scanValidationPresenter.entries.collectAsStateWithLifecycle()
-                    ShinyTheme {
-                        ScanValidationScreen(
-                            entries = entries,
-                            onConfirm = { index, chosen -> serviceScope.launch { scanValidationPresenter.confirm(index, chosen) } },
-                            onReject = { index -> scanValidationPresenter.reject(index) },
-                            onDismiss = { hideValidationPanel() },
-                        )
-                    }
+            overlayComposeView {
+                val entries by scanValidationPresenter.entries.collectAsStateWithLifecycle()
+                ShinyTheme {
+                    ScanValidationScreen(
+                        entries = entries,
+                        onConfirm = { index, chosen -> serviceScope.launch { scanValidationPresenter.confirm(index, chosen) } },
+                        onReject = { index -> scanValidationPresenter.reject(index) },
+                        onDismiss = { hideValidationPanel() },
+                    )
                 }
             }
         val params =

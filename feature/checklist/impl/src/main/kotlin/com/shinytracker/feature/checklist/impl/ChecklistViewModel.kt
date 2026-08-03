@@ -9,7 +9,6 @@ import com.shinytracker.core.data.ProfileShareRepository
 import com.shinytracker.core.model.ChecklistEntry
 import com.shinytracker.core.model.DisplayLanguage
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
@@ -36,14 +35,13 @@ class ChecklistViewModel
         private val profileShareRepository: ProfileShareRepository,
         private val onboardingPreferencesRepository: OnboardingPreferencesRepository,
     ) : ViewModel() {
-        private val searchText = MutableStateFlow("")
-        private val filter = MutableStateFlow(AdvancedFilter())
+        private val filterState = ChecklistFilterState()
 
         val uiState: StateFlow<ChecklistUiState> =
             combine(
                 checklistRepository.observeChecklist(),
-                searchText,
-                filter,
+                filterState.searchText,
+                filterState.filter,
                 onboardingPreferencesRepository.displayLanguage,
             ) { entries, search, currentFilter, displayLanguage ->
                 ChecklistUiState(
@@ -57,13 +55,9 @@ class ChecklistViewModel
                 )
             }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), ChecklistUiState())
 
-        fun onSearchChange(text: String) {
-            searchText.value = text
-        }
+        fun onSearchChange(text: String) = filterState.onSearchChange(text)
 
-        fun onFilterChange(newFilter: AdvancedFilter) {
-            filter.value = newFilter
-        }
+        fun onFilterChange(newFilter: AdvancedFilter) = filterState.onFilterChange(newFilter)
 
         fun toggleCaught(entry: ChecklistEntry) {
             viewModelScope.launch { checklistRepository.toggleCaught(entry) }

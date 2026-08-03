@@ -3,6 +3,7 @@ package com.shinytracker.feature.checklist.impl
 import com.shinytracker.core.model.ChecklistEntry
 import com.shinytracker.core.model.Generation
 import com.shinytracker.core.model.PokemonType
+import kotlinx.coroutines.flow.MutableStateFlow
 
 enum class ChecklistFilter { ALL, CAUGHT, NOT_CAUGHT }
 
@@ -13,6 +14,20 @@ data class AdvancedFilter(
 ) {
     val isActive: Boolean
         get() = status != ChecklistFilter.ALL || generations.isNotEmpty() || types.isNotEmpty()
+}
+
+/** Search text + [AdvancedFilter] state shared by owner and shared-profile checklist ViewModels. */
+class ChecklistFilterState {
+    val searchText = MutableStateFlow("")
+    val filter = MutableStateFlow(AdvancedFilter())
+
+    fun onSearchChange(text: String) {
+        searchText.value = text
+    }
+
+    fun onFilterChange(newFilter: AdvancedFilter) {
+        filter.value = newFilter
+    }
 }
 
 /** Search matches species name by substring, or dex id by numeric prefix. */

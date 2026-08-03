@@ -2,8 +2,7 @@ package com.shinytracker.core.data
 
 import com.shinytracker.core.model.CaughtRecord
 import com.shinytracker.core.model.ChecklistEntry
-import com.shinytracker.core.model.DexEntry
-import com.shinytracker.core.model.Generation
+import com.shinytracker.core.model.buildChecklistEntries
 import com.shinytracker.core.sprites.ShinyChecklistSource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
@@ -20,7 +19,7 @@ class ChecklistRepository
     ) {
         fun observeChecklist(): Flow<List<ChecklistEntry>> =
             checklistSource.observeChecklist().combine(caughtRepository.observeCaught()) { species, caught ->
-                species.map { it.toChecklistEntry(caught) }
+                buildChecklistEntries(species, caught)
             }
 
         /** Toggles [entry]'s caught state: records it if uncaught, deletes it if already caught. */
@@ -32,17 +31,4 @@ class ChecklistRepository
 
         /** Re-fetches the shiny checklist over the network; UI state (idle/syncing/success/error) lives in the caller. */
         suspend fun refresh(): Result<Unit> = checklistSource.refresh()
-
-        internal fun DexEntry.toChecklistEntry(caught: List<CaughtRecord>): ChecklistEntry {
-            val match =
-                caught.firstOrNull {
-                    it.dexEntry.dexId == dexId && it.dexEntry.formId == formId && it.dexEntry.costumeId == costumeId
-                }
-            return ChecklistEntry(
-                dexEntry = this,
-                caught = match != null,
-                caughtAt = match?.caughtAt,
-                generation = Generation.fromDexId(dexId),
-            )
-        }
     }

@@ -7,7 +7,7 @@ import com.shinytracker.core.data.OnboardingPreferencesRepository
 import com.shinytracker.core.data.ProfileShareRepository
 import com.shinytracker.core.model.ChecklistEntry
 import com.shinytracker.core.model.DisplayLanguage
-import com.shinytracker.core.model.Generation
+import com.shinytracker.core.model.buildChecklistEntries
 import com.shinytracker.core.sprites.ShinyChecklistSource
 import com.shinytracker.feature.checklist.api.ChecklistRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -46,14 +46,13 @@ class SharedProfileViewModel
     ) : ViewModel() {
         private val loadedEntries = MutableStateFlow<List<ChecklistEntry>?>(null)
         private val loadFailed = MutableStateFlow(false)
-        private val searchText = MutableStateFlow("")
-        private val filter = MutableStateFlow(AdvancedFilter())
+        private val filterState = ChecklistFilterState()
 
         val uiState: StateFlow<SharedProfileUiState> =
             combine(
                 loadedEntries,
-                searchText,
-                filter,
+                filterState.searchText,
+                filterState.filter,
                 loadFailed,
                 onboardingPreferencesRepository.displayLanguage,
             ) { entries, search, currentFilter, failed, displayLanguage ->
@@ -83,32 +82,14 @@ class SharedProfileViewModel
                     .importProfile(uri)
                     .onSuccess { imported ->
                         val species = checklistSource.observeChecklist().first()
-                        loadedEntries.value =
-                            species.map { dex ->
-                                val match =
-                                    imported.firstOrNull {
-                                        it.dexEntry.dexId == dex.dexId &&
-                                            it.dexEntry.formId == dex.formId &&
-                                            it.dexEntry.costumeId == dex.costumeId
-                                    }
-                                ChecklistEntry(
-                                    dexEntry = dex,
-                                    caught = match != null,
-                                    caughtAt = match?.caughtAt,
-                                    generation = Generation.fromDexId(dex.dexId),
-                                )
-                            }
+                        loadedEntries.value = buildChecklistEntries(species, imported)
                     }.onFailure {
                         loadFailed.value = true
                     }
             }
         }
 
-        fun onSearchChange(text: String) {
-            searchText.value = text
-        }
+        fun onSearchChange(text: String) = filterState.onSearchChange(text)
 
-        fun onFilterChange(newFilter: AdvancedFilter) {
-            filter.value = newFilter
-        }
+        fun onFilterChange(newFilter: AdvancedFilter) = filterState.onFilterChange(newFilter)
     }
