@@ -3,6288 +3,8424 @@
     "dexId": 1,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bulbasaur"
+    "name": "Bulbasaur",
+    "family": "Bulbasaur",
+    "releaseDate": "2018-03-25"
   },
   {
     "dexId": 1,
     "formId": 0,
     "costumeId": 11,
-    "name": "Bulbasaur"
+    "name": "Bulbasaur",
+    "family": "Bulbasaur",
+    "releaseDate": "2018-03-25"
   },
   {
     "dexId": 1,
     "formId": 0,
     "costumeId": 14,
-    "name": "Bulbasaur"
+    "name": "Bulbasaur",
+    "family": "Bulbasaur",
+    "releaseDate": "2018-03-25"
   },
   {
     "dexId": 2,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ivysaur"
+    "name": "Ivysaur",
+    "family": "Bulbasaur",
+    "releaseDate": "2018-03-25"
   },
   {
     "dexId": 3,
     "formId": 0,
     "costumeId": 0,
-    "name": "Venusaur"
+    "name": "Venusaur",
+    "family": "Bulbasaur",
+    "releaseDate": "2018-03-25"
   },
   {
     "dexId": 3,
     "formId": 1,
     "costumeId": 0,
-    "name": "Venusaur"
+    "name": "Venusaur",
+    "family": "Bulbasaur",
+    "releaseDate": "2018-03-25"
   },
   {
     "dexId": 3,
     "formId": 51,
     "costumeId": 0,
-    "name": "Venusaur"
+    "name": "Venusaur",
+    "family": "Bulbasaur",
+    "releaseDate": "2018-03-25"
   },
   {
     "dexId": 4,
     "formId": 0,
     "costumeId": 0,
-    "name": "Charmander"
+    "name": "Charmander",
+    "family": "Charmander",
+    "releaseDate": "2018-05-19"
   },
   {
     "dexId": 4,
     "formId": 0,
     "costumeId": 11,
-    "name": "Charmander"
+    "name": "Charmander",
+    "family": "Charmander",
+    "releaseDate": "2018-05-19"
   },
   {
     "dexId": 4,
     "formId": 0,
     "costumeId": 14,
-    "name": "Charmander"
+    "name": "Charmander",
+    "family": "Charmander",
+    "releaseDate": "2018-05-19"
   },
   {
     "dexId": 5,
     "formId": 0,
     "costumeId": 0,
-    "name": "Charmeleon"
+    "name": "Charmeleon",
+    "family": "Charmander",
+    "releaseDate": "2018-05-19"
   },
   {
     "dexId": 6,
     "formId": 0,
     "costumeId": 0,
-    "name": "Charizard"
+    "name": "Charizard",
+    "family": "Charmander",
+    "releaseDate": "2018-05-19"
   },
   {
     "dexId": 6,
     "formId": 51,
     "costumeId": 0,
-    "name": "Charizard"
+    "name": "Charizard",
+    "family": "Charmander",
+    "releaseDate": "2018-05-19"
   },
   {
     "dexId": 6,
     "formId": 52,
     "costumeId": 0,
-    "name": "Charizard"
+    "name": "Charizard",
+    "family": "Charmander",
+    "releaseDate": "2018-05-19"
   },
   {
     "dexId": 7,
     "formId": 0,
     "costumeId": 0,
-    "name": "Squirtle"
+    "name": "Squirtle",
+    "family": "Squirtle",
+    "releaseDate": "2018-07-08"
   },
   {
     "dexId": 7,
     "formId": 0,
     "costumeId": 5,
-    "name": "Squirtle"
+    "name": "Squirtle",
+    "family": "Squirtle",
+    "releaseDate": "2018-07-08"
   },
   {
     "dexId": 7,
     "formId": 0,
     "costumeId": 11,
-    "name": "Squirtle"
+    "name": "Squirtle",
+    "family": "Squirtle",
+    "releaseDate": "2018-07-08"
   },
   {
     "dexId": 7,
     "formId": 0,
     "costumeId": 14,
-    "name": "Squirtle"
+    "name": "Squirtle",
+    "family": "Squirtle",
+    "releaseDate": "2018-07-08"
   },
   {
     "dexId": 8,
     "formId": 0,
     "costumeId": 0,
-    "name": "Wartortle"
+    "name": "Wartortle",
+    "family": "Squirtle",
+    "releaseDate": "2018-07-08"
   },
   {
     "dexId": 8,
     "formId": 0,
     "costumeId": 5,
-    "name": "Wartortle"
+    "name": "Wartortle",
+    "family": "Squirtle",
+    "releaseDate": "2018-07-08"
   },
   {
     "dexId": 9,
     "formId": 0,
     "costumeId": 0,
-    "name": "Blastoise"
+    "name": "Blastoise",
+    "family": "Squirtle",
+    "releaseDate": "2018-07-08"
   },
   {
     "dexId": 9,
     "formId": 0,
     "costumeId": 5,
-    "name": "Blastoise"
+    "name": "Blastoise",
+    "family": "Squirtle",
+    "releaseDate": "2018-07-08"
   },
   {
     "dexId": 9,
     "formId": 51,
     "costumeId": 0,
-    "name": "Blastoise"
+    "name": "Blastoise",
+    "family": "Squirtle",
+    "releaseDate": "2018-07-08"
   },
   {
     "dexId": 10,
     "formId": 0,
     "costumeId": 0,
-    "name": "Caterpie"
+    "name": "Caterpie",
+    "family": "Caterpie",
+    "releaseDate": "2018-11-01"
   },
   {
     "dexId": 11,
     "formId": 0,
     "costumeId": 0,
-    "name": "Metapod"
+    "name": "Metapod",
+    "family": "Caterpie",
+    "releaseDate": "2018-11-01"
   },
   {
     "dexId": 12,
     "formId": 0,
     "costumeId": 0,
-    "name": "Butterfree"
+    "name": "Butterfree",
+    "family": "Caterpie",
+    "releaseDate": "2018-11-01"
   },
   {
     "dexId": 12,
     "formId": 1,
     "costumeId": 0,
-    "name": "Butterfree"
+    "name": "Butterfree",
+    "family": "Caterpie",
+    "releaseDate": "2018-11-01"
   },
   {
     "dexId": 13,
     "formId": 0,
     "costumeId": 0,
-    "name": "Weedle"
+    "name": "Weedle",
+    "family": "Weedle",
+    "releaseDate": "2020-06-19"
   },
   {
     "dexId": 14,
     "formId": 0,
     "costumeId": 0,
-    "name": "Kakuna"
+    "name": "Kakuna",
+    "family": "Weedle",
+    "releaseDate": "2020-06-19"
   },
   {
     "dexId": 15,
     "formId": 0,
     "costumeId": 0,
-    "name": "Beedrill"
+    "name": "Beedrill",
+    "family": "Weedle",
+    "releaseDate": "2020-06-19"
   },
   {
     "dexId": 15,
     "formId": 51,
     "costumeId": 0,
-    "name": "Beedrill"
+    "name": "Beedrill",
+    "family": "Weedle",
+    "releaseDate": "2020-06-19"
   },
   {
     "dexId": 16,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pidgey"
+    "name": "Pidgey",
+    "family": "Pidgey",
+    "releaseDate": "2019-02-26"
   },
   {
     "dexId": 17,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pidgeotto"
+    "name": "Pidgeotto",
+    "family": "Pidgey",
+    "releaseDate": "2019-02-26"
   },
   {
     "dexId": 18,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pidgeot"
+    "name": "Pidgeot",
+    "family": "Pidgey",
+    "releaseDate": "2019-02-26"
   },
   {
     "dexId": 18,
     "formId": 51,
     "costumeId": 0,
-    "name": "Pidgeot"
+    "name": "Pidgeot",
+    "family": "Pidgey",
+    "releaseDate": "2019-02-26"
   },
   {
     "dexId": 19,
     "formId": 0,
     "costumeId": 0,
-    "name": "Rattata"
+    "name": "Rattata",
+    "family": "Rattata",
+    "releaseDate": "2019-02-26"
   },
   {
     "dexId": 19,
     "formId": 1,
     "costumeId": 0,
-    "name": "Rattata"
+    "name": "Rattata",
+    "family": "Rattata",
+    "releaseDate": "2019-02-26"
   },
   {
     "dexId": 19,
     "formId": 61,
     "costumeId": 0,
-    "name": "Rattata"
+    "name": "Rattata",
+    "family": "Rattata",
+    "releaseDate": "2019-02-26"
   },
   {
     "dexId": 20,
     "formId": 0,
     "costumeId": 0,
-    "name": "Raticate"
+    "name": "Raticate",
+    "family": "Rattata",
+    "releaseDate": "2019-02-26"
   },
   {
     "dexId": 20,
     "formId": 0,
     "costumeId": 11,
-    "name": "Raticate"
+    "name": "Raticate",
+    "family": "Rattata",
+    "releaseDate": "2019-02-26"
   },
   {
     "dexId": 20,
     "formId": 1,
     "costumeId": 0,
-    "name": "Raticate"
+    "name": "Raticate",
+    "family": "Rattata",
+    "releaseDate": "2019-02-26"
   },
   {
     "dexId": 20,
     "formId": 1,
     "costumeId": 11,
-    "name": "Raticate"
+    "name": "Raticate",
+    "family": "Rattata",
+    "releaseDate": "2019-02-26"
   },
   {
     "dexId": 20,
     "formId": 61,
     "costumeId": 0,
-    "name": "Raticate"
+    "name": "Raticate",
+    "family": "Rattata",
+    "releaseDate": "2019-02-26"
   },
   {
     "dexId": 21,
     "formId": 0,
     "costumeId": 0,
-    "name": "Spearow"
+    "name": "Spearow",
+    "family": "Spearow",
+    "releaseDate": "2021-02-20"
   },
   {
     "dexId": 22,
     "formId": 0,
     "costumeId": 0,
-    "name": "Fearow"
+    "name": "Fearow",
+    "family": "Spearow",
+    "releaseDate": "2021-02-20"
   },
   {
     "dexId": 23,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ekans"
+    "name": "Ekans",
+    "family": "Ekans",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 24,
     "formId": 0,
     "costumeId": 0,
-    "name": "Arbok"
+    "name": "Arbok",
+    "family": "Ekans",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 1,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 2,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 3,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 4,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 5,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 6,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 7,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 8,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 9,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 10,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 11,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 12,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 13,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 22,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 23,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 24,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 25,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 27,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 28,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 0,
     "costumeId": 47,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 0,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 1,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 2,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 3,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 4,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 5,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 6,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 7,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 8,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 9,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 10,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 11,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 12,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 13,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 22,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 23,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 24,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 25,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 27,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 28,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 1,
     "costumeId": 47,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 25,
     "formId": 16,
     "costumeId": 0,
-    "name": "Pikachu"
+    "name": "Pikachu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 0,
     "costumeId": 0,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 0,
     "costumeId": 1,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 0,
     "costumeId": 2,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 0,
     "costumeId": 3,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 0,
     "costumeId": 4,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 0,
     "costumeId": 5,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 0,
     "costumeId": 6,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 0,
     "costumeId": 7,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 0,
     "costumeId": 8,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 0,
     "costumeId": 9,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 0,
     "costumeId": 27,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 0,
     "costumeId": 28,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 1,
     "costumeId": 0,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 1,
     "costumeId": 1,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 1,
     "costumeId": 2,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 1,
     "costumeId": 3,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 1,
     "costumeId": 4,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 1,
     "costumeId": 5,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 1,
     "costumeId": 6,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 1,
     "costumeId": 7,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 1,
     "costumeId": 8,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 1,
     "costumeId": 9,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 1,
     "costumeId": 27,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 1,
     "costumeId": 28,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 26,
     "formId": 61,
     "costumeId": 0,
-    "name": "Raichu"
+    "name": "Raichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 27,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sandshrew"
+    "name": "Sandshrew",
+    "family": "Sandshrew",
+    "releaseDate": "2018-12-06"
   },
   {
     "dexId": 27,
     "formId": 61,
     "costumeId": 0,
-    "name": "Sandshrew"
+    "name": "Sandshrew",
+    "family": "Sandshrew",
+    "releaseDate": "2018-12-06"
   },
   {
     "dexId": 28,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sandslash"
+    "name": "Sandslash",
+    "family": "Sandshrew",
+    "releaseDate": "2018-12-06"
   },
   {
     "dexId": 28,
     "formId": 61,
     "costumeId": 0,
-    "name": "Sandslash"
+    "name": "Sandslash",
+    "family": "Sandshrew",
+    "releaseDate": "2018-12-06"
   },
   {
     "dexId": 29,
     "formId": 0,
     "costumeId": 0,
-    "name": "Nidoran\u2640"
+    "name": "Nidoran\u2640",
+    "family": "Nidoran Female",
+    "releaseDate": null
   },
   {
     "dexId": 30,
     "formId": 0,
     "costumeId": 0,
-    "name": "Nidorina"
+    "name": "Nidorina",
+    "family": "Nidoran Female",
+    "releaseDate": null
   },
   {
     "dexId": 31,
     "formId": 0,
     "costumeId": 0,
-    "name": "Nidoqueen"
+    "name": "Nidoqueen",
+    "family": "Nidoran Female",
+    "releaseDate": null
   },
   {
     "dexId": 32,
     "formId": 0,
     "costumeId": 0,
-    "name": "Nidoran\u2642"
+    "name": "Nidoran\u2642",
+    "family": "Nidoran Male",
+    "releaseDate": null
   },
   {
     "dexId": 33,
     "formId": 0,
     "costumeId": 0,
-    "name": "Nidorino"
+    "name": "Nidorino",
+    "family": "Nidoran Male",
+    "releaseDate": null
   },
   {
     "dexId": 33,
     "formId": 0,
     "costumeId": 11,
-    "name": "Nidorino"
+    "name": "Nidorino",
+    "family": "Nidoran Male",
+    "releaseDate": null
   },
   {
     "dexId": 34,
     "formId": 0,
     "costumeId": 0,
-    "name": "Nidoking"
+    "name": "Nidoking",
+    "family": "Nidoran Male",
+    "releaseDate": null
   },
   {
     "dexId": 35,
     "formId": 0,
     "costumeId": 0,
-    "name": "Clefairy"
+    "name": "Clefairy",
+    "family": "Clefairy",
+    "releaseDate": "2019-02-13"
   },
   {
     "dexId": 36,
     "formId": 0,
     "costumeId": 0,
-    "name": "Clefable"
+    "name": "Clefable",
+    "family": "Clefairy",
+    "releaseDate": "2019-02-13"
   },
   {
     "dexId": 37,
     "formId": 0,
     "costumeId": 0,
-    "name": "Vulpix"
+    "name": "Vulpix",
+    "family": "Vulpix",
+    "releaseDate": "2020-10-09"
   },
   {
     "dexId": 37,
     "formId": 61,
     "costumeId": 0,
-    "name": "Vulpix"
+    "name": "Vulpix",
+    "family": "Vulpix",
+    "releaseDate": "2020-10-09"
   },
   {
     "dexId": 38,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ninetales"
+    "name": "Ninetales",
+    "family": "Vulpix",
+    "releaseDate": "2020-10-09"
   },
   {
     "dexId": 38,
     "formId": 61,
     "costumeId": 0,
-    "name": "Ninetales"
+    "name": "Ninetales",
+    "family": "Vulpix",
+    "releaseDate": "2020-10-09"
   },
   {
     "dexId": 39,
     "formId": 0,
     "costumeId": 0,
-    "name": "Jigglypuff"
+    "name": "Jigglypuff",
+    "family": "Jigglypuff",
+    "releaseDate": "2019-04-16"
   },
   {
     "dexId": 40,
     "formId": 0,
     "costumeId": 0,
-    "name": "Wigglytuff"
+    "name": "Wigglytuff",
+    "family": "Jigglypuff",
+    "releaseDate": "2019-04-16"
   },
   {
     "dexId": 41,
     "formId": 0,
     "costumeId": 0,
-    "name": "Zubat"
+    "name": "Zubat",
+    "family": "Zubat",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 41,
     "formId": 1,
     "costumeId": 0,
-    "name": "Zubat"
+    "name": "Zubat",
+    "family": "Zubat",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 42,
     "formId": 0,
     "costumeId": 0,
-    "name": "Golbat"
+    "name": "Golbat",
+    "family": "Zubat",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 42,
     "formId": 1,
     "costumeId": 0,
-    "name": "Golbat"
+    "name": "Golbat",
+    "family": "Zubat",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 43,
     "formId": 0,
     "costumeId": 0,
-    "name": "Oddish"
+    "name": "Oddish",
+    "family": "Oddish",
+    "releaseDate": "2019-10-03"
   },
   {
     "dexId": 44,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gloom"
+    "name": "Gloom",
+    "family": "Oddish",
+    "releaseDate": "2019-10-03"
   },
   {
     "dexId": 44,
     "formId": 1,
     "costumeId": 0,
-    "name": "Gloom"
+    "name": "Gloom",
+    "family": "Oddish",
+    "releaseDate": "2019-10-03"
   },
   {
     "dexId": 45,
     "formId": 0,
     "costumeId": 0,
-    "name": "Vileplume"
+    "name": "Vileplume",
+    "family": "Oddish",
+    "releaseDate": "2019-10-03"
   },
   {
     "dexId": 45,
     "formId": 1,
     "costumeId": 0,
-    "name": "Vileplume"
+    "name": "Vileplume",
+    "family": "Oddish",
+    "releaseDate": "2019-10-03"
   },
   {
     "dexId": 46,
     "formId": 0,
     "costumeId": 0,
-    "name": "Paras"
+    "name": "Paras",
+    "family": "Paras",
+    "releaseDate": "2021-02-20"
   },
   {
     "dexId": 47,
     "formId": 0,
     "costumeId": 0,
-    "name": "Parasect"
+    "name": "Parasect",
+    "family": "Paras",
+    "releaseDate": "2021-02-20"
   },
   {
     "dexId": 48,
     "formId": 0,
     "costumeId": 0,
-    "name": "Venonat"
+    "name": "Venonat",
+    "family": "Venonat",
+    "releaseDate": "2020-05-01"
   },
   {
     "dexId": 49,
     "formId": 0,
     "costumeId": 0,
-    "name": "Venomoth"
+    "name": "Venomoth",
+    "family": "Venonat",
+    "releaseDate": "2020-05-01"
   },
   {
     "dexId": 50,
     "formId": 0,
     "costumeId": 0,
-    "name": "Diglett"
+    "name": "Diglett",
+    "family": "Diglett",
+    "releaseDate": "2019-04-29"
   },
   {
     "dexId": 50,
     "formId": 61,
     "costumeId": 0,
-    "name": "Diglett"
+    "name": "Diglett",
+    "family": "Diglett",
+    "releaseDate": "2019-04-29"
   },
   {
     "dexId": 51,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dugtrio"
+    "name": "Dugtrio",
+    "family": "Diglett",
+    "releaseDate": "2019-04-29"
   },
   {
     "dexId": 51,
     "formId": 61,
     "costumeId": 0,
-    "name": "Dugtrio"
+    "name": "Dugtrio",
+    "family": "Diglett",
+    "releaseDate": "2019-04-29"
   },
   {
     "dexId": 52,
     "formId": 0,
     "costumeId": 0,
-    "name": "Meowth"
+    "name": "Meowth",
+    "family": "Meowth",
+    "releaseDate": "2019-11-07"
   },
   {
     "dexId": 52,
     "formId": 31,
     "costumeId": 0,
-    "name": "Meowth"
+    "name": "Meowth",
+    "family": "Meowth",
+    "releaseDate": "2019-11-07"
   },
   {
     "dexId": 52,
     "formId": 61,
     "costumeId": 0,
-    "name": "Meowth"
+    "name": "Meowth",
+    "family": "Meowth",
+    "releaseDate": "2019-11-07"
   },
   {
     "dexId": 53,
     "formId": 0,
     "costumeId": 0,
-    "name": "Persian"
+    "name": "Persian",
+    "family": "Meowth",
+    "releaseDate": "2019-11-07"
   },
   {
     "dexId": 53,
     "formId": 61,
     "costumeId": 0,
-    "name": "Persian"
+    "name": "Persian",
+    "family": "Meowth",
+    "releaseDate": "2019-11-07"
   },
   {
     "dexId": 54,
     "formId": 0,
     "costumeId": 0,
-    "name": "Psyduck"
+    "name": "Psyduck",
+    "family": "Psyduck",
+    "releaseDate": "2019-01-25"
   },
   {
     "dexId": 55,
     "formId": 0,
     "costumeId": 0,
-    "name": "Golduck"
+    "name": "Golduck",
+    "family": "Psyduck",
+    "releaseDate": "2019-01-25"
   },
   {
     "dexId": 56,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mankey"
+    "name": "Mankey",
+    "family": "Mankey",
+    "releaseDate": "2019-03-05"
   },
   {
     "dexId": 57,
     "formId": 0,
     "costumeId": 0,
-    "name": "Primeape"
+    "name": "Primeape",
+    "family": "Mankey",
+    "releaseDate": "2019-03-05"
   },
   {
     "dexId": 58,
     "formId": 0,
     "costumeId": 0,
-    "name": "Growlithe"
+    "name": "Growlithe",
+    "family": "Growlithe",
+    "releaseDate": "2018-09-01"
   },
   {
     "dexId": 59,
     "formId": 0,
     "costumeId": 0,
-    "name": "Arcanine"
+    "name": "Arcanine",
+    "family": "Growlithe",
+    "releaseDate": "2018-09-01"
   },
   {
     "dexId": 60,
     "formId": 0,
     "costumeId": 0,
-    "name": "Poliwag"
+    "name": "Poliwag",
+    "family": "Poliwag",
+    "releaseDate": "2019-08-06"
   },
   {
     "dexId": 61,
     "formId": 0,
     "costumeId": 0,
-    "name": "Poliwhirl"
+    "name": "Poliwhirl",
+    "family": "Poliwag",
+    "releaseDate": "2019-08-06"
   },
   {
     "dexId": 62,
     "formId": 0,
     "costumeId": 0,
-    "name": "Poliwrath"
+    "name": "Poliwrath",
+    "family": "Poliwag",
+    "releaseDate": "2019-08-06"
   },
   {
     "dexId": 63,
     "formId": 0,
     "costumeId": 0,
-    "name": "Abra"
+    "name": "Abra",
+    "family": "Abra",
+    "releaseDate": "2019-06-13"
   },
   {
     "dexId": 64,
     "formId": 0,
     "costumeId": 0,
-    "name": "Kadabra"
+    "name": "Kadabra",
+    "family": "Abra",
+    "releaseDate": "2019-06-13"
   },
   {
     "dexId": 64,
     "formId": 1,
     "costumeId": 0,
-    "name": "Kadabra"
+    "name": "Kadabra",
+    "family": "Abra",
+    "releaseDate": "2019-06-13"
   },
   {
     "dexId": 65,
     "formId": 0,
     "costumeId": 0,
-    "name": "Alakazam"
+    "name": "Alakazam",
+    "family": "Abra",
+    "releaseDate": "2019-06-13"
   },
   {
     "dexId": 65,
     "formId": 1,
     "costumeId": 0,
-    "name": "Alakazam"
+    "name": "Alakazam",
+    "family": "Abra",
+    "releaseDate": "2019-06-13"
   },
   {
     "dexId": 65,
     "formId": 51,
     "costumeId": 0,
-    "name": "Alakazam"
+    "name": "Alakazam",
+    "family": "Abra",
+    "releaseDate": "2019-06-13"
   },
   {
     "dexId": 66,
     "formId": 0,
     "costumeId": 0,
-    "name": "Machop"
+    "name": "Machop",
+    "family": "Machop",
+    "releaseDate": "2019-03-05"
   },
   {
     "dexId": 67,
     "formId": 0,
     "costumeId": 0,
-    "name": "Machoke"
+    "name": "Machoke",
+    "family": "Machop",
+    "releaseDate": "2019-03-05"
   },
   {
     "dexId": 68,
     "formId": 0,
     "costumeId": 0,
-    "name": "Machamp"
+    "name": "Machamp",
+    "family": "Machop",
+    "releaseDate": "2019-03-05"
   },
   {
     "dexId": 69,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bellsprout"
+    "name": "Bellsprout",
+    "family": "Bellsprout",
+    "releaseDate": "2020-07-16"
   },
   {
     "dexId": 70,
     "formId": 0,
     "costumeId": 0,
-    "name": "Weepinbell"
+    "name": "Weepinbell",
+    "family": "Bellsprout",
+    "releaseDate": "2020-07-16"
   },
   {
     "dexId": 71,
     "formId": 0,
     "costumeId": 0,
-    "name": "Victreebel"
+    "name": "Victreebel",
+    "family": "Bellsprout",
+    "releaseDate": "2020-07-16"
   },
   {
     "dexId": 72,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tentacool"
+    "name": "Tentacool",
+    "family": "Tentacool",
+    "releaseDate": "2019-11-19"
   },
   {
     "dexId": 73,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tentacruel"
+    "name": "Tentacruel",
+    "family": "Tentacool",
+    "releaseDate": "2019-11-19"
   },
   {
     "dexId": 74,
     "formId": 0,
     "costumeId": 0,
-    "name": "Geodude"
+    "name": "Geodude",
+    "family": "Geodude",
+    "releaseDate": "2018-09-13"
   },
   {
     "dexId": 74,
     "formId": 61,
     "costumeId": 0,
-    "name": "Geodude"
+    "name": "Geodude",
+    "family": "Geodude",
+    "releaseDate": "2018-09-13"
   },
   {
     "dexId": 75,
     "formId": 0,
     "costumeId": 0,
-    "name": "Graveler"
+    "name": "Graveler",
+    "family": "Geodude",
+    "releaseDate": "2018-09-13"
   },
   {
     "dexId": 75,
     "formId": 61,
     "costumeId": 0,
-    "name": "Graveler"
+    "name": "Graveler",
+    "family": "Geodude",
+    "releaseDate": "2018-09-13"
   },
   {
     "dexId": 76,
     "formId": 0,
     "costumeId": 0,
-    "name": "Golem"
+    "name": "Golem",
+    "family": "Geodude",
+    "releaseDate": "2018-09-13"
   },
   {
     "dexId": 76,
     "formId": 61,
     "costumeId": 0,
-    "name": "Golem"
+    "name": "Golem",
+    "family": "Geodude",
+    "releaseDate": "2018-09-13"
   },
   {
     "dexId": 77,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ponyta"
+    "name": "Ponyta",
+    "family": "Ponyta",
+    "releaseDate": "2018-11-05"
   },
   {
     "dexId": 77,
     "formId": 31,
     "costumeId": 0,
-    "name": "Ponyta"
+    "name": "Ponyta",
+    "family": "Ponyta",
+    "releaseDate": "2018-11-05"
   },
   {
     "dexId": 77,
     "formId": 31,
     "costumeId": 47,
-    "name": "Ponyta"
+    "name": "Ponyta",
+    "family": "Ponyta",
+    "releaseDate": "2018-11-05"
   },
   {
     "dexId": 78,
     "formId": 0,
     "costumeId": 0,
-    "name": "Rapidash"
+    "name": "Rapidash",
+    "family": "Ponyta",
+    "releaseDate": "2018-11-05"
   },
   {
     "dexId": 78,
     "formId": 31,
     "costumeId": 0,
-    "name": "Rapidash"
+    "name": "Rapidash",
+    "family": "Ponyta",
+    "releaseDate": "2018-11-05"
   },
   {
     "dexId": 79,
     "formId": 0,
     "costumeId": 0,
-    "name": "Slowpoke"
+    "name": "Slowpoke",
+    "family": "Slowpoke",
+    "releaseDate": "2020-11-16"
   },
   {
     "dexId": 79,
     "formId": 31,
     "costumeId": 0,
-    "name": "Slowpoke"
+    "name": "Slowpoke",
+    "family": "Slowpoke",
+    "releaseDate": "2020-11-16"
   },
   {
     "dexId": 80,
     "formId": 0,
     "costumeId": 0,
-    "name": "Slowbro"
+    "name": "Slowbro",
+    "family": "Slowpoke",
+    "releaseDate": "2020-11-16"
   },
   {
     "dexId": 80,
     "formId": 31,
     "costumeId": 0,
-    "name": "Slowbro"
+    "name": "Slowbro",
+    "family": "Slowpoke",
+    "releaseDate": "2020-11-16"
   },
   {
     "dexId": 80,
     "formId": 51,
     "costumeId": 0,
-    "name": "Slowbro"
+    "name": "Slowbro",
+    "family": "Slowpoke",
+    "releaseDate": "2020-11-16"
   },
   {
     "dexId": 81,
     "formId": 0,
     "costumeId": 0,
-    "name": "Magnemite"
+    "name": "Magnemite",
+    "family": "Magnemite",
+    "releaseDate": "2018-11-16"
   },
   {
     "dexId": 82,
     "formId": 0,
     "costumeId": 0,
-    "name": "Magneton"
+    "name": "Magneton",
+    "family": "Magnemite",
+    "releaseDate": "2018-11-16"
   },
   {
     "dexId": 83,
     "formId": 0,
     "costumeId": 0,
-    "name": "Farfetch\u2019d"
+    "name": "Farfetch\u2019d",
+    "family": "Farfetchd",
+    "releaseDate": null
   },
   {
     "dexId": 83,
     "formId": 31,
     "costumeId": 0,
-    "name": "Farfetch\u2019d"
+    "name": "Farfetch\u2019d",
+    "family": "Farfetchd",
+    "releaseDate": null
   },
   {
     "dexId": 84,
     "formId": 0,
     "costumeId": 0,
-    "name": "Doduo"
+    "name": "Doduo",
+    "family": "Doduo",
+    "releaseDate": "2020-09-21"
   },
   {
     "dexId": 84,
     "formId": 1,
     "costumeId": 0,
-    "name": "Doduo"
+    "name": "Doduo",
+    "family": "Doduo",
+    "releaseDate": "2020-09-21"
   },
   {
     "dexId": 85,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dodrio"
+    "name": "Dodrio",
+    "family": "Doduo",
+    "releaseDate": "2020-09-21"
   },
   {
     "dexId": 85,
     "formId": 1,
     "costumeId": 0,
-    "name": "Dodrio"
+    "name": "Dodrio",
+    "family": "Doduo",
+    "releaseDate": "2020-09-21"
   },
   {
     "dexId": 86,
     "formId": 0,
     "costumeId": 0,
-    "name": "Seel"
+    "name": "Seel",
+    "family": "Seel",
+    "releaseDate": "2019-05-01"
   },
   {
     "dexId": 87,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dewgong"
+    "name": "Dewgong",
+    "family": "Seel",
+    "releaseDate": "2019-05-01"
   },
   {
     "dexId": 88,
     "formId": 0,
     "costumeId": 0,
-    "name": "Grimer"
+    "name": "Grimer",
+    "family": "Grimer",
+    "releaseDate": "2018-09-13"
   },
   {
     "dexId": 88,
     "formId": 61,
     "costumeId": 0,
-    "name": "Grimer"
+    "name": "Grimer",
+    "family": "Grimer",
+    "releaseDate": "2018-09-13"
   },
   {
     "dexId": 89,
     "formId": 0,
     "costumeId": 0,
-    "name": "Muk"
+    "name": "Muk",
+    "family": "Grimer",
+    "releaseDate": "2018-09-13"
   },
   {
     "dexId": 89,
     "formId": 61,
     "costumeId": 0,
-    "name": "Muk"
+    "name": "Muk",
+    "family": "Grimer",
+    "releaseDate": "2018-09-13"
   },
   {
     "dexId": 90,
     "formId": 0,
     "costumeId": 0,
-    "name": "Shellder"
+    "name": "Shellder",
+    "family": "Shellder",
+    "releaseDate": "2018-06-07"
   },
   {
     "dexId": 91,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cloyster"
+    "name": "Cloyster",
+    "family": "Shellder",
+    "releaseDate": "2018-06-07"
   },
   {
     "dexId": 92,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gastly"
+    "name": "Gastly",
+    "family": "Gastly",
+    "releaseDate": "2018-11-03"
   },
   {
     "dexId": 93,
     "formId": 0,
     "costumeId": 0,
-    "name": "Haunter"
+    "name": "Haunter",
+    "family": "Gastly",
+    "releaseDate": "2018-11-03"
   },
   {
     "dexId": 94,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gengar"
+    "name": "Gengar",
+    "family": "Gastly",
+    "releaseDate": "2018-11-03"
   },
   {
     "dexId": 94,
     "formId": 0,
     "costumeId": 11,
-    "name": "Gengar"
+    "name": "Gengar",
+    "family": "Gastly",
+    "releaseDate": "2018-11-03"
   },
   {
     "dexId": 94,
     "formId": 26,
     "costumeId": 0,
-    "name": "Gengar"
+    "name": "Gengar",
+    "family": "Gastly",
+    "releaseDate": "2018-11-03"
   },
   {
     "dexId": 94,
     "formId": 51,
     "costumeId": 0,
-    "name": "Gengar"
+    "name": "Gengar",
+    "family": "Gastly",
+    "releaseDate": "2018-11-03"
   },
   {
     "dexId": 95,
     "formId": 0,
     "costumeId": 0,
-    "name": "Onix"
+    "name": "Onix",
+    "family": "Onix",
+    "releaseDate": "2019-06-04"
   },
   {
     "dexId": 96,
     "formId": 0,
     "costumeId": 0,
-    "name": "Drowzee"
+    "name": "Drowzee",
+    "family": "Drowzee",
+    "releaseDate": "2018-10-05"
   },
   {
     "dexId": 97,
     "formId": 0,
     "costumeId": 0,
-    "name": "Hypno"
+    "name": "Hypno",
+    "family": "Drowzee",
+    "releaseDate": "2018-10-05"
   },
   {
     "dexId": 97,
     "formId": 1,
     "costumeId": 0,
-    "name": "Hypno"
+    "name": "Hypno",
+    "family": "Drowzee",
+    "releaseDate": "2018-10-05"
   },
   {
     "dexId": 98,
     "formId": 0,
     "costumeId": 0,
-    "name": "Krabby"
+    "name": "Krabby",
+    "family": "Krabby",
+    "releaseDate": "2018-10-01"
   },
   {
     "dexId": 99,
     "formId": 0,
     "costumeId": 0,
-    "name": "Kingler"
+    "name": "Kingler",
+    "family": "Krabby",
+    "releaseDate": "2018-10-01"
   },
   {
     "dexId": 100,
     "formId": 0,
     "costumeId": 0,
-    "name": "Voltorb"
+    "name": "Voltorb",
+    "family": "Voltorb",
+    "releaseDate": "2020-05-08"
   },
   {
     "dexId": 101,
     "formId": 0,
     "costumeId": 0,
-    "name": "Electrode"
+    "name": "Electrode",
+    "family": "Voltorb",
+    "releaseDate": "2020-05-08"
   },
   {
     "dexId": 102,
     "formId": 0,
     "costumeId": 0,
-    "name": "Exeggcute"
+    "name": "Exeggcute",
+    "family": "Exeggcute",
+    "releaseDate": "2020-04-08"
   },
   {
     "dexId": 103,
     "formId": 0,
     "costumeId": 0,
-    "name": "Exeggutor"
+    "name": "Exeggutor",
+    "family": "Exeggcute",
+    "releaseDate": "2020-04-08"
   },
   {
     "dexId": 103,
     "formId": 61,
     "costumeId": 0,
-    "name": "Exeggutor"
+    "name": "Exeggutor",
+    "family": "Exeggcute",
+    "releaseDate": "2020-04-08"
   },
   {
     "dexId": 104,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cubone"
+    "name": "Cubone",
+    "family": "Cubone",
+    "releaseDate": "2018-11-05"
   },
   {
     "dexId": 105,
     "formId": 0,
     "costumeId": 0,
-    "name": "Marowak"
+    "name": "Marowak",
+    "family": "Cubone",
+    "releaseDate": "2018-11-05"
   },
   {
     "dexId": 105,
     "formId": 61,
     "costumeId": 0,
-    "name": "Marowak"
+    "name": "Marowak",
+    "family": "Cubone",
+    "releaseDate": "2018-11-05"
   },
   {
     "dexId": 106,
     "formId": 0,
     "costumeId": 0,
-    "name": "Hitmonlee"
+    "name": "Hitmonlee",
+    "family": "Tyrogue",
+    "releaseDate": "2021-02-20"
   },
   {
     "dexId": 107,
     "formId": 0,
     "costumeId": 0,
-    "name": "Hitmonchan"
+    "name": "Hitmonchan",
+    "family": "Tyrogue",
+    "releaseDate": "2021-02-20"
   },
   {
     "dexId": 108,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lickitung"
+    "name": "Lickitung",
+    "family": "Lickitung",
+    "releaseDate": "2020-02-15"
   },
   {
     "dexId": 109,
     "formId": 0,
     "costumeId": 0,
-    "name": "Koffing"
+    "name": "Koffing",
+    "family": "Koffing",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 110,
     "formId": 0,
     "costumeId": 0,
-    "name": "Weezing"
+    "name": "Weezing",
+    "family": "Koffing",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 110,
     "formId": 31,
     "costumeId": 0,
-    "name": "Weezing"
+    "name": "Weezing",
+    "family": "Koffing",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 111,
     "formId": 0,
     "costumeId": 0,
-    "name": "Rhyhorn"
+    "name": "Rhyhorn",
+    "family": "Rhyhorn",
+    "releaseDate": "2020-02-22"
   },
   {
     "dexId": 111,
     "formId": 1,
     "costumeId": 0,
-    "name": "Rhyhorn"
+    "name": "Rhyhorn",
+    "family": "Rhyhorn",
+    "releaseDate": "2020-02-22"
   },
   {
     "dexId": 112,
     "formId": 0,
     "costumeId": 0,
-    "name": "Rhydon"
+    "name": "Rhydon",
+    "family": "Rhyhorn",
+    "releaseDate": "2020-02-22"
   },
   {
     "dexId": 112,
     "formId": 1,
     "costumeId": 0,
-    "name": "Rhydon"
+    "name": "Rhydon",
+    "family": "Rhyhorn",
+    "releaseDate": "2020-02-22"
   },
   {
     "dexId": 113,
     "formId": 0,
     "costumeId": 0,
-    "name": "Chansey"
+    "name": "Chansey",
+    "family": "Chansey",
+    "releaseDate": "2020-02-13"
   },
   {
     "dexId": 113,
     "formId": 0,
     "costumeId": 7,
-    "name": "Chansey"
+    "name": "Chansey",
+    "family": "Chansey",
+    "releaseDate": "2020-02-13"
   },
   {
     "dexId": 114,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tangela"
+    "name": "Tangela",
+    "family": "Tangela",
+    "releaseDate": "2020-07-24"
   },
   {
     "dexId": 115,
     "formId": 0,
     "costumeId": 0,
-    "name": "Kangaskhan"
+    "name": "Kangaskhan",
+    "family": "Kangaskhan",
+    "releaseDate": null
   },
   {
     "dexId": 115,
     "formId": 51,
     "costumeId": 0,
-    "name": "Kangaskhan"
+    "name": "Kangaskhan",
+    "family": "Kangaskhan",
+    "releaseDate": null
   },
   {
     "dexId": 116,
     "formId": 0,
     "costumeId": 0,
-    "name": "Horsea"
+    "name": "Horsea",
+    "family": "Horsea",
+    "releaseDate": "2019-06-13"
   },
   {
     "dexId": 117,
     "formId": 0,
     "costumeId": 0,
-    "name": "Seadra"
+    "name": "Seadra",
+    "family": "Horsea",
+    "releaseDate": "2019-06-13"
   },
   {
     "dexId": 118,
     "formId": 0,
     "costumeId": 0,
-    "name": "Goldeen"
+    "name": "Goldeen",
+    "family": "Goldeen",
+    "releaseDate": "2020-11-23"
   },
   {
     "dexId": 118,
     "formId": 1,
     "costumeId": 0,
-    "name": "Goldeen"
+    "name": "Goldeen",
+    "family": "Goldeen",
+    "releaseDate": "2020-11-23"
   },
   {
     "dexId": 119,
     "formId": 0,
     "costumeId": 0,
-    "name": "Seaking"
+    "name": "Seaking",
+    "family": "Goldeen",
+    "releaseDate": "2020-11-23"
   },
   {
     "dexId": 119,
     "formId": 1,
     "costumeId": 0,
-    "name": "Seaking"
+    "name": "Seaking",
+    "family": "Goldeen",
+    "releaseDate": "2020-11-23"
   },
   {
     "dexId": 120,
     "formId": 0,
     "costumeId": 0,
-    "name": "Staryu"
+    "name": "Staryu",
+    "family": "Staryu",
+    "releaseDate": "2020-08-07"
   },
   {
     "dexId": 121,
     "formId": 0,
     "costumeId": 0,
-    "name": "Starmie"
+    "name": "Starmie",
+    "family": "Staryu",
+    "releaseDate": "2020-08-07"
   },
   {
     "dexId": 122,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mr. Mime"
+    "name": "Mr. Mime",
+    "family": "Mr Mime",
+    "releaseDate": null
   },
   {
     "dexId": 122,
     "formId": 31,
     "costumeId": 0,
-    "name": "Mr. Mime"
+    "name": "Mr. Mime",
+    "family": "Mr Mime",
+    "releaseDate": null
   },
   {
     "dexId": 123,
     "formId": 0,
     "costumeId": 0,
-    "name": "Scyther"
+    "name": "Scyther",
+    "family": "Scyther",
+    "releaseDate": "2019-04-02"
   },
   {
     "dexId": 123,
     "formId": 1,
     "costumeId": 0,
-    "name": "Scyther"
+    "name": "Scyther",
+    "family": "Scyther",
+    "releaseDate": "2019-04-02"
   },
   {
     "dexId": 124,
     "formId": 0,
     "costumeId": 0,
-    "name": "Jynx"
+    "name": "Jynx",
+    "family": "Jynx",
+    "releaseDate": "2019-02-13"
   },
   {
     "dexId": 125,
     "formId": 0,
     "costumeId": 0,
-    "name": "Electabuzz"
+    "name": "Electabuzz",
+    "family": "Electabuzz",
+    "releaseDate": "2018-11-15"
   },
   {
     "dexId": 126,
     "formId": 0,
     "costumeId": 0,
-    "name": "Magmar"
+    "name": "Magmar",
+    "family": "Magmar",
+    "releaseDate": "2018-03-22"
   },
   {
     "dexId": 127,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pinsir"
+    "name": "Pinsir",
+    "family": "Pinsir",
+    "releaseDate": null
   },
   {
     "dexId": 127,
     "formId": 51,
     "costumeId": 0,
-    "name": "Pinsir"
+    "name": "Pinsir",
+    "family": "Pinsir",
+    "releaseDate": null
   },
   {
     "dexId": 128,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tauros"
+    "name": "Tauros",
+    "family": "Tauros",
+    "releaseDate": null
   },
   {
     "dexId": 129,
     "formId": 0,
     "costumeId": 0,
-    "name": "Magikarp"
+    "name": "Magikarp",
+    "family": "Magikarp",
+    "releaseDate": "2017-03-22"
   },
   {
     "dexId": 129,
     "formId": 1,
     "costumeId": 0,
-    "name": "Magikarp"
+    "name": "Magikarp",
+    "family": "Magikarp",
+    "releaseDate": "2017-03-22"
   },
   {
     "dexId": 130,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gyarados"
+    "name": "Gyarados",
+    "family": "Magikarp",
+    "releaseDate": "2017-03-22"
   },
   {
     "dexId": 130,
     "formId": 1,
     "costumeId": 0,
-    "name": "Gyarados"
+    "name": "Gyarados",
+    "family": "Magikarp",
+    "releaseDate": "2017-03-22"
   },
   {
     "dexId": 130,
     "formId": 51,
     "costumeId": 0,
-    "name": "Gyarados"
+    "name": "Gyarados",
+    "family": "Magikarp",
+    "releaseDate": "2017-03-22"
   },
   {
     "dexId": 131,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lapras"
+    "name": "Lapras",
+    "family": "Lapras",
+    "releaseDate": null
   },
   {
     "dexId": 132,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ditto"
+    "name": "Ditto",
+    "family": "Ditto",
+    "releaseDate": "2021-02-20"
   },
   {
     "dexId": 133,
     "formId": 0,
     "costumeId": 0,
-    "name": "Eevee"
+    "name": "Eevee",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 133,
     "formId": 0,
     "costumeId": 7,
-    "name": "Eevee"
+    "name": "Eevee",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 133,
     "formId": 0,
     "costumeId": 11,
-    "name": "Eevee"
+    "name": "Eevee",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 134,
     "formId": 0,
     "costumeId": 0,
-    "name": "Vaporeon"
+    "name": "Vaporeon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 134,
     "formId": 0,
     "costumeId": 7,
-    "name": "Vaporeon"
+    "name": "Vaporeon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 135,
     "formId": 0,
     "costumeId": 0,
-    "name": "Jolteon"
+    "name": "Jolteon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 135,
     "formId": 0,
     "costumeId": 7,
-    "name": "Jolteon"
+    "name": "Jolteon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 136,
     "formId": 0,
     "costumeId": 0,
-    "name": "Flareon"
+    "name": "Flareon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 136,
     "formId": 0,
     "costumeId": 7,
-    "name": "Flareon"
+    "name": "Flareon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 137,
     "formId": 0,
     "costumeId": 0,
-    "name": "Porygon"
+    "name": "Porygon",
+    "family": "Porygon",
+    "releaseDate": "2020-09-19"
   },
   {
     "dexId": 138,
     "formId": 0,
     "costumeId": 0,
-    "name": "Omanyte"
+    "name": "Omanyte",
+    "family": "Omanyte",
+    "releaseDate": "2018-05-24"
   },
   {
     "dexId": 139,
     "formId": 0,
     "costumeId": 0,
-    "name": "Omastar"
+    "name": "Omastar",
+    "family": "Omanyte",
+    "releaseDate": "2018-05-24"
   },
   {
     "dexId": 140,
     "formId": 0,
     "costumeId": 0,
-    "name": "Kabuto"
+    "name": "Kabuto",
+    "family": "Kabuto",
+    "releaseDate": "2018-05-24"
   },
   {
     "dexId": 141,
     "formId": 0,
     "costumeId": 0,
-    "name": "Kabutops"
+    "name": "Kabutops",
+    "family": "Kabuto",
+    "releaseDate": "2018-05-24"
   },
   {
     "dexId": 142,
     "formId": 0,
     "costumeId": 0,
-    "name": "Aerodactyl"
+    "name": "Aerodactyl",
+    "family": "Aerodactyl",
+    "releaseDate": null
   },
   {
     "dexId": 142,
     "formId": 51,
     "costumeId": 0,
-    "name": "Aerodactyl"
+    "name": "Aerodactyl",
+    "family": "Aerodactyl",
+    "releaseDate": null
   },
   {
     "dexId": 143,
     "formId": 0,
     "costumeId": 0,
-    "name": "Snorlax"
+    "name": "Snorlax",
+    "family": "Snorlax",
+    "releaseDate": "2021-02-20"
   },
   {
     "dexId": 144,
     "formId": 0,
     "costumeId": 0,
-    "name": "Articuno"
+    "name": "Articuno",
+    "family": "Articuno",
+    "releaseDate": null
   },
   {
     "dexId": 145,
     "formId": 0,
     "costumeId": 0,
-    "name": "Zapdos"
+    "name": "Zapdos",
+    "family": "Zapdos",
+    "releaseDate": null
   },
   {
     "dexId": 146,
     "formId": 0,
     "costumeId": 0,
-    "name": "Moltres"
+    "name": "Moltres",
+    "family": "Moltres",
+    "releaseDate": null
   },
   {
     "dexId": 147,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dratini"
+    "name": "Dratini",
+    "family": "Dratini",
+    "releaseDate": "2018-02-24"
   },
   {
     "dexId": 148,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dragonair"
+    "name": "Dragonair",
+    "family": "Dratini",
+    "releaseDate": "2018-02-24"
   },
   {
     "dexId": 149,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dragonite"
+    "name": "Dragonite",
+    "family": "Dratini",
+    "releaseDate": "2018-02-24"
   },
   {
     "dexId": 150,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mewtwo"
+    "name": "Mewtwo",
+    "family": "Mewtwo",
+    "releaseDate": null
   },
   {
     "dexId": 150,
     "formId": 51,
     "costumeId": 0,
-    "name": "Mewtwo"
+    "name": "Mewtwo",
+    "family": "Mewtwo",
+    "releaseDate": null
   },
   {
     "dexId": 150,
     "formId": 52,
     "costumeId": 0,
-    "name": "Mewtwo"
+    "name": "Mewtwo",
+    "family": "Mewtwo",
+    "releaseDate": null
   },
   {
     "dexId": 151,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mew"
+    "name": "Mew",
+    "family": "Mew",
+    "releaseDate": "2021-02-20"
   },
   {
     "dexId": 152,
     "formId": 0,
     "costumeId": 0,
-    "name": "Chikorita"
+    "name": "Chikorita",
+    "family": "Chikorita",
+    "releaseDate": "2018-09-22"
   },
   {
     "dexId": 153,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bayleef"
+    "name": "Bayleef",
+    "family": "Chikorita",
+    "releaseDate": "2018-09-22"
   },
   {
     "dexId": 154,
     "formId": 0,
     "costumeId": 0,
-    "name": "Meganium"
+    "name": "Meganium",
+    "family": "Chikorita",
+    "releaseDate": "2018-09-22"
   },
   {
     "dexId": 154,
     "formId": 1,
     "costumeId": 0,
-    "name": "Meganium"
+    "name": "Meganium",
+    "family": "Chikorita",
+    "releaseDate": "2018-09-22"
   },
   {
     "dexId": 155,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cyndaquil"
+    "name": "Cyndaquil",
+    "family": "Cyndaquil",
+    "releaseDate": "2018-11-10"
   },
   {
     "dexId": 156,
     "formId": 0,
     "costumeId": 0,
-    "name": "Quilava"
+    "name": "Quilava",
+    "family": "Cyndaquil",
+    "releaseDate": "2018-11-10"
   },
   {
     "dexId": 157,
     "formId": 0,
     "costumeId": 0,
-    "name": "Typhlosion"
+    "name": "Typhlosion",
+    "family": "Cyndaquil",
+    "releaseDate": "2018-11-10"
   },
   {
     "dexId": 158,
     "formId": 0,
     "costumeId": 0,
-    "name": "Totodile"
+    "name": "Totodile",
+    "family": "Totodile",
+    "releaseDate": "2019-01-12"
   },
   {
     "dexId": 159,
     "formId": 0,
     "costumeId": 0,
-    "name": "Croconaw"
+    "name": "Croconaw",
+    "family": "Totodile",
+    "releaseDate": "2019-01-12"
   },
   {
     "dexId": 160,
     "formId": 0,
     "costumeId": 0,
-    "name": "Feraligatr"
+    "name": "Feraligatr",
+    "family": "Totodile",
+    "releaseDate": "2019-01-12"
   },
   {
     "dexId": 161,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sentret"
+    "name": "Sentret",
+    "family": "Sentret",
+    "releaseDate": "2019-09-02"
   },
   {
     "dexId": 162,
     "formId": 0,
     "costumeId": 0,
-    "name": "Furret"
+    "name": "Furret",
+    "family": "Sentret",
+    "releaseDate": "2019-09-02"
   },
   {
     "dexId": 163,
     "formId": 0,
     "costumeId": 0,
-    "name": "Hoothoot"
+    "name": "Hoothoot",
+    "family": "Hoothoot",
+    "releaseDate": "2022-01-01"
   },
   {
     "dexId": 164,
     "formId": 0,
     "costumeId": 0,
-    "name": "Noctowl"
+    "name": "Noctowl",
+    "family": "Hoothoot",
+    "releaseDate": "2022-01-01"
   },
   {
     "dexId": 165,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ledyba"
+    "name": "Ledyba",
+    "family": "Ledyba",
+    "releaseDate": "2020-09-10"
   },
   {
     "dexId": 165,
     "formId": 1,
     "costumeId": 0,
-    "name": "Ledyba"
+    "name": "Ledyba",
+    "family": "Ledyba",
+    "releaseDate": "2020-09-10"
   },
   {
     "dexId": 166,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ledian"
+    "name": "Ledian",
+    "family": "Ledyba",
+    "releaseDate": "2020-09-10"
   },
   {
     "dexId": 166,
     "formId": 1,
     "costumeId": 0,
-    "name": "Ledian"
+    "name": "Ledian",
+    "family": "Ledyba",
+    "releaseDate": "2020-09-10"
   },
   {
     "dexId": 167,
     "formId": 0,
     "costumeId": 0,
-    "name": "Spinarak"
+    "name": "Spinarak",
+    "family": "Spinarak",
+    "releaseDate": "2021-10-15"
   },
   {
     "dexId": 168,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ariados"
+    "name": "Ariados",
+    "family": "Spinarak",
+    "releaseDate": "2021-10-15"
   },
   {
     "dexId": 169,
     "formId": 0,
     "costumeId": 0,
-    "name": "Crobat"
+    "name": "Crobat",
+    "family": "Zubat",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 170,
     "formId": 0,
     "costumeId": 0,
-    "name": "Chinchou"
+    "name": "Chinchou",
+    "family": "Chinchou",
+    "releaseDate": "2020-04-17"
   },
   {
     "dexId": 171,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lanturn"
+    "name": "Lanturn",
+    "family": "Chinchou",
+    "releaseDate": "2020-04-17"
   },
   {
     "dexId": 172,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pichu"
+    "name": "Pichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 172,
     "formId": 0,
     "costumeId": 1,
-    "name": "Pichu"
+    "name": "Pichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 172,
     "formId": 0,
     "costumeId": 2,
-    "name": "Pichu"
+    "name": "Pichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 172,
     "formId": 0,
     "costumeId": 3,
-    "name": "Pichu"
+    "name": "Pichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 172,
     "formId": 0,
     "costumeId": 4,
-    "name": "Pichu"
+    "name": "Pichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 172,
     "formId": 0,
     "costumeId": 5,
-    "name": "Pichu"
+    "name": "Pichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 172,
     "formId": 0,
     "costumeId": 6,
-    "name": "Pichu"
+    "name": "Pichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 172,
     "formId": 0,
     "costumeId": 7,
-    "name": "Pichu"
+    "name": "Pichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 172,
     "formId": 0,
     "costumeId": 8,
-    "name": "Pichu"
+    "name": "Pichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 172,
     "formId": 0,
     "costumeId": 28,
-    "name": "Pichu"
+    "name": "Pichu",
+    "family": "Pikachu",
+    "releaseDate": "2017-08-15"
   },
   {
     "dexId": 173,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cleffa"
+    "name": "Cleffa",
+    "family": "Clefairy",
+    "releaseDate": "2019-02-13"
   },
   {
     "dexId": 174,
     "formId": 0,
     "costumeId": 0,
-    "name": "Igglybuff"
+    "name": "Igglybuff",
+    "family": "Jigglypuff",
+    "releaseDate": "2019-04-16"
   },
   {
     "dexId": 175,
     "formId": 0,
     "costumeId": 0,
-    "name": "Togepi"
+    "name": "Togepi",
+    "family": "Togepi",
+    "releaseDate": "2018-03-22"
   },
   {
     "dexId": 175,
     "formId": 0,
     "costumeId": 12,
-    "name": "Togepi"
+    "name": "Togepi",
+    "family": "Togepi",
+    "releaseDate": "2018-03-22"
   },
   {
     "dexId": 176,
     "formId": 0,
     "costumeId": 0,
-    "name": "Togetic"
+    "name": "Togetic",
+    "family": "Togepi",
+    "releaseDate": "2018-03-22"
   },
   {
     "dexId": 177,
     "formId": 0,
     "costumeId": 0,
-    "name": "Natu"
+    "name": "Natu",
+    "family": "Natu",
+    "releaseDate": "2018-08-20"
   },
   {
     "dexId": 178,
     "formId": 0,
     "costumeId": 0,
-    "name": "Xatu"
+    "name": "Xatu",
+    "family": "Natu",
+    "releaseDate": "2018-08-20"
   },
   {
     "dexId": 178,
     "formId": 1,
     "costumeId": 0,
-    "name": "Xatu"
+    "name": "Xatu",
+    "family": "Natu",
+    "releaseDate": "2018-08-20"
   },
   {
     "dexId": 179,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mareep"
+    "name": "Mareep",
+    "family": "Mareep",
+    "releaseDate": "2018-04-15"
   },
   {
     "dexId": 180,
     "formId": 0,
     "costumeId": 0,
-    "name": "Flaaffy"
+    "name": "Flaaffy",
+    "family": "Mareep",
+    "releaseDate": "2018-04-15"
   },
   {
     "dexId": 181,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ampharos"
+    "name": "Ampharos",
+    "family": "Mareep",
+    "releaseDate": "2018-04-15"
   },
   {
     "dexId": 181,
     "formId": 51,
     "costumeId": 0,
-    "name": "Ampharos"
+    "name": "Ampharos",
+    "family": "Mareep",
+    "releaseDate": "2018-04-15"
   },
   {
     "dexId": 182,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bellossom"
+    "name": "Bellossom",
+    "family": "Oddish",
+    "releaseDate": "2019-10-03"
   },
   {
     "dexId": 183,
     "formId": 0,
     "costumeId": 0,
-    "name": "Marill"
+    "name": "Marill",
+    "family": "Marill",
+    "releaseDate": "2018-12-18"
   },
   {
     "dexId": 184,
     "formId": 0,
     "costumeId": 0,
-    "name": "Azumarill"
+    "name": "Azumarill",
+    "family": "Marill",
+    "releaseDate": "2018-12-18"
   },
   {
     "dexId": 185,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sudowoodo"
+    "name": "Sudowoodo",
+    "family": "Sudowoodo",
+    "releaseDate": null
   },
   {
     "dexId": 185,
     "formId": 1,
     "costumeId": 0,
-    "name": "Sudowoodo"
+    "name": "Sudowoodo",
+    "family": "Sudowoodo",
+    "releaseDate": null
   },
   {
     "dexId": 186,
     "formId": 0,
     "costumeId": 0,
-    "name": "Politoed"
+    "name": "Politoed",
+    "family": "Poliwag",
+    "releaseDate": "2019-08-06"
   },
   {
     "dexId": 186,
     "formId": 1,
     "costumeId": 0,
-    "name": "Politoed"
+    "name": "Politoed",
+    "family": "Poliwag",
+    "releaseDate": "2019-08-06"
   },
   {
     "dexId": 187,
     "formId": 0,
     "costumeId": 0,
-    "name": "Hoppip"
+    "name": "Hoppip",
+    "family": "Hoppip",
+    "releaseDate": "2022-02-12"
   },
   {
     "dexId": 188,
     "formId": 0,
     "costumeId": 0,
-    "name": "Skiploom"
+    "name": "Skiploom",
+    "family": "Hoppip",
+    "releaseDate": "2022-02-12"
   },
   {
     "dexId": 189,
     "formId": 0,
     "costumeId": 0,
-    "name": "Jumpluff"
+    "name": "Jumpluff",
+    "family": "Hoppip",
+    "releaseDate": "2022-02-12"
   },
   {
     "dexId": 190,
     "formId": 0,
     "costumeId": 0,
-    "name": "Aipom"
+    "name": "Aipom",
+    "family": "Aipom",
+    "releaseDate": "2019-05-07"
   },
   {
     "dexId": 190,
     "formId": 1,
     "costumeId": 0,
-    "name": "Aipom"
+    "name": "Aipom",
+    "family": "Aipom",
+    "releaseDate": "2019-05-07"
   },
   {
     "dexId": 191,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sunkern"
+    "name": "Sunkern",
+    "family": "Sunkern",
+    "releaseDate": "2018-08-20"
   },
   {
     "dexId": 192,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sunflora"
+    "name": "Sunflora",
+    "family": "Sunkern",
+    "releaseDate": "2018-08-20"
   },
   {
     "dexId": 193,
     "formId": 0,
     "costumeId": 0,
-    "name": "Yanma"
+    "name": "Yanma",
+    "family": "Yanma",
+    "releaseDate": "2019-09-20"
   },
   {
     "dexId": 194,
     "formId": 0,
     "costumeId": 0,
-    "name": "Wooper"
+    "name": "Wooper",
+    "family": "Wooper",
+    "releaseDate": "2020-12-11"
   },
   {
     "dexId": 194,
     "formId": 1,
     "costumeId": 0,
-    "name": "Wooper"
+    "name": "Wooper",
+    "family": "Wooper",
+    "releaseDate": "2020-12-11"
   },
   {
     "dexId": 195,
     "formId": 0,
     "costumeId": 0,
-    "name": "Quagsire"
+    "name": "Quagsire",
+    "family": "Wooper",
+    "releaseDate": "2020-12-11"
   },
   {
     "dexId": 195,
     "formId": 1,
     "costumeId": 0,
-    "name": "Quagsire"
+    "name": "Quagsire",
+    "family": "Wooper",
+    "releaseDate": "2020-12-11"
   },
   {
     "dexId": 196,
     "formId": 0,
     "costumeId": 0,
-    "name": "Espeon"
+    "name": "Espeon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 196,
     "formId": 0,
     "costumeId": 7,
-    "name": "Espeon"
+    "name": "Espeon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 197,
     "formId": 0,
     "costumeId": 0,
-    "name": "Umbreon"
+    "name": "Umbreon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 197,
     "formId": 0,
     "costumeId": 7,
-    "name": "Umbreon"
+    "name": "Umbreon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 198,
     "formId": 0,
     "costumeId": 0,
-    "name": "Murkrow"
+    "name": "Murkrow",
+    "family": "Murkrow",
+    "releaseDate": null
   },
   {
     "dexId": 198,
     "formId": 1,
     "costumeId": 0,
-    "name": "Murkrow"
+    "name": "Murkrow",
+    "family": "Murkrow",
+    "releaseDate": null
   },
   {
     "dexId": 199,
     "formId": 0,
     "costumeId": 0,
-    "name": "Slowking"
+    "name": "Slowking",
+    "family": "Slowpoke",
+    "releaseDate": "2020-11-16"
   },
   {
     "dexId": 199,
     "formId": 31,
     "costumeId": 0,
-    "name": "Slowking"
+    "name": "Slowking",
+    "family": "Slowpoke",
+    "releaseDate": "2020-11-16"
   },
   {
     "dexId": 200,
     "formId": 0,
     "costumeId": 0,
-    "name": "Misdreavus"
+    "name": "Misdreavus",
+    "family": "Misdreavus",
+    "releaseDate": "2018-12-01"
   },
   {
     "dexId": 201,
     "formId": 11,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 12,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 13,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 14,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 15,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 16,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 17,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 18,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 19,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 20,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 21,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 22,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 23,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 24,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 25,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 26,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 27,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 28,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 29,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 30,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 31,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 32,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 33,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 34,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 35,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 36,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 37,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 201,
     "formId": 38,
     "costumeId": 0,
-    "name": "Unown"
+    "name": "Unown",
+    "family": "Unown",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 202,
     "formId": 0,
     "costumeId": 0,
-    "name": "Wobbuffet"
+    "name": "Wobbuffet",
+    "family": "Wobbuffet",
+    "releaseDate": "2018-03-22"
   },
   {
     "dexId": 202,
     "formId": 0,
     "costumeId": 11,
-    "name": "Wobbuffet"
+    "name": "Wobbuffet",
+    "family": "Wobbuffet",
+    "releaseDate": "2018-03-22"
   },
   {
     "dexId": 202,
     "formId": 1,
     "costumeId": 0,
-    "name": "Wobbuffet"
+    "name": "Wobbuffet",
+    "family": "Wobbuffet",
+    "releaseDate": "2018-03-22"
   },
   {
     "dexId": 202,
     "formId": 1,
     "costumeId": 11,
-    "name": "Wobbuffet"
+    "name": "Wobbuffet",
+    "family": "Wobbuffet",
+    "releaseDate": "2018-03-22"
   },
   {
     "dexId": 203,
     "formId": 0,
     "costumeId": 0,
-    "name": "Girafarig"
+    "name": "Girafarig",
+    "family": "Girafarig",
+    "releaseDate": "2022-02-26"
   },
   {
     "dexId": 203,
     "formId": 1,
     "costumeId": 0,
-    "name": "Girafarig"
+    "name": "Girafarig",
+    "family": "Girafarig",
+    "releaseDate": "2022-02-26"
   },
   {
     "dexId": 204,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pineco"
+    "name": "Pineco",
+    "family": "Pineco",
+    "releaseDate": "2018-08-20"
   },
   {
     "dexId": 205,
     "formId": 0,
     "costumeId": 0,
-    "name": "Forretress"
+    "name": "Forretress",
+    "family": "Pineco",
+    "releaseDate": "2018-08-20"
   },
   {
     "dexId": 206,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dunsparce"
+    "name": "Dunsparce",
+    "family": "Dunsparce",
+    "releaseDate": null
   },
   {
     "dexId": 207,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gligar"
+    "name": "Gligar",
+    "family": "Gligar",
+    "releaseDate": "2019-09-02"
   },
   {
     "dexId": 207,
     "formId": 1,
     "costumeId": 0,
-    "name": "Gligar"
+    "name": "Gligar",
+    "family": "Gligar",
+    "releaseDate": "2019-09-02"
   },
   {
     "dexId": 208,
     "formId": 0,
     "costumeId": 0,
-    "name": "Steelix"
+    "name": "Steelix",
+    "family": "Onix",
+    "releaseDate": "2019-06-04"
   },
   {
     "dexId": 208,
     "formId": 1,
     "costumeId": 0,
-    "name": "Steelix"
+    "name": "Steelix",
+    "family": "Onix",
+    "releaseDate": "2019-06-04"
   },
   {
     "dexId": 209,
     "formId": 0,
     "costumeId": 0,
-    "name": "Snubbull"
+    "name": "Snubbull",
+    "family": "Snubbull",
+    "releaseDate": "2018-08-01"
   },
   {
     "dexId": 210,
     "formId": 0,
     "costumeId": 0,
-    "name": "Granbull"
+    "name": "Granbull",
+    "family": "Snubbull",
+    "releaseDate": "2018-08-01"
   },
   {
     "dexId": 211,
     "formId": 0,
     "costumeId": 0,
-    "name": "Qwilfish"
+    "name": "Qwilfish",
+    "family": "Qwilfish",
+    "releaseDate": null
   },
   {
     "dexId": 212,
     "formId": 0,
     "costumeId": 0,
-    "name": "Scizor"
+    "name": "Scizor",
+    "family": "Scyther",
+    "releaseDate": "2019-04-02"
   },
   {
     "dexId": 212,
     "formId": 1,
     "costumeId": 0,
-    "name": "Scizor"
+    "name": "Scizor",
+    "family": "Scyther",
+    "releaseDate": "2019-04-02"
   },
   {
     "dexId": 213,
     "formId": 0,
     "costumeId": 0,
-    "name": "Shuckle"
+    "name": "Shuckle",
+    "family": "Shuckle",
+    "releaseDate": null
   },
   {
     "dexId": 214,
     "formId": 0,
     "costumeId": 0,
-    "name": "Heracross"
+    "name": "Heracross",
+    "family": "Heracross",
+    "releaseDate": "2021-08-06"
   },
   {
     "dexId": 214,
     "formId": 1,
     "costumeId": 0,
-    "name": "Heracross"
+    "name": "Heracross",
+    "family": "Heracross",
+    "releaseDate": "2021-08-06"
   },
   {
     "dexId": 215,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sneasel"
+    "name": "Sneasel",
+    "family": "Sneasel",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 215,
     "formId": 1,
     "costumeId": 0,
-    "name": "Sneasel"
+    "name": "Sneasel",
+    "family": "Sneasel",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 216,
     "formId": 0,
     "costumeId": 0,
-    "name": "Teddiursa"
+    "name": "Teddiursa",
+    "family": "Teddiursa",
+    "releaseDate": "2020-03-26"
   },
   {
     "dexId": 217,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ursaring"
+    "name": "Ursaring",
+    "family": "Teddiursa",
+    "releaseDate": "2020-03-26"
   },
   {
     "dexId": 217,
     "formId": 1,
     "costumeId": 0,
-    "name": "Ursaring"
+    "name": "Ursaring",
+    "family": "Teddiursa",
+    "releaseDate": "2020-03-26"
   },
   {
     "dexId": 218,
     "formId": 0,
     "costumeId": 0,
-    "name": "Slugma"
+    "name": "Slugma",
+    "family": "Slugma",
+    "releaseDate": "2021-01-07"
   },
   {
     "dexId": 219,
     "formId": 0,
     "costumeId": 0,
-    "name": "Magcargo"
+    "name": "Magcargo",
+    "family": "Slugma",
+    "releaseDate": "2021-01-07"
   },
   {
     "dexId": 220,
     "formId": 0,
     "costumeId": 0,
-    "name": "Swinub"
+    "name": "Swinub",
+    "family": "Swinub",
+    "releaseDate": "2019-02-16"
   },
   {
     "dexId": 221,
     "formId": 0,
     "costumeId": 0,
-    "name": "Piloswine"
+    "name": "Piloswine",
+    "family": "Swinub",
+    "releaseDate": "2019-02-16"
   },
   {
     "dexId": 221,
     "formId": 1,
     "costumeId": 0,
-    "name": "Piloswine"
+    "name": "Piloswine",
+    "family": "Swinub",
+    "releaseDate": "2019-02-16"
   },
   {
     "dexId": 222,
     "formId": 0,
     "costumeId": 0,
-    "name": "Corsola"
+    "name": "Corsola",
+    "family": "Corsola",
+    "releaseDate": "2022-02-26"
   },
   {
     "dexId": 223,
     "formId": 0,
     "costumeId": 0,
-    "name": "Remoraid"
+    "name": "Remoraid",
+    "family": "Remoraid",
+    "releaseDate": "2022-02-26"
   },
   {
     "dexId": 224,
     "formId": 0,
     "costumeId": 0,
-    "name": "Octillery"
+    "name": "Octillery",
+    "family": "Remoraid",
+    "releaseDate": "2022-02-26"
   },
   {
     "dexId": 224,
     "formId": 1,
     "costumeId": 0,
-    "name": "Octillery"
+    "name": "Octillery",
+    "family": "Remoraid",
+    "releaseDate": "2022-02-26"
   },
   {
     "dexId": 225,
     "formId": 0,
     "costumeId": 0,
-    "name": "Delibird"
+    "name": "Delibird",
+    "family": "Delibird",
+    "releaseDate": null
   },
   {
     "dexId": 226,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mantine"
+    "name": "Mantine",
+    "family": "Mantine",
+    "releaseDate": "2022-02-26"
   },
   {
     "dexId": 227,
     "formId": 0,
     "costumeId": 0,
-    "name": "Skarmory"
+    "name": "Skarmory",
+    "family": "Skarmory",
+    "releaseDate": null
   },
   {
     "dexId": 228,
     "formId": 0,
     "costumeId": 0,
-    "name": "Houndour"
+    "name": "Houndour",
+    "family": "Houndour",
+    "releaseDate": "2018-08-01"
   },
   {
     "dexId": 229,
     "formId": 0,
     "costumeId": 0,
-    "name": "Houndoom"
+    "name": "Houndoom",
+    "family": "Houndour",
+    "releaseDate": "2018-08-01"
   },
   {
     "dexId": 229,
     "formId": 1,
     "costumeId": 0,
-    "name": "Houndoom"
+    "name": "Houndoom",
+    "family": "Houndour",
+    "releaseDate": "2018-08-01"
   },
   {
     "dexId": 229,
     "formId": 51,
     "costumeId": 0,
-    "name": "Houndoom"
+    "name": "Houndoom",
+    "family": "Houndour",
+    "releaseDate": "2018-08-01"
   },
   {
     "dexId": 230,
     "formId": 0,
     "costumeId": 0,
-    "name": "Kingdra"
+    "name": "Kingdra",
+    "family": "Horsea",
+    "releaseDate": "2019-06-13"
   },
   {
     "dexId": 231,
     "formId": 0,
     "costumeId": 0,
-    "name": "Phanpy"
+    "name": "Phanpy",
+    "family": "Phanpy",
+    "releaseDate": "2022-02-26"
   },
   {
     "dexId": 232,
     "formId": 0,
     "costumeId": 0,
-    "name": "Donphan"
+    "name": "Donphan",
+    "family": "Phanpy",
+    "releaseDate": "2022-02-26"
   },
   {
     "dexId": 232,
     "formId": 1,
     "costumeId": 0,
-    "name": "Donphan"
+    "name": "Donphan",
+    "family": "Phanpy",
+    "releaseDate": "2022-02-26"
   },
   {
     "dexId": 233,
     "formId": 0,
     "costumeId": 0,
-    "name": "Porygon2"
+    "name": "Porygon2",
+    "family": "Porygon",
+    "releaseDate": "2020-09-19"
   },
   {
     "dexId": 234,
     "formId": 0,
     "costumeId": 0,
-    "name": "Stantler"
+    "name": "Stantler",
+    "family": "Stantler",
+    "releaseDate": null
   },
   {
     "dexId": 234,
     "formId": 0,
     "costumeId": 8,
-    "name": "Stantler"
+    "name": "Stantler",
+    "family": "Stantler",
+    "releaseDate": null
   },
   {
     "dexId": 235,
     "formId": 0,
     "costumeId": 0,
-    "name": "Smeargle"
+    "name": "Smeargle",
+    "family": "Smeargle",
+    "releaseDate": "2021-04-29"
   },
   {
     "dexId": 236,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tyrogue"
+    "name": "Tyrogue",
+    "family": "Tyrogue",
+    "releaseDate": "2022-02-26"
   },
   {
     "dexId": 237,
     "formId": 0,
     "costumeId": 0,
-    "name": "Hitmontop"
+    "name": "Hitmontop",
+    "family": "Tyrogue",
+    "releaseDate": "2022-02-26"
   },
   {
     "dexId": 238,
     "formId": 0,
     "costumeId": 0,
-    "name": "Smoochum"
+    "name": "Smoochum",
+    "family": "Jynx",
+    "releaseDate": "2019-02-13"
   },
   {
     "dexId": 238,
     "formId": 0,
     "costumeId": 16,
-    "name": "Smoochum"
+    "name": "Smoochum",
+    "family": "Jynx",
+    "releaseDate": "2019-02-13"
   },
   {
     "dexId": 239,
     "formId": 0,
     "costumeId": 0,
-    "name": "Elekid"
+    "name": "Elekid",
+    "family": "Electabuzz",
+    "releaseDate": "2018-11-15"
   },
   {
     "dexId": 240,
     "formId": 0,
     "costumeId": 0,
-    "name": "Magby"
+    "name": "Magby",
+    "family": "Magmar",
+    "releaseDate": "2018-03-22"
   },
   {
     "dexId": 241,
     "formId": 0,
     "costumeId": 0,
-    "name": "Miltank"
+    "name": "Miltank",
+    "family": "Miltank",
+    "releaseDate": "2021-01-26"
   },
   {
     "dexId": 242,
     "formId": 0,
     "costumeId": 0,
-    "name": "Blissey"
+    "name": "Blissey",
+    "family": "Chansey",
+    "releaseDate": "2020-02-13"
   },
   {
     "dexId": 242,
     "formId": 0,
     "costumeId": 7,
-    "name": "Blissey"
+    "name": "Blissey",
+    "family": "Chansey",
+    "releaseDate": "2020-02-13"
   },
   {
     "dexId": 243,
     "formId": 0,
     "costumeId": 0,
-    "name": "Raikou"
+    "name": "Raikou",
+    "family": "Raikou",
+    "releaseDate": null
   },
   {
     "dexId": 244,
     "formId": 0,
     "costumeId": 0,
-    "name": "Entei"
+    "name": "Entei",
+    "family": "Entei",
+    "releaseDate": null
   },
   {
     "dexId": 245,
     "formId": 0,
     "costumeId": 0,
-    "name": "Suicune"
+    "name": "Suicune",
+    "family": "Suicune",
+    "releaseDate": null
   },
   {
     "dexId": 246,
     "formId": 0,
     "costumeId": 0,
-    "name": "Larvitar"
+    "name": "Larvitar",
+    "family": "Larvitar",
+    "releaseDate": "2018-06-16"
   },
   {
     "dexId": 247,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pupitar"
+    "name": "Pupitar",
+    "family": "Larvitar",
+    "releaseDate": "2018-06-16"
   },
   {
     "dexId": 248,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tyranitar"
+    "name": "Tyranitar",
+    "family": "Larvitar",
+    "releaseDate": "2018-06-16"
   },
   {
     "dexId": 249,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lugia"
+    "name": "Lugia",
+    "family": "Lugia",
+    "releaseDate": null
   },
   {
     "dexId": 250,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ho-Oh"
+    "name": "Ho-Oh",
+    "family": "Ho Oh",
+    "releaseDate": null
   },
   {
     "dexId": 251,
     "formId": 0,
     "costumeId": 0,
-    "name": "Celebi"
+    "name": "Celebi",
+    "family": "Celebi",
+    "releaseDate": "2020-12-14"
   },
   {
     "dexId": 252,
     "formId": 0,
     "costumeId": 0,
-    "name": "Treecko"
+    "name": "Treecko",
+    "family": "Treecko",
+    "releaseDate": "2019-03-23"
   },
   {
     "dexId": 253,
     "formId": 0,
     "costumeId": 0,
-    "name": "Grovyle"
+    "name": "Grovyle",
+    "family": "Treecko",
+    "releaseDate": "2019-03-23"
   },
   {
     "dexId": 254,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sceptile"
+    "name": "Sceptile",
+    "family": "Treecko",
+    "releaseDate": "2019-03-23"
   },
   {
     "dexId": 255,
     "formId": 0,
     "costumeId": 0,
-    "name": "Torchic"
+    "name": "Torchic",
+    "family": "Torchic",
+    "releaseDate": "2019-05-19"
   },
   {
     "dexId": 255,
     "formId": 1,
     "costumeId": 0,
-    "name": "Torchic"
+    "name": "Torchic",
+    "family": "Torchic",
+    "releaseDate": "2019-05-19"
   },
   {
     "dexId": 256,
     "formId": 0,
     "costumeId": 0,
-    "name": "Combusken"
+    "name": "Combusken",
+    "family": "Torchic",
+    "releaseDate": "2019-05-19"
   },
   {
     "dexId": 256,
     "formId": 1,
     "costumeId": 0,
-    "name": "Combusken"
+    "name": "Combusken",
+    "family": "Torchic",
+    "releaseDate": "2019-05-19"
   },
   {
     "dexId": 257,
     "formId": 0,
     "costumeId": 0,
-    "name": "Blaziken"
+    "name": "Blaziken",
+    "family": "Torchic",
+    "releaseDate": "2019-05-19"
   },
   {
     "dexId": 257,
     "formId": 1,
     "costumeId": 0,
-    "name": "Blaziken"
+    "name": "Blaziken",
+    "family": "Torchic",
+    "releaseDate": "2019-05-19"
   },
   {
     "dexId": 258,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mudkip"
+    "name": "Mudkip",
+    "family": "Mudkip",
+    "releaseDate": "2019-07-21"
   },
   {
     "dexId": 259,
     "formId": 0,
     "costumeId": 0,
-    "name": "Marshtomp"
+    "name": "Marshtomp",
+    "family": "Mudkip",
+    "releaseDate": "2019-07-21"
   },
   {
     "dexId": 260,
     "formId": 0,
     "costumeId": 0,
-    "name": "Swampert"
+    "name": "Swampert",
+    "family": "Mudkip",
+    "releaseDate": "2019-07-21"
   },
   {
     "dexId": 261,
     "formId": 0,
     "costumeId": 0,
-    "name": "Poochyena"
+    "name": "Poochyena",
+    "family": "Poochyena",
+    "releaseDate": "2018-02-15"
   },
   {
     "dexId": 262,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mightyena"
+    "name": "Mightyena",
+    "family": "Poochyena",
+    "releaseDate": "2018-02-15"
   },
   {
     "dexId": 263,
     "formId": 0,
     "costumeId": 0,
-    "name": "Zigzagoon"
+    "name": "Zigzagoon",
+    "family": "Zigzagoon",
+    "releaseDate": "2019-01-15"
   },
   {
     "dexId": 263,
     "formId": 31,
     "costumeId": 0,
-    "name": "Zigzagoon"
+    "name": "Zigzagoon",
+    "family": "Zigzagoon",
+    "releaseDate": "2019-01-15"
   },
   {
     "dexId": 263,
     "formId": 31,
     "costumeId": 47,
-    "name": "Zigzagoon"
+    "name": "Zigzagoon",
+    "family": "Zigzagoon",
+    "releaseDate": "2019-01-15"
   },
   {
     "dexId": 264,
     "formId": 0,
     "costumeId": 0,
-    "name": "Linoone"
+    "name": "Linoone",
+    "family": "Zigzagoon",
+    "releaseDate": "2019-01-15"
   },
   {
     "dexId": 264,
     "formId": 31,
     "costumeId": 0,
-    "name": "Linoone"
+    "name": "Linoone",
+    "family": "Zigzagoon",
+    "releaseDate": "2019-01-15"
   },
   {
     "dexId": 265,
     "formId": 0,
     "costumeId": 0,
-    "name": "Wurmple"
+    "name": "Wurmple",
+    "family": "Wurmple",
+    "releaseDate": "2020-01-02"
   },
   {
     "dexId": 265,
     "formId": 0,
     "costumeId": 11,
-    "name": "Wurmple"
+    "name": "Wurmple",
+    "family": "Wurmple",
+    "releaseDate": "2020-01-02"
   },
   {
     "dexId": 266,
     "formId": 0,
     "costumeId": 0,
-    "name": "Silcoon"
+    "name": "Silcoon",
+    "family": "Wurmple",
+    "releaseDate": "2020-01-02"
   },
   {
     "dexId": 267,
     "formId": 0,
     "costumeId": 0,
-    "name": "Beautifly"
+    "name": "Beautifly",
+    "family": "Wurmple",
+    "releaseDate": "2020-01-02"
   },
   {
     "dexId": 267,
     "formId": 1,
     "costumeId": 0,
-    "name": "Beautifly"
+    "name": "Beautifly",
+    "family": "Wurmple",
+    "releaseDate": "2020-01-02"
   },
   {
     "dexId": 268,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cascoon"
+    "name": "Cascoon",
+    "family": "Wurmple",
+    "releaseDate": "2020-01-02"
   },
   {
     "dexId": 269,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dustox"
+    "name": "Dustox",
+    "family": "Wurmple",
+    "releaseDate": "2020-01-02"
   },
   {
     "dexId": 269,
     "formId": 1,
     "costumeId": 0,
-    "name": "Dustox"
+    "name": "Dustox",
+    "family": "Wurmple",
+    "releaseDate": "2020-01-02"
   },
   {
     "dexId": 270,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lotad"
+    "name": "Lotad",
+    "family": "Lotad",
+    "releaseDate": "2019-03-29"
   },
   {
     "dexId": 271,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lombre"
+    "name": "Lombre",
+    "family": "Lotad",
+    "releaseDate": "2019-03-29"
   },
   {
     "dexId": 272,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ludicolo"
+    "name": "Ludicolo",
+    "family": "Lotad",
+    "releaseDate": "2019-03-29"
   },
   {
     "dexId": 272,
     "formId": 1,
     "costumeId": 0,
-    "name": "Ludicolo"
+    "name": "Ludicolo",
+    "family": "Lotad",
+    "releaseDate": "2019-03-29"
   },
   {
     "dexId": 273,
     "formId": 0,
     "costumeId": 0,
-    "name": "Seedot"
+    "name": "Seedot",
+    "family": "Seedot",
+    "releaseDate": "2020-05-23"
   },
   {
     "dexId": 274,
     "formId": 0,
     "costumeId": 0,
-    "name": "Nuzleaf"
+    "name": "Nuzleaf",
+    "family": "Seedot",
+    "releaseDate": "2020-05-23"
   },
   {
     "dexId": 274,
     "formId": 1,
     "costumeId": 0,
-    "name": "Nuzleaf"
+    "name": "Nuzleaf",
+    "family": "Seedot",
+    "releaseDate": "2020-05-23"
   },
   {
     "dexId": 275,
     "formId": 0,
     "costumeId": 0,
-    "name": "Shiftry"
+    "name": "Shiftry",
+    "family": "Seedot",
+    "releaseDate": "2020-05-23"
   },
   {
     "dexId": 275,
     "formId": 1,
     "costumeId": 0,
-    "name": "Shiftry"
+    "name": "Shiftry",
+    "family": "Seedot",
+    "releaseDate": "2020-05-23"
   },
   {
     "dexId": 276,
     "formId": 0,
     "costumeId": 0,
-    "name": "Taillow"
+    "name": "Taillow",
+    "family": "Taillow",
+    "releaseDate": "2019-01-15"
   },
   {
     "dexId": 277,
     "formId": 0,
     "costumeId": 0,
-    "name": "Swellow"
+    "name": "Swellow",
+    "family": "Taillow",
+    "releaseDate": "2019-01-15"
   },
   {
     "dexId": 278,
     "formId": 0,
     "costumeId": 0,
-    "name": "Wingull"
+    "name": "Wingull",
+    "family": "Wingull",
+    "releaseDate": "2018-08-29"
   },
   {
     "dexId": 279,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pelipper"
+    "name": "Pelipper",
+    "family": "Wingull",
+    "releaseDate": "2018-08-29"
   },
   {
     "dexId": 280,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ralts"
+    "name": "Ralts",
+    "family": "Ralts",
+    "releaseDate": "2019-08-03"
   },
   {
     "dexId": 281,
     "formId": 0,
     "costumeId": 0,
-    "name": "Kirlia"
+    "name": "Kirlia",
+    "family": "Ralts",
+    "releaseDate": "2019-08-03"
   },
   {
     "dexId": 281,
     "formId": 0,
     "costumeId": 16,
-    "name": "Kirlia"
+    "name": "Kirlia",
+    "family": "Ralts",
+    "releaseDate": "2019-08-03"
   },
   {
     "dexId": 282,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gardevoir"
+    "name": "Gardevoir",
+    "family": "Ralts",
+    "releaseDate": "2019-08-03"
   },
   {
     "dexId": 282,
     "formId": 0,
     "costumeId": 47,
-    "name": "Gardevoir"
+    "name": "Gardevoir",
+    "family": "Ralts",
+    "releaseDate": "2019-08-03"
   },
   {
     "dexId": 283,
     "formId": 0,
     "costumeId": 0,
-    "name": "Surskit"
+    "name": "Surskit",
+    "family": "Surskit",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 284,
     "formId": 0,
     "costumeId": 0,
-    "name": "Masquerain"
+    "name": "Masquerain",
+    "family": "Surskit",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 285,
     "formId": 0,
     "costumeId": 0,
-    "name": "Shroomish"
+    "name": "Shroomish",
+    "family": "Shroomish",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 286,
     "formId": 0,
     "costumeId": 0,
-    "name": "Breloom"
+    "name": "Breloom",
+    "family": "Shroomish",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 287,
     "formId": 0,
     "costumeId": 0,
-    "name": "Slakoth"
+    "name": "Slakoth",
+    "family": "Slakoth",
+    "releaseDate": "2019-06-08"
   },
   {
     "dexId": 288,
     "formId": 0,
     "costumeId": 0,
-    "name": "Vigoroth"
+    "name": "Vigoroth",
+    "family": "Slakoth",
+    "releaseDate": "2019-06-08"
   },
   {
     "dexId": 289,
     "formId": 0,
     "costumeId": 0,
-    "name": "Slaking"
+    "name": "Slaking",
+    "family": "Slakoth",
+    "releaseDate": "2019-06-08"
   },
   {
     "dexId": 290,
     "formId": 0,
     "costumeId": 0,
-    "name": "Nincada"
+    "name": "Nincada",
+    "family": "Nincada",
+    "releaseDate": "2020-03-19"
   },
   {
     "dexId": 291,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ninjask"
+    "name": "Ninjask",
+    "family": "Nincada",
+    "releaseDate": "2020-03-19"
   },
   {
     "dexId": 292,
     "formId": 0,
     "costumeId": 0,
-    "name": "Shedinja"
+    "name": "Shedinja",
+    "family": "Nincada",
+    "releaseDate": "2022-10-01"
   },
   {
     "dexId": 293,
     "formId": 0,
     "costumeId": 0,
-    "name": "Whismur"
+    "name": "Whismur",
+    "family": "Whismur",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 294,
     "formId": 0,
     "costumeId": 0,
-    "name": "Loudred"
+    "name": "Loudred",
+    "family": "Whismur",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 295,
     "formId": 0,
     "costumeId": 0,
-    "name": "Exploud"
+    "name": "Exploud",
+    "family": "Whismur",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 296,
     "formId": 0,
     "costumeId": 0,
-    "name": "Makuhita"
+    "name": "Makuhita",
+    "family": "Makuhita",
+    "releaseDate": "2018-05-01"
   },
   {
     "dexId": 297,
     "formId": 0,
     "costumeId": 0,
-    "name": "Hariyama"
+    "name": "Hariyama",
+    "family": "Makuhita",
+    "releaseDate": "2018-05-01"
   },
   {
     "dexId": 298,
     "formId": 0,
     "costumeId": 0,
-    "name": "Azurill"
+    "name": "Azurill",
+    "family": "Marill",
+    "releaseDate": "2018-12-18"
   },
   {
     "dexId": 299,
     "formId": 0,
     "costumeId": 0,
-    "name": "Nosepass"
+    "name": "Nosepass",
+    "family": "Nosepass",
+    "releaseDate": "2021-03-09"
   },
   {
     "dexId": 300,
     "formId": 0,
     "costumeId": 0,
-    "name": "Skitty"
+    "name": "Skitty",
+    "family": "Skitty",
+    "releaseDate": "2020-05-15"
   },
   {
     "dexId": 301,
     "formId": 0,
     "costumeId": 0,
-    "name": "Delcatty"
+    "name": "Delcatty",
+    "family": "Skitty",
+    "releaseDate": "2020-05-15"
   },
   {
     "dexId": 302,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sableye"
+    "name": "Sableye",
+    "family": "Sableye",
+    "releaseDate": null
   },
   {
     "dexId": 302,
     "formId": 51,
     "costumeId": 0,
-    "name": "Sableye"
+    "name": "Sableye",
+    "family": "Sableye",
+    "releaseDate": null
   },
   {
     "dexId": 303,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mawile"
+    "name": "Mawile",
+    "family": "Mawile",
+    "releaseDate": null
   },
   {
     "dexId": 303,
     "formId": 51,
     "costumeId": 0,
-    "name": "Mawile"
+    "name": "Mawile",
+    "family": "Mawile",
+    "releaseDate": null
   },
   {
     "dexId": 304,
     "formId": 0,
     "costumeId": 0,
-    "name": "Aron"
+    "name": "Aron",
+    "family": "Aron",
+    "releaseDate": "2018-01-23"
   },
   {
     "dexId": 305,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lairon"
+    "name": "Lairon",
+    "family": "Aron",
+    "releaseDate": "2018-01-23"
   },
   {
     "dexId": 306,
     "formId": 0,
     "costumeId": 0,
-    "name": "Aggron"
+    "name": "Aggron",
+    "family": "Aron",
+    "releaseDate": "2018-01-23"
   },
   {
     "dexId": 307,
     "formId": 0,
     "costumeId": 0,
-    "name": "Meditite"
+    "name": "Meditite",
+    "family": "Meditite",
+    "releaseDate": "2018-05-01"
   },
   {
     "dexId": 307,
     "formId": 1,
     "costumeId": 0,
-    "name": "Meditite"
+    "name": "Meditite",
+    "family": "Meditite",
+    "releaseDate": "2018-05-01"
   },
   {
     "dexId": 308,
     "formId": 0,
     "costumeId": 0,
-    "name": "Medicham"
+    "name": "Medicham",
+    "family": "Meditite",
+    "releaseDate": "2018-05-01"
   },
   {
     "dexId": 308,
     "formId": 1,
     "costumeId": 0,
-    "name": "Medicham"
+    "name": "Medicham",
+    "family": "Meditite",
+    "releaseDate": "2018-05-01"
   },
   {
     "dexId": 309,
     "formId": 0,
     "costumeId": 0,
-    "name": "Electrike"
+    "name": "Electrike",
+    "family": "Electrike",
+    "releaseDate": "2019-09-01"
   },
   {
     "dexId": 310,
     "formId": 0,
     "costumeId": 0,
-    "name": "Manectric"
+    "name": "Manectric",
+    "family": "Electrike",
+    "releaseDate": "2019-09-01"
   },
   {
     "dexId": 310,
     "formId": 51,
     "costumeId": 0,
-    "name": "Manectric"
+    "name": "Manectric",
+    "family": "Electrike",
+    "releaseDate": "2019-09-01"
   },
   {
     "dexId": 311,
     "formId": 0,
     "costumeId": 0,
-    "name": "Plusle"
+    "name": "Plusle",
+    "family": "Plusle",
+    "releaseDate": null
   },
   {
     "dexId": 312,
     "formId": 0,
     "costumeId": 0,
-    "name": "Minun"
+    "name": "Minun",
+    "family": "Minun",
+    "releaseDate": null
   },
   {
     "dexId": 313,
     "formId": 0,
     "costumeId": 0,
-    "name": "Volbeat"
+    "name": "Volbeat",
+    "family": "Volbeat",
+    "releaseDate": null
   },
   {
     "dexId": 314,
     "formId": 0,
     "costumeId": 0,
-    "name": "Illumise"
+    "name": "Illumise",
+    "family": "Illumise",
+    "releaseDate": null
   },
   {
     "dexId": 315,
     "formId": 0,
     "costumeId": 0,
-    "name": "Roselia"
+    "name": "Roselia",
+    "family": "Roselia",
+    "releaseDate": null
   },
   {
     "dexId": 315,
     "formId": 1,
     "costumeId": 0,
-    "name": "Roselia"
+    "name": "Roselia",
+    "family": "Roselia",
+    "releaseDate": null
   },
   {
     "dexId": 316,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gulpin"
+    "name": "Gulpin",
+    "family": "Gulpin",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 316,
     "formId": 1,
     "costumeId": 0,
-    "name": "Gulpin"
+    "name": "Gulpin",
+    "family": "Gulpin",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 317,
     "formId": 0,
     "costumeId": 0,
-    "name": "Swalot"
+    "name": "Swalot",
+    "family": "Gulpin",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 317,
     "formId": 1,
     "costumeId": 0,
-    "name": "Swalot"
+    "name": "Swalot",
+    "family": "Gulpin",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 318,
     "formId": 0,
     "costumeId": 0,
-    "name": "Carvanha"
+    "name": "Carvanha",
+    "family": "Carvanha",
+    "releaseDate": "2019-08-23"
   },
   {
     "dexId": 319,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sharpedo"
+    "name": "Sharpedo",
+    "family": "Carvanha",
+    "releaseDate": "2019-08-23"
   },
   {
     "dexId": 319,
     "formId": 51,
     "costumeId": 0,
-    "name": "Sharpedo"
+    "name": "Sharpedo",
+    "family": "Carvanha",
+    "releaseDate": "2019-08-23"
   },
   {
     "dexId": 320,
     "formId": 0,
     "costumeId": 0,
-    "name": "Wailmer"
+    "name": "Wailmer",
+    "family": "Wailmer",
+    "releaseDate": "2018-04-23"
   },
   {
     "dexId": 321,
     "formId": 0,
     "costumeId": 0,
-    "name": "Wailord"
+    "name": "Wailord",
+    "family": "Wailmer",
+    "releaseDate": "2018-04-23"
   },
   {
     "dexId": 322,
     "formId": 0,
     "costumeId": 0,
-    "name": "Numel"
+    "name": "Numel",
+    "family": "Numel",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 322,
     "formId": 1,
     "costumeId": 0,
-    "name": "Numel"
+    "name": "Numel",
+    "family": "Numel",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 323,
     "formId": 0,
     "costumeId": 0,
-    "name": "Camerupt"
+    "name": "Camerupt",
+    "family": "Numel",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 323,
     "formId": 1,
     "costumeId": 0,
-    "name": "Camerupt"
+    "name": "Camerupt",
+    "family": "Numel",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 324,
     "formId": 0,
     "costumeId": 0,
-    "name": "Torkoal"
+    "name": "Torkoal",
+    "family": "Torkoal",
+    "releaseDate": null
   },
   {
     "dexId": 325,
     "formId": 0,
     "costumeId": 0,
-    "name": "Spoink"
+    "name": "Spoink",
+    "family": "Spoink",
+    "releaseDate": "2019-02-04"
   },
   {
     "dexId": 326,
     "formId": 0,
     "costumeId": 0,
-    "name": "Grumpig"
+    "name": "Grumpig",
+    "family": "Spoink",
+    "releaseDate": "2019-02-04"
   },
   {
     "dexId": 327,
     "formId": 0,
     "costumeId": 0,
-    "name": "Spinda"
+    "name": "Spinda",
+    "family": "Spinda",
+    "releaseDate": null
   },
   {
     "dexId": 327,
     "formId": 11,
     "costumeId": 0,
-    "name": "Spinda"
+    "name": "Spinda",
+    "family": "Spinda",
+    "releaseDate": null
   },
   {
     "dexId": 327,
     "formId": 12,
     "costumeId": 0,
-    "name": "Spinda"
+    "name": "Spinda",
+    "family": "Spinda",
+    "releaseDate": null
   },
   {
     "dexId": 327,
     "formId": 13,
     "costumeId": 0,
-    "name": "Spinda"
+    "name": "Spinda",
+    "family": "Spinda",
+    "releaseDate": null
   },
   {
     "dexId": 327,
     "formId": 14,
     "costumeId": 0,
-    "name": "Spinda"
+    "name": "Spinda",
+    "family": "Spinda",
+    "releaseDate": null
   },
   {
     "dexId": 327,
     "formId": 15,
     "costumeId": 0,
-    "name": "Spinda"
+    "name": "Spinda",
+    "family": "Spinda",
+    "releaseDate": null
   },
   {
     "dexId": 327,
     "formId": 16,
     "costumeId": 0,
-    "name": "Spinda"
+    "name": "Spinda",
+    "family": "Spinda",
+    "releaseDate": null
   },
   {
     "dexId": 327,
     "formId": 17,
     "costumeId": 0,
-    "name": "Spinda"
+    "name": "Spinda",
+    "family": "Spinda",
+    "releaseDate": null
   },
   {
     "dexId": 327,
     "formId": 18,
     "costumeId": 0,
-    "name": "Spinda"
+    "name": "Spinda",
+    "family": "Spinda",
+    "releaseDate": null
   },
   {
     "dexId": 327,
     "formId": 19,
     "costumeId": 0,
-    "name": "Spinda"
+    "name": "Spinda",
+    "family": "Spinda",
+    "releaseDate": null
   },
   {
     "dexId": 328,
     "formId": 0,
     "costumeId": 0,
-    "name": "Trapinch"
+    "name": "Trapinch",
+    "family": "Trapinch",
+    "releaseDate": "2019-10-11"
   },
   {
     "dexId": 329,
     "formId": 0,
     "costumeId": 0,
-    "name": "Vibrava"
+    "name": "Vibrava",
+    "family": "Trapinch",
+    "releaseDate": "2019-10-11"
   },
   {
     "dexId": 330,
     "formId": 0,
     "costumeId": 0,
-    "name": "Flygon"
+    "name": "Flygon",
+    "family": "Trapinch",
+    "releaseDate": "2019-10-11"
   },
   {
     "dexId": 330,
     "formId": 0,
     "costumeId": 47,
-    "name": "Flygon"
+    "name": "Flygon",
+    "family": "Trapinch",
+    "releaseDate": "2019-10-11"
   },
   {
     "dexId": 331,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cacnea"
+    "name": "Cacnea",
+    "family": "Cacnea",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 332,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cacturne"
+    "name": "Cacturne",
+    "family": "Cacnea",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 332,
     "formId": 1,
     "costumeId": 0,
-    "name": "Cacturne"
+    "name": "Cacturne",
+    "family": "Cacnea",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 333,
     "formId": 0,
     "costumeId": 0,
-    "name": "Swablu"
+    "name": "Swablu",
+    "family": "Swablu",
+    "releaseDate": "2018-02-09"
   },
   {
     "dexId": 334,
     "formId": 0,
     "costumeId": 0,
-    "name": "Altaria"
+    "name": "Altaria",
+    "family": "Swablu",
+    "releaseDate": "2018-02-09"
   },
   {
     "dexId": 334,
     "formId": 51,
     "costumeId": 0,
-    "name": "Altaria"
+    "name": "Altaria",
+    "family": "Swablu",
+    "releaseDate": "2018-02-09"
   },
   {
     "dexId": 335,
     "formId": 0,
     "costumeId": 0,
-    "name": "Zangoose"
+    "name": "Zangoose",
+    "family": "Zangoose",
+    "releaseDate": null
   },
   {
     "dexId": 336,
     "formId": 0,
     "costumeId": 0,
-    "name": "Seviper"
+    "name": "Seviper",
+    "family": "Seviper",
+    "releaseDate": null
   },
   {
     "dexId": 337,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lunatone"
+    "name": "Lunatone",
+    "family": "Lunatone",
+    "releaseDate": null
   },
   {
     "dexId": 338,
     "formId": 0,
     "costumeId": 0,
-    "name": "Solrock"
+    "name": "Solrock",
+    "family": "Solrock",
+    "releaseDate": null
   },
   {
     "dexId": 339,
     "formId": 0,
     "costumeId": 0,
-    "name": "Barboach"
+    "name": "Barboach",
+    "family": "Barboach",
+    "releaseDate": "2019-08-23"
   },
   {
     "dexId": 340,
     "formId": 0,
     "costumeId": 0,
-    "name": "Whiscash"
+    "name": "Whiscash",
+    "family": "Barboach",
+    "releaseDate": "2019-08-23"
   },
   {
     "dexId": 341,
     "formId": 0,
     "costumeId": 0,
-    "name": "Corphish"
+    "name": "Corphish",
+    "family": "Corphish",
+    "releaseDate": "2022-05-13"
   },
   {
     "dexId": 342,
     "formId": 0,
     "costumeId": 0,
-    "name": "Crawdaunt"
+    "name": "Crawdaunt",
+    "family": "Corphish",
+    "releaseDate": "2022-05-13"
   },
   {
     "dexId": 343,
     "formId": 0,
     "costumeId": 0,
-    "name": "Baltoy"
+    "name": "Baltoy",
+    "family": "Baltoy",
+    "releaseDate": "2020-03-27"
   },
   {
     "dexId": 344,
     "formId": 0,
     "costumeId": 0,
-    "name": "Claydol"
+    "name": "Claydol",
+    "family": "Baltoy",
+    "releaseDate": "2020-03-27"
   },
   {
     "dexId": 345,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lileep"
+    "name": "Lileep",
+    "family": "Lileep",
+    "releaseDate": "2019-06-04"
   },
   {
     "dexId": 346,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cradily"
+    "name": "Cradily",
+    "family": "Lileep",
+    "releaseDate": "2019-06-04"
   },
   {
     "dexId": 347,
     "formId": 0,
     "costumeId": 0,
-    "name": "Anorith"
+    "name": "Anorith",
+    "family": "Anorith",
+    "releaseDate": "2019-06-04"
   },
   {
     "dexId": 348,
     "formId": 0,
     "costumeId": 0,
-    "name": "Armaldo"
+    "name": "Armaldo",
+    "family": "Anorith",
+    "releaseDate": "2019-06-04"
   },
   {
     "dexId": 349,
     "formId": 0,
     "costumeId": 0,
-    "name": "Feebas"
+    "name": "Feebas",
+    "family": "Feebas",
+    "releaseDate": "2019-01-19"
   },
   {
     "dexId": 350,
     "formId": 0,
     "costumeId": 0,
-    "name": "Milotic"
+    "name": "Milotic",
+    "family": "Feebas",
+    "releaseDate": "2019-01-19"
   },
   {
     "dexId": 350,
     "formId": 1,
     "costumeId": 0,
-    "name": "Milotic"
+    "name": "Milotic",
+    "family": "Feebas",
+    "releaseDate": "2019-01-19"
   },
   {
     "dexId": 351,
     "formId": 0,
     "costumeId": 0,
-    "name": "Castform"
+    "name": "Castform",
+    "family": "Castform",
+    "releaseDate": "2021-03-24"
   },
   {
     "dexId": 351,
     "formId": 11,
     "costumeId": 0,
-    "name": "Castform"
+    "name": "Castform",
+    "family": "Castform",
+    "releaseDate": "2021-03-24"
   },
   {
     "dexId": 351,
     "formId": 12,
     "costumeId": 0,
-    "name": "Castform"
+    "name": "Castform",
+    "family": "Castform",
+    "releaseDate": "2021-03-24"
   },
   {
     "dexId": 351,
     "formId": 13,
     "costumeId": 0,
-    "name": "Castform"
+    "name": "Castform",
+    "family": "Castform",
+    "releaseDate": "2021-03-24"
   },
   {
     "dexId": 351,
     "formId": 14,
     "costumeId": 0,
-    "name": "Castform"
+    "name": "Castform",
+    "family": "Castform",
+    "releaseDate": "2021-03-24"
   },
   {
     "dexId": 352,
     "formId": 0,
     "costumeId": 0,
-    "name": "Kecleon"
+    "name": "Kecleon",
+    "family": "Kecleon",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 353,
     "formId": 0,
     "costumeId": 0,
-    "name": "Shuppet"
+    "name": "Shuppet",
+    "family": "Shuppet",
+    "releaseDate": "2017-10-31"
   },
   {
     "dexId": 354,
     "formId": 0,
     "costumeId": 0,
-    "name": "Banette"
+    "name": "Banette",
+    "family": "Shuppet",
+    "releaseDate": "2017-10-31"
   },
   {
     "dexId": 355,
     "formId": 0,
     "costumeId": 0,
-    "name": "Duskull"
+    "name": "Duskull",
+    "family": "Duskull",
+    "releaseDate": "2017-10-26"
   },
   {
     "dexId": 356,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dusclops"
+    "name": "Dusclops",
+    "family": "Duskull",
+    "releaseDate": "2017-10-26"
   },
   {
     "dexId": 357,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tropius"
+    "name": "Tropius",
+    "family": "Tropius",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 358,
     "formId": 0,
     "costumeId": 0,
-    "name": "Chimecho"
+    "name": "Chimecho",
+    "family": "Chimecho",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 359,
     "formId": 0,
     "costumeId": 0,
-    "name": "Absol"
+    "name": "Absol",
+    "family": "Absol",
+    "releaseDate": null
   },
   {
     "dexId": 360,
     "formId": 0,
     "costumeId": 0,
-    "name": "Wynaut"
+    "name": "Wynaut",
+    "family": "Wobbuffet",
+    "releaseDate": "2018-03-22"
   },
   {
     "dexId": 361,
     "formId": 0,
     "costumeId": 0,
-    "name": "Snorunt"
+    "name": "Snorunt",
+    "family": "Snorunt",
+    "releaseDate": "2017-12-21"
   },
   {
     "dexId": 362,
     "formId": 0,
     "costumeId": 0,
-    "name": "Glalie"
+    "name": "Glalie",
+    "family": "Snorunt",
+    "releaseDate": "2017-12-21"
   },
   {
     "dexId": 363,
     "formId": 0,
     "costumeId": 0,
-    "name": "Spheal"
+    "name": "Spheal",
+    "family": "Spheal",
+    "releaseDate": "2021-12-16"
   },
   {
     "dexId": 364,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sealeo"
+    "name": "Sealeo",
+    "family": "Spheal",
+    "releaseDate": "2021-12-16"
   },
   {
     "dexId": 365,
     "formId": 0,
     "costumeId": 0,
-    "name": "Walrein"
+    "name": "Walrein",
+    "family": "Spheal",
+    "releaseDate": "2021-12-16"
   },
   {
     "dexId": 366,
     "formId": 0,
     "costumeId": 0,
-    "name": "Clamperl"
+    "name": "Clamperl",
+    "family": "Clamperl",
+    "releaseDate": "2019-02-23"
   },
   {
     "dexId": 367,
     "formId": 0,
     "costumeId": 0,
-    "name": "Huntail"
+    "name": "Huntail",
+    "family": "Clamperl",
+    "releaseDate": "2019-02-23"
   },
   {
     "dexId": 368,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gorebyss"
+    "name": "Gorebyss",
+    "family": "Clamperl",
+    "releaseDate": "2019-02-23"
   },
   {
     "dexId": 369,
     "formId": 0,
     "costumeId": 0,
-    "name": "Relicanth"
+    "name": "Relicanth",
+    "family": "Relicanth",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 369,
     "formId": 1,
     "costumeId": 0,
-    "name": "Relicanth"
+    "name": "Relicanth",
+    "family": "Relicanth",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 370,
     "formId": 0,
     "costumeId": 0,
-    "name": "Luvdisc"
+    "name": "Luvdisc",
+    "family": "Luvdisc",
+    "releaseDate": null
   },
   {
     "dexId": 371,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bagon"
+    "name": "Bagon",
+    "family": "Bagon",
+    "releaseDate": "2019-04-13"
   },
   {
     "dexId": 372,
     "formId": 0,
     "costumeId": 0,
-    "name": "Shelgon"
+    "name": "Shelgon",
+    "family": "Bagon",
+    "releaseDate": "2019-04-13"
   },
   {
     "dexId": 373,
     "formId": 0,
     "costumeId": 0,
-    "name": "Salamence"
+    "name": "Salamence",
+    "family": "Bagon",
+    "releaseDate": "2019-04-13"
   },
   {
     "dexId": 374,
     "formId": 0,
     "costumeId": 0,
-    "name": "Beldum"
+    "name": "Beldum",
+    "family": "Beldum",
+    "releaseDate": "2018-10-21"
   },
   {
     "dexId": 375,
     "formId": 0,
     "costumeId": 0,
-    "name": "Metang"
+    "name": "Metang",
+    "family": "Beldum",
+    "releaseDate": "2018-10-21"
   },
   {
     "dexId": 376,
     "formId": 0,
     "costumeId": 0,
-    "name": "Metagross"
+    "name": "Metagross",
+    "family": "Beldum",
+    "releaseDate": "2018-10-21"
   },
   {
     "dexId": 377,
     "formId": 0,
     "costumeId": 0,
-    "name": "Regirock"
+    "name": "Regirock",
+    "family": "Regirock",
+    "releaseDate": null
   },
   {
     "dexId": 378,
     "formId": 0,
     "costumeId": 0,
-    "name": "Regice"
+    "name": "Regice",
+    "family": "Regice",
+    "releaseDate": null
   },
   {
     "dexId": 379,
     "formId": 0,
     "costumeId": 0,
-    "name": "Registeel"
+    "name": "Registeel",
+    "family": "Registeel",
+    "releaseDate": null
   },
   {
     "dexId": 380,
     "formId": 0,
     "costumeId": 0,
-    "name": "Latias"
+    "name": "Latias",
+    "family": "Latias",
+    "releaseDate": null
   },
   {
     "dexId": 381,
     "formId": 0,
     "costumeId": 0,
-    "name": "Latios"
+    "name": "Latios",
+    "family": "Latios",
+    "releaseDate": null
   },
   {
     "dexId": 382,
     "formId": 0,
     "costumeId": 0,
-    "name": "Kyogre"
+    "name": "Kyogre",
+    "family": "Kyogre",
+    "releaseDate": null
   },
   {
     "dexId": 383,
     "formId": 0,
     "costumeId": 0,
-    "name": "Groudon"
+    "name": "Groudon",
+    "family": "Groudon",
+    "releaseDate": null
   },
   {
     "dexId": 384,
     "formId": 0,
     "costumeId": 0,
-    "name": "Rayquaza"
+    "name": "Rayquaza",
+    "family": "Rayquaza",
+    "releaseDate": null
   },
   {
     "dexId": 385,
     "formId": 0,
     "costumeId": 0,
-    "name": "Jirachi"
+    "name": "Jirachi",
+    "family": "Jirachi",
+    "releaseDate": "2023-02-18"
   },
   {
     "dexId": 386,
     "formId": 11,
     "costumeId": 0,
-    "name": "Deoxys"
+    "name": "Deoxys",
+    "family": "Deoxys",
+    "releaseDate": null
   },
   {
     "dexId": 386,
     "formId": 12,
     "costumeId": 0,
-    "name": "Deoxys"
+    "name": "Deoxys",
+    "family": "Deoxys",
+    "releaseDate": null
   },
   {
     "dexId": 386,
     "formId": 13,
     "costumeId": 0,
-    "name": "Deoxys"
+    "name": "Deoxys",
+    "family": "Deoxys",
+    "releaseDate": null
   },
   {
     "dexId": 386,
     "formId": 14,
     "costumeId": 0,
-    "name": "Deoxys"
+    "name": "Deoxys",
+    "family": "Deoxys",
+    "releaseDate": null
   },
   {
     "dexId": 387,
     "formId": 0,
     "costumeId": 0,
-    "name": "Turtwig"
+    "name": "Turtwig",
+    "family": "Turtwig",
+    "releaseDate": "2019-09-14"
   },
   {
     "dexId": 388,
     "formId": 0,
     "costumeId": 0,
-    "name": "Grotle"
+    "name": "Grotle",
+    "family": "Turtwig",
+    "releaseDate": "2019-09-14"
   },
   {
     "dexId": 389,
     "formId": 0,
     "costumeId": 0,
-    "name": "Torterra"
+    "name": "Torterra",
+    "family": "Turtwig",
+    "releaseDate": "2019-09-14"
   },
   {
     "dexId": 390,
     "formId": 0,
     "costumeId": 0,
-    "name": "Chimchar"
+    "name": "Chimchar",
+    "family": "Chimchar",
+    "releaseDate": "2019-11-15"
   },
   {
     "dexId": 391,
     "formId": 0,
     "costumeId": 0,
-    "name": "Monferno"
+    "name": "Monferno",
+    "family": "Chimchar",
+    "releaseDate": "2019-11-15"
   },
   {
     "dexId": 392,
     "formId": 0,
     "costumeId": 0,
-    "name": "Infernape"
+    "name": "Infernape",
+    "family": "Chimchar",
+    "releaseDate": "2019-11-15"
   },
   {
     "dexId": 393,
     "formId": 0,
     "costumeId": 0,
-    "name": "Piplup"
+    "name": "Piplup",
+    "family": "Piplup",
+    "releaseDate": "2020-01-18"
   },
   {
     "dexId": 394,
     "formId": 0,
     "costumeId": 0,
-    "name": "Prinplup"
+    "name": "Prinplup",
+    "family": "Piplup",
+    "releaseDate": "2020-01-18"
   },
   {
     "dexId": 395,
     "formId": 0,
     "costumeId": 0,
-    "name": "Empoleon"
+    "name": "Empoleon",
+    "family": "Piplup",
+    "releaseDate": "2020-01-18"
   },
   {
     "dexId": 396,
     "formId": 0,
     "costumeId": 0,
-    "name": "Starly"
+    "name": "Starly",
+    "family": "Starly",
+    "releaseDate": "2022-07-17"
   },
   {
     "dexId": 396,
     "formId": 1,
     "costumeId": 0,
-    "name": "Starly"
+    "name": "Starly",
+    "family": "Starly",
+    "releaseDate": "2022-07-17"
   },
   {
     "dexId": 397,
     "formId": 0,
     "costumeId": 0,
-    "name": "Staravia"
+    "name": "Staravia",
+    "family": "Starly",
+    "releaseDate": "2022-07-17"
   },
   {
     "dexId": 397,
     "formId": 1,
     "costumeId": 0,
-    "name": "Staravia"
+    "name": "Staravia",
+    "family": "Starly",
+    "releaseDate": "2022-07-17"
   },
   {
     "dexId": 398,
     "formId": 0,
     "costumeId": 0,
-    "name": "Staraptor"
+    "name": "Staraptor",
+    "family": "Starly",
+    "releaseDate": "2022-07-17"
   },
   {
     "dexId": 398,
     "formId": 1,
     "costumeId": 0,
-    "name": "Staraptor"
+    "name": "Staraptor",
+    "family": "Starly",
+    "releaseDate": "2022-07-17"
   },
   {
     "dexId": 399,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bidoof"
+    "name": "Bidoof",
+    "family": "Bidoof",
+    "releaseDate": "2021-06-25"
   },
   {
     "dexId": 399,
     "formId": 1,
     "costumeId": 0,
-    "name": "Bidoof"
+    "name": "Bidoof",
+    "family": "Bidoof",
+    "releaseDate": "2021-06-25"
   },
   {
     "dexId": 400,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bibarel"
+    "name": "Bibarel",
+    "family": "Bidoof",
+    "releaseDate": "2021-06-25"
   },
   {
     "dexId": 400,
     "formId": 1,
     "costumeId": 0,
-    "name": "Bibarel"
+    "name": "Bibarel",
+    "family": "Bidoof",
+    "releaseDate": "2021-06-25"
   },
   {
     "dexId": 401,
     "formId": 0,
     "costumeId": 0,
-    "name": "Kricketot"
+    "name": "Kricketot",
+    "family": "Kricketot",
+    "releaseDate": "2020-10-02"
   },
   {
     "dexId": 401,
     "formId": 1,
     "costumeId": 0,
-    "name": "Kricketot"
+    "name": "Kricketot",
+    "family": "Kricketot",
+    "releaseDate": "2020-10-02"
   },
   {
     "dexId": 402,
     "formId": 0,
     "costumeId": 0,
-    "name": "Kricketune"
+    "name": "Kricketune",
+    "family": "Kricketot",
+    "releaseDate": "2020-10-02"
   },
   {
     "dexId": 402,
     "formId": 1,
     "costumeId": 0,
-    "name": "Kricketune"
+    "name": "Kricketune",
+    "family": "Kricketot",
+    "releaseDate": "2020-10-02"
   },
   {
     "dexId": 403,
     "formId": 0,
     "costumeId": 0,
-    "name": "Shinx"
+    "name": "Shinx",
+    "family": "Shinx",
+    "releaseDate": "2018-10-16"
   },
   {
     "dexId": 403,
     "formId": 0,
     "costumeId": 16,
-    "name": "Shinx"
+    "name": "Shinx",
+    "family": "Shinx",
+    "releaseDate": "2018-10-16"
   },
   {
     "dexId": 403,
     "formId": 1,
     "costumeId": 0,
-    "name": "Shinx"
+    "name": "Shinx",
+    "family": "Shinx",
+    "releaseDate": "2018-10-16"
   },
   {
     "dexId": 403,
     "formId": 1,
     "costumeId": 16,
-    "name": "Shinx"
+    "name": "Shinx",
+    "family": "Shinx",
+    "releaseDate": "2018-10-16"
   },
   {
     "dexId": 404,
     "formId": 0,
     "costumeId": 0,
-    "name": "Luxio"
+    "name": "Luxio",
+    "family": "Shinx",
+    "releaseDate": "2018-10-16"
   },
   {
     "dexId": 404,
     "formId": 1,
     "costumeId": 0,
-    "name": "Luxio"
+    "name": "Luxio",
+    "family": "Shinx",
+    "releaseDate": "2018-10-16"
   },
   {
     "dexId": 405,
     "formId": 0,
     "costumeId": 0,
-    "name": "Luxray"
+    "name": "Luxray",
+    "family": "Shinx",
+    "releaseDate": "2018-10-16"
   },
   {
     "dexId": 405,
     "formId": 1,
     "costumeId": 0,
-    "name": "Luxray"
+    "name": "Luxray",
+    "family": "Shinx",
+    "releaseDate": "2018-10-16"
   },
   {
     "dexId": 406,
     "formId": 0,
     "costumeId": 0,
-    "name": "Budew"
+    "name": "Budew",
+    "family": "Roselia",
+    "releaseDate": null
   },
   {
     "dexId": 407,
     "formId": 0,
     "costumeId": 0,
-    "name": "Roserade"
+    "name": "Roserade",
+    "family": "Roselia",
+    "releaseDate": null
   },
   {
     "dexId": 407,
     "formId": 1,
     "costumeId": 0,
-    "name": "Roserade"
+    "name": "Roserade",
+    "family": "Roselia",
+    "releaseDate": null
   },
   {
     "dexId": 408,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cranidos"
+    "name": "Cranidos",
+    "family": "Cranidos",
+    "releaseDate": "2021-07-23"
   },
   {
     "dexId": 409,
     "formId": 0,
     "costumeId": 0,
-    "name": "Rampardos"
+    "name": "Rampardos",
+    "family": "Cranidos",
+    "releaseDate": "2021-07-23"
   },
   {
     "dexId": 410,
     "formId": 0,
     "costumeId": 0,
-    "name": "Shieldon"
+    "name": "Shieldon",
+    "family": "Shieldon",
+    "releaseDate": "2021-07-23"
   },
   {
     "dexId": 411,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bastiodon"
+    "name": "Bastiodon",
+    "family": "Shieldon",
+    "releaseDate": "2021-07-23"
   },
   {
     "dexId": 412,
     "formId": 11,
     "costumeId": 0,
-    "name": "Burmy"
+    "name": "Burmy",
+    "family": "Burmy",
+    "releaseDate": null
   },
   {
     "dexId": 412,
     "formId": 12,
     "costumeId": 0,
-    "name": "Burmy"
+    "name": "Burmy",
+    "family": "Burmy",
+    "releaseDate": null
   },
   {
     "dexId": 412,
     "formId": 13,
     "costumeId": 0,
-    "name": "Burmy"
+    "name": "Burmy",
+    "family": "Burmy",
+    "releaseDate": null
   },
   {
     "dexId": 413,
     "formId": 11,
     "costumeId": 0,
-    "name": "Wormadam"
+    "name": "Wormadam",
+    "family": "Burmy",
+    "releaseDate": null
   },
   {
     "dexId": 413,
     "formId": 12,
     "costumeId": 0,
-    "name": "Wormadam"
+    "name": "Wormadam",
+    "family": "Burmy",
+    "releaseDate": null
   },
   {
     "dexId": 413,
     "formId": 13,
     "costumeId": 0,
-    "name": "Wormadam"
+    "name": "Wormadam",
+    "family": "Burmy",
+    "releaseDate": null
   },
   {
     "dexId": 414,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mothim"
+    "name": "Mothim",
+    "family": "Burmy",
+    "releaseDate": null
   },
   {
     "dexId": 415,
     "formId": 0,
     "costumeId": 0,
-    "name": "Combee"
+    "name": "Combee",
+    "family": "Combee",
+    "releaseDate": "2022-07-22"
   },
   {
     "dexId": 415,
     "formId": 1,
     "costumeId": 0,
-    "name": "Combee"
+    "name": "Combee",
+    "family": "Combee",
+    "releaseDate": "2022-07-22"
   },
   {
     "dexId": 416,
     "formId": 0,
     "costumeId": 0,
-    "name": "Vespiquen"
+    "name": "Vespiquen",
+    "family": "Combee",
+    "releaseDate": "2022-07-22"
   },
   {
     "dexId": 417,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pachirisu"
+    "name": "Pachirisu",
+    "family": "Pachirisu",
+    "releaseDate": "2024-02-19"
   },
   {
     "dexId": 417,
     "formId": 1,
     "costumeId": 0,
-    "name": "Pachirisu"
+    "name": "Pachirisu",
+    "family": "Pachirisu",
+    "releaseDate": "2024-02-19"
   },
   {
     "dexId": 418,
     "formId": 0,
     "costumeId": 0,
-    "name": "Buizel"
+    "name": "Buizel",
+    "family": "Buizel",
+    "releaseDate": "2021-01-12"
   },
   {
     "dexId": 418,
     "formId": 1,
     "costumeId": 0,
-    "name": "Buizel"
+    "name": "Buizel",
+    "family": "Buizel",
+    "releaseDate": "2021-01-12"
   },
   {
     "dexId": 419,
     "formId": 0,
     "costumeId": 0,
-    "name": "Floatzel"
+    "name": "Floatzel",
+    "family": "Buizel",
+    "releaseDate": "2021-01-12"
   },
   {
     "dexId": 419,
     "formId": 1,
     "costumeId": 0,
-    "name": "Floatzel"
+    "name": "Floatzel",
+    "family": "Buizel",
+    "releaseDate": "2021-01-12"
   },
   {
     "dexId": 420,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cherubi"
+    "name": "Cherubi",
+    "family": "Cherubi",
+    "releaseDate": "2022-04-20"
   },
   {
     "dexId": 421,
     "formId": 11,
     "costumeId": 0,
-    "name": "Cherrim"
+    "name": "Cherrim",
+    "family": "Cherubi",
+    "releaseDate": "2022-04-20"
   },
   {
     "dexId": 421,
     "formId": 12,
     "costumeId": 0,
-    "name": "Cherrim"
+    "name": "Cherrim",
+    "family": "Cherubi",
+    "releaseDate": "2022-04-20"
   },
   {
     "dexId": 422,
     "formId": 11,
     "costumeId": 0,
-    "name": "Shellos"
+    "name": "Shellos",
+    "family": "Shellos",
+    "releaseDate": "2023-08-27"
   },
   {
     "dexId": 422,
     "formId": 12,
     "costumeId": 0,
-    "name": "Shellos"
+    "name": "Shellos",
+    "family": "Shellos",
+    "releaseDate": "2023-08-27"
   },
   {
     "dexId": 423,
     "formId": 11,
     "costumeId": 0,
-    "name": "Gastrodon"
+    "name": "Gastrodon",
+    "family": "Shellos",
+    "releaseDate": "2023-08-27"
   },
   {
     "dexId": 423,
     "formId": 12,
     "costumeId": 0,
-    "name": "Gastrodon"
+    "name": "Gastrodon",
+    "family": "Shellos",
+    "releaseDate": "2023-08-27"
   },
   {
     "dexId": 424,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ambipom"
+    "name": "Ambipom",
+    "family": "Aipom",
+    "releaseDate": "2019-05-07"
   },
   {
     "dexId": 424,
     "formId": 1,
     "costumeId": 0,
-    "name": "Ambipom"
+    "name": "Ambipom",
+    "family": "Aipom",
+    "releaseDate": "2019-05-07"
   },
   {
     "dexId": 425,
     "formId": 0,
     "costumeId": 0,
-    "name": "Drifloon"
+    "name": "Drifloon",
+    "family": "Drifloon",
+    "releaseDate": "2018-10-23"
   },
   {
     "dexId": 426,
     "formId": 0,
     "costumeId": 0,
-    "name": "Drifblim"
+    "name": "Drifblim",
+    "family": "Drifloon",
+    "releaseDate": "2018-10-23"
   },
   {
     "dexId": 427,
     "formId": 0,
     "costumeId": 0,
-    "name": "Buneary"
+    "name": "Buneary",
+    "family": "Buneary",
+    "releaseDate": "2019-04-16"
   },
   {
     "dexId": 427,
     "formId": 0,
     "costumeId": 12,
-    "name": "Buneary"
+    "name": "Buneary",
+    "family": "Buneary",
+    "releaseDate": "2019-04-16"
   },
   {
     "dexId": 428,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lopunny"
+    "name": "Lopunny",
+    "family": "Buneary",
+    "releaseDate": "2019-04-16"
   },
   {
     "dexId": 428,
     "formId": 51,
     "costumeId": 0,
-    "name": "Lopunny"
+    "name": "Lopunny",
+    "family": "Buneary",
+    "releaseDate": "2019-04-16"
   },
   {
     "dexId": 429,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mismagius"
+    "name": "Mismagius",
+    "family": "Misdreavus",
+    "releaseDate": "2018-12-01"
   },
   {
     "dexId": 430,
     "formId": 0,
     "costumeId": 0,
-    "name": "Honchkrow"
+    "name": "Honchkrow",
+    "family": "Murkrow",
+    "releaseDate": null
   },
   {
     "dexId": 431,
     "formId": 0,
     "costumeId": 0,
-    "name": "Glameow"
+    "name": "Glameow",
+    "family": "Glameow",
+    "releaseDate": "2020-05-22"
   },
   {
     "dexId": 432,
     "formId": 0,
     "costumeId": 0,
-    "name": "Purugly"
+    "name": "Purugly",
+    "family": "Glameow",
+    "releaseDate": "2020-05-22"
   },
   {
     "dexId": 433,
     "formId": 0,
     "costumeId": 0,
-    "name": "Chingling"
+    "name": "Chingling",
+    "family": "Chimecho",
+    "releaseDate": "2024-02-17"
   },
   {
     "dexId": 434,
     "formId": 0,
     "costumeId": 0,
-    "name": "Stunky"
+    "name": "Stunky",
+    "family": "Stunky",
+    "releaseDate": "2024-02-24"
   },
   {
     "dexId": 435,
     "formId": 0,
     "costumeId": 0,
-    "name": "Skuntank"
+    "name": "Skuntank",
+    "family": "Stunky",
+    "releaseDate": "2024-02-24"
   },
   {
     "dexId": 436,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bronzor"
+    "name": "Bronzor",
+    "family": "Bronzor",
+    "releaseDate": "2019-05-21"
   },
   {
     "dexId": 437,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bronzong"
+    "name": "Bronzong",
+    "family": "Bronzor",
+    "releaseDate": "2019-05-21"
   },
   {
     "dexId": 438,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bonsly"
+    "name": "Bonsly",
+    "family": "Sudowoodo",
+    "releaseDate": null
   },
   {
     "dexId": 439,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mime Jr."
+    "name": "Mime Jr.",
+    "family": "Mr Mime",
+    "releaseDate": null
   },
   {
     "dexId": 440,
     "formId": 0,
     "costumeId": 0,
-    "name": "Happiny"
+    "name": "Happiny",
+    "family": "Chansey",
+    "releaseDate": "2020-02-13"
   },
   {
     "dexId": 440,
     "formId": 0,
     "costumeId": 7,
-    "name": "Happiny"
+    "name": "Happiny",
+    "family": "Chansey",
+    "releaseDate": "2020-02-13"
   },
   {
     "dexId": 441,
     "formId": 0,
     "costumeId": 0,
-    "name": "Chatot"
+    "name": "Chatot",
+    "family": "Chatot",
+    "releaseDate": "2024-02-19"
   },
   {
     "dexId": 442,
     "formId": 0,
     "costumeId": 0,
-    "name": "Spiritomb"
+    "name": "Spiritomb",
+    "family": "Spiritomb",
+    "releaseDate": "2020-10-24"
   },
   {
     "dexId": 443,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gible"
+    "name": "Gible",
+    "family": "Gible",
+    "releaseDate": "2019-12-17"
   },
   {
     "dexId": 443,
     "formId": 1,
     "costumeId": 0,
-    "name": "Gible"
+    "name": "Gible",
+    "family": "Gible",
+    "releaseDate": "2019-12-17"
   },
   {
     "dexId": 444,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gabite"
+    "name": "Gabite",
+    "family": "Gible",
+    "releaseDate": "2019-12-17"
   },
   {
     "dexId": 444,
     "formId": 1,
     "costumeId": 0,
-    "name": "Gabite"
+    "name": "Gabite",
+    "family": "Gible",
+    "releaseDate": "2019-12-17"
   },
   {
     "dexId": 445,
     "formId": 0,
     "costumeId": 0,
-    "name": "Garchomp"
+    "name": "Garchomp",
+    "family": "Gible",
+    "releaseDate": "2019-12-17"
   },
   {
     "dexId": 445,
     "formId": 1,
     "costumeId": 0,
-    "name": "Garchomp"
+    "name": "Garchomp",
+    "family": "Gible",
+    "releaseDate": "2019-12-17"
   },
   {
     "dexId": 446,
     "formId": 0,
     "costumeId": 0,
-    "name": "Munchlax"
+    "name": "Munchlax",
+    "family": "Snorlax",
+    "releaseDate": "2022-11-09"
   },
   {
     "dexId": 447,
     "formId": 0,
     "costumeId": 0,
-    "name": "Riolu"
+    "name": "Riolu",
+    "family": "Riolu",
+    "releaseDate": "2020-02-06"
   },
   {
     "dexId": 448,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lucario"
+    "name": "Lucario",
+    "family": "Riolu",
+    "releaseDate": "2020-02-06"
   },
   {
     "dexId": 449,
     "formId": 0,
     "costumeId": 0,
-    "name": "Hippopotas"
+    "name": "Hippopotas",
+    "family": "Hippowdon",
+    "releaseDate": null
   },
   {
     "dexId": 449,
     "formId": 1,
     "costumeId": 0,
-    "name": "Hippopotas"
+    "name": "Hippopotas",
+    "family": "Hippowdon",
+    "releaseDate": null
   },
   {
     "dexId": 450,
     "formId": 0,
     "costumeId": 0,
-    "name": "Hippowdon"
+    "name": "Hippowdon",
+    "family": "Hippowdon",
+    "releaseDate": null
   },
   {
     "dexId": 450,
     "formId": 1,
     "costumeId": 0,
-    "name": "Hippowdon"
+    "name": "Hippowdon",
+    "family": "Hippowdon",
+    "releaseDate": null
   },
   {
     "dexId": 451,
     "formId": 0,
     "costumeId": 0,
-    "name": "Skorupi"
+    "name": "Skorupi",
+    "family": "Skorupi",
+    "releaseDate": "2020-03-05"
   },
   {
     "dexId": 452,
     "formId": 0,
     "costumeId": 0,
-    "name": "Drapion"
+    "name": "Drapion",
+    "family": "Skorupi",
+    "releaseDate": "2020-03-05"
   },
   {
     "dexId": 453,
     "formId": 0,
     "costumeId": 0,
-    "name": "Croagunk"
+    "name": "Croagunk",
+    "family": "Croagunk",
+    "releaseDate": "2020-03-31"
   },
   {
     "dexId": 453,
     "formId": 0,
     "costumeId": 16,
-    "name": "Croagunk"
+    "name": "Croagunk",
+    "family": "Croagunk",
+    "releaseDate": "2020-03-31"
   },
   {
     "dexId": 453,
     "formId": 1,
     "costumeId": 0,
-    "name": "Croagunk"
+    "name": "Croagunk",
+    "family": "Croagunk",
+    "releaseDate": "2020-03-31"
   },
   {
     "dexId": 453,
     "formId": 1,
     "costumeId": 16,
-    "name": "Croagunk"
+    "name": "Croagunk",
+    "family": "Croagunk",
+    "releaseDate": "2020-03-31"
   },
   {
     "dexId": 454,
     "formId": 0,
     "costumeId": 0,
-    "name": "Toxicroak"
+    "name": "Toxicroak",
+    "family": "Croagunk",
+    "releaseDate": "2020-03-31"
   },
   {
     "dexId": 454,
     "formId": 1,
     "costumeId": 0,
-    "name": "Toxicroak"
+    "name": "Toxicroak",
+    "family": "Croagunk",
+    "releaseDate": "2020-03-31"
   },
   {
     "dexId": 455,
     "formId": 0,
     "costumeId": 0,
-    "name": "Carnivine"
+    "name": "Carnivine",
+    "family": "Carnivine",
+    "releaseDate": "2024-02-19"
   },
   {
     "dexId": 456,
     "formId": 0,
     "costumeId": 0,
-    "name": "Finneon"
+    "name": "Finneon",
+    "family": "Finneon",
+    "releaseDate": "2022-1-21"
   },
   {
     "dexId": 456,
     "formId": 1,
     "costumeId": 0,
-    "name": "Finneon"
+    "name": "Finneon",
+    "family": "Finneon",
+    "releaseDate": "2022-1-21"
   },
   {
     "dexId": 457,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lumineon"
+    "name": "Lumineon",
+    "family": "Finneon",
+    "releaseDate": "2022-1-21"
   },
   {
     "dexId": 457,
     "formId": 1,
     "costumeId": 0,
-    "name": "Lumineon"
+    "name": "Lumineon",
+    "family": "Finneon",
+    "releaseDate": "2022-1-21"
   },
   {
     "dexId": 458,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mantyke"
+    "name": "Mantyke",
+    "family": "Mantine",
+    "releaseDate": "2023-05-02"
   },
   {
     "dexId": 459,
     "formId": 0,
     "costumeId": 0,
-    "name": "Snover"
+    "name": "Snover",
+    "family": "Snover",
+    "releaseDate": "2019-12-24"
   },
   {
     "dexId": 459,
     "formId": 1,
     "costumeId": 0,
-    "name": "Snover"
+    "name": "Snover",
+    "family": "Snover",
+    "releaseDate": "2019-12-24"
   },
   {
     "dexId": 460,
     "formId": 0,
     "costumeId": 0,
-    "name": "Abomasnow"
+    "name": "Abomasnow",
+    "family": "Snover",
+    "releaseDate": "2019-12-24"
   },
   {
     "dexId": 460,
     "formId": 1,
     "costumeId": 0,
-    "name": "Abomasnow"
+    "name": "Abomasnow",
+    "family": "Snover",
+    "releaseDate": "2019-12-24"
   },
   {
     "dexId": 460,
     "formId": 51,
     "costumeId": 0,
-    "name": "Abomasnow"
+    "name": "Abomasnow",
+    "family": "Snover",
+    "releaseDate": "2019-12-24"
   },
   {
     "dexId": 461,
     "formId": 0,
     "costumeId": 0,
-    "name": "Weavile"
+    "name": "Weavile",
+    "family": "Sneasel",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 461,
     "formId": 1,
     "costumeId": 0,
-    "name": "Weavile"
+    "name": "Weavile",
+    "family": "Sneasel",
+    "releaseDate": "2019-07-25"
   },
   {
     "dexId": 462,
     "formId": 0,
     "costumeId": 0,
-    "name": "Magnezone"
+    "name": "Magnezone",
+    "family": "Magnemite",
+    "releaseDate": "2018-11-16"
   },
   {
     "dexId": 463,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lickilicky"
+    "name": "Lickilicky",
+    "family": "Lickitung",
+    "releaseDate": "2020-02-15"
   },
   {
     "dexId": 464,
     "formId": 0,
     "costumeId": 0,
-    "name": "Rhyperior"
+    "name": "Rhyperior",
+    "family": "Rhyhorn",
+    "releaseDate": "2020-02-22"
   },
   {
     "dexId": 464,
     "formId": 1,
     "costumeId": 0,
-    "name": "Rhyperior"
+    "name": "Rhyperior",
+    "family": "Rhyhorn",
+    "releaseDate": "2020-02-22"
   },
   {
     "dexId": 465,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tangrowth"
+    "name": "Tangrowth",
+    "family": "Tangela",
+    "releaseDate": "2020-07-24"
   },
   {
     "dexId": 465,
     "formId": 1,
     "costumeId": 0,
-    "name": "Tangrowth"
+    "name": "Tangrowth",
+    "family": "Tangela",
+    "releaseDate": "2020-07-24"
   },
   {
     "dexId": 466,
     "formId": 0,
     "costumeId": 0,
-    "name": "Electivire"
+    "name": "Electivire",
+    "family": "Electabuzz",
+    "releaseDate": "2018-11-15"
   },
   {
     "dexId": 467,
     "formId": 0,
     "costumeId": 0,
-    "name": "Magmortar"
+    "name": "Magmortar",
+    "family": "Magmar",
+    "releaseDate": "2018-03-22"
   },
   {
     "dexId": 468,
     "formId": 0,
     "costumeId": 0,
-    "name": "Togekiss"
+    "name": "Togekiss",
+    "family": "Togepi",
+    "releaseDate": "2018-03-22"
   },
   {
     "dexId": 469,
     "formId": 0,
     "costumeId": 0,
-    "name": "Yanmega"
+    "name": "Yanmega",
+    "family": "Yanma",
+    "releaseDate": "2019-09-20"
   },
   {
     "dexId": 470,
     "formId": 0,
     "costumeId": 0,
-    "name": "Leafeon"
+    "name": "Leafeon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 470,
     "formId": 0,
     "costumeId": 7,
-    "name": "Leafeon"
+    "name": "Leafeon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 471,
     "formId": 0,
     "costumeId": 0,
-    "name": "Glaceon"
+    "name": "Glaceon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 471,
     "formId": 0,
     "costumeId": 7,
-    "name": "Glaceon"
+    "name": "Glaceon",
+    "family": "Eevee",
+    "releaseDate": "2018-08-11"
   },
   {
     "dexId": 472,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gliscor"
+    "name": "Gliscor",
+    "family": "Gligar",
+    "releaseDate": "2019-09-02"
   },
   {
     "dexId": 473,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mamoswine"
+    "name": "Mamoswine",
+    "family": "Swinub",
+    "releaseDate": "2019-02-16"
   },
   {
     "dexId": 473,
     "formId": 1,
     "costumeId": 0,
-    "name": "Mamoswine"
+    "name": "Mamoswine",
+    "family": "Swinub",
+    "releaseDate": "2019-02-16"
   },
   {
     "dexId": 474,
     "formId": 0,
     "costumeId": 0,
-    "name": "Porygon-Z"
+    "name": "Porygon-Z",
+    "family": "Porygon",
+    "releaseDate": "2020-09-19"
   },
   {
     "dexId": 475,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gallade"
+    "name": "Gallade",
+    "family": "Ralts",
+    "releaseDate": "2019-08-03"
   },
   {
     "dexId": 476,
     "formId": 0,
     "costumeId": 0,
-    "name": "Probopass"
+    "name": "Probopass",
+    "family": "Nosepass",
+    "releaseDate": "2021-03-09"
   },
   {
     "dexId": 477,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dusknoir"
+    "name": "Dusknoir",
+    "family": "Duskull",
+    "releaseDate": "2017-10-26"
   },
   {
     "dexId": 478,
     "formId": 0,
     "costumeId": 0,
-    "name": "Froslass"
+    "name": "Froslass",
+    "family": "Snorunt",
+    "releaseDate": "2017-12-21"
   },
   {
     "dexId": 479,
     "formId": 11,
     "costumeId": 0,
-    "name": "Rotom"
+    "name": "Rotom",
+    "family": "Rotom",
+    "releaseDate": "2024-02-17"
   },
   {
     "dexId": 479,
     "formId": 12,
     "costumeId": 0,
-    "name": "Rotom"
+    "name": "Rotom",
+    "family": "Rotom",
+    "releaseDate": "2024-02-17"
   },
   {
     "dexId": 479,
     "formId": 13,
     "costumeId": 0,
-    "name": "Rotom"
+    "name": "Rotom",
+    "family": "Rotom",
+    "releaseDate": "2024-02-17"
   },
   {
     "dexId": 479,
     "formId": 14,
     "costumeId": 0,
-    "name": "Rotom"
+    "name": "Rotom",
+    "family": "Rotom",
+    "releaseDate": "2024-02-17"
   },
   {
     "dexId": 479,
     "formId": 15,
     "costumeId": 0,
-    "name": "Rotom"
+    "name": "Rotom",
+    "family": "Rotom",
+    "releaseDate": "2024-02-17"
   },
   {
     "dexId": 479,
     "formId": 16,
     "costumeId": 0,
-    "name": "Rotom"
+    "name": "Rotom",
+    "family": "Rotom",
+    "releaseDate": "2024-02-17"
   },
   {
     "dexId": 480,
     "formId": 0,
     "costumeId": 0,
-    "name": "Uxie"
+    "name": "Uxie",
+    "family": "Uxie",
+    "releaseDate": "2021-09-14"
   },
   {
     "dexId": 481,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mesprit"
+    "name": "Mesprit",
+    "family": "Mesprit",
+    "releaseDate": "2021-09-14"
   },
   {
     "dexId": 482,
     "formId": 0,
     "costumeId": 0,
-    "name": "Azelf"
+    "name": "Azelf",
+    "family": "Azelf",
+    "releaseDate": "2021-09-14"
   },
   {
     "dexId": 483,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dialga"
+    "name": "Dialga",
+    "family": "Dialga",
+    "releaseDate": "2021-07-23"
   },
   {
     "dexId": 484,
     "formId": 0,
     "costumeId": 0,
-    "name": "Palkia"
+    "name": "Palkia",
+    "family": "Palkia",
+    "releaseDate": "2021-08-06"
   },
   {
     "dexId": 485,
     "formId": 0,
     "costumeId": 0,
-    "name": "Heatran"
+    "name": "Heatran",
+    "family": "Heatran",
+    "releaseDate": null
   },
   {
     "dexId": 486,
     "formId": 0,
     "costumeId": 0,
-    "name": "Regigigas"
+    "name": "Regigigas",
+    "family": "Regigigas",
+    "releaseDate": "2021-06-17"
   },
   {
     "dexId": 487,
     "formId": 11,
     "costumeId": 0,
-    "name": "Giratina"
+    "name": "Giratina",
+    "family": "Giratina",
+    "releaseDate": "2020-10-09"
   },
   {
     "dexId": 487,
     "formId": 12,
     "costumeId": 0,
-    "name": "Giratina"
+    "name": "Giratina",
+    "family": "Giratina",
+    "releaseDate": "2020-10-09"
   },
   {
     "dexId": 488,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cresselia"
+    "name": "Cresselia",
+    "family": "Cresselia",
+    "releaseDate": null
   },
   {
     "dexId": 491,
     "formId": 0,
     "costumeId": 0,
-    "name": "Darkrai"
+    "name": "Darkrai",
+    "family": "Darkrai",
+    "releaseDate": null
   },
   {
     "dexId": 492,
     "formId": 11,
     "costumeId": 0,
-    "name": "Shaymin"
+    "name": "Shaymin",
+    "family": "Shaymin",
+    "releaseDate": "2024-02-24"
   },
   {
     "dexId": 492,
     "formId": 12,
     "costumeId": 0,
-    "name": "Shaymin"
+    "name": "Shaymin",
+    "family": "Shaymin",
+    "releaseDate": "2024-02-24"
   },
   {
     "dexId": 495,
     "formId": 0,
     "costumeId": 0,
-    "name": "Snivy"
+    "name": "Snivy",
+    "family": "Snivy",
+    "releaseDate": "2021-01-04"
   },
   {
     "dexId": 496,
     "formId": 0,
     "costumeId": 0,
-    "name": "Servine"
+    "name": "Servine",
+    "family": "Snivy",
+    "releaseDate": "2021-01-04"
   },
   {
     "dexId": 497,
     "formId": 0,
     "costumeId": 0,
-    "name": "Serperior"
+    "name": "Serperior",
+    "family": "Snivy",
+    "releaseDate": "2021-01-04"
   },
   {
     "dexId": 498,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tepig"
+    "name": "Tepig",
+    "family": "Tepig",
+    "releaseDate": "2021-07-03"
   },
   {
     "dexId": 499,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pignite"
+    "name": "Pignite",
+    "family": "Tepig",
+    "releaseDate": "2021-07-03"
   },
   {
     "dexId": 500,
     "formId": 0,
     "costumeId": 0,
-    "name": "Emboar"
+    "name": "Emboar",
+    "family": "Tepig",
+    "releaseDate": "2021-07-03"
   },
   {
     "dexId": 501,
     "formId": 0,
     "costumeId": 0,
-    "name": "Oshawott"
+    "name": "Oshawott",
+    "family": "Oshawott",
+    "releaseDate": "2021-09-19"
   },
   {
     "dexId": 502,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dewott"
+    "name": "Dewott",
+    "family": "Oshawott",
+    "releaseDate": "2021-09-19"
   },
   {
     "dexId": 503,
     "formId": 0,
     "costumeId": 0,
-    "name": "Samurott"
+    "name": "Samurott",
+    "family": "Oshawott",
+    "releaseDate": "2021-09-19"
   },
   {
     "dexId": 504,
     "formId": 0,
     "costumeId": 0,
-    "name": "Patrat"
+    "name": "Patrat",
+    "family": "Patrat",
+    "releaseDate": "2019-09-16"
   },
   {
     "dexId": 505,
     "formId": 0,
     "costumeId": 0,
-    "name": "Watchog"
+    "name": "Watchog",
+    "family": "Patrat",
+    "releaseDate": "2019-09-16"
   },
   {
     "dexId": 506,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lillipup"
+    "name": "Lillipup",
+    "family": "Lillipup",
+    "releaseDate": "2019-09-16"
   },
   {
     "dexId": 507,
     "formId": 0,
     "costumeId": 0,
-    "name": "Herdier"
+    "name": "Herdier",
+    "family": "Lillipup",
+    "releaseDate": "2019-09-16"
   },
   {
     "dexId": 508,
     "formId": 0,
     "costumeId": 0,
-    "name": "Stoutland"
+    "name": "Stoutland",
+    "family": "Lillipup",
+    "releaseDate": "2019-09-16"
   },
   {
     "dexId": 509,
     "formId": 0,
     "costumeId": 0,
-    "name": "Purrloin"
+    "name": "Purrloin",
+    "family": "Purrloin",
+    "releaseDate": "2022-11-24"
   },
   {
     "dexId": 510,
     "formId": 0,
     "costumeId": 0,
-    "name": "Liepard"
+    "name": "Liepard",
+    "family": "Purrloin",
+    "releaseDate": "2022-11-24"
   },
   {
     "dexId": 511,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pansage"
+    "name": "Pansage",
+    "family": "Pansage",
+    "releaseDate": "2022-08-05"
   },
   {
     "dexId": 512,
     "formId": 0,
     "costumeId": 0,
-    "name": "Simisage"
+    "name": "Simisage",
+    "family": "Pansage",
+    "releaseDate": "2022-08-05"
   },
   {
     "dexId": 513,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pansear"
+    "name": "Pansear",
+    "family": "Pansear",
+    "releaseDate": "2022-07-01"
   },
   {
     "dexId": 514,
     "formId": 0,
     "costumeId": 0,
-    "name": "Simisear"
+    "name": "Simisear",
+    "family": "Pansear",
+    "releaseDate": "2022-07-01"
   },
   {
     "dexId": 515,
     "formId": 0,
     "costumeId": 0,
-    "name": "Panpour"
+    "name": "Panpour",
+    "family": "Panpour",
+    "releaseDate": "2022-07-22"
   },
   {
     "dexId": 516,
     "formId": 0,
     "costumeId": 0,
-    "name": "Simipour"
+    "name": "Simipour",
+    "family": "Panpour",
+    "releaseDate": "2022-07-22"
   },
   {
     "dexId": 517,
     "formId": 0,
     "costumeId": 0,
-    "name": "Munna"
+    "name": "Munna",
+    "family": "Munna",
+    "releaseDate": "2022-08-27"
   },
   {
     "dexId": 518,
     "formId": 0,
     "costumeId": 0,
-    "name": "Musharna"
+    "name": "Musharna",
+    "family": "Munna",
+    "releaseDate": "2022-08-27"
   },
   {
     "dexId": 519,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pidove"
+    "name": "Pidove",
+    "family": "Pidove",
+    "releaseDate": "2020-07-02"
   },
   {
     "dexId": 520,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tranquill"
+    "name": "Tranquill",
+    "family": "Pidove",
+    "releaseDate": "2020-07-02"
   },
   {
     "dexId": 521,
     "formId": 0,
     "costumeId": 0,
-    "name": "Unfezant"
+    "name": "Unfezant",
+    "family": "Pidove",
+    "releaseDate": "2020-07-02"
   },
   {
     "dexId": 521,
     "formId": 1,
     "costumeId": 0,
-    "name": "Unfezant"
+    "name": "Unfezant",
+    "family": "Pidove",
+    "releaseDate": "2020-07-02"
   },
   {
     "dexId": 522,
     "formId": 0,
     "costumeId": 0,
-    "name": "Blitzle"
+    "name": "Blitzle",
+    "family": "Blitzle",
+    "releaseDate": "2021-09-28"
   },
   {
     "dexId": 523,
     "formId": 0,
     "costumeId": 0,
-    "name": "Zebstrika"
+    "name": "Zebstrika",
+    "family": "Blitzle",
+    "releaseDate": "2021-09-28"
   },
   {
     "dexId": 524,
     "formId": 0,
     "costumeId": 0,
-    "name": "Roggenrola"
+    "name": "Roggenrola",
+    "family": "Roggenrola",
+    "releaseDate": "2020-08-14"
   },
   {
     "dexId": 525,
     "formId": 0,
     "costumeId": 0,
-    "name": "Boldore"
+    "name": "Boldore",
+    "family": "Roggenrola",
+    "releaseDate": "2020-08-14"
   },
   {
     "dexId": 526,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gigalith"
+    "name": "Gigalith",
+    "family": "Roggenrola",
+    "releaseDate": "2020-08-14"
   },
   {
     "dexId": 527,
     "formId": 0,
     "costumeId": 0,
-    "name": "Woobat"
+    "name": "Woobat",
+    "family": "Woobat",
+    "releaseDate": "2020-07-24"
   },
   {
     "dexId": 528,
     "formId": 0,
     "costumeId": 0,
-    "name": "Swoobat"
+    "name": "Swoobat",
+    "family": "Woobat",
+    "releaseDate": "2020-07-24"
   },
   {
     "dexId": 529,
     "formId": 0,
     "costumeId": 0,
-    "name": "Drilbur"
+    "name": "Drilbur",
+    "family": "Drilbur",
+    "releaseDate": "2023-04-20"
   },
   {
     "dexId": 530,
     "formId": 0,
     "costumeId": 0,
-    "name": "Excadrill"
+    "name": "Excadrill",
+    "family": "Drilbur",
+    "releaseDate": "2023-04-20"
   },
   {
     "dexId": 531,
     "formId": 0,
     "costumeId": 0,
-    "name": "Audino"
+    "name": "Audino",
+    "family": "Audino",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 532,
     "formId": 0,
     "costumeId": 0,
-    "name": "Timburr"
+    "name": "Timburr",
+    "family": "Timburr",
+    "releaseDate": "2020-03-13"
   },
   {
     "dexId": 533,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gurdurr"
+    "name": "Gurdurr",
+    "family": "Timburr",
+    "releaseDate": "2020-03-13"
   },
   {
     "dexId": 534,
     "formId": 0,
     "costumeId": 0,
-    "name": "Conkeldurr"
+    "name": "Conkeldurr",
+    "family": "Timburr",
+    "releaseDate": "2020-03-13"
   },
   {
     "dexId": 535,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tympole"
+    "name": "Tympole",
+    "family": "Tympole",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 536,
     "formId": 0,
     "costumeId": 0,
-    "name": "Palpitoad"
+    "name": "Palpitoad",
+    "family": "Tympole",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 537,
     "formId": 0,
     "costumeId": 0,
-    "name": "Seismitoad"
+    "name": "Seismitoad",
+    "family": "Tympole",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 538,
     "formId": 0,
     "costumeId": 0,
-    "name": "Throh"
+    "name": "Throh",
+    "family": "Throh",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 539,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sawk"
+    "name": "Sawk",
+    "family": "Sawk",
+    "releaseDate": "2021-07-17"
   },
   {
     "dexId": 540,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sewaddle"
+    "name": "Sewaddle",
+    "family": "Sewaddle",
+    "releaseDate": "2024-10-05"
   },
   {
     "dexId": 541,
     "formId": 0,
     "costumeId": 0,
-    "name": "Swadloon"
+    "name": "Swadloon",
+    "family": "Sewaddle",
+    "releaseDate": "2024-10-05"
   },
   {
     "dexId": 542,
     "formId": 0,
     "costumeId": 0,
-    "name": "Leavanny"
+    "name": "Leavanny",
+    "family": "Sewaddle",
+    "releaseDate": "2024-10-05"
   },
   {
     "dexId": 543,
     "formId": 0,
     "costumeId": 0,
-    "name": "Venipede"
+    "name": "Venipede",
+    "family": "Venipede",
+    "releaseDate": "2022-08-10"
   },
   {
     "dexId": 544,
     "formId": 0,
     "costumeId": 0,
-    "name": "Whirlipede"
+    "name": "Whirlipede",
+    "family": "Venipede",
+    "releaseDate": "2022-08-10"
   },
   {
     "dexId": 545,
     "formId": 0,
     "costumeId": 0,
-    "name": "Scolipede"
+    "name": "Scolipede",
+    "family": "Venipede",
+    "releaseDate": "2022-08-10"
   },
   {
     "dexId": 546,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cottonee"
+    "name": "Cottonee",
+    "family": "Cottonee",
+    "releaseDate": "2022-03-22"
   },
   {
     "dexId": 547,
     "formId": 0,
     "costumeId": 0,
-    "name": "Whimsicott"
+    "name": "Whimsicott",
+    "family": "Cottonee",
+    "releaseDate": "2024-03-21"
   },
   {
     "dexId": 548,
     "formId": 0,
     "costumeId": 0,
-    "name": "Petilil"
+    "name": "Petilil",
+    "family": "Petilil",
+    "releaseDate": "2023-08-04"
   },
   {
     "dexId": 549,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lilligant"
+    "name": "Lilligant",
+    "family": "Petilil",
+    "releaseDate": "2023-08-04"
   },
   {
     "dexId": 550,
     "formId": 11,
     "costumeId": 0,
-    "name": "Basculin"
+    "name": "Basculin",
+    "family": "Basculin",
+    "releaseDate": "2024-02-24"
   },
   {
     "dexId": 550,
     "formId": 12,
     "costumeId": 0,
-    "name": "Basculin"
+    "name": "Basculin",
+    "family": "Basculin",
+    "releaseDate": "2024-02-24"
   },
   {
     "dexId": 551,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sandile"
+    "name": "Sandile",
+    "family": "Sandile",
+    "releaseDate": "2024-03-27"
   },
   {
     "dexId": 552,
     "formId": 0,
     "costumeId": 0,
-    "name": "Krokorok"
+    "name": "Krokorok",
+    "family": "Sandile",
+    "releaseDate": "2024-03-27"
   },
   {
     "dexId": 553,
     "formId": 0,
     "costumeId": 0,
-    "name": "Krookodile"
+    "name": "Krookodile",
+    "family": "Sandile",
+    "releaseDate": "2024-03-27"
   },
   {
     "dexId": 554,
     "formId": 0,
     "costumeId": 0,
-    "name": "Darumaka"
+    "name": "Darumaka",
+    "family": "Darumaka",
+    "releaseDate": "2021-07-06"
   },
   {
     "dexId": 554,
     "formId": 31,
     "costumeId": 0,
-    "name": "Darumaka"
+    "name": "Darumaka",
+    "family": "Darumaka",
+    "releaseDate": "2021-07-06"
   },
   {
     "dexId": 555,
     "formId": 11,
     "costumeId": 0,
-    "name": "Darmanitan"
+    "name": "Darmanitan",
+    "family": "Darumaka",
+    "releaseDate": "2021-07-06"
   },
   {
     "dexId": 555,
     "formId": 12,
     "costumeId": 0,
-    "name": "Darmanitan"
+    "name": "Darmanitan",
+    "family": "Darumaka",
+    "releaseDate": "2021-07-06"
   },
   {
     "dexId": 555,
     "formId": 31,
     "costumeId": 0,
-    "name": "Darmanitan"
+    "name": "Darmanitan",
+    "family": "Darumaka",
+    "releaseDate": "2021-07-06"
   },
   {
     "dexId": 555,
     "formId": 32,
     "costumeId": 0,
-    "name": "Darmanitan"
+    "name": "Darmanitan",
+    "family": "Darumaka",
+    "releaseDate": "2021-07-06"
   },
   {
     "dexId": 556,
     "formId": 0,
     "costumeId": 0,
-    "name": "Maractus"
+    "name": "Maractus",
+    "family": "Maractus",
+    "releaseDate": "2025-02-21"
   },
   {
     "dexId": 557,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dwebble"
+    "name": "Dwebble",
+    "family": "Dwebble",
+    "releaseDate": "2020-06-25"
   },
   {
     "dexId": 558,
     "formId": 0,
     "costumeId": 0,
-    "name": "Crustle"
+    "name": "Crustle",
+    "family": "Dwebble",
+    "releaseDate": "2020-06-25"
   },
   {
     "dexId": 559,
     "formId": 0,
     "costumeId": 0,
-    "name": "Scraggy"
+    "name": "Scraggy",
+    "family": "Scraggy",
+    "releaseDate": "2023-08-11"
   },
   {
     "dexId": 560,
     "formId": 0,
     "costumeId": 0,
-    "name": "Scrafty"
+    "name": "Scrafty",
+    "family": "Scraggy",
+    "releaseDate": "2023-08-11"
   },
   {
     "dexId": 561,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sigilyph"
+    "name": "Sigilyph",
+    "family": "Sigilyph",
+    "releaseDate": "2025-02-21"
   },
   {
     "dexId": 562,
     "formId": 0,
     "costumeId": 0,
-    "name": "Yamask"
+    "name": "Yamask",
+    "family": "Yamask",
+    "releaseDate": "2019-10-17"
   },
   {
     "dexId": 562,
     "formId": 31,
     "costumeId": 0,
-    "name": "Yamask"
+    "name": "Yamask",
+    "family": "Yamask",
+    "releaseDate": "2019-10-17"
   },
   {
     "dexId": 563,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cofagrigus"
+    "name": "Cofagrigus",
+    "family": "Yamask",
+    "releaseDate": "2019-10-17"
   },
   {
     "dexId": 564,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tirtouga"
+    "name": "Tirtouga",
+    "family": "Tirtouga",
+    "releaseDate": "2022-06-07"
   },
   {
     "dexId": 565,
     "formId": 0,
     "costumeId": 0,
-    "name": "Carracosta"
+    "name": "Carracosta",
+    "family": "Tirtouga",
+    "releaseDate": "2022-06-07"
   },
   {
     "dexId": 566,
     "formId": 0,
     "costumeId": 0,
-    "name": "Archen"
+    "name": "Archen",
+    "family": "Archen",
+    "releaseDate": "2022-06-07"
   },
   {
     "dexId": 567,
     "formId": 0,
     "costumeId": 0,
-    "name": "Archeops"
+    "name": "Archeops",
+    "family": "Archen",
+    "releaseDate": "2022-06-07"
   },
   {
     "dexId": 568,
     "formId": 0,
     "costumeId": 0,
-    "name": "Trubbish"
+    "name": "Trubbish",
+    "family": "Trubbish",
+    "releaseDate": "2021-04-20"
   },
   {
     "dexId": 569,
     "formId": 0,
     "costumeId": 0,
-    "name": "Garbodor"
+    "name": "Garbodor",
+    "family": "Trubbish",
+    "releaseDate": "2021-04-20"
   },
   {
     "dexId": 570,
     "formId": 0,
     "costumeId": 0,
-    "name": "Zorua"
+    "name": "Zorua",
+    "family": "Zorua",
+    "releaseDate": "2023-10-26"
   },
   {
     "dexId": 571,
     "formId": 0,
     "costumeId": 0,
-    "name": "Zoroark"
+    "name": "Zoroark",
+    "family": "Zorua",
+    "releaseDate": "2023-10-26"
   },
   {
     "dexId": 572,
     "formId": 0,
     "costumeId": 0,
-    "name": "Minccino"
+    "name": "Minccino",
+    "family": "Minccino",
+    "releaseDate": "2020-02-02"
   },
   {
     "dexId": 573,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cinccino"
+    "name": "Cinccino",
+    "family": "Minccino",
+    "releaseDate": "2020-02-02"
   },
   {
     "dexId": 574,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gothita"
+    "name": "Gothita",
+    "family": "Gothita",
+    "releaseDate": "2023-11-15"
   },
   {
     "dexId": 575,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gothorita"
+    "name": "Gothorita",
+    "family": "Gothita",
+    "releaseDate": "2023-11-15"
   },
   {
     "dexId": 576,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gothitelle"
+    "name": "Gothitelle",
+    "family": "Gothita",
+    "releaseDate": "2023-11-15"
   },
   {
     "dexId": 577,
     "formId": 0,
     "costumeId": 0,
-    "name": "Solosis"
+    "name": "Solosis",
+    "family": "Solosis",
+    "releaseDate": "2023-09-20"
   },
   {
     "dexId": 578,
     "formId": 0,
     "costumeId": 0,
-    "name": "Duosion"
+    "name": "Duosion",
+    "family": "Solosis",
+    "releaseDate": "2023-09-20"
   },
   {
     "dexId": 579,
     "formId": 0,
     "costumeId": 0,
-    "name": "Reuniclus"
+    "name": "Reuniclus",
+    "family": "Solosis",
+    "releaseDate": "2023-09-20"
   },
   {
     "dexId": 580,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ducklett"
+    "name": "Ducklett",
+    "family": "Ducklett",
+    "releaseDate": "2024-07-05"
   },
   {
     "dexId": 581,
     "formId": 0,
     "costumeId": 0,
-    "name": "Swanna"
+    "name": "Swanna",
+    "family": "Ducklett",
+    "releaseDate": "2024-07-05"
   },
   {
     "dexId": 582,
     "formId": 0,
     "costumeId": 0,
-    "name": "Vanillite"
+    "name": "Vanillite",
+    "family": "Vanillite",
+    "releaseDate": "2023-12-25"
   },
   {
     "dexId": 583,
     "formId": 0,
     "costumeId": 0,
-    "name": "Vanillish"
+    "name": "Vanillish",
+    "family": "Vanillite",
+    "releaseDate": "2023-12-25"
   },
   {
     "dexId": 584,
     "formId": 0,
     "costumeId": 0,
-    "name": "Vanilluxe"
+    "name": "Vanilluxe",
+    "family": "Vanillite",
+    "releaseDate": "2023-12-25"
   },
   {
     "dexId": 585,
     "formId": 11,
     "costumeId": 0,
-    "name": "Deerling"
+    "name": "Deerling",
+    "family": "Deerling",
+    "releaseDate": "2025-02-21"
   },
   {
     "dexId": 585,
     "formId": 12,
     "costumeId": 0,
-    "name": "Deerling"
+    "name": "Deerling",
+    "family": "Deerling",
+    "releaseDate": "2025-02-21"
   },
   {
     "dexId": 585,
     "formId": 13,
     "costumeId": 0,
-    "name": "Deerling"
+    "name": "Deerling",
+    "family": "Deerling",
+    "releaseDate": "2025-02-21"
   },
   {
     "dexId": 585,
     "formId": 14,
     "costumeId": 0,
-    "name": "Deerling"
+    "name": "Deerling",
+    "family": "Deerling",
+    "releaseDate": "2025-02-21"
   },
   {
     "dexId": 586,
     "formId": 11,
     "costumeId": 0,
-    "name": "Sawsbuck"
+    "name": "Sawsbuck",
+    "family": "Deerling",
+    "releaseDate": "2025-02-21"
   },
   {
     "dexId": 586,
     "formId": 12,
     "costumeId": 0,
-    "name": "Sawsbuck"
+    "name": "Sawsbuck",
+    "family": "Deerling",
+    "releaseDate": "2025-02-21"
   },
   {
     "dexId": 586,
     "formId": 13,
     "costumeId": 0,
-    "name": "Sawsbuck"
+    "name": "Sawsbuck",
+    "family": "Deerling",
+    "releaseDate": "2025-02-21"
   },
   {
     "dexId": 586,
     "formId": 14,
     "costumeId": 0,
-    "name": "Sawsbuck"
+    "name": "Sawsbuck",
+    "family": "Deerling",
+    "releaseDate": "2025-02-21"
   },
   {
     "dexId": 587,
     "formId": 0,
     "costumeId": 0,
-    "name": "Emolga"
+    "name": "Emolga",
+    "family": "Emolga",
+    "releaseDate": "2024-05-30"
   },
   {
     "dexId": 588,
     "formId": 0,
     "costumeId": 0,
-    "name": "Karrablast"
+    "name": "Karrablast",
+    "family": "Karrablast",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 589,
     "formId": 0,
     "costumeId": 0,
-    "name": "Escavalier"
+    "name": "Escavalier",
+    "family": "Karrablast",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 590,
     "formId": 0,
     "costumeId": 0,
-    "name": "Foongus"
+    "name": "Foongus",
+    "family": "Foongus",
+    "releaseDate": "2022-07-01"
   },
   {
     "dexId": 591,
     "formId": 0,
     "costumeId": 0,
-    "name": "Amoonguss"
+    "name": "Amoonguss",
+    "family": "Foongus",
+    "releaseDate": "2022-07-01"
   },
   {
     "dexId": 592,
     "formId": 0,
     "costumeId": 0,
-    "name": "Frillish"
+    "name": "Frillish",
+    "family": "Frillish",
+    "releaseDate": "2023-02-08"
   },
   {
     "dexId": 592,
     "formId": 1,
     "costumeId": 0,
-    "name": "Frillish"
+    "name": "Frillish",
+    "family": "Frillish",
+    "releaseDate": "2023-02-08"
   },
   {
     "dexId": 593,
     "formId": 0,
     "costumeId": 0,
-    "name": "Jellicent"
+    "name": "Jellicent",
+    "family": "Frillish",
+    "releaseDate": "2023-02-08"
   },
   {
     "dexId": 593,
     "formId": 1,
     "costumeId": 0,
-    "name": "Jellicent"
+    "name": "Jellicent",
+    "family": "Frillish",
+    "releaseDate": "2023-02-08"
   },
   {
     "dexId": 594,
     "formId": 0,
     "costumeId": 0,
-    "name": "Alomomola"
+    "name": "Alomomola",
+    "family": "Alomomola",
+    "releaseDate": "2021-02-14"
   },
   {
     "dexId": 595,
     "formId": 0,
     "costumeId": 0,
-    "name": "Joltik"
+    "name": "Joltik",
+    "family": "Joltik",
+    "releaseDate": "2023-08-27"
   },
   {
     "dexId": 596,
     "formId": 0,
     "costumeId": 0,
-    "name": "Galvantula"
+    "name": "Galvantula",
+    "family": "Joltik",
+    "releaseDate": "2023-08-27"
   },
   {
     "dexId": 597,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ferroseed"
+    "name": "Ferroseed",
+    "family": "Ferroseed",
+    "releaseDate": "2020-11-07"
   },
   {
     "dexId": 598,
     "formId": 0,
     "costumeId": 0,
-    "name": "Ferrothorn"
+    "name": "Ferrothorn",
+    "family": "Ferroseed",
+    "releaseDate": "2020-11-07"
   },
   {
     "dexId": 599,
     "formId": 0,
     "costumeId": 0,
-    "name": "Klink"
+    "name": "Klink",
+    "family": "Klink",
+    "releaseDate": "2019-09-16"
   },
   {
     "dexId": 600,
     "formId": 0,
     "costumeId": 0,
-    "name": "Klang"
+    "name": "Klang",
+    "family": "Klink",
+    "releaseDate": "2019-09-16"
   },
   {
     "dexId": 601,
     "formId": 0,
     "costumeId": 0,
-    "name": "Klinklang"
+    "name": "Klinklang",
+    "family": "Klink",
+    "releaseDate": "2019-09-16"
   },
   {
     "dexId": 602,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tynamo"
+    "name": "Tynamo",
+    "family": "Tynamo",
+    "releaseDate": "2024-07-21"
   },
   {
     "dexId": 603,
     "formId": 0,
     "costumeId": 0,
-    "name": "Eelektrik"
+    "name": "Eelektrik",
+    "family": "Tynamo",
+    "releaseDate": "2024-07-21"
   },
   {
     "dexId": 604,
     "formId": 0,
     "costumeId": 0,
-    "name": "Eelektross"
+    "name": "Eelektross",
+    "family": "Tynamo",
+    "releaseDate": "2024-07-21"
   },
   {
     "dexId": 605,
     "formId": 0,
     "costumeId": 0,
-    "name": "Elgyem"
+    "name": "Elgyem",
+    "family": "Elgyem",
+    "releaseDate": "2022-09-06"
   },
   {
     "dexId": 606,
     "formId": 0,
     "costumeId": 0,
-    "name": "Beheeyem"
+    "name": "Beheeyem",
+    "family": "Elgyem",
+    "releaseDate": "2022-09-06"
   },
   {
     "dexId": 607,
     "formId": 0,
     "costumeId": 0,
-    "name": "Litwick"
+    "name": "Litwick",
+    "family": "Litwick",
+    "releaseDate": "2022-10-15"
   },
   {
     "dexId": 608,
     "formId": 0,
     "costumeId": 0,
-    "name": "Lampent"
+    "name": "Lampent",
+    "family": "Litwick",
+    "releaseDate": "2022-10-15"
   },
   {
     "dexId": 609,
     "formId": 0,
     "costumeId": 0,
-    "name": "Chandelure"
+    "name": "Chandelure",
+    "family": "Litwick",
+    "releaseDate": "2022-10-15"
   },
   {
     "dexId": 610,
     "formId": 0,
     "costumeId": 0,
-    "name": "Axew"
+    "name": "Axew",
+    "family": "Axew",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 611,
     "formId": 0,
     "costumeId": 0,
-    "name": "Fraxure"
+    "name": "Fraxure",
+    "family": "Axew",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 612,
     "formId": 0,
     "costumeId": 0,
-    "name": "Haxorus"
+    "name": "Haxorus",
+    "family": "Axew",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 613,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cubchoo"
+    "name": "Cubchoo",
+    "family": "Cubchoo",
+    "releaseDate": "2020-12-18"
   },
   {
     "dexId": 614,
     "formId": 0,
     "costumeId": 0,
-    "name": "Beartic"
+    "name": "Beartic",
+    "family": "Cubchoo",
+    "releaseDate": "2020-12-18"
   },
   {
     "dexId": 615,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cryogonal"
+    "name": "Cryogonal",
+    "family": "Cryogonal",
+    "releaseDate": "2023-12-09"
   },
   {
     "dexId": 616,
     "formId": 0,
     "costumeId": 0,
-    "name": "Shelmet"
+    "name": "Shelmet",
+    "family": "Shelmet",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 617,
     "formId": 0,
     "costumeId": 0,
-    "name": "Accelgor"
+    "name": "Accelgor",
+    "family": "Shelmet",
+    "releaseDate": "2022-06-04"
   },
   {
     "dexId": 618,
     "formId": 0,
     "costumeId": 0,
-    "name": "Stunfisk"
+    "name": "Stunfisk",
+    "family": "Stunfisk",
+    "releaseDate": "2023-04-23"
   },
   {
     "dexId": 618,
     "formId": 31,
     "costumeId": 0,
-    "name": "Stunfisk"
+    "name": "Stunfisk",
+    "family": "Stunfisk",
+    "releaseDate": "2023-04-23"
   },
   {
     "dexId": 619,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mienfoo"
+    "name": "Mienfoo",
+    "family": "Mienfoo",
+    "releaseDate": "2024-08-16"
   },
   {
     "dexId": 620,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mienshao"
+    "name": "Mienshao",
+    "family": "Mienfoo",
+    "releaseDate": "2024-08-16"
   },
   {
     "dexId": 621,
     "formId": 0,
     "costumeId": 0,
-    "name": "Druddigon"
+    "name": "Druddigon",
+    "family": "Druddigon",
+    "releaseDate": "2021-12-07"
   },
   {
     "dexId": 622,
     "formId": 0,
     "costumeId": 0,
-    "name": "Golett"
+    "name": "Golett",
+    "family": "Golett",
+    "releaseDate": "2023-08-18"
   },
   {
     "dexId": 623,
     "formId": 0,
     "costumeId": 0,
-    "name": "Golurk"
+    "name": "Golurk",
+    "family": "Golett",
+    "releaseDate": "2023-08-18"
   },
   {
     "dexId": 624,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pawniard"
+    "name": "Pawniard",
+    "family": "Pawniard",
+    "releaseDate": "2022-11-14"
   },
   {
     "dexId": 625,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bisharp"
+    "name": "Bisharp",
+    "family": "Pawniard",
+    "releaseDate": "2022-11-14"
   },
   {
     "dexId": 626,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bouffalant"
+    "name": "Bouffalant",
+    "family": "Bouffalant",
+    "releaseDate": "2025-02-21"
   },
   {
     "dexId": 627,
     "formId": 0,
     "costumeId": 0,
-    "name": "Rufflet"
+    "name": "Rufflet",
+    "family": "Rufflet",
+    "releaseDate": "2020-12-13"
   },
   {
     "dexId": 628,
     "formId": 0,
     "costumeId": 0,
-    "name": "Braviary"
+    "name": "Braviary",
+    "family": "Rufflet",
+    "releaseDate": "2020-12-13"
   },
   {
     "dexId": 629,
     "formId": 0,
     "costumeId": 0,
-    "name": "Vullaby"
+    "name": "Vullaby",
+    "family": "Vullaby",
+    "releaseDate": "2021-11-09"
   },
   {
     "dexId": 630,
     "formId": 0,
     "costumeId": 0,
-    "name": "Mandibuzz"
+    "name": "Mandibuzz",
+    "family": "Vullaby",
+    "releaseDate": "2021-11-09"
   },
   {
     "dexId": 631,
     "formId": 0,
     "costumeId": 0,
-    "name": "Heatmor"
+    "name": "Heatmor",
+    "family": "Heatmor",
+    "releaseDate": null
   },
   {
     "dexId": 632,
     "formId": 0,
     "costumeId": 0,
-    "name": "Durant"
+    "name": "Durant",
+    "family": "Durant",
+    "releaseDate": null
   },
   {
     "dexId": 633,
     "formId": 0,
     "costumeId": 0,
-    "name": "Deino"
+    "name": "Deino",
+    "family": "Deino",
+    "releaseDate": "2020-08-01"
   },
   {
     "dexId": 634,
     "formId": 0,
     "costumeId": 0,
-    "name": "Zweilous"
+    "name": "Zweilous",
+    "family": "Deino",
+    "releaseDate": "2020-08-01"
   },
   {
     "dexId": 635,
     "formId": 0,
     "costumeId": 0,
-    "name": "Hydreigon"
+    "name": "Hydreigon",
+    "family": "Deino",
+    "releaseDate": "2020-08-01"
   },
   {
     "dexId": 636,
     "formId": 0,
     "costumeId": 0,
-    "name": "Larvesta"
+    "name": "Larvesta",
+    "family": "Larvesta",
+    "releaseDate": "2024-06-21"
   },
   {
     "dexId": 637,
     "formId": 0,
     "costumeId": 0,
-    "name": "Volcarona"
+    "name": "Volcarona",
+    "family": "Larvesta",
+    "releaseDate": "2024-06-21"
   },
   {
     "dexId": 638,
     "formId": 0,
     "costumeId": 0,
-    "name": "Cobalion"
+    "name": "Cobalion",
+    "family": "Cobalion",
+    "releaseDate": "2020-05-18"
   },
   {
     "dexId": 639,
     "formId": 0,
     "costumeId": 0,
-    "name": "Terrakion"
+    "name": "Terrakion",
+    "family": "Terrakion",
+    "releaseDate": "2020-05-19"
   },
   {
     "dexId": 640,
     "formId": 0,
     "costumeId": 0,
-    "name": "Virizion"
+    "name": "Virizion",
+    "family": "Virizion",
+    "releaseDate": "2020-05-13"
   },
   {
     "dexId": 641,
     "formId": 11,
     "costumeId": 0,
-    "name": "Tornadus"
+    "name": "Tornadus",
+    "family": "Tornadus",
+    "releaseDate": "2021-03-06"
   },
   {
     "dexId": 641,
     "formId": 12,
     "costumeId": 0,
-    "name": "Tornadus"
+    "name": "Tornadus",
+    "family": "Tornadus",
+    "releaseDate": "2021-03-06"
   },
   {
     "dexId": 642,
     "formId": 11,
     "costumeId": 0,
-    "name": "Thundurus"
+    "name": "Thundurus",
+    "family": "Thundurus",
+    "releaseDate": "2021-03-11"
   },
   {
     "dexId": 642,
     "formId": 12,
     "costumeId": 0,
-    "name": "Thundurus"
+    "name": "Thundurus",
+    "family": "Thundurus",
+    "releaseDate": "2021-03-11"
   },
   {
     "dexId": 643,
     "formId": 0,
     "costumeId": 0,
-    "name": "Reshiram"
+    "name": "Reshiram",
+    "family": "Reshiram",
+    "releaseDate": "2021-12-01"
   },
   {
     "dexId": 644,
     "formId": 0,
     "costumeId": 0,
-    "name": "Zekrom"
+    "name": "Zekrom",
+    "family": "Zekrom",
+    "releaseDate": "2021-12-01"
   },
   {
     "dexId": 645,
     "formId": 11,
     "costumeId": 0,
-    "name": "Landorus"
+    "name": "Landorus",
+    "family": "Landorus",
+    "releaseDate": "2021-03-01"
   },
   {
     "dexId": 645,
     "formId": 12,
     "costumeId": 0,
-    "name": "Landorus"
+    "name": "Landorus",
+    "family": "Landorus",
+    "releaseDate": "2021-03-01"
   },
   {
     "dexId": 646,
     "formId": 11,
     "costumeId": 0,
-    "name": "Kyurem"
+    "name": "Kyurem",
+    "family": "Kyurem",
+    "releaseDate": "2021-12-16"
   },
   {
     "dexId": 646,
     "formId": 12,
     "costumeId": 0,
-    "name": "Kyurem"
+    "name": "Kyurem",
+    "family": "Kyurem",
+    "releaseDate": "2021-12-16"
   },
   {
     "dexId": 646,
     "formId": 13,
     "costumeId": 0,
-    "name": "Kyurem"
+    "name": "Kyurem",
+    "family": "Kyurem",
+    "releaseDate": "2021-12-16"
   },
   {
     "dexId": 647,
     "formId": 11,
     "costumeId": 0,
-    "name": "Keldeo"
+    "name": "Keldeo",
+    "family": "Keldeo",
+    "releaseDate": "2025-11-25"
   },
   {
     "dexId": 647,
     "formId": 12,
     "costumeId": 0,
-    "name": "Keldeo"
+    "name": "Keldeo",
+    "family": "Keldeo",
+    "releaseDate": "2025-11-25"
   },
   {
     "dexId": 648,
     "formId": 11,
     "costumeId": 0,
-    "name": "Meloetta"
+    "name": "Meloetta",
+    "family": "Meloetta",
+    "releaseDate": null
   },
   {
     "dexId": 648,
     "formId": 12,
     "costumeId": 0,
-    "name": "Meloetta"
+    "name": "Meloetta",
+    "family": "Meloetta",
+    "releaseDate": null
   },
   {
     "dexId": 649,
     "formId": 11,
     "costumeId": 0,
-    "name": "Genesect"
+    "name": "Genesect",
+    "family": "Genesect",
+    "releaseDate": "2020-08-15"
   },
   {
     "dexId": 649,
     "formId": 12,
     "costumeId": 0,
-    "name": "Genesect"
+    "name": "Genesect",
+    "family": "Genesect",
+    "releaseDate": "2020-08-15"
   },
   {
     "dexId": 649,
     "formId": 13,
     "costumeId": 0,
-    "name": "Genesect"
+    "name": "Genesect",
+    "family": "Genesect",
+    "releaseDate": "2020-08-15"
   },
   {
     "dexId": 649,
     "formId": 14,
     "costumeId": 0,
-    "name": "Genesect"
+    "name": "Genesect",
+    "family": "Genesect",
+    "releaseDate": "2020-08-15"
   },
   {
     "dexId": 649,
     "formId": 15,
     "costumeId": 0,
-    "name": "Genesect"
+    "name": "Genesect",
+    "family": "Genesect",
+    "releaseDate": "2020-08-15"
   },
   {
     "dexId": 650,
     "formId": 0,
     "costumeId": 0,
-    "name": "Chespin"
+    "name": "Chespin",
+    "family": "Chespin",
+    "releaseDate": "2023-01-07"
   },
   {
     "dexId": 651,
     "formId": 0,
     "costumeId": 0,
-    "name": "Quilladin"
+    "name": "Quilladin",
+    "family": "Chespin",
+    "releaseDate": "2023-01-07"
   },
   {
     "dexId": 652,
     "formId": 0,
     "costumeId": 0,
-    "name": "Chesnaught"
+    "name": "Chesnaught",
+    "family": "Chespin",
+    "releaseDate": "2023-01-07"
   },
   {
     "dexId": 653,
     "formId": 0,
     "costumeId": 0,
-    "name": "Fennekin"
+    "name": "Fennekin",
+    "family": "Fennekin",
+    "releaseDate": "2023-05-21"
   },
   {
     "dexId": 654,
     "formId": 0,
     "costumeId": 0,
-    "name": "Braixen"
+    "name": "Braixen",
+    "family": "Fennekin",
+    "releaseDate": "2023-05-21"
   },
   {
     "dexId": 655,
     "formId": 0,
     "costumeId": 0,
-    "name": "Delphox"
+    "name": "Delphox",
+    "family": "Fennekin",
+    "releaseDate": "2023-05-21"
   },
   {
     "dexId": 656,
     "formId": 0,
     "costumeId": 0,
-    "name": "Froakie"
+    "name": "Froakie",
+    "family": "Froakie",
+    "releaseDate": "2023-08-13"
   },
   {
     "dexId": 657,
     "formId": 0,
     "costumeId": 0,
-    "name": "Frogadier"
+    "name": "Frogadier",
+    "family": "Froakie",
+    "releaseDate": "2023-08-13"
   },
   {
     "dexId": 658,
     "formId": 0,
     "costumeId": 0,
-    "name": "Greninja"
+    "name": "Greninja",
+    "family": "Froakie",
+    "releaseDate": "2023-08-13"
   },
   {
     "dexId": 659,
     "formId": 0,
     "costumeId": 0,
-    "name": "Bunnelby"
+    "name": "Bunnelby",
+    "family": "Bunnelby",
+    "releaseDate": "2021-04-04"
   },
   {
     "dexId": 660,
     "formId": 0,
     "costumeId": 0,
-    "name": "Diggersby"
+    "name": "Diggersby",
+    "family": "Bunnelby",
+    "releaseDate": "2021-04-04"
   },
   {
     "dexId": 661,
     "formId": 0,
     "costumeId": 0,
-    "name": "Fletchling"
+    "name": "Fletchling",
+    "family": "Fletchling",
+    "releaseDate": "2021-03-06"
   },
   {
     "dexId": 662,
     "formId": 0,
     "costumeId": 0,
-    "name": "Fletchinder"
+    "name": "Fletchinder",
+    "family": "Fletchling",
+    "releaseDate": "2021-03-06"
   },
   {
     "dexId": 663,
     "formId": 0,
     "costumeId": 0,
-    "name": "Talonflame"
+    "name": "Talonflame",
+    "family": "Fletchling",
+    "releaseDate": "2021-03-06"
   },
   {
     "dexId": 664,
     "formId": 0,
     "costumeId": 0,
-    "name": "Scatterbug"
+    "name": "Scatterbug",
+    "family": "Scatterbug",
+    "releaseDate": "2025-02-18"
   },
   {
     "dexId": 665,
     "formId": 0,
     "costumeId": 0,
-    "name": "Spewpa"
+    "name": "Spewpa",
+    "family": "Scatterbug",
+    "releaseDate": "2025-02-18"
   },
   {
     "dexId": 667,
     "formId": 0,
     "costumeId": 0,
-    "name": "Litleo"
+    "name": "Litleo",
+    "family": "Litleo",
+    "releaseDate": "2022-02-01"
   },
   {
     "dexId": 668,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pyroar"
+    "name": "Pyroar",
+    "family": "Litleo",
+    "releaseDate": "2022-02-01"
   },
   {
     "dexId": 668,
     "formId": 1,
     "costumeId": 0,
-    "name": "Pyroar"
+    "name": "Pyroar",
+    "family": "Litleo",
+    "releaseDate": "2022-02-01"
   },
   {
     "dexId": 672,
     "formId": 0,
     "costumeId": 0,
-    "name": "Skiddo"
+    "name": "Skiddo",
+    "family": "Skiddo",
+    "releaseDate": "2023-10-07"
   },
   {
     "dexId": 673,
     "formId": 0,
     "costumeId": 0,
-    "name": "Gogoat"
+    "name": "Gogoat",
+    "family": "Skiddo",
+    "releaseDate": "2023-10-07"
   },
   {
     "dexId": 674,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pancham"
+    "name": "Pancham",
+    "family": "Pancham",
+    "releaseDate": "2023-06-16"
   },
   {
     "dexId": 675,
     "formId": 0,
     "costumeId": 0,
-    "name": "Pangoro"
+    "name": "Pangoro",
+    "family": "Pancham",
+    "releaseDate": "2023-06-16"
   },
   {
     "dexId": 677,
     "formId": 0,
     "costumeId": 0,
-    "name": "Espurr"
+    "name": "Espurr",
+    "family": "Espurr",
+    "releaseDate": "2022-02-01"
   },
   {
     "dexId": 678,
     "formId": 0,
     "costumeId": 0,
-    "name": "Meowstic"
+    "name": "Meowstic",
+    "family": "Espurr",
+    "releaseDate": "2022-02-01"
   },
   {
     "dexId": 678,
     "formId": 1,
     "costumeId": 0,
-    "name": "Meowstic"
+    "name": "Meowstic",
+    "family": "Espurr",
+    "releaseDate": "2022-02-01"
+  },
+  {
+    "dexId": 679,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Honedge",
+    "family": "Honedge",
+    "releaseDate": "2026-02-20"
+  },
+  {
+    "dexId": 680,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Doublade",
+    "family": "Honedge",
+    "releaseDate": "2026-02-20"
   },
   {
     "dexId": 682,
     "formId": 0,
     "costumeId": 0,
-    "name": "Spritzee"
+    "name": "Spritzee",
+    "family": "Spritzee",
+    "releaseDate": "2022-09-24"
   },
   {
     "dexId": 683,
     "formId": 0,
     "costumeId": 0,
-    "name": "Aromatisse"
+    "name": "Aromatisse",
+    "family": "Spritzee",
+    "releaseDate": "2022-09-24"
   },
   {
     "dexId": 684,
     "formId": 0,
     "costumeId": 0,
-    "name": "Swirlix"
+    "name": "Swirlix",
+    "family": "Swirlix",
+    "releaseDate": "2022-08-05"
   },
   {
     "dexId": 685,
     "formId": 0,
     "costumeId": 0,
-    "name": "Slurpuff"
+    "name": "Slurpuff",
+    "family": "Swirlix",
+    "releaseDate": "2022-08-05"
   },
   {
     "dexId": 686,
     "formId": 0,
     "costumeId": 0,
-    "name": "Inkay"
+    "name": "Inkay",
+    "family": "Inkay",
+    "releaseDate": "2022-09-03"
   },
   {
     "dexId": 687,
     "formId": 0,
     "costumeId": 0,
-    "name": "Malamar"
+    "name": "Malamar",
+    "family": "Inkay",
+    "releaseDate": "2022-09-03"
   },
   {
     "dexId": 688,
     "formId": 0,
     "costumeId": 0,
-    "name": "Binacle"
+    "name": "Binacle",
+    "family": "Binacle",
+    "releaseDate": "2022-05-13"
   },
   {
     "dexId": 689,
     "formId": 0,
     "costumeId": 0,
-    "name": "Barbaracle"
+    "name": "Barbaracle",
+    "family": "Binacle",
+    "releaseDate": "2022-05-13"
   },
   {
     "dexId": 690,
     "formId": 0,
     "costumeId": 0,
-    "name": "Skrelp"
+    "name": "Skrelp",
+    "family": "Skrelp",
+    "releaseDate": "2023-08-18"
   },
   {
     "dexId": 691,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dragalge"
+    "name": "Dragalge",
+    "family": "Skrelp",
+    "releaseDate": "2023-08-18"
   },
   {
     "dexId": 692,
     "formId": 0,
     "costumeId": 0,
-    "name": "Clauncher"
+    "name": "Clauncher",
+    "family": "Clauncher",
+    "releaseDate": "2023-06-06"
   },
   {
     "dexId": 693,
     "formId": 0,
     "costumeId": 0,
-    "name": "Clawitzer"
+    "name": "Clawitzer",
+    "family": "Clauncher",
+    "releaseDate": "2023-06-06"
   },
   {
     "dexId": 694,
     "formId": 0,
     "costumeId": 0,
-    "name": "Helioptile"
+    "name": "Helioptile",
+    "family": "Helioptile",
+    "releaseDate": "2023-01-27"
   },
   {
     "dexId": 695,
     "formId": 0,
     "costumeId": 0,
-    "name": "Heliolisk"
+    "name": "Heliolisk",
+    "family": "Helioptile",
+    "releaseDate": "2023-01-27"
   },
   {
     "dexId": 696,
     "formId": 0,
     "costumeId": 0,
-    "name": "Tyrunt"
+    "name": "Tyrunt",
+    "family": "Tyrunt",
+    "releaseDate": "2023-07-27"
   },
   {
     "dexId": 698,
     "formId": 0,
     "costumeId": 0,
-    "name": "Amaura"
+    "name": "Amaura",
+    "family": "Amaura",
+    "releaseDate": "2023-07-27"
   },
   {
     "dexId": 699,
     "formId": 0,
     "costumeId": 0,
-    "name": "Aurorus"
+    "name": "Aurorus",
+    "family": "Amaura",
+    "releaseDate": "2023-07-27"
   },
   {
     "dexId": 700,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sylveon"
+    "name": "Sylveon",
+    "family": "Eevee",
+    "releaseDate": "2021-05-25"
   },
   {
     "dexId": 700,
     "formId": 0,
     "costumeId": 7,
-    "name": "Sylveon"
+    "name": "Sylveon",
+    "family": "Eevee",
+    "releaseDate": "2021-05-25"
+  },
+  {
+    "dexId": 701,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Hawlucha",
+    "family": "Hawlucha",
+    "releaseDate": "2026-02-20"
   },
   {
     "dexId": 702,
     "formId": 0,
     "costumeId": 0,
-    "name": "Dedenne"
+    "name": "Dedenne",
+    "family": "Dedenne",
+    "releaseDate": "2023-01-10"
   },
   {
     "dexId": 704,
     "formId": 0,
     "costumeId": 0,
-    "name": "Goomy"
+    "name": "Goomy",
+    "family": "Goomy",
+    "releaseDate": "2023-08-27"
   },
   {
     "dexId": 705,
     "formId": 0,
     "costumeId": 0,
-    "name": "Sliggoo"
+    "name": "Sliggoo",
+    "family": "Goomy",
+    "releaseDate": "2023-08-27"
   },
   {
     "dexId": 706,
     "formId": 0,
     "costumeId": 0,
-    "name": "Goodra"
+    "name": "Goodra",
+    "family": "Goomy",
+    "releaseDate": "2023-08-27"
+  },
+  {
+    "dexId": 707,
+    "formId": 0,
+    "costumeId": 0,
+    "name": "Klefki",
+    "family": "Klefki",
+    "releaseDate": "2026-02-20"
   },
   {
     "dexId": 714,
     "formId": 0,
     "costumeId": 0,
-    "name": "Noibat"
+    "name": "Noibat",
+    "family": "Noibat",
+    "releaseDate": "2022-10-20"
   },
   {
     "dexId": 715,
     "formId": 0,
     "costumeId": 0,
-    "name": "Noivern"
+    "name": "Noivern",
+    "family": "Noibat",
+    "releaseDate": "2022-10-20"
   },
   {
     "dexId": 716,
     "formId": 0,
     "costumeId": 0,
-    "name": "Xerneas"
+    "name": "Xerneas",
+    "family": "Xerneas",
+    "releaseDate": "2022-10-08"
   },
   {
     "dexId": 717,
     "formId": 0,
     "costumeId": 0,
-    "name": "Yveltal"
+    "name": "Yveltal",
+    "family": "Yveltal",
+    "releaseDate": "2022-09-27"
   },
   {
     "dexId": 808,
     "formId": 0,
     "costumeId": 0,
-    "name": "Meltan"
+    "name": "Meltan",
+    "family": "Meltan",
+    "releaseDate": "2019-02-05"
   },
   {
     "dexId": 809,
     "formId": 0,
     "costumeId": 0,
-    "name": "Melmetal"
+    "name": "Melmetal",
+    "family": "Meltan",
+    "releaseDate": "2019-02-05"
   },
   {
     "dexId": 862,
     "formId": 31,
     "costumeId": 0,
-    "name": "Obstagoon"
+    "name": "Obstagoon",
+    "family": "Zigzagoon_31",
+    "releaseDate": "2020-05-25"
   },
   {
     "dexId": 863,
     "formId": 31,
     "costumeId": 0,
-    "name": "Perrserker"
+    "name": "Perrserker",
+    "family": "Meowth",
+    "releaseDate": null
   },
   {
     "dexId": 865,
     "formId": 31,
     "costumeId": 0,
-    "name": "Sirfetch\u2019d"
+    "name": "Sirfetch\u2019d",
+    "family": "Farfetchd",
+    "releaseDate": null
+  },
+  {
+    "dexId": 866,
+    "formId": 31,
+    "costumeId": 0,
+    "name": "Mr. Rime",
+    "family": "Mr Mime_31",
+    "releaseDate": "2022-12-01"
   },
   {
     "dexId": 867,
     "formId": 31,
     "costumeId": 0,
-    "name": "Runerigus"
+    "name": "Runerigus",
+    "family": "Yamask_31",
+    "releaseDate": "2022-10-20"
   }
 ]

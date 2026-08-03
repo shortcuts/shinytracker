@@ -17,6 +17,8 @@ Identity of one Pokemon variant.
 | species | String? | Species flavor text (e.g. "Seed Pokémon"); null for dex ids >898 |
 | evolvesFrom | Int? | Dex id this species evolves from; null if it has no pre-evolution or is outside `dexdata.json`'s coverage |
 | evolvesTo | List\<Int\> | Dex ids this species evolves into; empty if it has none or is outside `dexdata.json`'s coverage |
+| family | String? | Evolution-line grouping label sourced from leekduck.com's `pms.json` (e.g. "Bulbasaur" covers Bulbasaur/Ivysaur/Venusaur); null if leekduck has no entry for this dexId |
+| releaseDate | String? | This species' shiny release date, `YYYY-MM-DD`, sourced from leekduck.com's `pms.json` `released_date` (reformatted from its native `YYYY/MM/DD`); null if leekduck has no confirmed date |
 
 ## PokemonType
 

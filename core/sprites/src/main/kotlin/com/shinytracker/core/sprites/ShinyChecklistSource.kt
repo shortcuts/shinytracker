@@ -29,6 +29,8 @@ private data class ChecklistEntryJson(
     val formId: Int = 0,
     val costumeId: Int = 0,
     val name: String,
+    val family: String? = null,
+    val releaseDate: String? = null,
 )
 
 /**
@@ -54,7 +56,10 @@ class ShinyChecklistSource
         fun nameFor(dexId: Int): String = state.value.firstOrNull { it.dexId == dexId }?.name ?: "Unknown #%03d".format(dexId)
 
         /** Species-level DexEntry (types/localizedNames/species/evolutions merged in), used by SpriteCatalog. */
-        fun dexEntryFor(dexId: Int): DexEntry = dexEntry(dexId, formId = 0, costumeId = 0, nameFor(dexId))
+        fun dexEntryFor(dexId: Int): DexEntry {
+            val match = state.value.firstOrNull { it.dexId == dexId }
+            return dexEntry(dexId, formId = 0, costumeId = 0, nameFor(dexId), match?.family, match?.releaseDate)
+        }
 
         suspend fun refresh(): Result<Unit> = refreshFrom(CHECKLIST_URL)
 
@@ -95,13 +100,15 @@ class ShinyChecklistSource
         private fun parse(text: String): List<DexEntry> =
             json
                 .decodeFromString<List<ChecklistEntryJson>>(text)
-                .map { dexEntry(it.dexId, it.formId, it.costumeId, it.name) }
+                .map { dexEntry(it.dexId, it.formId, it.costumeId, it.name, it.family, it.releaseDate) }
 
         private fun dexEntry(
             dexId: Int,
             formId: Int,
             costumeId: Int,
             name: String,
+            family: String?,
+            releaseDate: String?,
         ): DexEntry {
             val data = dexDataSource.get(dexId)
             return DexEntry(
@@ -114,6 +121,8 @@ class ShinyChecklistSource
                 species = data?.species,
                 evolvesFrom = data?.evolvesFrom,
                 evolvesTo = data?.evolvesTo.orEmpty(),
+                family = family,
+                releaseDate = releaseDate,
             )
         }
 

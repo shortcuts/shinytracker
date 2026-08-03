@@ -10,4 +10,6 @@ data class DexEntry(
     val species: String? = null,
     val evolvesFrom: Int? = null,
     val evolvesTo: List<Int> = emptyList(),
+    val family: String? = null,
+    val releaseDate: String? = null,
 )

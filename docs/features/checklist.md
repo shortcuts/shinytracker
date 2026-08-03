@@ -102,14 +102,21 @@ The filter sheet's Type section shows a caption noting this limitation.
 `ShinyChecklistSource` (`:core:sprites`) loads a bundled
 `core/sprites/src/main/assets/checklist.json` by default, so a fresh
 install works offline. `scripts/sync_checklist.py` writes that file from
-two sources: pogoapi.net's `shiny_pokemon.json` for species-level
-eligibility and display names, and `PokeMiners/pogo_assets`' shiny sprite
-filenames (Git Trees API) to explode each eligible species into its
+three sources: pogoapi.net's `shiny_pokemon.json` for the primary
+species-level eligibility set and display names; leekduck.com's
+`shiny/pms.json` and `shiny/name.json` to cross-check that set (widening it
+to dexIds pogoapi.net hasn't listed yet, using leekduck's own name data for
+those) and to backfill each species' `family` (evolution-line label) and
+`releaseDate` (shiny release date); and `PokeMiners/pogo_assets`' shiny
+sprite filenames (Git Trees API) to explode each eligible species into its
 individual form/costume variants -- each entry is a
-`(dexId, formId, costumeId)` triple, not just a species. `refresh()`
-re-fetches pogoapi.net's species list over the network and overwrites only
-the on-disk cache (`filesDir/checklist.json`), never the bundled asset; on
-failure the previously-loaded list is left untouched. (`refresh()` only
-re-syncs species-level eligibility, not variant data -- variant data only
-changes via re-running `scripts/sync_checklist.py` and shipping a new
-build.)
+`(dexId, formId, costumeId)` triple, not just a species. `family` and
+`releaseDate` are species-level (leekduck has no per-variant data usable
+here) and duplicated across every variant row of a dexId, the same
+convention already used for `name`. `refresh()` re-fetches pogoapi.net's
+species list over the network and overwrites only the on-disk cache
+(`filesDir/checklist.json`), never the bundled asset; on failure the
+previously-loaded list is left untouched. (`refresh()` only re-syncs
+pogoapi.net's species-level eligibility, not leekduck or pogo_assets data --
+those only change via re-running `scripts/sync_checklist.py` and shipping a
+new build.)

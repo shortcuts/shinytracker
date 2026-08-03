@@ -42,6 +42,24 @@ class ShinyChecklistSourceTest {
         }
 
     @Test
+    fun `observeChecklist and dexEntryFor carry family and releaseDate`() =
+        runTest {
+            val checklist = source.observeChecklist().first()
+            val bulbasaur = checklist.first { it.dexId == 1 && it.formId == 0 && it.costumeId == 0 }
+
+            assertEquals("Bulbasaur", bulbasaur.family)
+            assertEquals("2018-03-25", bulbasaur.releaseDate)
+            assertEquals("Bulbasaur", source.dexEntryFor(1).family)
+            assertEquals("2018-03-25", source.dexEntryFor(1).releaseDate)
+
+            // dexId 421 (Cherrim) has no plain pms.json row -- exercises
+            // leekduck_species_meta's fallback-to-earliest-released_date path.
+            val cherrim = checklist.first { it.dexId == 421 && it.formId == 11 }
+            assertEquals("Cherubi", cherrim.family)
+            assertEquals("2022-04-20", cherrim.releaseDate)
+        }
+
+    @Test
     fun `refresh failure leaves the previously loaded checklist untouched`() =
         runTest {
             val before = source.observeChecklist().first()
