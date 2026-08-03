@@ -47,6 +47,7 @@ import com.shinytracker.core.model.DisplayLanguage
 @Composable
 fun OnboardingScreen(
     displayLanguageChoice: DisplayLanguage?,
+    scannerEnabledPref: Boolean,
     accessibilityGranted: Boolean,
     overlayGranted: Boolean,
     onSetupComplete: (DisplayLanguage, Boolean) -> Unit,
@@ -54,7 +55,7 @@ fun OnboardingScreen(
     onOpenOverlaySettings: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    if (displayLanguageChoice == null) {
+    if (displayLanguageChoice == null || !scannerEnabledPref) {
         SetupStep(onContinue = onSetupComplete, modifier = modifier)
     } else {
         PermissionsStep(
@@ -280,6 +281,7 @@ private fun OnboardingScreenSetupStepPreview() {
     ShinyTheme {
         OnboardingScreen(
             displayLanguageChoice = null,
+            scannerEnabledPref = false,
             accessibilityGranted = false,
             overlayGranted = false,
             onSetupComplete = { _, _ -> },
@@ -295,6 +297,7 @@ private fun OnboardingScreenPermissionsStepPreview() {
     ShinyTheme {
         OnboardingScreen(
             displayLanguageChoice = DisplayLanguage.ENGLISH,
+            scannerEnabledPref = true,
             accessibilityGranted = false,
             overlayGranted = true,
             onSetupComplete = { _, _ -> },

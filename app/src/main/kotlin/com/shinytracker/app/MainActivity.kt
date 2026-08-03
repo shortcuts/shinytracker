@@ -80,6 +80,7 @@ class MainActivity : ComponentActivity() {
                         composable(ONBOARDING_ROUTE) {
                             OnboardingScreen(
                                 displayLanguageChoice = displayLanguageChoice,
+                                scannerEnabledPref = scannerEnabledPref,
                                 accessibilityGranted = isServiceEnabled,
                                 overlayGranted = overlayPermissionGranted,
                                 onSetupComplete = { language, scannerEnabled ->
