@@ -2,7 +2,6 @@ package com.shinytracker.feature.checklist.impl
 
 import android.net.Uri
 import androidx.compose.animation.core.animateFloatAsState
-import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -43,7 +42,6 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -51,7 +49,6 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.ColorMatrix
@@ -404,15 +401,11 @@ private fun SpriteTile(
 ) {
     val caughtLabel = if (entry.caught) "caught" else "not caught"
     val grayscale = remember { ColorMatrix().apply { setToSaturation(0f) } }
-    var visible by remember { mutableStateOf(false) }
-    LaunchedEffect(Unit) { visible = true }
-    val alpha by animateFloatAsState(if (visible) 1f else 0f, animationSpec = tween(200), label = "spriteTileFadeIn")
     Box(
         modifier =
             modifier
                 .size(76.dp)
                 .padding(4.dp)
-                .alpha(alpha)
                 .background(MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.shapes.medium)
                 .then(if (onToggle != null) Modifier.clickable(onClick = onToggle) else Modifier)
                 .clearAndSetSemantics {
